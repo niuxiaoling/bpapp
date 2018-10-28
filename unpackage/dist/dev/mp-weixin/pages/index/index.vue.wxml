@@ -1,0 +1,30 @@
+<template name="299c4eba">
+  <view class="_view data-v-56c5dc7a content">
+    <view class="_view data-v-56c5dc7a logo">
+      <image src="http://www.xhsmoll.com/upFiles/images/2018101175667609.jpg" mode="scaleToFill" class="_image data-v-56c5dc7a"></image>
+    </view>
+    <view class="_view data-v-56c5dc7a login">
+      <view class="_view data-v-56c5dc7a input-row border">
+        <text class="_text data-v-56c5dc7a title">账号：</text>
+        <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="请输入账号" data-eventid="{{'nUY-0'}}" data-comkey="{{$k}}" class="_input data-v-56c5dc7a" />
+      </view>
+      <view class="_view data-v-56c5dc7a input-row">
+        <text class="_text data-v-56c5dc7a title">密码：</text>
+        <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'5yX-1'}}" data-comkey="{{$k}}" class="_input data-v-56c5dc7a" />
+      </view>
+    </view>
+    <view class="_view data-v-56c5dc7a btn-row">
+      <button type="primary" class="_button data-v-56c5dc7a primary" bindtap="handleProxy" data-eventid="{{'JbD-2'}}" data-comkey="{{$k}}">登录</button>
+    </view>
+    <view class="_view data-v-56c5dc7a action-row">
+      <navigator url="../reg/reg" class="_navigator data-v-56c5dc7a">注册账号</navigator>
+      <text class="_text data-v-56c5dc7a">|</text>
+      <navigator url="../pwd/pwd" class="_navigator data-v-56c5dc7a">忘记密码</navigator>
+    </view>
+    <view class="_view data-v-56c5dc7a oauth-row" wx:if="{{hasProvider}}" style=" {{('top:' + (positionTop + 'px') + ';')}}">
+      <view class="_view data-v-56c5dc7a oauth-image" wx:key="provider.value" key="{{provider.value}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="provider">
+        <image src="{{provider.image}}" bindtap="handleProxy" data-eventid="{{'pQh-3-'+index}}" data-comkey="{{$k}}" class="_image data-v-56c5dc7a"></image>
+      </view>
+    </view>
+  </view>
+</template>
