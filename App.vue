@@ -17,7 +17,8 @@
 
 	page {
 	        min-height: 100%;
-	        display: flex;
+			width:100%;
+			background:#EDEDED;
 	    }
 	
 	    .content {

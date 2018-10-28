@@ -1,9 +1,8 @@
 
 page {
   min-height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+  width: 100%;
+  background: #EDEDED;
 }
 .content {
   display: -webkit-box;
