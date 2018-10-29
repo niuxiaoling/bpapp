@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template name="0ef0f486">
   <view class="_view data-v-06a1ead8">
     <view class="_view data-v-06a1ead8 swiperbox">
@@ -17,6 +18,43 @@
           <text class="_text data-v-06a1ead8">{{v.text}}</text>
         </navigator>
       </view>
+=======
+<template name="765f41be">
+  <view class="_view data-v-f70cb24e">
+    <view class="_view data-v-f70cb24e swiperbox">
+      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#3AC198" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="_swiper data-v-f70cb24e">
+        <swiper-item wx:key="item" key="{{item}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-f70cb24e">
+          <text class="_text data-v-f70cb24e">{{item}}</text>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_view data-v-f70cb24e banner">
+      <swiper indicator-dots="{{false}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{true}}" class="_swiper data-v-f70cb24e">
+        <swiper-item wx:key="item" key="{{item}}" wx:for="{{itemList2}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-f70cb24e">
+          <text class="_text data-v-f70cb24e">{{item}}</text>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_view data-v-f70cb24e list">
+      <view class="_view data-v-f70cb24e list_item">
+        <image src="../../static/img/book.png" mode="scaleToFill" class="_image data-v-f70cb24e"></image>
+        <text class="_text data-v-f70cb24e">如何赚佣</text>
+      </view>
+      <view class="_view data-v-f70cb24e list_item">
+        <image src="../../static/img/book.png" mode="scaleToFill" class="_image data-v-f70cb24e"></image>
+        <text class="_text data-v-f70cb24e">如何赚佣</text>
+      </view>
+      <view class="_view data-v-f70cb24e list_item">
+        <image src="../../static/img/book.png" mode="scaleToFill" class="_image data-v-f70cb24e"></image>
+        <text class="_text data-v-f70cb24e">如何赚佣</text>
+      </view>
+      <view class="_view data-v-f70cb24e list_item">
+        <image src="../../static/img/book.png" mode="scaleToFill" class="_image data-v-f70cb24e"></image>
+        <text class="_text data-v-f70cb24e">如何赚佣</text>
+      </view>
+      <view class="_view data-v-f70cb24e"></view>
+      <view class="_view data-v-f70cb24e"></view>
+>>>>>>> 415e66f36acecfe9f52ce39ea7ff6d48029ff754
     </view>
   </view>
 </template>
