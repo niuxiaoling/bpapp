@@ -1,29 +1,29 @@
-<template name="1e4980c9">
-  <view class="_view data-v-4aa9949e content">
-    <view class="_view data-v-4aa9949e logo">
-      <image src="http://www.xhsmoll.com/upFiles/images/2018101175667609.jpg" mode="scaleToFill" class="_image data-v-4aa9949e"></image>
+<template name="f5bb7eec">
+  <view class="_view data-v-9cfb5742 content">
+    <view class="_view data-v-9cfb5742 logo">
+      <image src="http://www.xhsmoll.com/upFiles/images/2018101175667609.jpg" mode="scaleToFill" class="_image data-v-9cfb5742"></image>
     </view>
-    <view class="_view data-v-4aa9949e login">
-      <view class="_view data-v-4aa9949e input-row border">
-        <text class="_text data-v-4aa9949e title">账号：</text>
-        <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="请输入账号" data-eventid="{{'uu3-0'}}" data-comkey="{{$k}}" class="_input data-v-4aa9949e" />
+    <view class="_view data-v-9cfb5742 login">
+      <view class="_view data-v-9cfb5742 input-row border">
+        <text class="_text data-v-9cfb5742 title">账号：</text>
+        <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="请输入账号" data-eventid="{{'35f-0'}}" data-comkey="{{$k}}" class="_input data-v-9cfb5742" />
       </view>
-      <view class="_view data-v-4aa9949e input-row">
-        <text class="_text data-v-4aa9949e title">密码：</text>
-        <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'xN4-1'}}" data-comkey="{{$k}}" class="_input data-v-4aa9949e" />
+      <view class="_view data-v-9cfb5742 input-row">
+        <text class="_text data-v-9cfb5742 title">密码：</text>
+        <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'zAH-1'}}" data-comkey="{{$k}}" class="_input data-v-9cfb5742" />
       </view>
     </view>
-    <view class="_view data-v-4aa9949e btn-row">
-      <button type="primary" class="_button data-v-4aa9949e primary" bindtap="handleProxy" data-eventid="{{'jCN-2'}}" data-comkey="{{$k}}">登录</button>
+    <view class="_view data-v-9cfb5742 btn-row">
+      <button type="primary" class="_button data-v-9cfb5742 primary" bindtap="handleProxy" data-eventid="{{'G1m-2'}}" data-comkey="{{$k}}">登录</button>
     </view>
-    <view class="_view data-v-4aa9949e action-row">
-      <navigator url="../reg/reg" class="_navigator data-v-4aa9949e">注册账号</navigator>
-      <text class="_text data-v-4aa9949e">|</text>
-      <navigator url="../pwd/pwd" class="_navigator data-v-4aa9949e">忘记密码</navigator>
+    <view class="_view data-v-9cfb5742 action-row">
+      <navigator url="../reg/reg" class="_navigator data-v-9cfb5742">注册账号</navigator>
+      <text class="_text data-v-9cfb5742">|</text>
+      <navigator url="../pwd/pwd" class="_navigator data-v-9cfb5742">忘记密码</navigator>
     </view>
-    <view class="_view data-v-4aa9949e oauth-row" wx:if="{{hasProvider}}" style=" {{('top:' + (positionTop + 'px') + ';')}}">
-      <view class="_view data-v-4aa9949e oauth-image" wx:key="provider.value" key="{{provider.value}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="provider">
-        <image src="{{provider.image}}" bindtap="handleProxy" data-eventid="{{'fUv-3-'+index}}" data-comkey="{{$k}}" class="_image data-v-4aa9949e"></image>
+    <view class="_view data-v-9cfb5742 oauth-row" wx:if="{{hasProvider}}" style=" {{('top:' + (positionTop + 'px') + ';')}}">
+      <view class="_view data-v-9cfb5742 oauth-image" wx:key="provider.value" key="{{provider.value}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="provider">
+        <image src="{{provider.image}}" bindtap="handleProxy" data-eventid="{{'pQp-3-'+index}}" data-comkey="{{$k}}" class="_image data-v-9cfb5742"></image>
       </view>
     </view>
   </view>
