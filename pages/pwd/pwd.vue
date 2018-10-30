@@ -1,6 +1,6 @@
 <template>
 	<view>
-		忘记密码
+		待开发
 	</view>
 </template>
 <script>

@@ -154,7 +154,7 @@
 		align-items:center;
 		display: flex;
 		margin: 10upx 0;
-		/* padding-left:5%; */
+		font-size:30upx;
 		border-bottom:1px solid #dadada;
 		
 	}
@@ -165,7 +165,7 @@
 		
 	}
 	.lists .listli text{
-		margin-left:10upx;
+		margin-left:20upx;
 	}
 	.getOut{
 		background:linear-gradient(bottom, #E61532,#E86318);

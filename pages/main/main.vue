@@ -1,14 +1,14 @@
 <template>
 	<view>
 		<view class="swiperbox">
-			<swiper :indicator-dots="indicatorDots" indicator-active-color="#3AC198" :autoplay="autoplay" :interval="interval" :duration="duration">
+			<swiper :indicator-dots="indicatorDots" indicator-active-color="#3AC198" :autoplay="autoplay" :interval="interval" :duration="duration" :circular="true">
 				<swiper-item v-for="item in itemList" :key="item">
 					<image :src = "item"  mode="scaleToFill"></image>
 				</swiper-item>
 			</swiper>
 		</view>
 		<view class="banner marquee_box">
-			<text class="marquee_text" >
+			<text class="marquee_text">
 				床前明月光，疑是地上霜。	
 			</text>
 			  
@@ -32,25 +32,51 @@
 			],
 			list:[
 				{
-					imgage:'../../static/img/book.png',
+					imgage:'../../static/img/ruhezhuangqu.png',
 					text:'如何赚佣',
 					url:'/pages/pwd/pwd'
 				},
 				{
-					imgage:'../../static/img/book.png',
+					imgage:'../../static/img/tgewm.png',
 					text:'推广二维码',
 					url:"/pages/pwd/pwd"
 				},
 				{
-					imgage:'../../static/img/book.png',
+					imgage:'../../static/img/ggrw.png',
 					text:'广告投放',
 					url:'/pages/pwd/pwd'
 				},
 				{
-					imgage:'../../static/img/book.png',
-					text:'会员',
+					imgage:'../../static/img/huiyuanrenwu.png',
+					text:'微品会员',
 					url:'/pages/pwd/pwd'
-				}
+				},
+				{
+					imgage:'../../static/img/renwudating.png',
+					text:'任务大厅',
+					url:'/pages/pwd/pwd'
+				},
+				{
+					imgage:'../../static/img/wdgx.png',
+					text:'我的贡献',
+					url:'/pages/pwd/pwd'
+				},
+				{
+					imgage:'../../static/img/shagnchengwulian.png',
+					text:'物联商城',
+					url:'/pages/pwd/pwd'
+				},
+				{
+					imgage:'../../static/img/hb.png',
+					text:'红包多多',
+					url:'/pages/pwd/pwd'
+				},
+				{
+					imgage:'../../static/img/kefu.png',
+					text:'客服中心',
+					url:'/pages/pwd/pwd'
+				},
+				
 			],
 			indicatorDots: true,
 			autoplay: true,
@@ -62,7 +88,7 @@
 		    marqueeDistance: 0,//初始滚动距离
 		    marqueeDistance2: 0,
 		    marquee2copy_status: false,
-		    marquee2_margin: 60,
+		//     marquee2_margin: 60,
 		    size: 14,
 
 		},
@@ -89,6 +115,10 @@
 		width:100%;
 		background:#fff;
 	}
+	.swiperbox image{
+		width:100%;
+		height: 100%;
+	}
 	.banner{
 		width:100%;
 		height:100upx;
@@ -104,7 +134,7 @@
 		background:#fff;
 	}
 	.list .list_item{
-		width:33.3%;
+		width:33%;
 		display:flex;
 		flex-direction:column;
 		justify-content:center;
@@ -116,12 +146,14 @@
 		flex-direction:column;
 		justify-content:center;
 		align-items:center;
+		margin:20upx 0;
 	}
 	.list_item image{
 		width:80upx;
 		height:80upx;
 	}
 	.list_item text{
-		margin-top:18upx;
+		margin-top:20upx;
+		font-size:30upx;
 	}
 </style>
