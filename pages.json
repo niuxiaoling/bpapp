@@ -3,7 +3,7 @@
 		{
 			"path": "pages/main/main",
 			"style": {
-				"navigationBarTitleText": "微品天下"
+				"navigationBarTitleText": "微品"
 			}
 		},
 		{
@@ -28,13 +28,13 @@
 		{
 			"path": "pages/reg/reg",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "注册"
 			}
 		},
 		{
 			"path": "pages/pwd/pwd",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "忘记密码"
 			}
 		}
 	],

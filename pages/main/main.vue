@@ -8,8 +8,7 @@
 			</swiper>
 		</view>
 		<view class="banner marquee_box">
-			<text class="marquee_text">
-				床前明月光，疑是地上霜。	
+			<text class="marquee_text" v-html="htmltext">	
 			</text>
 			  
 		</view>
@@ -26,6 +25,7 @@
 <script>
 	export default{
 		data:{
+			
 			itemList: [
 				'../../static/img/banner1.jpg',
 				'../../static/img/banner2.jpg'
@@ -33,12 +33,12 @@
 			list:[
 				{
 					imgage:'../../static/img/ruhezhuangqu.png',
-					text:'如何赚佣',
+					text:'赚钱方式',
 					url:'/pages/pwd/pwd'
 				},
 				{
 					imgage:'../../static/img/tgewm.png',
-					text:'推广二维码',
+					text:'勇士推广码',
 					url:"/pages/pwd/pwd"
 				},
 				{
@@ -48,27 +48,27 @@
 				},
 				{
 					imgage:'../../static/img/huiyuanrenwu.png',
-					text:'微品会员',
+					text:'微品勇士',
 					url:'/pages/pwd/pwd'
 				},
 				{
 					imgage:'../../static/img/renwudating.png',
-					text:'任务大厅',
+					text:'科企互化',
 					url:'/pages/pwd/pwd'
 				},
 				{
 					imgage:'../../static/img/wdgx.png',
-					text:'我的贡献',
+					text:'科技孵化',
 					url:'/pages/pwd/pwd'
 				},
 				{
 					imgage:'../../static/img/shagnchengwulian.png',
-					text:'物联商城',
+					text:'微品众商',
 					url:'/pages/pwd/pwd'
 				},
 				{
 					imgage:'../../static/img/hb.png',
-					text:'红包多多',
+					text:'全球免费',
 					url:'/pages/pwd/pwd'
 				},
 				{
@@ -83,11 +83,11 @@
 			interval: 5000,
 			duration: 1000,
 			orientation:'left',
-			text:'这是一条会滚动的文字滚来滚去的文字跑马灯，哈哈哈哈哈哈哈哈',
+			htmltext:'数据待接收',
 			marqueePace: 1,//滚动速度
-		    marqueeDistance: 0,//初始滚动距离
-		    marqueeDistance2: 0,
-		    marquee2copy_status: false,
+		  marqueeDistance: 0,//初始滚动距离
+		  marqueeDistance2: 0,
+		  marquee2copy_status: false,
 		//     marquee2_margin: 60,
 		    size: 14,
 

@@ -8,7 +8,7 @@
       </swiper>
     </view>
     <view class="_view data-v-06a1ead8 banner marquee_box">
-      <text class="_text data-v-06a1ead8 marquee_text"> 床前明月光，疑是地上霜。 </text>
+      <rich-text class="_text data-v-06a1ead8 marquee_text" nodes="{{htmltext}}"></rich-text>
     </view>
     <view class="_view data-v-06a1ead8 list">
       <view class="_view data-v-06a1ead8 list_item" wx:key="v" key="{{v}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="v">

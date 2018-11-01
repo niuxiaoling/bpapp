@@ -1,4 +1,10 @@
 
+page {
+  min-height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(bottom, #E61532,#EA5B17);
+  background: linear-gradient(bottom, #E61532,#EA5B17);
+}
 .content {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -11,16 +17,26 @@
   align-items: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: -webkit-linear-gradient(bottom, #E61532,#EA5B17);
-  background: linear-gradient(bottom, #E61532,#EA5B17);
 }
 .logo {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   width: 120rpx;
   height: 120rpx;
+  margin-top: 10%;
+  border-radius: 50%;
 }
 .logo image {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 .login {
   display: -webkit-box;
@@ -28,8 +44,10 @@
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  color: #FFFFFF;
 }
 .action-row {
+  margin-top: 50rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -40,10 +58,13 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  color: #FFFFFF;
 }
 .action-row navigator {
   color: #007aff;
-  padding: 0 20px;
+  padding: 0 30px;
+  color: #FFFFFF;
+  font-size: 30rpx;
 }
 .oauth-row {
   display: -webkit-box;

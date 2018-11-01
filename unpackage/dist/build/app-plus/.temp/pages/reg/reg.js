@@ -1,0 +1,3 @@
+require("../../common/manifest.js");
+require("../../common/vendor.js");
+global.webpackJsonp([2],{31:function(t,e,n){"use strict";var u=i(n(0)),r=i(n(32));function i(t){return t&&t.__esModule?t:{default:t}}new u.default(r.default).$mount()},32:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var u=n(34),r=n.n(u),i=n(35);var s=function(t){n(33)},a=n(1)(r.a,i.a,s,null,null);e.default=a.exports},33:function(t,e){},34:function(t,e,n){"use strict"},35:function(t,e,n){"use strict";var u={render:function(){var t=this.$createElement;return(this._self._c||t)("view",[this._v("\n\t注册账号\n")])},staticRenderFns:[]};e.a=u}},[31]);

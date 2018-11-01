@@ -1,7 +1,9 @@
 
 .avatars {
+  width: 100%;
   background: -webkit-linear-gradient(bottom, #E61532,#E86318);
   background: linear-gradient(bottom, #E61532,#E86318);
+  backgorund-size: 100% 100%;
   padding-top: 50rpx;
 }
 .avatar_box {
@@ -93,6 +95,7 @@
 }
 .list-text {
   margin-bottom: 20rpx;
+  font-size: 30rpx;
 }
 .lists {
   background-color: #F4F0F1;
@@ -121,5 +124,6 @@
 .getOut {
   background: -webkit-linear-gradient(bottom, #E61532,#E86318);
   background: linear-gradient(bottom, #E61532,#E86318);
+  backgorund-size: 100% 100%;
   color: #FFF;
 }

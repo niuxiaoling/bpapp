@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view class="logo">
-			<image src="http://www.xhsmoll.com/upFiles/images/2018101175667609.jpg" mode="scaleToFill"></image>
+			<image src="../../static/img/logo.jpg" mode="scaleToFill"></image>
 		</view>
 		<view class="login">
 			<view class="input-row border">
@@ -156,34 +156,50 @@
 </script>
 
 <style>
+	
+	page{
+		min-height: 100%;
+		width:100%;
+		background:linear-gradient(bottom, #E61532,#EA5B17);
+	}
 	.content {
 		flex: 1;
 		justify-content: center;
 		align-items: center;
-		flex-wrap:wrap;
-		background:linear-gradient(bottom, #E61532,#EA5B17);
+		flex-wrap:wrap;	
 	}
 	.logo{
+		flex: 1;
+		justify-content: center;
+		align-items: center;
 		width:120upx;
 		height: 120upx;
+		margin-top: 10%;
+		border-radius: 50%;
 	}
 	.logo image{
 		width:100%;
 		height: 100%;
+		border-radius: 50%;
 	}
 	.login{
 		display:flex;
 		flex-wrap:wrap;
+		color: #FFFFFF;
 	}
 	.action-row {
+		    margin-top: 50upx;
 	        display: flex;
 	        flex-direction: row;
 	        justify-content: center;
+			color: #FFFFFF;
 	    }
 	
 	.action-row navigator {
 		color: #007aff;
-		padding: 0 20px;
+		padding: 0 30px;
+		color: #FFFFFF;
+		font-size: 30upx;
 	}
 
 	.oauth-row {

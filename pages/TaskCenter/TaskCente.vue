@@ -35,7 +35,7 @@
 				{
 				imgage:'../../static/img/renwudating.png',
 				text:'任务大厅',
-				url:'/pages/pwd/pwd'	
+				url:'/pages/index/index'	
 				},
 				{
 				imgage:'../../static/img/tijiaorenwu.png',
@@ -81,11 +81,13 @@
 	border-right:1px solid #ddd;
 }
 .taskList navigator{
-	
 	display: flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;	
+}
+.taskList:last-child{
+	border-right:none;
 }
 .taskList navigator image{
 	width: 80upx;

@@ -1,0 +1,3 @@
+require("../../common/manifest.js");
+require("../../common/vendor.js");
+global.webpackJsonp([3],{36:function(t,e,n){"use strict";var u=i(n(0)),r=i(n(37));function i(t){return t&&t.__esModule?t:{default:t}}new u.default(r.default).$mount()},37:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var u=n(39),r=n.n(u),i=n(40);var s=function(t){n(38)},a=n(1)(r.a,i.a,s,null,null);e.default=a.exports},38:function(t,e){},39:function(t,e,n){"use strict"},40:function(t,e,n){"use strict";var u={render:function(){var t=this.$createElement;return(this._self._c||t)("view",[this._v("\n\t待开发\n")])},staticRenderFns:[]};e.a=u}},[36]);

@@ -12,17 +12,17 @@
 		<view class="income">
 			<view class="income-list">
 				<text class="list-No">12</text>
-				<rich-text class="list-text">总收入</rich-text>
+				<rich-text class="list-text">总贡献值</rich-text>
 				
 			</view>
 			<view class="income-list">
 				<text class="list-No">12</text>
-				<rich-text class="list-text">今日收入</rich-text>
+				<rich-text class="list-text">今日贡献</rich-text>
 				
 			</view>
 			<view class="income-list">
 				<text class="list-No">12</text>
-				<rich-text class="list-text">已提现</rich-text>
+				<rich-text class="list-text">已兑贡献</rich-text>
 			</view>
 		</view>
 		<view class="lists">
@@ -34,11 +34,9 @@
 				<image src="../../static/img/VIP.png" mode="aspectFit"></image><text>账号会员</text>
 				</view>
 			<view class="listli">
-				<image src="../../static/img/TD.png" mode="aspectFit"></image><text>账号会员</text>
+				<image src="../../static/img/TD.png" mode="aspectFit"></image><text>我得战队</text>
 			</view>
-			<view class="listli">
-				<image src="../../static/img/WDXZ.png" mode="aspectFit"></image><text>我的献值</text>
-				</view>
+			
 			<view class="listli">
 				<image src="../../static/img/QB.png" mode="aspectFit"></image><text>我的钱包</text>
 			</view>
@@ -56,7 +54,7 @@
 			</view>
 	
 		</view>
-		<view><button class="getOut">退出APP</button>
+		<view style="width:100%;"><button class="getOut">退出APP</button>
 		</view>
 		</view>
 		
@@ -76,8 +74,11 @@
 
 <style>
 	.avatars{
+		width:100%;
 		background:linear-gradient(bottom, #E61532,#E86318);
+		backgorund-size:100% 100%;
 		padding-top:50upx;
+		
 	}
 	.avatar_box{
 		display: flex;
@@ -142,7 +143,8 @@
 		color:#FFF;
 	}
 	.list-text{
-		margin-bottom:20upx
+		margin-bottom:20upx;
+		font-size: 30upx;
 	}
 	.lists{
 		background-color: #F4F0F1;
@@ -169,6 +171,7 @@
 	}
 	.getOut{
 		background:linear-gradient(bottom, #E61532,#E86318);
+		backgorund-size:100% 100%;
 		color:#FFF;
 	}
 </style>

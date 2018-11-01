@@ -3,6 +3,7 @@ page {
   min-height: 100%;
   width: 100%;
   background: #EDEDED;
+  overflow-x: hidden;
 }
 .content {
   display: -webkit-box;
@@ -15,7 +16,6 @@ page {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   flex-direction: column;
-  background-color: #efeff4;
   padding: 20px;
 }
 .input-group {
@@ -70,6 +70,7 @@ page {
   padding: 15px 0;
   padding-right: 30px;
   line-height: 50px;
+  color: #FFFFFF;
 }
 .input-row.border::after {
   position: absolute;
@@ -83,9 +84,10 @@ page {
   background-color: #c8c7cc;
 }
 .btn-row {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 50px 0;
+  width: 100%;
 }
 ._button.primary {
   background-color: #0faeff;
+  width: 80%;
 }

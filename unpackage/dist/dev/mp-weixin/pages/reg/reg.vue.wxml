@@ -1,3 +1,11 @@
 <template name="3e00cf4d">
-  <view class="_view data-v-0009733c"> 注册账号 </view>
+  <view class="_view data-v-0009733c">
+    <view class="_view data-v-0009733c logo">
+      <image src="../../static/img/logo.jpg" class="_image data-v-0009733c"></image>
+    </view>
+    <view class="_view data-v-0009733c reg-list">
+      <image src="../../static/img/logo.jpg" class="_image data-v-0009733c"></image>
+      <input type="text" value="{{phoneNo}}" bindinput="handleProxy" placeholder="电话号码" data-eventid="{{'Inn-0'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
+    </view>
+  </view>
 </template>

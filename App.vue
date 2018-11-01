@@ -19,13 +19,14 @@
 	        min-height: 100%;
 			width:100%;
 			background:#EDEDED;
+			overflow-x: hidden;
 	    }
 	
 	    .content {
 	        display: flex;
 	        flex: 1;
 	        flex-direction: column;
-	        background-color: #efeff4;
+	        /* background-color: #efeff4; */
 	        padding: 20px;
 	    }
 	
@@ -81,6 +82,7 @@
 	        padding: 15px 0;
 	        padding-right: 30px;
 	        line-height: 50px;
+			color: #FFFFFF;
 	    }
 	
 	    .input-row.border::after {
@@ -96,11 +98,13 @@
 	    }
 	
 	    .btn-row {
-	        margin-top: 50px;
-	        padding: 20px;
+	        margin-top: 50px 0;
+	        width: 100%;
+			
 	    }
 	
 	    button.primary {
 	        background-color: #0faeff;
+			width: 80%;
 	    }
 </style>

@@ -12,15 +12,15 @@
     <view class="_view data-v-8a99ad50 income">
       <view class="_view data-v-8a99ad50 income-list">
         <text class="_text data-v-8a99ad50 list-No">12</text>
-        <rich-text class="_rich-text data-v-8a99ad50 list-text">总收入</rich-text>
+        <rich-text class="_rich-text data-v-8a99ad50 list-text">总贡献值</rich-text>
       </view>
       <view class="_view data-v-8a99ad50 income-list">
         <text class="_text data-v-8a99ad50 list-No">12</text>
-        <rich-text class="_rich-text data-v-8a99ad50 list-text">今日收入</rich-text>
+        <rich-text class="_rich-text data-v-8a99ad50 list-text">今日贡献</rich-text>
       </view>
       <view class="_view data-v-8a99ad50 income-list">
         <text class="_text data-v-8a99ad50 list-No">12</text>
-        <rich-text class="_rich-text data-v-8a99ad50 list-text">已提现</rich-text>
+        <rich-text class="_rich-text data-v-8a99ad50 list-text">已兑贡献</rich-text>
       </view>
     </view>
     <view class="_view data-v-8a99ad50 lists">
@@ -34,11 +34,7 @@
       </view>
       <view class="_view data-v-8a99ad50 listli">
         <image src="../../static/img/TD.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">账号会员</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/WDXZ.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">我的献值</text>
+        <text class="_text data-v-8a99ad50">我得战队</text>
       </view>
       <view class="_view data-v-8a99ad50 listli">
         <image src="../../static/img/QB.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
@@ -61,7 +57,7 @@
         <text class="_text data-v-8a99ad50">切换账号</text>
       </view>
     </view>
-    <view class="_view data-v-8a99ad50">
+    <view style="width:100%;" class="_view data-v-8a99ad50">
       <button class="_button data-v-8a99ad50 getOut">退出APP</button>
     </view>
   </view>

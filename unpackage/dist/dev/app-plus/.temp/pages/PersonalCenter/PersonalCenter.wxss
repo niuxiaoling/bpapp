@@ -93,6 +93,7 @@
 }
 .list-text {
   margin-bottom: 20rpx;
+  font-size: 30rpx;
 }
 .lists {
   background-color: #F4F0F1;

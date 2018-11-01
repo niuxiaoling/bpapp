@@ -1,6 +1,6 @@
 {
-    "name" : "bpapp",
-    "appid" : "__UNI__D59B4C2",
+    "name" : "微品天下",
+    "appid" : "__UNI__33306AD",
     "description" : "一款app应用",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -40,7 +40,12 @@
             },
             "ios" : {},
             /* ios打包配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {},
+            "icons" : {
+                "ios" : {
+                    "appstore" : ""
+                }
+            }
         }
     },
     /* SDK配置 */
