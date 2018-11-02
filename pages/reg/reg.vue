@@ -44,8 +44,7 @@
 		width: 100%;
 		height: 120upx;
 		padding: 10% 0;
-		
-		
+	
 	}
 	.logo image{
 		width: 120upx;
