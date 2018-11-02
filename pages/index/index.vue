@@ -6,11 +6,11 @@
 		<view class="login">
 			<view class="input-row border">
 				<text class="title">账号：</text>
-				<input type="text" v-model="account" placeholder="请输入账号">
+				<input type="text" v-model="account" placeholder="请输入账号" placeholder-style="color:#ffffff">
 			</view>
 			<view class="input-row">
 				<text class="title">密码：</text>
-				<input type="text" password="true" v-model="password" placeholder="请输入密码">
+				<input type="text" password="true" v-model="password" placeholder="请输入密码" placeholder-style="color:#ffffff">
 			</view>
 		</view>
 		<view class="btn-row">
@@ -174,7 +174,7 @@
 		align-items: center;
 		width:120upx;
 		height: 120upx;
-		margin-top: 10%;
+		padding-top: 10%;
 		border-radius: 50%;
 	}
 	.logo image{
@@ -225,6 +225,9 @@
 		width: 60px;
 		height: 60px;
 		margin: 20px;
+	}
+	.input-row{
+		font-size: 40upx;
 	}
 	
 </style>
