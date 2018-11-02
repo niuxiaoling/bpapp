@@ -83,7 +83,7 @@
 			interval: 5000,
 			duration: 1000,
 			orientation:'left',
-			htmltext:'数据待接收111',
+			htmltext:'数据待接收',
 			marqueePace: 1,//滚动速度
 		  marqueeDistance: 0,//初始滚动距离
 		  marqueeDistance2: 0,
