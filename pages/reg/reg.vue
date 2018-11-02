@@ -4,25 +4,25 @@
 			<image src="../../static/img/logo.jpg"></image>
 		</view>
 		<view class="reg-list">
-			<image src="../../static/img/logo.jpg"></image>
-			<input type="text" v-model="phoneNo" placeholder="手机号" />
+			<image src="../../static/img/shouji.png"></image>
+			<input type="text" v-model="phoneNo" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff"/>
 		</view>
 		<view class="reg-list">
-			<image src="../../static/img/logo.jpg"></image>
-			<input type="text" v-model="phoneNo" placeholder="短信验证码" />
+			<image src="../../static/img/yanzhengma.png"></image>
+			<input type="text" v-model="phoneNo" placeholder="短信验证码" placeholder-style="color:#ffffff"/>
 			<button><text>|</text>获取</button>
 		</view>
 		<view class="reg-list">
-			<image src="../../static/img/logo.jpg"></image>
-			<input type="text" v-model="phoneNo" placeholder="密码" />
+			<image src="../../static/img/miam.png"></image>
+			<input type="text" v-model="phoneNo" placeholder="密码"  placeholder-style="color:#ffffff"/>
 		</view>
 		<view class="reg-list">
-			<image src="../../static/img/logo.jpg"></image>
-			<input type="text" v-model="phoneNo" placeholder="确认密码" />
+			<image src="../../static/img/querenmima.png"></image>
+			<input type="text" v-model="phoneNo" placeholder="确认密码" placeholder-style="color:#ffffff"/>
 		</view>
 		<view class="reg-list">
-			<image src="../../static/img/logo.jpg"></image>
-			<input type="text" v-model="phoneNo" placeholder="邀请码" />
+			<image src="../../static/img/yaoqingma.png"></image>
+			<input type="text" v-model="phoneNo" placeholder="邀请码" placeholder-style="color:#ffffff"/>
 		</view>
 		<view class="regBut">
 			<button>确认注册</button>
@@ -35,6 +35,7 @@
 <style>
 	page{
 		background:linear-gradient(bottom, #E61532,#EA5B17);
+
 	}
 	.logo{
 		display: flex;
@@ -42,7 +43,8 @@
 		justify-content: center;
 		width: 100%;
 		height: 120upx;
-		margin: 10% 0;
+		padding: 10% 0;
+		
 		
 	}
 	.logo image{
@@ -58,7 +60,7 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		margin-top: 50upx;
+		margin-top: 30upx;
 	}
 	.reg-list image{
 		position: absolute;
@@ -69,13 +71,12 @@
 	}
 	.reg-list input{
 		color: #FFFFFF;
-		width: 40%;
+		width: 55%;
 		height: 80upx;
 		font-size: 30upx;
 		border: 1upx solid #FFFFFF;
 		border-radius: 40px;
-		padding:0 15%;
-		
+		padding-left: 15%;
 	}
 	.reg-list button{
 		width: 100upx;
