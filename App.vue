@@ -98,7 +98,7 @@
 	    }
 	
 	    .btn-row {
-	        margin-top: 50px 0;
+	        /* margin-top: 50px 0; */
 	        width: 100%;
 			
 	    }

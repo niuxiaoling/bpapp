@@ -84,7 +84,6 @@ page {
   background-color: #c8c7cc;
 }
 .btn-row {
-  margin-top: 50px 0;
   width: 100%;
 }
 ._button.primary {

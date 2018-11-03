@@ -15,7 +15,7 @@ page {
   justify-content: center;
   width: 100%;
   height: 120rpx;
-  margin-top: 10%;
+  padding: 10% 0;
 }
 .logo image {
   width: 120rpx;
@@ -24,8 +24,8 @@ page {
 }
 .reg-list {
   width: 100%;
-  height: 50rpx;
-  line-height: 50rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -36,20 +36,52 @@ page {
   -webkit-align-items: center;
   align-items: center;
   position: relative;
+  margin-top: 30rpx;
 }
 .reg-list image {
   position: absolute;
-  top: 0;
-  left: 22%;
+  top: 15rpx;
+  left: 20%;
   width: 50rpx;
   height: 50rpx;
 }
 .reg-list ._input {
   color: #FFFFFF;
-  width: 50%;
-  height: 50rpx;
+  width: 55%;
+  height: 80rpx;
   font-size: 30rpx;
   border: 1rpx solid #FFFFFF;
-  border-radius: 15px;
-  padding-left: 20%;
+  border-radius: 40px;
+  padding-left: 15%;
+}
+.reg-list ._button {
+  width: 100rpx;
+  height: 80rpx;
+  padding: 0 5rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  position: absolute;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 15%;
+}
+.reg-list ._button text {
+  padding-right: 10rpx;
+}
+.regBut {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 60rpx;
+}
+.regBut ._button {
+  width: 70%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50rpx;
+  color: #D32241;
 }
