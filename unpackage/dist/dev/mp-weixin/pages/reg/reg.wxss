@@ -1,8 +1,4 @@
 
-page {
-  background: -webkit-linear-gradient(bottom, #E61532,#EA5B17);
-  background: linear-gradient(bottom, #E61532,#EA5B17);
-}
 .logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -47,7 +43,7 @@ page {
 }
 .reg-list ._input {
   color: #FFFFFF;
-  width: 55%;
+  width: 60%;
   height: 80rpx;
   font-size: 30rpx;
   border: 1rpx solid #FFFFFF;
@@ -67,6 +63,9 @@ page {
   top: 0;
   right: 15%;
 }
+.reg-list ._button:after {
+  border: none;
+}
 .reg-list ._button text {
   padding-right: 10rpx;
 }
@@ -76,7 +75,7 @@ page {
   margin-top: 60rpx;
 }
 .regBut ._button {
-  width: 70%;
+  width: 75%;
   height: 100rpx;
   line-height: 100rpx;
   font-size: 40rpx;
@@ -84,4 +83,21 @@ page {
   border: none;
   border-radius: 50rpx;
   color: #D32241;
+}
+.action-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 20rpx;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.action-row navigator {
+  font-size: 24rpx;
+  color: #fff;
+}
+page {
+  background: -webkit-linear-gradient(bottom, #E61532,#EA5B17);
+  background: linear-gradient(bottom, #E61532,#EA5B17);
 }
