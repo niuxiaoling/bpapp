@@ -7,10 +7,12 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		<view class="banner marquee_box">
-			<text class="marquee_text" v-html="htmltext">	
-			</text>
-			  
+		<view class="banner">
+			<view class='seamlessscrolling' v-bind:style="{height:bh +'px',width:bw +'px'}">
+				<view v-bind:style="{height:direction=='vertical'?bh*clonestr.length:bh+'px',width:direction=='horizontal'?bw*clonestr.length +'px':bw+'px',left:bl +'px',top:bt +'px'}">
+				<view v-for="(item,index) in clonestr" :key="index" v-bind:style="{height:bh +'px',lineHeight:bh +'px',width:bw +'px',position:absolute,top: direction=='vertical'?index*bh +'px':0,left:direction=='horizontal'?index*bw +'px':0}">{{item}}</view>
+				</view>
+			</view> 
 		</view>
 		<view class="list">
 			<view class="list_item" v-for="v in list" :key="v">
@@ -44,7 +46,7 @@
 				{
 					imgage:'../../static/img/ggrw.png',
 					text:'广告投放',
-					url:'/pages/pwd/pwd'
+					url:'/pages/MoneyWay/request-payment'
 				},
 				{
 					imgage:'../../static/img/huiyuanrenwu.png',
@@ -78,36 +80,64 @@
 				},
 				
 			],
-			indicatorDots: true,
-			autoplay: true,
-			interval: 5000,
-			duration: 1000,
-			orientation:'left',
-			htmltext:'数据待接收',
-			marqueePace: 1,//滚动速度
-		  marqueeDistance: 0,//初始滚动距离
-		  marqueeDistance2: 0,
-		  marquee2copy_status: false,
-		//     marquee2_margin: 60,
-		    size: 14,
+			bchange: 2,//变化值，可自定义设置
+			bspeed: 100,//速度，可自定义设置
+			direction: "horizontal", //  horizontal=水平 vertical=垂直  ，可设置
+			horizontal_dire: "left",// direction: "horizontal" 有效，   left =左    right =右，可设置
+			vertical_dire: "top",// direction: "vertical" 有效，   top =上    bottom =下，可设置
+			strs: ["所有的楼房全部低于3千平米赶快买", "所有的车子全部低于30000一辆", "知道区块链吗，知道比特币吗，赶紧学"],//滚动内容，可自定义设置
+			clonestr:[],//无缝衔接容器
+			bw: 0,//容器宽度
+			bh: 0,//容器高度
+			bl: 0,//容器位置 left
+			bt: 0//容器位置 top
 
 		},
+		
 		methods: {
-			 
+			 seamlessscrolling:function(){
+				 var that = this;
+				 //复制容器
+				 var clonestr = [];
+				 for (var i = 0; i < this.strs.length; i++) {
+					clonestr.push(this.strs[i]);
+				 };
+			     for (var i = 0; i < this.strs.length; i++) {
+						  clonestr.push(this.strs[i]);
+				};
+				 that.clonestr = clonestr;
+				 //容器设置 获取设备宽度（可自定义处理）
+				 wx.getSystemInfo({
+					success: function (res) {
+						that.bw = res.windowWidth;
+						that.bh = 40;
+					}
+				})
+				}
 		},
 		mounted(){
+			
 		},
-// 		onShow() {
-// 			var vm = this;
-// 			var length = vm.data.text.length * vm.data.size;//文字长度
-// 			var windowWidth = uni.getSystemInfoSync().windowWidth;// 屏幕宽度
-// 			 vm.setData({
-// 				length: length,
-// 				windowWidth: windowWidth,
-// 				marquee2_margin: length < windowWidth ? windowWidth - length : vm.data.marquee2_margin//当文字长度小于屏幕长度时，需要增加补白
-// 
-//     		});
-// 		}
+		onLoad:function(){
+			this.seamlessscrolling();
+			var that = this;
+			//动画
+			var anima = setInterval(function () {
+				if (that.direction == "horizontal") {//水平
+					if (that.bl - that.bchange <= -that.bw * that.strs.length) {
+						that.bl = 0;
+					} else {
+						that.bl =  that.bl - that.bchange;
+					};
+				} else if (that.direction == "vertical") {//垂直
+					if (that.bt - that.bchange <= -that.bh * that.strs.length) {
+						that.bl = 0;
+					} else {
+						that.bt =  that.bt - that.bchange;
+					};
+				};
+			}, that.bspeed)
+		}
 	}
 </script>
 <style>
@@ -155,5 +185,15 @@
 	.list_item text{
 		margin-top:20upx;
 		font-size:30upx;
+	}
+	.seamlessscrolling{
+		background-color: #cccccc;
+		position: relative;
+		overflow: hidden;
+	}
+	.seamlessscrolling view{
+		position: absolute;
+		white-space: nowrap;
+		color: #333;
 	}
 </style>

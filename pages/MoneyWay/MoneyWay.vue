@@ -1,7 +1,6 @@
 <template>
 	
 	<view class="imageBox">
-		
 		<image src="../../static/img/moneyway.png" mode="widthFix"></image>
 	</view>
 	

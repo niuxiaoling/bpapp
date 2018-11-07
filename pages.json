@@ -74,6 +74,14 @@
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}
+		},
+		{
+			"path": "pages/MoneyWay/request-payment",
+			"style": {
+				"navigationBarTitleText": "支付",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
 		}
 		
 	],

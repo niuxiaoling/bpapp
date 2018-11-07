@@ -7,8 +7,12 @@
         </swiper-item>
       </swiper>
     </view>
-    <view class="_view data-v-06a1ead8 banner marquee_box">
-      <rich-text class="_text data-v-06a1ead8 marquee_text" nodes="{{htmltext}}"></rich-text>
+    <view class="_view data-v-06a1ead8 banner">
+      <view class="_view data-v-06a1ead8 seamlessscrolling" style=" {{('height:' + (bh + 'px') + ';' + 'width:' + (bw + 'px') + ';')}}">
+        <view class="_view data-v-06a1ead8" style=" {{(  'height:' +  (direction == 'vertical' ? bh * clonestr.length : bh + 'px') +  ';' +  'width:' +  (direction == 'horizontal' ? bw * clonestr.length + 'px' : bw + 'px') +  ';' +  'left:' +  (bl + 'px') +  ';' +  'top:' +  (bt + 'px') +  ';')}}">
+          <view wx:key="index" key="{{index}}" wx:for="{{clonestr}}" wx:for-index="index" wx:for-item="item" class="_view data-v-06a1ead8" style=" {{(  'height:' +  (bh + 'px') +  ';' +  'line-height:' +  (bh + 'px') +  ';' +  'width:' +  (bw + 'px') +  ';' +  'position:' +  absolute +  ';' +  'top:' +  (direction == 'vertical' ? index * bh + 'px' : 0) +  ';' +  'left:' +  (direction == 'horizontal' ? index * bw + 'px' : 0) +  ';')}}">{{item}}</view>
+        </view>
+      </view>
     </view>
     <view class="_view data-v-06a1ead8 list">
       <view class="_view data-v-06a1ead8 list_item" wx:key="v" key="{{v}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="v">
