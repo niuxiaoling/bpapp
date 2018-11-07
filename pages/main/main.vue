@@ -34,12 +34,12 @@
 				{
 					imgage:'../../static/img/ruhezhuangqu.png',
 					text:'赚钱方式',
-					url:'/pages/pwd/pwd'
+					url:'/pages/MoneyWay/MoneyWay'
 				},
 				{
 					imgage:'../../static/img/tgewm.png',
 					text:'勇士推广码',
-					url:"/pages/pwd/pwd"
+					url:"/pages/SeoCode/SeoCode"
 				},
 				{
 					imgage:'../../static/img/ggrw.png',

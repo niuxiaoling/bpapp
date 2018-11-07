@@ -10,7 +10,7 @@
 		<view class="reg-list">
 			<image src="../../static/img/yanzhengma.png"></image>
 			<input type="text" v-model="verificationCode" placeholder="手机验证码" placeholder-style="color:#ffffff"/>
-			<button @tap="getPhone"><text>|</text>获取</button>
+			<button  v-html="coustDown"  @tap="getPhone"><text>|</text>获取</button>
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/yanzhengma.png"></image>
@@ -37,13 +37,21 @@
 				verificationCode:'',
 				account:"",
 				password:'',
-				invitationCode:''
+				invitationCode:'',
 			}
 		},
 		methods:{
 		// 获取手机验证码
 			getPhone(){
+				 if(this.phone == ''){
+					 uni.showToast({
+					 	icon:"none",
+						title:"手机号码不能为空"
+					 })
+				 }
 				//缺少接口
+				
+				//
 			},
 		// 注册
 			register(){
@@ -91,6 +99,7 @@
 					
 					success: (res) => {
 						// if();
+						console.log(res)
 						uni.showToast({
 							title: '注册成功'
 						});
