@@ -1,0 +1,14 @@
+<template name="2b5715ca">
+  <view class="_view data-v-2d3145bb">
+    <view class="_view data-v-2d3145bb logo">
+      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-2d3145bb"></image>
+    </view>
+    <view class="_view data-v-2d3145bb twobuttons">
+      <button class="_button data-v-2d3145bb">99VIP</button>
+      <button class="_button data-v-2d3145bb">999成为高级VIP</button>
+    </view>
+    <view class="_view data-v-2d3145bb bVip">
+      <button class="_button data-v-2d3145bb">99成为VIP</button>
+    </view>
+  </view>
+</template>

@@ -1,1 +1,1 @@
-<import src="/pages/MoneyWay/MoneyWay.vue.wxml" /><template is="7f981006" data="{{ ...$root['0'], $root }}"/>
+<import src="/pages/MoneyWay/MoneyWay.vue.wxml" /><template is="2b6eb5b9" data="{{ ...$root['0'], $root }}"/>

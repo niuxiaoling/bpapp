@@ -46,18 +46,18 @@
 					this.positionTop = uni.getSystemInfoSync().windowHeight - 100;
 				},
 				bindLogin() {
-					uni.showModal({
-						title:'温馨提示',
-						content:"当前没有登陆，请登陆",
-						success:function(result){
-							if(result.confirm){
-								console.log("确定")
-							}
-							if(result.cancel){
-								console.log("取消")
-							}
-						}
-					})
+// 					uni.showModal({
+// 						title:'温馨提示',
+// 						content:"当前没有登陆，请登陆",
+// 						success:function(result){
+// 							if(result.confirm){
+// 								console.log("确定")
+// 							}
+// 							if(result.cancel){
+// 								console.log("取消")
+// 							}
+// 						}
+// 					})
 					var that = this;
 					if (this.account.length == '') {
 						uni.showToast({
@@ -73,25 +73,34 @@
 						});
 						return;
 					}
+					let userInfo ={
+							account:that.account,
+							password:that.password,
+					       }
+					let jsonString ={
+						userInfo:userInfo,
+						requestType:"login",
+					}
+					let param ={
+						controllerRequestType:"loginControllerService",
+						jsonString:JSON.stringify(jsonString)
+					}
 					uni.request({
-						url:'http://10.138.93.113:2221/ScreenTheWord/MainController.do?controllerRequestType=loginControllerService',
+						url:'http://39.106.215.215:8080/ScreenTheWord/MainController.do?',
 						method:'POST',
 						header: {
-							'Access-Control-Allow-Origin':'*' 
+							// 'Access-Control-Allow-Origin':'*' ,
+							"content-type":"application/x-www-form-urlencoded"
 						},
-						data:{
-							jsonString:{
-								'requestType':"login",
-								userInfo:{
-									'account':that.account,
-									'password':that.password,
-								}
-							}
-							
-						},
-						
+						data:param,
+
 						success: (res) => {
-							console.log(res.data);
+							console.log(res);
+						
+						
+						},
+						fail:(res) =>{
+							console.log(res);
 						}
 					})
 					/**

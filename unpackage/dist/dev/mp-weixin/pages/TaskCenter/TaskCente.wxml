@@ -1,1 +1,1 @@
-<import src="/pages/TaskCenter/TaskCente.vue.wxml" /><template is="e89f3a36" data="{{ ...$root['0'], $root }}"/>
+<import src="/pages/TaskCenter/TaskCente.vue.wxml" /><template is="171408ae" data="{{ ...$root['0'], $root }}"/>

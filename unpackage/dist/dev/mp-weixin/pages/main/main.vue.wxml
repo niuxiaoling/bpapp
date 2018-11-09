@@ -1,24 +1,24 @@
-<template name="0ef0f486">
-  <view class="_view data-v-06a1ead8">
-    <view class="_view data-v-06a1ead8 swiperbox">
-      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#3AC198" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}" class="_swiper data-v-06a1ead8">
-        <swiper-item wx:key="item" key="{{item}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-06a1ead8">
-          <image src="{{item}}" mode="scaleToFill" class="_image data-v-06a1ead8"></image>
+<template name="b26c810e">
+  <view class="_view data-v-2cb2dfce">
+    <view class="_view data-v-2cb2dfce swiperbox">
+      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#3AC198" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}" class="_swiper data-v-2cb2dfce">
+        <swiper-item wx:key="item" key="{{item}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-2cb2dfce">
+          <image src="{{item}}" mode="scaleToFill" class="_image data-v-2cb2dfce"></image>
         </swiper-item>
       </swiper>
     </view>
-    <view class="_view data-v-06a1ead8 banner">
-      <view class="_view data-v-06a1ead8 seamlessscrolling" style=" {{('height:' + (bh + 'px') + ';' + 'width:' + (bw + 'px') + ';')}}">
-        <view class="_view data-v-06a1ead8" style=" {{(  'height:' +  (direction == 'vertical' ? bh * clonestr.length : bh + 'px') +  ';' +  'width:' +  (direction == 'horizontal' ? bw * clonestr.length + 'px' : bw + 'px') +  ';' +  'left:' +  (bl + 'px') +  ';' +  'top:' +  (bt + 'px') +  ';')}}">
-          <view wx:key="index" key="{{index}}" wx:for="{{clonestr}}" wx:for-index="index" wx:for-item="item" class="_view data-v-06a1ead8" style=" {{(  'height:' +  (bh + 'px') +  ';' +  'line-height:' +  (bh + 'px') +  ';' +  'width:' +  (bw + 'px') +  ';' +  'position:' +  absolute +  ';' +  'top:' +  (direction == 'vertical' ? index * bh + 'px' : 0) +  ';' +  'left:' +  (direction == 'horizontal' ? index * bw + 'px' : 0) +  ';')}}">{{item}}</view>
+    <view class="_view data-v-2cb2dfce banner">
+      <view class="_view data-v-2cb2dfce seamlessscrolling" style=" {{('height:' + (bh + 'px') + ';' + 'width:' + (bw + 'px') + ';')}}">
+        <view class="_view data-v-2cb2dfce" style=" {{(  'height:' +  (direction == 'vertical' ? bh * clonestr.length : bh + 'px') +  ';' +  'width:' +  (direction == 'horizontal' ? bw * clonestr.length + 'px' : bw + 'px') +  ';' +  'left:' +  (bl + 'px') +  ';' +  'top:' +  (bt + 'px') +  ';')}}">
+          <view wx:key="index" key="{{index}}" wx:for="{{clonestr}}" wx:for-index="index" wx:for-item="item" class="_view data-v-2cb2dfce" style=" {{(  'height:' +  (bh + 'px') +  ';' +  'line-height:' +  (bh + 'px') +  ';' +  'width:' +  (bw + 'px') +  ';' +  'position:' +  absolute +  ';' +  'top:' +  (direction == 'vertical' ? index * bh + 'px' : 0) +  ';' +  'left:' +  (direction == 'horizontal' ? index * bw + 'px' : 0) +  ';')}}">{{item}}</view>
         </view>
       </view>
     </view>
-    <view class="_view data-v-06a1ead8 list">
-      <view class="_view data-v-06a1ead8 list_item" wx:key="v" key="{{v}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="v">
-        <navigator url="{{v.url}}" class="_navigator data-v-06a1ead8">
-          <image src="{{v.imgage}}" mode="scaleToFill" class="_image data-v-06a1ead8"></image>
-          <text class="_text data-v-06a1ead8">{{v.text}}</text>
+    <view class="_view data-v-2cb2dfce list">
+      <view class="_view data-v-2cb2dfce list_item" wx:key="v" key="{{v}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="v">
+        <navigator url="{{v.url}}" class="_navigator data-v-2cb2dfce">
+          <image src="{{v.imgage}}" mode="scaleToFill" class="_image data-v-2cb2dfce"></image>
+          <text class="_text data-v-2cb2dfce">{{v.text}}</text>
         </navigator>
       </view>
     </view>

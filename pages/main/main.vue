@@ -27,73 +27,79 @@
 <script>
 	export default{
 		data:{
-			
-			itemList: [
-				'../../static/img/banner1.jpg',
-				'../../static/img/banner2.jpg'
-			],
-			list:[
-				{
-					imgage:'../../static/img/ruhezhuangqu.png',
-					text:'赚钱方式',
-					url:'/pages/MoneyWay/MoneyWay'
-				},
-				{
-					imgage:'../../static/img/tgewm.png',
-					text:'勇士推广码',
-					url:"/pages/SeoCode/SeoCode"
-				},
-				{
-					imgage:'../../static/img/ggrw.png',
-					text:'广告投放',
-					url:'/pages/MoneyWay/request-payment'
-				},
-				{
-					imgage:'../../static/img/huiyuanrenwu.png',
-					text:'微品勇士',
-					url:'/pages/pwd/pwd'
-				},
-				{
-					imgage:'../../static/img/renwudating.png',
-					text:'科企互化',
-					url:'/pages/pwd/pwd'
-				},
-				{
-					imgage:'../../static/img/wdgx.png',
-					text:'科技孵化',
-					url:'/pages/pwd/pwd'
-				},
-				{
-					imgage:'../../static/img/shagnchengwulian.png',
-					text:'微品众商',
-					url:'/pages/pwd/pwd'
-				},
-				{
-					imgage:'../../static/img/hb.png',
-					text:'全球免费',
-					url:'/pages/pwd/pwd'
-				},
-				{
-					imgage:'../../static/img/kefu.png',
-					text:'客服中心',
-					url:'/pages/pwd/pwd'
-				},
-				
-			],
-			bchange: 2,//变化值，可自定义设置
-			bspeed: 100,//速度，可自定义设置
-			direction: "horizontal", //  horizontal=水平 vertical=垂直  ，可设置
-			horizontal_dire: "left",// direction: "horizontal" 有效，   left =左    right =右，可设置
-			vertical_dire: "top",// direction: "vertical" 有效，   top =上    bottom =下，可设置
-			strs: ["所有的楼房全部低于3千平米赶快买", "所有的车子全部低于30000一辆", "知道区块链吗，知道比特币吗，赶紧学"],//滚动内容，可自定义设置
-			clonestr:[],//无缝衔接容器
-			bw: 0,//容器宽度
-			bh: 0,//容器高度
-			bl: 0,//容器位置 left
-			bt: 0//容器位置 top
-
-		},
+					
+					itemList: [
+						'../../static/img/banner1.jpg',
+						'../../static/img/banner2.jpg'
+					],
+					list:[
+						{
+							imgage:'../../static/img/ruhezhuangqu.png',
+							text:'赚钱方式',
+							url:'/pages/main/MoneyWay'
+						},
+						{
+							imgage:'../../static/img/tgewm.png',
+							text:'勇士推广码',
+							url:"/pages/main/SeoCode"
+						},
+						{
+							imgage:'../../static/img/ggrw.png',
+							text:'广告投放',
+							url:"/pages/main/waiting"
 		
+						},
+						{
+							imgage:'../../static/img/huiyuanrenwu.png',
+							text:'微品勇士',
+							url:"/pages/main/bVip"
+		
+						},
+						{
+							imgage:'../../static/img/renwudating.png',
+							text:'科企互化',
+							url:"/pages/main/waiting"
+		
+						},
+						{
+							imgage:'../../static/img/wdgx.png',
+							text:'科技孵化',
+							url:"/pages/main/waiting"
+		
+						},
+						{
+							imgage:'../../static/img/shagnchengwulian.png',
+							text:'微品众商',
+							url:"/pages/main/waiting"
+		
+						},
+						{
+							imgage:'../../static/img/hb.png',
+							text:'全球免费',
+						 url:"/pages/main/waiting"
+		
+						},
+						{
+							imgage:'../../static/img/kefu.png',
+							text:'客服中心',
+							url:"/pages/MoneyWay/request-payment"
+		
+						},
+						
+					],
+					bchange: 2,//变化值，可自定义设置
+					bspeed: 100,//速度，可自定义设置
+					direction: "horizontal", //  horizontal=水平 vertical=垂直  ，可设置
+					horizontal_dire: "left",// direction: "horizontal" 有效，   left =左    right =右，可设置
+					vertical_dire: "top",// direction: "vertical" 有效，   top =上    bottom =下，可设置
+					strs: ["所有的楼房全部低于3千平米赶快买", "所有的车子全部低于30000一辆", "知道区块链吗，知道比特币吗，赶紧学"],//滚动内容，可自定义设置
+					clonestr:[],//无缝衔接容器
+					bw: 0,//容器宽度
+					bh: 0,//容器高度
+					bl: 0,//容器位置 left
+					bt: 0//容器位置 top
+		     
+				},
 		methods: {
 			 seamlessscrolling:function(){
 				 var that = this;
