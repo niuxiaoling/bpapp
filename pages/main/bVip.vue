@@ -8,7 +8,7 @@
 		<button>999成为高级VIP</button>
 	</view>
 	<view class="bVip">
-		<button>99成为VIP</button>
+		<button>99成为VI1P</button>
 	</view>
 	</view>
 </template>
@@ -32,4 +32,5 @@
 	 flex-direction: row;
 	 margin-top: 50upx;
 	 }
+	 
 </style>

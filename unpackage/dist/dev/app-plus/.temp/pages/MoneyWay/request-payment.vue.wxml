@@ -8,7 +8,7 @@
           <text class="_text data-v-0743eee4 rmbLogo">￥</text>0.01</view>
         <view class="_view data-v-0743eee4 desc">实际应用中可自定义金额</view>
         <view class="_view data-v-0743eee4 btn-area">
-          <button wx:key="index" key="{{index}}" bindtap="handleProxy" loading="{{item.loading}}" data-eventid="{{'wIc-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item" class="_button data-v-0743eee4">{{item.name}}支付</button>
+          <button wx:key="index" key="{{index}}" bindtap="handleProxy" loading="{{item.loading}}" data-eventid="{{'Jwg-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item" class="_button data-v-0743eee4">{{item.name}}支付</button>
         </view>
       </view>
     </view>

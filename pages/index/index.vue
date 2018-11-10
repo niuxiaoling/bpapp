@@ -73,20 +73,21 @@
 						});
 						return;
 					}
-					let userInfo ={
+					const userInfo ={
 							account:that.account,
 							password:that.password,
 					       }
-					let jsonString ={
+					const jsonString ={
 						userInfo:userInfo,
 						requestType:"login",
 					}
-					let param ={
+					const param ={
 						controllerRequestType:"loginControllerService",
 						jsonString:JSON.stringify(jsonString)
 					}
 					uni.request({
 						url:'http://39.106.215.215:8080/ScreenTheWord/MainController.do?',
+
 						method:'POST',
 						header: {
 							// 'Access-Control-Allow-Origin':'*' ,
@@ -96,6 +97,14 @@
 
 						success: (res) => {
 							console.log(res);
+							if(res.data.errorCode == '0000'){
+								
+							}else{
+								uni.showToast({
+									icon:'none',
+									title:res.data.errorMessage
+								})
+							}
 						
 						
 						},

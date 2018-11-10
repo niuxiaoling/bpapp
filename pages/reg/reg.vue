@@ -9,20 +9,20 @@
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/yanzhengma.png"></image>
-			<input type="text" v-model="verificationCode" placeholder="手机验证码" placeholder-style="color:#ffffff"/>
-			<button  v-html="coustDown"  @tap="getPhone"><text>|</text>获取</button>
-		</view>
-		<view class="reg-list">
-			<image src="../../static/img/yanzhengma.png"></image>
-			<input type="text" v-model="account" placeholder="用户名" placeholder-style="color:#ffffff"/>
+			<input type="text" v-model="verificationCode" placeholder="验证码/注意大小写" placeholder-style="color:#ffffff"/>
+			<button @tap="getPhone"><text>|</text>获取</button>
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/miam.png"></image>
-			<input type="text" v-model="password" placeholder="密码"  placeholder-style="color:#ffffff"/>
+			<input type="password" v-model="password" placeholder="密码"  placeholder-style="color:#ffffff"/>
+		</view>
+		<view class="reg-list">
+			<image src="../../static/img/querenmima.png"></image>
+			<input type="password" v-model="okPassword" placeholder="请确认密码" placeholder-style="color:#ffffff"/>
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/yaoqingma.png"></image>
-			<input type="text" v-model="invitationCode" placeholder="邀请码" placeholder-style="color:#ffffff"/>
+			<input type="text" v-model="superInvitationCode" placeholder="邀请码" placeholder-style="color:#ffffff"/>
 		</view>
 		<view class="regBut">
 			<button @tap="register">确认注册</button>
@@ -37,28 +37,63 @@
 				verificationCode:'',
 				account:"",
 				password:'',
-				invitationCode:'',
+				superInvitationCode:'',
 			}
 		},
 		methods:{
 		// 获取手机验证码
 			getPhone(){
-				 if(this.phone == ''){
-					 uni.showToast({
-					 	icon:"none",
-						title:"手机号码不能为空"
-					 })
+				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
+				 	uni.showToast({
+				 		icon: 'none',
+				 		title: '请输入正确的11位手机号'
+				 	});
+				 	return;
+				 };
+				 const data ={
+				 phone:this.phone,
+				 
+				 }
+				 const jsonString = {
+				 	requestType:"getInvitation",
+				 	userInfo:data,
+				 }
+				 const param ={
+				 controllerRequestType:"loginControllerService",
+				 jsonString:JSON.stringify(jsonString)
 				 }
 				//缺少接口
-				
+				uni.request({
+					// 192.168.43.229
+					url:'http://192.168.43.229:8080/ScreenTheWord/MainController.do?',
+					// url:'http://39.106.215.215:8080/ScreenTheWord/MainController.do?',
+					method:'POST',
+					header: {
+		
+						"content-type":"application/x-www-form-urlencoded"
+					},
+					data:param,
+					success: (res) => {
+						console.log(res)
+						
+					},
+					fail: (res) => {
+						uni.showToast({
+							icon:'none',
+							title:'获取失败'
+						})
+						
+					}
+				})
+		
 				//
 			},
 		// 注册
 			register(){
-				if (this.account.length < 5) {
+				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
 					uni.showToast({
 						icon: 'none',
-						title: '账号最短为 5 个字符'
+						title: '请输入正确的11位手机号'
 					});
 					return;
 				}
@@ -69,6 +104,20 @@
 					});
 					return;
 				}
+				if (this.password.length < 6) {
+					uni.showToast({
+						icon: 'none',
+						title: '密码最短为 6 个字符'
+					});
+					return;
+				}
+				if (this.okPassword !=this.password){
+					uni.showToast({
+						icon: 'none',
+						title: '密码不一致'
+					});
+					return;
+				}
 				if(this.verificationCode ==''){
 					uni.showToast({
 						icon: 'none',
@@ -76,36 +125,57 @@
 					});
 					return;
 				}
+				if(this.superInvitationCode ==''){
+					uni.showToast({
+						icon: 'none',
+						title: '请输入邀请码'
+					});
+					return;
+				}
+				
+				
 				const data ={
 					phone:this.phone,
 					verificationCode:this.verificationCode,
-					account:this.account,
+					account:this.phone,
 					password:this.password,
-					invitationCode:this.invitationCode
+					superInvitationCode:this.superInvitationCode
+				}
+				const jsonString = {
+					requestType:"registUserInfo",
+					userInfo:data,
+				}
+				
+				const param ={
+					controllerRequestType:"loginControllerService",
+					jsonString:JSON.stringify(jsonString)
 				}
 				uni.request({
-					url:'http://10.138.93.113:2221/ScreenTheWord/MainController.do',
+					url:'http://192.168.43.229:8080/ScreenTheWord/MainController.do?',
 					method:'POST',
 					header: {
-						'Access-Control-Allow-Origin':'*' 
+						"content-type":"application/x-www-form-urlencoded"
 					},
-					data:{
-						controllerRequestType:'loginControllerService',
-						jsonString:{
-							'requestType':"registUserInfo",
-							 userInfo:data
-						}	
-					},
-					
+					data:param,
 					success: (res) => {
-						// if();
 						console.log(res)
-						uni.showToast({
-							title: '注册成功'
-						});
+						if(res.data.errorCode == '0000'){
+							uni.showToast({
+								icon:'none',
+								title:'注册成功'
+							})
+						}else{
+							uni.showToast({
+								icon:'none',
+								title:res.data.errorMessage
+							})
+						}
 					},
 					fail:(response) =>{
-						
+						uni.showToast({
+							icon:'none',
+							title:'注册失败'
+						})
 					}
 				})
 			}
