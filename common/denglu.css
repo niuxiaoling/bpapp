@@ -94,6 +94,7 @@
 		justify-content: space-around;
 	}
 	.action-row navigator{
-		font-size: 24upx;
+		font-size: 30upx;
+		margin-top: 20upx;
 		color:#fff;
 	}

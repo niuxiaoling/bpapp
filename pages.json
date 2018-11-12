@@ -60,7 +60,7 @@
 			}
 		},
 		{
-			"path": "pages/MoneyWay/MoneyWay",
+			"path": "pages/main/MoneyWay",
 			"style": {
 				"navigationBarTitleText": "赚钱方式",
 				"navigationBarBackgroundColor":"#EA5B17",
@@ -68,9 +68,25 @@
 			}
 		},
 		{
-			"path": "pages/SeoCode/SeoCode",
+			"path": "pages/main/SeoCode",
 			"style": {
 				"navigationBarTitleText": "勇士推广码",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/main/bVip",
+			"style": {
+				"navigationBarTitleText": "微品勇士",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/main/waiting",
+			"style": {
+				"navigationBarTitleText": "功能开发中",
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}
@@ -83,6 +99,7 @@
 				"navigationBarTextStyle":"white"
 			}
 		}
+		
 		
 	],
 	"globalStyle": {
