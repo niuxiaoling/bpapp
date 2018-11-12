@@ -5,28 +5,28 @@
     </view>
     <view class="_view data-v-d28b703a reg-list">
       <image src="../../static/img/shouji.png" class="_image data-v-d28b703a"></image>
-      <input type="text" value="{{phone}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'p9C-0'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+      <input type="text" value="{{phone}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'TMW-0'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
     </view>
     <view class="_view data-v-d28b703a reg-list">
       <image src="../../static/img/yanzhengma.png" class="_image data-v-d28b703a"></image>
-      <input type="text" value="{{verificationCode}}" bindinput="handleProxy" placeholder="验证码/注意大小写" placeholder-style="color:#ffffff" data-eventid="{{'5DH-1'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
-      <button bindtap="handleProxy" data-eventid="{{'cHQ-2'}}" data-comkey="{{$k}}" class="_button data-v-d28b703a">
+      <input type="text" value="{{verificationCode}}" bindinput="handleProxy" placeholder="验证码/注意大小写" placeholder-style="color:#ffffff" data-eventid="{{'TV8-1'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+      <button bindtap="handleProxy" data-eventid="{{'bir-2'}}" data-comkey="{{$k}}" class="_button data-v-d28b703a">
         <text class="_text data-v-d28b703a">|</text>获取</button>
     </view>
     <view class="_view data-v-d28b703a reg-list">
       <image src="../../static/img/miam.png" class="_image data-v-d28b703a"></image>
-      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" placeholder-style="color:#ffffff" data-eventid="{{'s9J-3'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" placeholder-style="color:#ffffff" data-eventid="{{'dPl-3'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
     </view>
     <view class="_view data-v-d28b703a reg-list">
       <image src="../../static/img/querenmima.png" class="_image data-v-d28b703a"></image>
-      <input type="password" value="{{okPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'M1S-4'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+      <input type="password" value="{{okPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'Fnu-4'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
     </view>
     <view class="_view data-v-d28b703a reg-list">
       <image src="../../static/img/yaoqingma.png" class="_image data-v-d28b703a"></image>
-      <input type="text" value="{{superInvitationCode}}" bindinput="handleProxy" placeholder="邀请码" placeholder-style="color:#ffffff" data-eventid="{{'5xf-5'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+      <input type="text" value="{{superInvitationCode}}" bindinput="handleProxy" placeholder="邀请码" placeholder-style="color:#ffffff" data-eventid="{{'ZcJ-5'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
     </view>
     <view class="_view data-v-d28b703a regBut">
-      <button bindtap="handleProxy" data-eventid="{{'8C3-6'}}" data-comkey="{{$k}}" class="_button data-v-d28b703a">确认注册</button>
+      <button bindtap="handleProxy" data-eventid="{{'3zo-6'}}" data-comkey="{{$k}}" class="_button data-v-d28b703a">确认注册</button>
     </view>
   </view>
 </template>

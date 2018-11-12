@@ -5,7 +5,7 @@
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/shouji.png"></image>
-			<input type="text" v-model="account" placeholder="账号" maxlength="11" placeholder-style="color:#ffffff"/>
+			<input type="text" v-model="account" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff"/>
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/miam.png"></image>

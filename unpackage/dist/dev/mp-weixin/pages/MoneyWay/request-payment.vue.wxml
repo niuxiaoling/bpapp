@@ -8,7 +8,7 @@
           <text class="_text data-v-0743eee4 rmbLogo">￥</text>0.01</view>
         <view class="_view data-v-0743eee4 desc">实际应用中可自定义金额</view>
         <view class="_view data-v-0743eee4 btn-area">
-          <button type="primary" bindtap="handleProxy" loading="{{loading}}" data-eventid="{{'unH-0'}}" data-comkey="{{$k}}" class="_button data-v-0743eee4">微信支付</button>
+          <button type="primary" bindtap="handleProxy" loading="{{loading}}" data-eventid="{{'nbp-0'}}" data-comkey="{{$k}}" class="_button data-v-0743eee4">微信支付</button>
         </view>
       </view>
     </view>

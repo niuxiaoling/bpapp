@@ -3,10 +3,12 @@
     <view class="_view data-v-35939c1a logo">
       <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-35939c1a"></image>
     </view>
-    <view class="_view data-v-35939c1a erweima"> 二维码 </view>
-    <view class="_view data-v-35939c1a TjCode">
-      <view class="_view data-v-35939c1a">邀请码</view>
-      <view class="_view data-v-35939c1a">
+    <view class="_view data-v-35939c1a erweima">
+      <image src="../../static/img/erweimaTEXT.jpg" class="_image data-v-35939c1a"></image>
+    </view>
+    <view class="_view data-v-35939c1a tjCode">
+      <view class="_view data-v-35939c1a plText">我的邀请码</view>
+      <view class="_view data-v-35939c1a plCode">
         <text class="_text data-v-35939c1a">0</text>
         <text class="_text data-v-35939c1a">3</text>
         <text class="_text data-v-35939c1a">e</text>

@@ -46,6 +46,7 @@
 					this.positionTop = uni.getSystemInfoSync().windowHeight - 100;
 				},
 				bindLogin() {
+		
 // 					uni.showModal({
 // 						title:'温馨提示',
 // 						content:"当前没有登陆，请登陆",
