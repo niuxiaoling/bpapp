@@ -80,7 +80,7 @@
 						data:param,
 						success(res) {
 							if(res.data.errorCode == '0000'){
-								  that.invitationCode = res.data.userInfo.invitationCode;
+								  that.retunverificationCode = res.data.userInfo.retunverificationCode;
 							}else{
 								uni.showToast({
 									icon:'none',
@@ -157,7 +157,8 @@
 					account:this.phone,
 					password:this.password,
 					superInvitationCode:this.superInvitationCode,
-					invitationCode:this.invitationCode
+					retunverificationCode:this.retunverificationCode
+					
 					
 				}
 				const jsonString = {
@@ -169,6 +170,7 @@
 					controllerRequestType:"loginControllerService",
 					jsonString:JSON.stringify(jsonString)
 				}
+				
 				uni.request({
 					url:that.websiteUrl,
 					method:'POST',
