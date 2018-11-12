@@ -88,7 +88,6 @@
 					}
 					uni.request({
 						url:'http://39.106.215.215:8080/ScreenTheWord/MainController.do?',
-
 						method:'POST',
 						header: {
 							// 'Access-Control-Allow-Origin':'*' ,

@@ -31,6 +31,7 @@
 	</view>
 </template>
 <script>
+	import commons from '../../common/commons.js';
 	export default{
 		data(){
 			return{
@@ -39,30 +40,78 @@
 				account:"",
 				password:'',
 				invitationCode:'',
+				superInvitationCode:'',
 				showTime:false,
-				time:60
+				time:60,
 			}
 		},
 		methods:{
 		// 获取手机验证码
 			getPhone(){
 				var that =  this;
-				 if(this.phone == ''){
-					 uni.showToast({
-					 	icon:"none",
-						title:"手机号码不能为空"
-					 })
-				 }
-				//缺少接口
-				this.showTime = true	
-				var go = setInterval(function(){
-					that.time --;
-					if(that.time == 0){
-					   that.showTime = false;
-				       clearInterval(go);
-					   that.time = 60;
+				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
+				 	uni.showToast({
+				 		icon: 'none',
+				 		title: '请输入正确的11位手机号'
+				 	});
+				 	return;
+				 }else{
+					const data ={
+						phone:this.phone,
+					
 					}
-				},1000)
+					const jsonString = {
+						requestType:"getInvitation",
+						userInfo:data,
+					}
+					
+					const param ={
+						controllerRequestType:"loginControllerService",
+						jsonString:JSON.stringify(jsonString)
+					}
+					uni.request({
+						url:'http://192.168.43.229:8080/ScreenTheWord/MainController.do?',
+						method:'POST',
+						header: {
+							"content-type":"application/x-www-form-urlencoded"
+						},
+						data:param,
+						success(res) {
+							if(res.data.errorCode == '0000'){
+							console.log
+							
+								uni.showToast({
+									icon:'none',
+									title:"发送成功"
+								})
+							}else{
+								uni.showToast({
+									icon:'none',
+									title:res.data.errorMessage
+								})
+							}
+						},
+						fail(res) {
+							uni.showToast({
+							icon:'none',
+							title:res.data.errorMessage
+						})
+						}
+					})
+					//缺少接口
+					this.showTime = true	
+					var go = setInterval(function(){
+						that.time --;
+						if(that.time == 0){
+							that.showTime = false;
+								clearInterval(go);
+							that.time = 60;
+						}
+					},1000) 
+					
+					
+				 }
+				 
 
 			},
 		// 注册
@@ -116,7 +165,8 @@
 					verificationCode:this.verificationCode,
 					account:this.phone,
 					password:this.password,
-					superInvitationCode:this.superInvitationCode
+					superInvitationCode:this.superInvitationCode,
+					
 				}
 				const jsonString = {
 					requestType:"registUserInfo",
@@ -139,7 +189,7 @@
 						if(res.data.errorCode == '0000'){
 							uni.showToast({
 								icon:'none',
-								title:'注册成功'
+								title:'注册成功,请登陆！'
 							})
 						}else{
 							uni.showToast({
