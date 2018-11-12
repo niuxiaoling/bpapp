@@ -65,3 +65,13 @@
   margin-top: 20rpx;
   font-size: 30rpx;
 }
+.seamlessscrolling {
+  background-color: #cccccc;
+  position: relative;
+  overflow: hidden;
+}
+.seamlessscrolling view {
+  position: absolute;
+  white-space: nowrap;
+  color: #333;
+}

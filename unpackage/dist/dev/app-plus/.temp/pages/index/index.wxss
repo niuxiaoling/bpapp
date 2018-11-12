@@ -1,4 +1,106 @@
 
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 120rpx;
+  padding: 10% 0;
+}
+.logo image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.reg-list {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  margin-top: 30rpx;
+}
+.reg-list image {
+  position: absolute;
+  top: 15rpx;
+  left: 20%;
+  width: 50rpx;
+  height: 50rpx;
+}
+.reg-list ._input {
+  color: #FFFFFF;
+  width: 60%;
+  height: 80rpx;
+  font-size: 30rpx;
+  border: 1rpx solid #FFFFFF;
+  border-radius: 40px;
+  padding-left: 15%;
+}
+.reg-list ._button {
+  width: 100rpx;
+  height: 80rpx;
+  padding: 0 5rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  position: absolute;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 15%;
+}
+.reg-list ._button:after {
+  border: none;
+}
+.reg-list ._button text {
+  padding-right: 10rpx;
+}
+.regBut {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 60rpx;
+}
+.regBut ._button {
+  width: 75%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50rpx;
+  color: #D32241;
+}
+.action-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 20rpx;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.action-row navigator {
+  font-size: 24rpx;
+  color: #fff;
+}
+page {
+  background: -webkit-linear-gradient(bottom, #E61532,#EA5B17);
+  background: linear-gradient(bottom, #E61532,#EA5B17);
+}
 .content {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -11,66 +113,4 @@
   align-items: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: -webkit-linear-gradient(bottom, #E61532,#EA5B17);
-  background: linear-gradient(bottom, #E61532,#EA5B17);
-}
-.logo {
-  width: 120rpx;
-  height: 120rpx;
-}
-.logo image {
-  width: 100%;
-  height: 100%;
-}
-.login {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.action-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-.action-row navigator {
-  color: #007aff;
-  padding: 0 20px;
-}
-.oauth-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.oauth-image {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #dddddd;
-  border-radius: 100px;
-  margin: 0 40px;
-  background-color: #ffffff;
-}
-.oauth-image image {
-  width: 60px;
-  height: 60px;
-  margin: 20px;
 }

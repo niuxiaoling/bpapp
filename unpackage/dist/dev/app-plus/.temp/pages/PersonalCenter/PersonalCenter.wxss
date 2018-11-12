@@ -1,7 +1,9 @@
 
 .avatars {
+  width: 100%;
   background: -webkit-linear-gradient(bottom, #E61532,#E86318);
   background: linear-gradient(bottom, #E61532,#E86318);
+  backgorund-size: 100% 100%;
   padding-top: 50rpx;
 }
 .avatar_box {
@@ -122,5 +124,6 @@
 .getOut {
   background: -webkit-linear-gradient(bottom, #E61532,#E86318);
   background: linear-gradient(bottom, #E61532,#E86318);
+  backgorund-size: 100% 100%;
   color: #FFF;
 }

@@ -10,7 +10,9 @@
 		<view class="reg-list">
 			<image src="../../static/img/yanzhengma.png"></image>
 			<input type="text" v-model="verificationCode" placeholder="手机验证码" placeholder-style="color:#ffffff"/>
-			<button  v-html="coustDown"  @tap="getPhone"><text>|</text>获取</button>
+			<text class="yanzhentime" v-if="showTime">{{time}}s</text>
+			<button v-else  @tap="getPhone"><text>|</text>获取</button>
+			
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/yanzhengma.png"></image>
@@ -38,11 +40,14 @@
 				account:"",
 				password:'',
 				invitationCode:'',
+				showTime:false,
+				time:60
 			}
 		},
 		methods:{
 		// 获取手机验证码
 			getPhone(){
+				var that =  this;
 				 if(this.phone == ''){
 					 uni.showToast({
 					 	icon:"none",
@@ -50,7 +55,15 @@
 					 })
 				 }
 				//缺少接口
-				
+				this.showTime = true	
+				var go = setInterval(function(){
+					that.time --;
+					if(that.time == 0){
+					   that.showTime = false;
+				       clearInterval(go);
+					   that.time = 60;
+					}
+				},1000)
 				//
 			},
 		// 注册

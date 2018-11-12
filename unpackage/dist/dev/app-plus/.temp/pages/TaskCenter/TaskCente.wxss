@@ -46,6 +46,9 @@
   -webkit-align-items: center;
   align-items: center;
 }
+.taskList:last-child {
+  border-right: none;
+}
 .taskList navigator image {
   width: 80rpx;
   height: 80rpx;
