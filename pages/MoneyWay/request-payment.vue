@@ -159,7 +159,7 @@
 				})
 			},
 			getOrderInfo(e) {
-				let appid = "";
+				let appid = "wx726318aa9a4e7971";
 				// #ifdef APP-PLUS
 				appid = plus.runtime.appid;
 				// #endif

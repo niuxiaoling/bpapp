@@ -31,7 +31,7 @@
 	</view>
 </template>
 <script>
-	import commons from '../../common/commons.js';
+	// import commons from '../../common/commons.js';
 	export default{
 		data(){
 			return{
@@ -43,6 +43,8 @@
 				superInvitationCode:'',
 				showTime:false,
 				time:60,
+				
+				
 			}
 		},
 		methods:{
@@ -70,7 +72,7 @@
 						jsonString:JSON.stringify(jsonString)
 					}
 					uni.request({
-						url:'http://192.168.43.229:8080/ScreenTheWord/MainController.do?',
+						url:that.websiteUrl,
 						method:'POST',
 						header: {
 							"content-type":"application/x-www-form-urlencoded"
@@ -78,12 +80,7 @@
 						data:param,
 						success(res) {
 							if(res.data.errorCode == '0000'){
-							console.log
-							
-								uni.showToast({
-									icon:'none',
-									title:"发送成功"
-								})
+								  that.invitationCode = res.data.userInfo.invitationCode;
 							}else{
 								uni.showToast({
 									icon:'none',
@@ -116,17 +113,11 @@
 			},
 		// 注册
 			register(){
+				var that = this;
 				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
 					uni.showToast({
 						icon: 'none',
 						title: '请输入正确的11位手机号'
-					});
-					return;
-				}
-				if (this.password.length < 6) {
-					uni.showToast({
-						icon: 'none',
-						title: '密码最短为 6 个字符'
 					});
 					return;
 				}
@@ -166,6 +157,7 @@
 					account:this.phone,
 					password:this.password,
 					superInvitationCode:this.superInvitationCode,
+					invitationCode:this.invitationCode
 					
 				}
 				const jsonString = {
@@ -178,14 +170,13 @@
 					jsonString:JSON.stringify(jsonString)
 				}
 				uni.request({
-					url:'http://192.168.43.229:8080/ScreenTheWord/MainController.do?',
+					url:that.websiteUrl,
 					method:'POST',
 					header: {
 						"content-type":"application/x-www-form-urlencoded"
 					},
 					data:param,
 					success: (res) => {
-						console.log(res)
 						if(res.data.errorCode == '0000'){
 							uni.showToast({
 								icon:'none',
