@@ -1,32 +1,33 @@
-<template name="34836fee">
-  <view class="_view data-v-d28b703a">
-    <view class="_view data-v-d28b703a logo">
-      <image src="../../static/img/logo.jpg" class="_image data-v-d28b703a"></image>
+<template name="3e00cf4d">
+  <view class="_view data-v-0009733c">
+    <view class="_view data-v-0009733c logo">
+      <image src="../../static/img/logo.jpg" class="_image data-v-0009733c"></image>
     </view>
-    <view class="_view data-v-d28b703a reg-list">
-      <image src="../../static/img/shouji.png" class="_image data-v-d28b703a"></image>
-      <input type="text" value="{{phone}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'p9C-0'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+    <view class="_view data-v-0009733c reg-list">
+      <image src="../../static/img/shouji.png" class="_image data-v-0009733c"></image>
+      <input type="text" value="{{phone}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'fOz-0'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
     </view>
-    <view class="_view data-v-d28b703a reg-list">
-      <image src="../../static/img/yanzhengma.png" class="_image data-v-d28b703a"></image>
-      <input type="text" value="{{verificationCode}}" bindinput="handleProxy" placeholder="验证码/注意大小写" placeholder-style="color:#ffffff" data-eventid="{{'5DH-1'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
-      <button bindtap="handleProxy" data-eventid="{{'cHQ-2'}}" data-comkey="{{$k}}" class="_button data-v-d28b703a">
-        <text class="_text data-v-d28b703a">|</text>获取</button>
+    <view class="_view data-v-0009733c reg-list">
+      <image src="../../static/img/yanzhengma.png" class="_image data-v-0009733c"></image>
+      <input type="text" value="{{verificationCode}}" bindinput="handleProxy" placeholder="手机验证码" placeholder-style="color:#ffffff" data-eventid="{{'0Cl-1'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
+      <text class="_text data-v-0009733c yanzhentime" wx:if="{{showTime}}">{{time}}s</text>
+      <button wx:else bindtap="handleProxy" data-eventid="{{'SPf-2'}}" data-comkey="{{$k}}" class="_button data-v-0009733c">
+        <text class="_text data-v-0009733c">|</text>获取</button>
     </view>
-    <view class="_view data-v-d28b703a reg-list">
-      <image src="../../static/img/miam.png" class="_image data-v-d28b703a"></image>
-      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" placeholder-style="color:#ffffff" data-eventid="{{'s9J-3'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+    <view class="_view data-v-0009733c reg-list">
+      <image src="../../static/img/miam.png" class="_image data-v-0009733c"></image>
+      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" placeholder-style="color:#ffffff" data-eventid="{{'peX-3'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
     </view>
-    <view class="_view data-v-d28b703a reg-list">
-      <image src="../../static/img/querenmima.png" class="_image data-v-d28b703a"></image>
-      <input type="password" value="{{okPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'M1S-4'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+    <view class="_view data-v-0009733c reg-list">
+      <image src="../../static/img/querenmima.png" class="_image data-v-0009733c"></image>
+      <input type="password" value="{{okPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'cLO-4'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
     </view>
-    <view class="_view data-v-d28b703a reg-list">
-      <image src="../../static/img/yaoqingma.png" class="_image data-v-d28b703a"></image>
-      <input type="text" value="{{superInvitationCode}}" bindinput="handleProxy" placeholder="邀请码" placeholder-style="color:#ffffff" data-eventid="{{'5xf-5'}}" data-comkey="{{$k}}" class="_input data-v-d28b703a" />
+    <view class="_view data-v-0009733c reg-list">
+      <image src="../../static/img/yaoqingma.png" class="_image data-v-0009733c"></image>
+      <input type="text" value="{{superInvitationCode}}" bindinput="handleProxy" placeholder="邀请码" placeholder-style="color:#ffffff" data-eventid="{{'1QZ-5'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
     </view>
-    <view class="_view data-v-d28b703a regBut">
-      <button bindtap="handleProxy" data-eventid="{{'8C3-6'}}" data-comkey="{{$k}}" class="_button data-v-d28b703a">确认注册</button>
+    <view class="_view data-v-0009733c regBut">
+      <button bindtap="handleProxy" data-eventid="{{'uPe-6'}}" data-comkey="{{$k}}" class="_button data-v-0009733c">确认注册</button>
     </view>
   </view>
 </template>

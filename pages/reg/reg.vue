@@ -9,15 +9,9 @@
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/yanzhengma.png"></image>
-<<<<<<< HEAD
 			<input type="text" v-model="verificationCode" placeholder="手机验证码" placeholder-style="color:#ffffff"/>
 			<text class="yanzhentime" v-if="showTime">{{time}}s</text>
 			<button v-else  @tap="getPhone"><text>|</text>获取</button>
-			
-=======
-			<input type="text" v-model="verificationCode" placeholder="验证码/注意大小写" placeholder-style="color:#ffffff"/>
-			<button @tap="getPhone"><text>|</text>获取</button>
->>>>>>> e7b07807aee1b6bbc948a230cfd7df8aa0dce258
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/miam.png"></image>
@@ -44,19 +38,14 @@
 				verificationCode:'',
 				account:"",
 				password:'',
-<<<<<<< HEAD
 				invitationCode:'',
 				showTime:false,
 				time:60
-=======
-				superInvitationCode:'',
->>>>>>> e7b07807aee1b6bbc948a230cfd7df8aa0dce258
 			}
 		},
 		methods:{
 		// 获取手机验证码
 			getPhone(){
-<<<<<<< HEAD
 				var that =  this;
 				 if(this.phone == ''){
 					 uni.showToast({
@@ -74,52 +63,7 @@
 					   that.time = 60;
 					}
 				},1000)
-=======
-				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
-				 	uni.showToast({
-				 		icon: 'none',
-				 		title: '请输入正确的11位手机号'
-				 	});
-				 	return;
-				 };
-				 const data ={
-				 phone:this.phone,
-				 
-				 }
-				 const jsonString = {
-				 	requestType:"getInvitation",
-				 	userInfo:data,
-				 }
-				 const param ={
-				 controllerRequestType:"loginControllerService",
-				 jsonString:JSON.stringify(jsonString)
-				 }
-				//缺少接口
-				uni.request({
-					// 192.168.43.229
-					url:'http://192.168.43.229:8080/ScreenTheWord/MainController.do?',
-					// url:'http://39.106.215.215:8080/ScreenTheWord/MainController.do?',
-					method:'POST',
-					header: {
-		
-						"content-type":"application/x-www-form-urlencoded"
-					},
-					data:param,
-					success: (res) => {
-						console.log(res)
-						
-					},
-					fail: (res) => {
-						uni.showToast({
-							icon:'none',
-							title:'获取失败'
-						})
-						
-					}
-				})
-		
->>>>>>> e7b07807aee1b6bbc948a230cfd7df8aa0dce258
-				//
+
 			},
 		// 注册
 			register(){

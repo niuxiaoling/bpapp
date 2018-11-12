@@ -109,7 +109,8 @@
   justify-content: space-around;
 }
 .action-row navigator {
-  font-size: 24rpx;
+  font-size: 30rpx;
+  margin-top: 20rpx;
   color: #fff;
 }
 page {
