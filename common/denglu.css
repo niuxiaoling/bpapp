@@ -50,6 +50,21 @@
 		color: #FFFFFF;
 		top: 0;
 		right:15% ;
+		z-index:999;
+	}
+	.yanzhentime{
+		width: 100upx;
+		height: 80upx;
+		padding: 0 5upx;
+		font-size: 30upx;
+		line-height: 80upx;
+		position: absolute;
+		background: none;
+		border: none;
+		color: #FFFFFF;
+		top: 0;
+		right:10% ;
+		z-index:999;
 	}
 	.reg-list button:after{
 		border:none;

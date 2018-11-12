@@ -9,8 +9,9 @@
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/yanzhengma.png"></image>
-			<input type="text" v-model="verificationCode" placeholder="验证码/注意大小写" placeholder-style="color:#ffffff"/>
-			<button @tap="getPhone"><text>|</text>获取</button>
+			<input type="text" v-model="verificationCode" placeholder="手机验证码" placeholder-style="color:#ffffff"/>
+			<text class="yanzhentime" v-if="showTime">{{time}}s</text>
+			<button v-else  @tap="getPhone"><text>|</text>获取</button>
 		</view>
 		<view class="reg-list">
 			<image src="../../static/img/miam.png"></image>
@@ -37,56 +38,32 @@
 				verificationCode:'',
 				account:"",
 				password:'',
-				superInvitationCode:'',
+				invitationCode:'',
+				showTime:false,
+				time:60
 			}
 		},
 		methods:{
 		// 获取手机验证码
 			getPhone(){
-				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
-				 	uni.showToast({
-				 		icon: 'none',
-				 		title: '请输入正确的11位手机号'
-				 	});
-				 	return;
-				 };
-				 const data ={
-				 phone:this.phone,
-				 
-				 }
-				 const jsonString = {
-				 	requestType:"getInvitation",
-				 	userInfo:data,
-				 }
-				 const param ={
-				 controllerRequestType:"loginControllerService",
-				 jsonString:JSON.stringify(jsonString)
+				var that =  this;
+				 if(this.phone == ''){
+					 uni.showToast({
+					 	icon:"none",
+						title:"手机号码不能为空"
+					 })
 				 }
 				//缺少接口
-				uni.request({
-					// 192.168.43.229
-					url:'http://192.168.43.229:8080/ScreenTheWord/MainController.do?',
-					// url:'http://39.106.215.215:8080/ScreenTheWord/MainController.do?',
-					method:'POST',
-					header: {
-		
-						"content-type":"application/x-www-form-urlencoded"
-					},
-					data:param,
-					success: (res) => {
-						console.log(res)
-						
-					},
-					fail: (res) => {
-						uni.showToast({
-							icon:'none',
-							title:'获取失败'
-						})
-						
+				this.showTime = true	
+				var go = setInterval(function(){
+					that.time --;
+					if(that.time == 0){
+					   that.showTime = false;
+				       clearInterval(go);
+					   that.time = 60;
 					}
-				})
-		
-				//
+				},1000)
+
 			},
 		// 注册
 			register(){
