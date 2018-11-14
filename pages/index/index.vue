@@ -87,7 +87,7 @@
 						jsonString:JSON.stringify(jsonString)
 					}
 					uni.request({
-						url:'http://39.106.215.215:8080/ScreenTheWord/MainController.do?',
+						url:that.websiteUrl,
 						method:'POST',
 						header: {
 							// 'Access-Control-Allow-Origin':'*' ,
@@ -96,8 +96,7 @@
 						data:param,
 
 						success: (res) => {
-							if(res.data.errorCode == '0000'){
-								
+							if(res.data.errorCode == '0000'){		
 								uni.setStorageSync("userInfo",res.data.userInfo);
 								uni.reLaunch({
 							         url:'../main/main',
