@@ -14,17 +14,18 @@
 </template>
 
 <script>
+	import service from '../../common/service.js'
 	export default {
 		data() {
 			return {
+			
+			
 				
 			};
 		},
-		onLoad() {
-			
-		},
-		onLoad: () => {
-			
+		onLoad:function(){
+			// const  valueUser= uni.getStorageSync('userInfo');
+			console.log(service.userInfo)
 		}
 	}
 </script>

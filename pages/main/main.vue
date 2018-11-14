@@ -16,7 +16,7 @@
 		</view>
 		<view class="list">
 			<view class="list_item" v-for="v in list" :key="v">
-				<navigator  :url="v.url">
+				<navigator  @tap='goURL(v.url)'>
 					<image :src="v.imgage" mode="scaleToFill"></image>
 					<text>{{v.text}}</text>
 				</navigator >
@@ -25,6 +25,7 @@
 	</view>
 </template>
 <script>
+	import service from '../../common/service.js';
 	export default{
 		data:{
 					
@@ -76,7 +77,7 @@
 						{
 							imgage:'../../static/img/hb.png',
 							text:'全球免费',
-						 url:"/pages/main/waiting"
+						  url:"/pages/main/waiting"
 		
 						},
 						{
@@ -92,7 +93,7 @@
 					direction: "horizontal", //  horizontal=水平 vertical=垂直  ，可设置
 					horizontal_dire: "left",// direction: "horizontal" 有效，   left =左    right =右，可设置
 					vertical_dire: "top",// direction: "vertical" 有效，   top =上    bottom =下，可设置
-					strs: ["所有的楼房全部低于3千平米赶快买", "所有的车子全部低于30000一辆", "知道区块链吗，知道比特币吗，赶紧学"],//滚动内容，可自定义设置
+					strs: ["微品，引领新时代","微品，引领新时代"],//滚动内容，可自定义设置
 					clonestr:[],//无缝衔接容器
 					bw: 0,//容器宽度
 					bh: 0,//容器高度
@@ -100,7 +101,19 @@
 					bt: 0//容器位置 top
 		     
 				},
+				
 		methods: {
+			getUser:function(){
+					try {
+						const value = uni.getStorageSync('userInfo');
+						if (value) {
+					service.userInfo = value;
+					
+						}
+				} catch (e) {
+						// err
+				}
+			},
 			 seamlessscrolling:function(){
 				 var that = this;
 				 //复制容器
@@ -119,12 +132,36 @@
 						that.bh = 40;
 					}
 				})
-				}
+				},
+				goURL:function(url){
+						if(service.userInfo =="" ||!service.userInfo){
+							uni.showModal({
+								title:'温馨提示',
+								content:"当前没有登陆，请登陆",
+								success:function(result){
+									if(result.confirm){
+										uni.navigateTo({
+											url:'../index/index',
+										})
+									}
+									if(result.cancel){
+										console.log("取消")
+									}
+								}
+							});;
+						}else{
+					uni.navigateTo({
+						url:url
+					})
+						}
+					
+				},
 		},
 		mounted(){
 			
 		},
 		onLoad:function(){
+			this.getUser();
 			this.seamlessscrolling();
 			var that = this;
 			//动画
@@ -142,7 +179,8 @@
 						that.bt =  that.bt - that.bchange;
 					};
 				};
-			}, that.bspeed)
+			}, that.bspeed);
+			
 		}
 	}
 </script>

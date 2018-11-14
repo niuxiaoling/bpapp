@@ -182,7 +182,12 @@
 						if(res.data.errorCode == '0000'){
 							uni.showToast({
 								icon:'none',
-								title:'注册成功,请登陆！'
+								title:'注册成功,请登陆！',
+								success() {
+									uni.navigateTo({
+										url:'../index/index',
+									})
+								}
 							})
 						}else{
 							uni.showToast({

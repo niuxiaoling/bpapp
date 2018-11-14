@@ -77,7 +77,7 @@
 					const userInfo ={
 							account:that.account,
 							password:that.password,
-					}
+					       }
 					const jsonString ={
 						userInfo:userInfo,
 						requestType:"login",
@@ -96,11 +96,13 @@
 						data:param,
 
 						success: (res) => {
-							console.log(res);
 							if(res.data.errorCode == '0000'){
-// 									uni.navigateTo({
-// 										 url:'pages/main/main'
-// 									})
+								
+								uni.setStorageSync("userInfo",res.data.userInfo);
+								uni.reLaunch({
+							         url:'../main/main',
+						    });
+							 
 							}else{
 								uni.showToast({
 									icon:'none',
