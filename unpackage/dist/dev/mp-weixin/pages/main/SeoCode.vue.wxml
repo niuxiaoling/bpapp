@@ -1,20 +1,20 @@
-<template name="ab45d814">
-  <view class="_view data-v-480e560a">
-    <view class="_view data-v-480e560a logo">
-      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-480e560a"></image>
+<template name="3e7efdb0">
+  <view class="_view data-v-34f2c9f0">
+    <view class="_view data-v-34f2c9f0 logo">
+      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-34f2c9f0"></image>
     </view>
-    <view class="_view data-v-480e560a erweima">
-      <image src="../../static/img/erweimaTEXT.jpg" class="_image data-v-480e560a"></image>
+    <view class="_view data-v-34f2c9f0 erweima">
+      <image src="{{qrimg}}" class="_image data-v-34f2c9f0"></image>
     </view>
-    <view class="_view data-v-480e560a tjCode">
-      <view class="_view data-v-480e560a plText">我的邀请码</view>
-      <view class="_view data-v-480e560a plCode">
-        <text class="_text data-v-480e560a">0</text>
-        <text class="_text data-v-480e560a">3</text>
-        <text class="_text data-v-480e560a">e</text>
-        <text class="_text data-v-480e560a">g</text>
-        <text class="_text data-v-480e560a">j</text>
-        <text class="_text data-v-480e560a">k</text>
+    <view class="_view data-v-34f2c9f0 tjCode">
+      <view class="_view data-v-34f2c9f0 plText">我的邀请码</view>
+      <view class="_view data-v-34f2c9f0 plCode">
+        <text class="_text data-v-34f2c9f0">0</text>
+        <text class="_text data-v-34f2c9f0">3</text>
+        <text class="_text data-v-34f2c9f0">e</text>
+        <text class="_text data-v-34f2c9f0">g</text>
+        <text class="_text data-v-34f2c9f0">j</text>
+        <text class="_text data-v-34f2c9f0">k</text>
       </view>
     </view>
   </view>

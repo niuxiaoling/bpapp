@@ -4,8 +4,7 @@
 		<image src="../../static/img/logoBanner.jpg" mode="widthFix"></image>
 	</view>
 	<view class="erweima">
-		
-		<image src="../../static/img/erweimaTEXT.jpg"></image>
+		<image :src="qrimg"></image>
 	</view>
 	<view class="tjCode">
 		<view class="plText">我的邀请码</view>
@@ -22,11 +21,26 @@
 </template>
 
 <script>
+	import QR from '../../common/wxqrcode.js'
 	export default {
 		data() {
 			return {
-				
+				  qrimg:'',
+					plcode:'03egjk',
+					plcodeArr:[]
 			};
+		},
+		onLoad: function() {
+			var that = this;
+			 let imgsrc = QR.createQrCodeImg('....',{
+					size:parseInt(250)
+			})
+			that.qrimg = imgsrc;
+// 			let str='';
+// 			for(let i= 0;i<=that.plcode.length;i++){
+// 				 str += that.plcode[i]+'-';
+// 			}
+			// console.log(that.plcodeArr);
 		}
 	}
 </script>
