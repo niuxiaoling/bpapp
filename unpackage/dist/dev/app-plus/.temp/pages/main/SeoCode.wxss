@@ -37,6 +37,7 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  margin-bottom: 50rpx;
 }
 .tjCode .plText {
   text-align: center;

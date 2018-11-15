@@ -8,8 +8,9 @@
 			<input type="text" v-model="account" placeholder="手机号" maxlength="11" placeholder-class="placeholder"/>
 		</view>
 		<view class="reg-list">
+			 <!-- password="false" -->
 			<image src="../../static/img/miam.png"></image>
-			<input type="text"  password="true" v-model="password" placeholder="密码" maxlength="11" placeholder-class="placeholder"/>
+			<input type="text"  v-model="password" placeholder="密码" maxlength="11" placeholder-class="placeholder"/>
 		</view>
 		<view class="regBut">
 			<button @tap="bindLogin"> 登 录 </button>
@@ -47,18 +48,18 @@
 				},
 				bindLogin() {
 		
-// 					uni.showModal({
-// 						title:'温馨提示',
-// 						content:"当前没有登陆，请登陆",
-// 						success:function(result){
-// 							if(result.confirm){
-// 								console.log("确定")
-// 							}
-// 							if(result.cancel){
-// 								console.log("取消")
-// 							}
-// 						}
-// 					})
+					uni.showModal({
+						title:'温馨提示',
+						content:"当前没有登陆，请登陆",
+						success:function(result){
+							if(result.confirm){
+								console.log("确定")
+							}
+							if(result.cancel){
+								console.log("取消")
+							}
+						}
+					})
 					var that = this;
 					if (this.account.length == '') {
 						uni.showToast({
@@ -94,12 +95,16 @@
 							"content-type":"application/x-www-form-urlencoded"
 						},
 						data:param,
-
 						success: (res) => {
+							console.log('登录中',JSON.stringify(res));
 							if(res.data.errorCode == '0000'){		
 								uni.setStorageSync("userInfo",res.data.userInfo);
+								uni.showToast({
+									icon:'none',
+									title:'登录成功'
+								})
 								uni.reLaunch({
-							         url:'../main/main',
+							      url:'../main/main',
 						    });
 							 
 							}else{
@@ -112,7 +117,7 @@
 						
 						},
 						fail:(res) =>{
-							console.log(res);
+							console.log(JSON.stringify(res));
 						}
 					})
 					/**

@@ -16,10 +16,10 @@
 		</view>
 		<view class="list">
 			<view class="list_item" v-for="v in list" :key="v">
-				<navigator  @tap='goURL(v.url)'>
+				<view class="list_item_a" @tap='goURL(v.url)'>
 					<image :src="v.imgage" mode="scaleToFill"></image>
 					<text>{{v.text}}</text>
-				</navigator >
+				</view >
 			</view>
 		</view>
 	</view>
@@ -107,7 +107,7 @@
 					try {
 						const value = uni.getStorageSync('userInfo');
 						if (value) {
-					service.userInfo = value;
+							service.userInfo = value;
 					
 						}
 				} catch (e) {
@@ -150,9 +150,9 @@
 								}
 							});;
 						}else{
-					uni.navigateTo({
-						url:url
-					})
+							uni.navigateTo({
+								url:url
+							})
 						}
 					
 				},
@@ -215,7 +215,7 @@
 		align-items:center;
 		padding-top:12upx;
 	}
-	.list .list_item navigator{
+	.list .list_item .list_item_a{
 		display:flex;
 		flex-direction:column;
 		justify-content:center;

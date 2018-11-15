@@ -1,15 +1,24 @@
-<template name="831282a4">
-  <view class="_view data-v-0743eee4">
-    <page-head title="{{title}}" class="_page-head data-v-0743eee4"></page-head>
-    <view class="_view data-v-0743eee4 page-body">
-      <view class="_view data-v-0743eee4 page-section">
-        <view class="_view data-v-0743eee4">支付金额</view>
-        <view class="_view data-v-0743eee4 price">
-          <text class="_text data-v-0743eee4 rmbLogo">￥</text>0.01</view>
-        <view class="_view data-v-0743eee4 desc">实际应用中可自定义金额</view>
-        <view class="_view data-v-0743eee4 btn-area">
-          <button wx:key="index" key="{{index}}" bindtap="handleProxy" loading="{{item.loading}}" data-eventid="{{'xDd-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item" class="_button data-v-0743eee4">{{item.name}}支付</button>
-        </view>
+<template name="5119b02c">
+  <view class="_view data-v-7dd7f7ef">
+    <page-head title="{{title}}" class="_page-head data-v-7dd7f7ef"></page-head>
+    <view class="_view data-v-7dd7f7ef page-body">
+      <view class="_view data-v-7dd7f7ef page-section">
+        <view class="_view data-v-7dd7f7ef">支付金额</view>
+        <view class="_view data-v-7dd7f7ef price">
+          <text class="_text data-v-7dd7f7ef rmbLogo">￥</text>{{money}}</view>
+      </view>
+    </view>
+    <view class="_view data-v-7dd7f7ef">
+      <view class="_view data-v-7dd7f7ef desc">支付方式</view>
+      <view class="_view data-v-7dd7f7ef uni-list">
+        <radio-group class="_radio-group data-v-7dd7f7ef">
+          <label class="_label data-v-7dd7f7ef uni-list-cell uni-list-cell-pd pay-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'Qgk-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_view data-v-7dd7f7ef">
+              <radio value="{{item.value}}" checked="true" class="_radio data-v-7dd7f7ef" />
+            </view>
+            <view class="_view data-v-7dd7f7ef">{{item.name}}</view>
+          </label>
+        </radio-group>
       </view>
     </view>
   </view>

@@ -1,14 +1,25 @@
-<template name="8b658836">
-  <view class="_view data-v-971b44e6">
-    <view class="_view data-v-971b44e6 logo">
-      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-971b44e6"></image>
+<template name="3c123b5f">
+  <view class="_view data-v-4a2ca07a">
+    <view class="_view data-v-4a2ca07a logo">
+      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-4a2ca07a"></image>
     </view>
-    <view class="_view data-v-971b44e6 twobuttons">
-      <button class="_button data-v-971b44e6">99VIP</button>
-      <button class="_button data-v-971b44e6">999成为高级VIP</button>
+    <view class="_view data-v-4a2ca07a bevip">
+      <view class="_view data-v-4a2ca07a bevip-item {{active == 1 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'Pvy-0'}}" data-comkey="{{$k}}">
+        <text class="_text data-v-4a2ca07a">普通VIP</text>
+        <text style="color:red" class="_text data-v-4a2ca07a">￥99</text>
+      </view>
+      <view class="_view data-v-4a2ca07a bevip-item {{active == 2 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'xrJ-1'}}" data-comkey="{{$k}}">
+        <text class="_text data-v-4a2ca07a">高级VIP</text>
+        <text style="color:red" class="_text data-v-4a2ca07a">￥999</text>
+      </view>
     </view>
-    <view class="_view data-v-971b44e6 bVip">
-      <button class="_button data-v-971b44e6">99成为VI1P</button>
+    <view class="_view data-v-4a2ca07a bevipbtn">
+      <navigator url="../MoneyWay/request-payment?money=99" class="_navigator data-v-4a2ca07a">
+        <button wx:if="{{active==1}}" class="_button data-v-4a2ca07a">成为VIP</button>
+      </navigator>
+      <navigator url="../MoneyWay/request-payment?money=999" class="_navigator data-v-4a2ca07a">
+        <button wx:if="{{active==2}}" class="_button data-v-4a2ca07a">成为高级VIP</button>
+      </navigator>
     </view>
   </view>
 </template>

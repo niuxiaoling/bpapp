@@ -1060,32 +1060,38 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'831282a4'])
-Z([3,'_view data-v-0743eee4'])
-Z([3,'_page-head data-v-0743eee4'])
+Z([3,'5119b02c'])
+Z([3,'_view data-v-7dd7f7ef'])
+Z([3,'_page-head data-v-7dd7f7ef'])
 Z([[7],[3,'title']])
-Z([3,'_view data-v-0743eee4 page-body'])
-Z([3,'_view data-v-0743eee4 page-section'])
+Z([3,'_view data-v-7dd7f7ef page-body'])
+Z([3,'_view data-v-7dd7f7ef page-section'])
 Z(z[1])
 Z([3,'支付金额'])
-Z([3,'_view data-v-0743eee4 price'])
-Z([3,'_text data-v-0743eee4 rmbLogo'])
+Z([3,'_view data-v-7dd7f7ef price'])
+Z([3,'_text data-v-7dd7f7ef rmbLogo'])
 Z([3,'￥'])
-Z([3,'0.01'])
-Z([3,'_view data-v-0743eee4 desc'])
-Z([3,'实际应用中可自定义金额'])
-Z([3,'_view data-v-0743eee4 btn-area'])
+Z([a,[[7],[3,'money']]])
+Z(z[1])
+Z([3,'_view data-v-7dd7f7ef desc'])
+Z([3,'支付方式'])
+Z([3,'_view data-v-7dd7f7ef uni-list'])
+Z([3,'_radio-group data-v-7dd7f7ef'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'providerList']])
-Z(z[15])
+Z(z[17])
 Z([3,'handleProxy'])
-Z([3,'_button data-v-0743eee4'])
+Z([3,'_label data-v-7dd7f7ef uni-list-cell uni-list-cell-pd pay-item'])
 Z([[7],[3,'$k']])
-Z([[2,'+'],[1,'xDd-0-'],[[7],[3,'index']]])
+Z([[2,'+'],[1,'Qgk-0-'],[[7],[3,'index']]])
 Z([[7],[3,'index']])
-Z([[6],[[7],[3,'item']],[3,'loading']])
-Z([a,[[6],[[7],[3,'item']],[3,'name']],[3,'支付']])
+Z(z[1])
+Z([3,'true'])
+Z([3,'_radio data-v-7dd7f7ef'])
+Z([[6],[[7],[3,'item']],[3,'value']])
+Z(z[1])
+Z([a,[[6],[[7],[3,'item']],[3,'name']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1093,31 +1099,31 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_2)return __WXML_GLOBAL__.ops_cached.$gwx_2
 __WXML_GLOBAL__.ops_cached.$gwx_2=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'831282a4'])
+Z([3,'5119b02c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
 }
 function gz$gwx_3(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
 __WXML_GLOBAL__.ops_cached.$gwx_3=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'3cc367b9'])
-Z([3,'_view data-v-866cb7ce avatars'])
-Z([3,'_view data-v-866cb7ce avatar_box'])
-Z([3,'_view data-v-866cb7ce avatar'])
-Z([3,'_image data-v-866cb7ce'])
+Z([3,'16f93806'])
+Z([3,'_view data-v-8a99ad50 avatars'])
+Z([3,'_view data-v-8a99ad50 avatar_box'])
+Z([3,'_view data-v-8a99ad50 avatar'])
+Z([3,'_image data-v-8a99ad50'])
 Z([3,'aspectFit'])
 Z([3,'../../static/img/tx_rbt.jpg'])
-Z([3,'_view data-v-866cb7ce sign'])
+Z([3,'_view data-v-8a99ad50 sign'])
 Z(z[4])
 Z(z[5])
 Z([3,'../../static/img/viptest.jpg'])
-Z([3,'_text data-v-866cb7ce phoneNo'])
+Z([3,'_text data-v-8a99ad50 phoneNo'])
 Z([3,'18888888888'])
-Z([3,'_view data-v-866cb7ce income'])
-Z([3,'_view data-v-866cb7ce income-list'])
-Z([3,'_text data-v-866cb7ce list-No'])
+Z([3,'_view data-v-8a99ad50 income'])
+Z([3,'_view data-v-8a99ad50 income-list'])
+Z([3,'_text data-v-8a99ad50 list-No'])
 Z([3,'12'])
-Z([3,'_rich-text data-v-866cb7ce list-text'])
+Z([3,'_rich-text data-v-8a99ad50 list-text'])
 Z([3,'总贡献值'])
 Z(z[14])
 Z(z[15])
@@ -1129,12 +1135,12 @@ Z(z[15])
 Z(z[16])
 Z(z[17])
 Z([3,'已兑贡献'])
-Z([3,'_view data-v-866cb7ce lists'])
-Z([3,'_view data-v-866cb7ce listli'])
+Z([3,'_view data-v-8a99ad50 lists'])
+Z([3,'_view data-v-8a99ad50 listli'])
 Z(z[4])
 Z(z[5])
 Z([3,'../../static/img/GRZL.png'])
-Z([3,'_text data-v-866cb7ce'])
+Z([3,'_text data-v-8a99ad50'])
 Z([3,'个人资料'])
 Z(z[30])
 Z(z[4])
@@ -1178,9 +1184,9 @@ Z(z[5])
 Z([3,'../../static/img/QHZH.png'])
 Z(z[34])
 Z([3,'切换账号'])
-Z([3,'_view data-v-866cb7ce'])
+Z([3,'_view data-v-8a99ad50'])
 Z([3,'width:100%;'])
-Z([3,'_button data-v-866cb7ce getOut'])
+Z([3,'_button data-v-8a99ad50 getOut'])
 Z([3,'退出APP'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
 }
@@ -1189,18 +1195,18 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
 __WXML_GLOBAL__.ops_cached.$gwx_4=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'3cc367b9'])
+Z([3,'16f93806'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
 function gz$gwx_5(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
 __WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'171408ae'])
-Z([3,'_view data-v-8e16766e'])
+Z([3,'e89f3a36'])
+Z([3,'_view data-v-72c78caa'])
 Z([[7],[3,'autoplay']])
 Z([[7],[3,'circular']])
-Z([3,'_swiper data-v-8e16766e swpier-box'])
+Z([3,'_swiper data-v-72c78caa swpier-box'])
 Z([[7],[3,'duration']])
 Z([3,'#3AC198'])
 Z([[7],[3,'indicator']])
@@ -1208,24 +1214,24 @@ Z([3,'index'])
 Z([3,'ite'])
 Z([[7],[3,'items']])
 Z(z[9])
-Z([3,'_swiper-item data-v-8e16766e'])
+Z([3,'_swiper-item data-v-72c78caa'])
 Z([[7],[3,'ite']])
-Z([3,'_image data-v-8e16766e'])
+Z([3,'_image data-v-72c78caa'])
 Z([3,'scaleToFill'])
 Z(z[13])
-Z([3,'_view data-v-8e16766e taskListBOX'])
+Z([3,'_view data-v-72c78caa taskListBOX'])
 Z(z[8])
 Z([3,'task'])
 Z([[7],[3,'tasksList']])
 Z(z[19])
-Z([3,'_view data-v-8e16766e taskList'])
+Z([3,'_view data-v-72c78caa taskList'])
 Z([[7],[3,'task']])
-Z([3,'_navigator data-v-8e16766e'])
+Z([3,'_navigator data-v-72c78caa'])
 Z([[6],[[7],[3,'task']],[3,'url']])
 Z(z[14])
 Z(z[15])
 Z([[6],[[7],[3,'task']],[3,'imgage']])
-Z([3,'_text data-v-8e16766e'])
+Z([3,'_text data-v-72c78caa'])
 Z([a,[[6],[[7],[3,'task']],[3,'text']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
@@ -1234,25 +1240,25 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
 __WXML_GLOBAL__.ops_cached.$gwx_6=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'171408ae'])
+Z([3,'e89f3a36'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
 }
 function gz$gwx_7(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
 __WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'44e43b85'])
-Z([3,'_view data-v-7f19ed9f content'])
-Z([3,'_view data-v-7f19ed9f logo'])
-Z([3,'_image data-v-7f19ed9f'])
+Z([3,'1e4980c9'])
+Z([3,'_view data-v-4aa9949e content'])
+Z([3,'_view data-v-4aa9949e logo'])
+Z([3,'_image data-v-4aa9949e'])
 Z([3,'../../static/img/logo.jpg'])
-Z([3,'_view data-v-7f19ed9f reg-list'])
+Z([3,'_view data-v-4aa9949e reg-list'])
 Z(z[3])
 Z([3,'../../static/img/shouji.png'])
 Z([3,'handleProxy'])
-Z([3,'_input data-v-7f19ed9f'])
+Z([3,'_input data-v-4aa9949e'])
 Z([[7],[3,'$k']])
-Z([1,'Z6y-0'])
+Z([1,'fiI-0'])
 Z([3,'11'])
 Z([3,'手机号'])
 Z([3,'placeholder'])
@@ -1264,24 +1270,23 @@ Z([3,'../../static/img/miam.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'uC7-1'])
+Z([1,'YYk-1'])
 Z(z[12])
-Z([3,'true'])
 Z([3,'密码'])
 Z(z[14])
 Z(z[15])
 Z([[7],[3,'password']])
-Z([3,'_view data-v-7f19ed9f regBut'])
+Z([3,'_view data-v-4aa9949e regBut'])
 Z(z[8])
-Z([3,'_button data-v-7f19ed9f'])
+Z([3,'_button data-v-4aa9949e'])
 Z(z[10])
-Z([1,'i0N-2'])
+Z([1,'pZr-2'])
 Z([3,' 登 录 '])
-Z([3,'_view data-v-7f19ed9f action-row'])
-Z([3,'_navigator data-v-7f19ed9f'])
+Z([3,'_view data-v-4aa9949e action-row'])
+Z([3,'_navigator data-v-4aa9949e'])
 Z([3,'../reg/reg'])
 Z([3,'注册账号'])
-Z(z[37])
+Z(z[36])
 Z([3,'../pwd/pwd'])
 Z([3,'忘记密码'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
@@ -1291,16 +1296,16 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
 __WXML_GLOBAL__.ops_cached.$gwx_8=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'44e43b85'])
+Z([3,'1e4980c9'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
 __WXML_GLOBAL__.ops_cached.$gwx_9=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'47f658ef'])
-Z([3,'_view data-v-38b9d98f imageBox'])
-Z([3,'_image data-v-38b9d98f'])
+Z([3,'5d1f5d33'])
+Z([3,'_view data-v-5efbbcce imageBox'])
+Z([3,'_image data-v-5efbbcce'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/moneyway.png'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
@@ -1310,33 +1315,38 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'47f658ef'])
+Z([3,'5d1f5d33'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 function gz$gwx_11(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
 __WXML_GLOBAL__.ops_cached.$gwx_11=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'5719b0ba'])
-Z([3,'_view data-v-35939c1a'])
-Z([3,'_view data-v-35939c1a logo'])
-Z([3,'_image data-v-35939c1a'])
+Z([3,'ab45d814'])
+Z([3,'_view data-v-480e560a'])
+Z([3,'_view data-v-480e560a logo'])
+Z([3,'_image data-v-480e560a'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/logoBanner.jpg'])
-Z([3,'_view data-v-35939c1a erweima'])
+Z([3,'_view data-v-480e560a erweima'])
 Z(z[3])
-Z([3,'../../static/img/erweimaTEXT.jpg'])
-Z([3,'_view data-v-35939c1a tjCode'])
-Z([3,'_view data-v-35939c1a plText'])
+Z([[7],[3,'qrimg']])
+Z([3,'_view data-v-480e560a tjCode'])
+Z([3,'_view data-v-480e560a plText'])
 Z([3,'我的邀请码'])
-Z([3,'index'])
-Z([3,'cod'])
-Z([[7],[3,'codeList']])
+Z([3,'_view data-v-480e560a plCode'])
+Z([3,'_text data-v-480e560a'])
+Z([3,'0'])
 Z(z[13])
-Z([3,'_view data-v-35939c1a plCode'])
-Z([[7],[3,'cod']])
-Z([3,'_text data-v-35939c1a'])
-Z([3,'cod'])
+Z([3,'3'])
+Z(z[13])
+Z([3,'e'])
+Z(z[13])
+Z([3,'g'])
+Z(z[13])
+Z([3,'j'])
+Z(z[13])
+Z([3,'k'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
 function gz$gwx_12(){
@@ -1344,27 +1354,49 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
 __WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'5719b0ba'])
+Z([3,'ab45d814'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
 function gz$gwx_13(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
 __WXML_GLOBAL__.ops_cached.$gwx_13=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'2b5715ca'])
-Z([3,'_view data-v-2d3145bb'])
-Z([3,'_view data-v-2d3145bb logo'])
-Z([3,'_image data-v-2d3145bb'])
+Z([3,'3c123b5f'])
+Z([3,'_view data-v-4a2ca07a'])
+Z([3,'_view data-v-4a2ca07a logo'])
+Z([3,'_image data-v-4a2ca07a'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/logoBanner.jpg'])
-Z([3,'_view data-v-2d3145bb twobuttons'])
-Z([3,'_button data-v-2d3145bb'])
-Z([3,'99VIP'])
+Z([3,'_view data-v-4a2ca07a bevip'])
+Z([3,'handleProxy'])
+Z([a,[3,'_view data-v-4a2ca07a bevip-item '],[[2,'?:'],[[2,'=='],[[7],[3,'active']],[1,1]],[1,'active'],[1,'']]])
+Z([[7],[3,'$k']])
+Z([1,'jU2-0'])
+Z([3,'_text data-v-4a2ca07a'])
+Z([3,'普通VIP'])
+Z(z[11])
+Z([3,'color:red'])
+Z([3,'￥99'])
 Z(z[7])
-Z([3,'999成为高级VIP'])
-Z([3,'_view data-v-2d3145bb bVip'])
-Z(z[7])
-Z([3,'99成为VI1P'])
+Z([a,z[8][1],[[2,'?:'],[[2,'=='],[[7],[3,'active']],[1,2]],[1,'active'],[1,'']]])
+Z(z[9])
+Z([1,'5v6-1'])
+Z(z[11])
+Z([3,'高级VIP'])
+Z(z[11])
+Z(z[14])
+Z([3,'￥999'])
+Z([3,'_view data-v-4a2ca07a bevipbtn'])
+Z([3,'_navigator data-v-4a2ca07a'])
+Z([3,'../MoneyWay/request-payment?money\x3d99'])
+Z([[2,'=='],[[7],[3,'active']],[1,1]])
+Z([3,'_button data-v-4a2ca07a'])
+Z([3,'成为VIP'])
+Z(z[26])
+Z([3,'../MoneyWay/request-payment?money\x3d999'])
+Z([[2,'=='],[[7],[3,'active']],[1,2]])
+Z(z[29])
+Z([3,'成为高级VIP'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
 }
 function gz$gwx_14(){
@@ -1372,19 +1404,19 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
 __WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'2b5715ca'])
+Z([3,'3c123b5f'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
 function gz$gwx_15(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
 __WXML_GLOBAL__.ops_cached.$gwx_15=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'b26c810e'])
-Z([3,'_view data-v-2cb2dfce'])
-Z([3,'_view data-v-2cb2dfce swiperbox'])
+Z([3,'0ef0f486'])
+Z([3,'_view data-v-06a1ead8'])
+Z([3,'_view data-v-06a1ead8 swiperbox'])
 Z([[7],[3,'autoplay']])
 Z([1,true])
-Z([3,'_swiper data-v-2cb2dfce'])
+Z([3,'_swiper data-v-06a1ead8'])
 Z([[7],[3,'duration']])
 Z([3,'#3AC198'])
 Z([[7],[3,'indicatorDots']])
@@ -1393,13 +1425,13 @@ Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'itemList']])
 Z(z[11])
-Z([3,'_swiper-item data-v-2cb2dfce'])
+Z([3,'_swiper-item data-v-06a1ead8'])
 Z([[7],[3,'item']])
-Z([3,'_image data-v-2cb2dfce'])
+Z([3,'_image data-v-06a1ead8'])
 Z([3,'scaleToFill'])
 Z(z[15])
-Z([3,'_view data-v-2cb2dfce banner'])
-Z([3,'_view data-v-2cb2dfce seamlessscrolling'])
+Z([3,'_view data-v-06a1ead8 banner'])
+Z([3,'_view data-v-06a1ead8 seamlessscrolling'])
 Z([a,[3,' '],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'height:'],[[2,'+'],[[7],[3,'bh']],[1,'px']]],[1,';']],[1,'width:']],[[2,'+'],[[7],[3,'bw']],[1,'px']]],[1,';']]])
 Z(z[1])
 Z([a,z[21][1],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'height:'],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'vertical']],[[2,'*'],[[7],[3,'bh']],[[6],[[7],[3,'clonestr']],[3,'length']]],[[2,'+'],[[7],[3,'bh']],[1,'px']]]],[1,';']],[1,'width:']],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'horizontal']],[[2,'+'],[[2,'*'],[[7],[3,'bw']],[[6],[[7],[3,'clonestr']],[3,'length']]],[1,'px']],[[2,'+'],[[7],[3,'bw']],[1,'px']]]],[1,';']],[1,'left:']],[[2,'+'],[[7],[3,'bl']],[1,'px']]],[1,';']],[1,'top:']],[[2,'+'],[[7],[3,'bt']],[1,'px']]],[1,';']]])
@@ -1411,19 +1443,21 @@ Z(z[1])
 Z([[7],[3,'index']])
 Z([a,z[21][1],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'height:'],[[2,'+'],[[7],[3,'bh']],[1,'px']]],[1,';']],[1,'line-height:']],[[2,'+'],[[7],[3,'bh']],[1,'px']]],[1,';']],[1,'width:']],[[2,'+'],[[7],[3,'bw']],[1,'px']]],[1,';']],[1,'position:']],[[7],[3,'absolute']]],[1,';']],[1,'top:']],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'vertical']],[[2,'+'],[[2,'*'],[[7],[3,'index']],[[7],[3,'bh']]],[1,'px']],[1,0]]],[1,';']],[1,'left:']],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'horizontal']],[[2,'+'],[[2,'*'],[[7],[3,'index']],[[7],[3,'bw']]],[1,'px']],[1,0]]],[1,';']]])
 Z([a,[[7],[3,'item']]])
-Z([3,'_view data-v-2cb2dfce list'])
+Z([3,'_view data-v-06a1ead8 list'])
 Z(z[10])
 Z([3,'v'])
 Z([[7],[3,'list']])
 Z(z[34])
-Z([3,'_view data-v-2cb2dfce list_item'])
+Z([3,'_view data-v-06a1ead8 list_item'])
 Z([[7],[3,'v']])
-Z([3,'_navigator data-v-2cb2dfce'])
-Z([[6],[[7],[3,'v']],[3,'url']])
+Z([3,'handleProxy'])
+Z([3,'_view data-v-06a1ead8 list_item_a'])
+Z([[7],[3,'$k']])
+Z([[2,'+'],[1,'Idz-0-'],[[7],[3,'index']]])
 Z(z[16])
 Z(z[17])
 Z([[6],[[7],[3,'v']],[3,'imgage']])
-Z([3,'_text data-v-2cb2dfce'])
+Z([3,'_text data-v-06a1ead8'])
 Z([a,[[6],[[7],[3,'v']],[3,'text']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
 }
@@ -1432,23 +1466,23 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
 __WXML_GLOBAL__.ops_cached.$gwx_16=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'b26c810e'])
+Z([3,'0ef0f486'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
 }
 function gz$gwx_17(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_17)return __WXML_GLOBAL__.ops_cached.$gwx_17
 __WXML_GLOBAL__.ops_cached.$gwx_17=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'9b396486'])
-Z([3,'_view data-v-de458dc6'])
-Z([3,'_view data-v-de458dc6 logo'])
-Z([3,'_image data-v-de458dc6'])
+Z([3,'05a6b0f9'])
+Z([3,'_view data-v-374271fe'])
+Z([3,'_view data-v-374271fe logo'])
+Z([3,'_image data-v-374271fe'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/logoBanner.jpg'])
-Z([3,'_view data-v-de458dc6 waitfor'])
-Z([3,'_text data-v-de458dc6 willline'])
+Z([3,'_view data-v-374271fe waitfor'])
+Z([3,'_text data-v-374271fe willline'])
 Z([3,' 即将上线'])
-Z([3,'_text data-v-de458dc6 paeasewaiting'])
+Z([3,'_text data-v-374271fe paeasewaiting'])
 Z([3,' 敬请期待'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
 }
@@ -1457,25 +1491,25 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
 __WXML_GLOBAL__.ops_cached.$gwx_18=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'9b396486'])
+Z([3,'05a6b0f9'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
 }
 function gz$gwx_19(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
 __WXML_GLOBAL__.ops_cached.$gwx_19=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'3ddbf04a'])
-Z([3,'_view data-v-dbe3f096'])
-Z([3,'_view data-v-dbe3f096 logo'])
-Z([3,'_image data-v-dbe3f096'])
+Z([3,'39548f1f'])
+Z([3,'_view data-v-0961f398'])
+Z([3,'_view data-v-0961f398 logo'])
+Z([3,'_image data-v-0961f398'])
 Z([3,'../../static/img/logo.jpg'])
-Z([3,'_view data-v-dbe3f096 reg-list'])
+Z([3,'_view data-v-0961f398 reg-list'])
 Z(z[3])
 Z([3,'../../static/img/shouji.png'])
 Z([3,'handleProxy'])
-Z([3,'_input data-v-dbe3f096'])
+Z([3,'_input data-v-0961f398'])
 Z([[7],[3,'$k']])
-Z([1,'bcJ-0'])
+Z([1,'P7a-0'])
 Z([3,'11'])
 Z([3,'手机号'])
 Z([3,'color:#ffffff'])
@@ -1487,7 +1521,7 @@ Z([3,'../../static/img/miam.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'14z-1'])
+Z([1,'5u3-1'])
 Z([3,'true'])
 Z([3,'请输入新密码'])
 Z(z[14])
@@ -1499,17 +1533,17 @@ Z([3,'../../static/img/querenmima.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'aXs-2'])
+Z([1,'avo-2'])
 Z(z[24])
 Z([3,'请确认密码'])
 Z(z[14])
 Z(z[15])
 Z([[7],[3,'newPassword']])
-Z([3,'_view data-v-dbe3f096 regBut'])
+Z([3,'_view data-v-0961f398 regBut'])
 Z(z[8])
-Z([3,'_button data-v-dbe3f096'])
+Z([3,'_button data-v-0961f398'])
 Z(z[10])
-Z([1,'iFU-3'])
+Z([1,'njL-3'])
 Z([3,' 确 定'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
 }
@@ -1518,25 +1552,25 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
 __WXML_GLOBAL__.ops_cached.$gwx_20=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'3ddbf04a'])
+Z([3,'39548f1f'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
 }
 function gz$gwx_21(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_21)return __WXML_GLOBAL__.ops_cached.$gwx_21
 __WXML_GLOBAL__.ops_cached.$gwx_21=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'34836fee'])
-Z([3,'_view data-v-d28b703a'])
-Z([3,'_view data-v-d28b703a logo'])
-Z([3,'_image data-v-d28b703a'])
+Z([3,'3e00cf4d'])
+Z([3,'_view data-v-0009733c'])
+Z([3,'_view data-v-0009733c logo'])
+Z([3,'_image data-v-0009733c'])
 Z([3,'../../static/img/logo.jpg'])
-Z([3,'_view data-v-d28b703a reg-list'])
+Z([3,'_view data-v-0009733c reg-list'])
 Z(z[3])
 Z([3,'../../static/img/shouji.png'])
 Z([3,'handleProxy'])
-Z([3,'_input data-v-d28b703a'])
+Z([3,'_input data-v-0009733c'])
 Z([[7],[3,'$k']])
-Z([1,'qoy-0'])
+Z([1,'PS3-0'])
 Z([3,'11'])
 Z([3,'手机号'])
 Z([3,'color:#ffffff'])
@@ -1548,16 +1582,19 @@ Z([3,'../../static/img/yanzhengma.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'R6M-1'])
-Z([3,'验证码/注意大小写'])
+Z([1,'NoB-1'])
+Z([3,'手机验证码'])
 Z(z[14])
 Z(z[15])
 Z([[7],[3,'verificationCode']])
+Z([[7],[3,'showTime']])
+Z([3,'_text data-v-0009733c yanzhentime'])
+Z([a,[[7],[3,'time']],[3,'s']])
 Z(z[8])
-Z([3,'_button data-v-d28b703a'])
+Z([3,'_button data-v-0009733c'])
 Z(z[10])
-Z([1,'0YD-2'])
-Z([3,'_text data-v-d28b703a'])
+Z([1,'ppe-2'])
+Z([3,'_text data-v-0009733c'])
 Z([3,'|'])
 Z([3,'获取'])
 Z(z[5])
@@ -1566,7 +1603,7 @@ Z([3,'../../static/img/miam.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'gRc-3'])
+Z([1,'eYT-3'])
 Z([3,'密码'])
 Z(z[14])
 Z([3,'password'])
@@ -1577,10 +1614,10 @@ Z([3,'../../static/img/querenmima.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'kEr-4'])
+Z([1,'XG4-4'])
 Z([3,'请确认密码'])
 Z(z[14])
-Z(z[44])
+Z(z[47])
 Z([[7],[3,'okPassword']])
 Z(z[5])
 Z(z[3])
@@ -1588,16 +1625,16 @@ Z([3,'../../static/img/yaoqingma.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'t6J-5'])
+Z([1,'YQt-5'])
 Z([3,'邀请码'])
 Z(z[14])
 Z(z[15])
 Z([[7],[3,'superInvitationCode']])
-Z([3,'_view data-v-d28b703a regBut'])
+Z([3,'_view data-v-0009733c regBut'])
 Z(z[8])
-Z(z[29])
+Z(z[32])
 Z(z[10])
-Z([1,'aVC-6'])
+Z([1,'qY8-6'])
 Z([3,'确认注册'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
 }
@@ -1606,7 +1643,7 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
 __WXML_GLOBAL__.ops_cached.$gwx_22=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'34836fee'])
+Z([3,'3e00cf4d'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_22);return __WXML_GLOBAL__.ops_cached.$gwx_22
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
@@ -1614,9 +1651,9 @@ __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);throw e;}
 }}}()
 var x=['./pages/MoneyWay/request-payment.vue.wxml','./pages/MoneyWay/request-payment.wxml','/pages/MoneyWay/request-payment.vue.wxml','./pages/PersonalCenter/PersonalCenter.vue.wxml','./pages/PersonalCenter/PersonalCenter.wxml','/pages/PersonalCenter/PersonalCenter.vue.wxml','./pages/TaskCenter/TaskCente.vue.wxml','./pages/TaskCenter/TaskCente.wxml','/pages/TaskCenter/TaskCente.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','/pages/index/index.vue.wxml','./pages/main/MoneyWay.vue.wxml','./pages/main/MoneyWay.wxml','/pages/main/MoneyWay.vue.wxml','./pages/main/SeoCode.vue.wxml','./pages/main/SeoCode.wxml','/pages/main/SeoCode.vue.wxml','./pages/main/bVip.vue.wxml','./pages/main/bVip.wxml','/pages/main/bVip.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','/pages/main/main.vue.wxml','./pages/main/waiting.vue.wxml','./pages/main/waiting.wxml','/pages/main/waiting.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','/pages/pwd/pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','/pages/reg/reg.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["831282a4"]=function(e,s,r,gg){
+d_[x[0]]["5119b02c"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':831282a4'
+var b=x[0]+':5119b02c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/MoneyWay/request-payment.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -1656,37 +1693,61 @@ var lK=_oz(z,11,e,s,gg)
 _(oH,lK)
 cs.pop()
 _(fE,oH)
-cs.push("./pages/MoneyWay/request-payment.vue.wxml:view:9:10")
-var aL=_n('view')
-_rz(z,aL,'class',12,e,s,gg)
-var tM=_oz(z,13,e,s,gg)
-_(aL,tM)
-cs.pop()
-_(fE,aL)
-cs.push("./pages/MoneyWay/request-payment.vue.wxml:view:10:10")
-var eN=_n('view')
-_rz(z,eN,'class',14,e,s,gg)
-var bO=_v()
-_(eN,bO)
-cs.push("./pages/MoneyWay/request-payment.vue.wxml:button:11:12")
-var oP=function(oR,xQ,fS,gg){
-cs.push("./pages/MoneyWay/request-payment.vue.wxml:button:11:12")
-var hU=_mz(z,'button',['bindtap',19,'class',1,'data-comkey',2,'data-eventid',3,'key',4,'loading',5],[],oR,xQ,gg)
-var oV=_oz(z,25,oR,xQ,gg)
-_(hU,oV)
-cs.pop()
-_(fS,hU)
-return fS
-}
-bO.wxXCkey=2
-_2z(z,17,oP,e,s,gg,bO,'item','index','index')
-cs.pop()
-cs.pop()
-_(fE,eN)
 cs.pop()
 _(oD,fE)
 cs.pop()
 _(oB,oD)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:view:11:6")
+var aL=_n('view')
+_rz(z,aL,'class',12,e,s,gg)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:view:12:8")
+var tM=_n('view')
+_rz(z,tM,'class',13,e,s,gg)
+var eN=_oz(z,14,e,s,gg)
+_(tM,eN)
+cs.pop()
+_(aL,tM)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:view:13:8")
+var bO=_n('view')
+_rz(z,bO,'class',15,e,s,gg)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:radio-group:14:10")
+var oP=_n('radio-group')
+_rz(z,oP,'class',16,e,s,gg)
+var xQ=_v()
+_(oP,xQ)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:label:15:12")
+var oR=function(cT,fS,hU,gg){
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:label:15:12")
+var cW=_mz(z,'label',['bindtap',21,'class',1,'data-comkey',2,'data-eventid',3,'key',4],[],cT,fS,gg)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:view:16:14")
+var oX=_n('view')
+_rz(z,oX,'class',26,cT,fS,gg)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:radio:17:16")
+var lY=_mz(z,'radio',['checked',27,'class',1,'value',2],[],cT,fS,gg)
+cs.pop()
+_(oX,lY)
+cs.pop()
+_(cW,oX)
+cs.push("./pages/MoneyWay/request-payment.vue.wxml:view:19:14")
+var aZ=_n('view')
+_rz(z,aZ,'class',30,cT,fS,gg)
+var t1=_oz(z,31,cT,fS,gg)
+_(aZ,t1)
+cs.pop()
+_(cW,aZ)
+cs.pop()
+_(hU,cW)
+return hU
+}
+xQ.wxXCkey=2
+_2z(z,19,oR,e,s,gg,xQ,'item','index','index')
+cs.pop()
+cs.pop()
+_(bO,oP)
+cs.pop()
+_(aL,bO)
+cs.pop()
+_(oB,aL)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -1725,9 +1786,9 @@ return r
 }
 e_[x[1]]={f:m1,j:[],i:[],ti:[x[2]],ic:[]}
 d_[x[3]]={}
-d_[x[3]]["3cc367b9"]=function(e,s,r,gg){
+d_[x[3]]["16f93806"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[3]+':3cc367b9'
+var b=x[3]+':16f93806'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/PersonalCenter/PersonalCenter.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[3]);return}
@@ -2010,9 +2071,9 @@ return r
 }
 e_[x[4]]={f:m3,j:[],i:[],ti:[x[5]],ic:[]}
 d_[x[6]]={}
-d_[x[6]]["171408ae"]=function(e,s,r,gg){
+d_[x[6]]["e89f3a36"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[6]+':171408ae'
+var b=x[6]+':e89f3a36'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/TaskCenter/TaskCente.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[6]);return}
@@ -2113,9 +2174,9 @@ return r
 }
 e_[x[7]]={f:m5,j:[],i:[],ti:[x[8]],ic:[]}
 d_[x[9]]={}
-d_[x[9]]["44e43b85"]=function(e,s,r,gg){
+d_[x[9]]["1e4980c9"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[9]+':44e43b85'
+var b=x[9]+':1e4980c9'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/index/index.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[9]);return}
@@ -2154,17 +2215,17 @@ var cI=_mz(z,'image',['class',18,'src',1],[],e,s,gg)
 cs.pop()
 _(oH,cI)
 cs.push("./pages/index/index.vue.wxml:input:12:8")
-var oJ=_mz(z,'input',['bindinput',20,'class',1,'data-comkey',2,'data-eventid',3,'maxlength',4,'password',5,'placeholder',6,'placeholderClass',7,'type',8,'value',9],[],e,s,gg)
+var oJ=_mz(z,'input',['bindinput',20,'class',1,'data-comkey',2,'data-eventid',3,'maxlength',4,'placeholder',5,'placeholderClass',6,'type',7,'value',8],[],e,s,gg)
 cs.pop()
 _(oH,oJ)
 cs.pop()
 _(oB,oH)
 cs.push("./pages/index/index.vue.wxml:view:14:6")
 var lK=_n('view')
-_rz(z,lK,'class',30,e,s,gg)
+_rz(z,lK,'class',29,e,s,gg)
 cs.push("./pages/index/index.vue.wxml:button:15:8")
-var aL=_mz(z,'button',['bindtap',31,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-var tM=_oz(z,35,e,s,gg)
+var aL=_mz(z,'button',['bindtap',30,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+var tM=_oz(z,34,e,s,gg)
 _(aL,tM)
 cs.pop()
 _(lK,aL)
@@ -2172,16 +2233,16 @@ cs.pop()
 _(oB,lK)
 cs.push("./pages/index/index.vue.wxml:view:17:6")
 var eN=_n('view')
-_rz(z,eN,'class',36,e,s,gg)
+_rz(z,eN,'class',35,e,s,gg)
 cs.push("./pages/index/index.vue.wxml:navigator:18:8")
-var bO=_mz(z,'navigator',['class',37,'url',1],[],e,s,gg)
-var oP=_oz(z,39,e,s,gg)
+var bO=_mz(z,'navigator',['class',36,'url',1],[],e,s,gg)
+var oP=_oz(z,38,e,s,gg)
 _(bO,oP)
 cs.pop()
 _(eN,bO)
 cs.push("./pages/index/index.vue.wxml:navigator:19:8")
-var xQ=_mz(z,'navigator',['class',40,'url',1],[],e,s,gg)
-var oR=_oz(z,42,e,s,gg)
+var xQ=_mz(z,'navigator',['class',39,'url',1],[],e,s,gg)
+var oR=_oz(z,41,e,s,gg)
 _(xQ,oR)
 cs.pop()
 _(eN,xQ)
@@ -2225,9 +2286,9 @@ return r
 }
 e_[x[10]]={f:m7,j:[],i:[],ti:[x[11]],ic:[]}
 d_[x[12]]={}
-d_[x[12]]["47f658ef"]=function(e,s,r,gg){
+d_[x[12]]["5d1f5d33"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[12]+':47f658ef'
+var b=x[12]+':5d1f5d33'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/MoneyWay.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[12]);return}
@@ -2278,9 +2339,9 @@ return r
 }
 e_[x[13]]={f:m9,j:[],i:[],ti:[x[14]],ic:[]}
 d_[x[15]]={}
-d_[x[15]]["5719b0ba"]=function(e,s,r,gg){
+d_[x[15]]["ab45d814"]=function(e,s,r,gg){
 var z=gz$gwx_11()
-var b=x[15]+':5719b0ba'
+var b=x[15]+':ab45d814'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/SeoCode.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[15]);return}
@@ -2317,26 +2378,53 @@ var cI=_oz(z,11,e,s,gg)
 _(oH,cI)
 cs.pop()
 _(hG,oH)
-var oJ=_v()
-_(hG,oJ)
 cs.push("./pages/main/SeoCode.vue.wxml:view:11:8")
-var lK=function(tM,aL,eN,gg){
-cs.push("./pages/main/SeoCode.vue.wxml:view:11:8")
-var oP=_mz(z,'view',['class',16,'key',1],[],tM,aL,gg)
+var oJ=_n('view')
+_rz(z,oJ,'class',12,e,s,gg)
 cs.push("./pages/main/SeoCode.vue.wxml:text:12:10")
+var lK=_n('text')
+_rz(z,lK,'class',13,e,s,gg)
+var aL=_oz(z,14,e,s,gg)
+_(lK,aL)
+cs.pop()
+_(oJ,lK)
+cs.push("./pages/main/SeoCode.vue.wxml:text:13:10")
+var tM=_n('text')
+_rz(z,tM,'class',15,e,s,gg)
+var eN=_oz(z,16,e,s,gg)
+_(tM,eN)
+cs.pop()
+_(oJ,tM)
+cs.push("./pages/main/SeoCode.vue.wxml:text:14:10")
+var bO=_n('text')
+_rz(z,bO,'class',17,e,s,gg)
+var oP=_oz(z,18,e,s,gg)
+_(bO,oP)
+cs.pop()
+_(oJ,bO)
+cs.push("./pages/main/SeoCode.vue.wxml:text:15:10")
 var xQ=_n('text')
-_rz(z,xQ,'class',18,tM,aL,gg)
-var oR=_oz(z,19,tM,aL,gg)
+_rz(z,xQ,'class',19,e,s,gg)
+var oR=_oz(z,20,e,s,gg)
 _(xQ,oR)
 cs.pop()
-_(oP,xQ)
+_(oJ,xQ)
+cs.push("./pages/main/SeoCode.vue.wxml:text:16:10")
+var fS=_n('text')
+_rz(z,fS,'class',21,e,s,gg)
+var cT=_oz(z,22,e,s,gg)
+_(fS,cT)
 cs.pop()
-_(eN,oP)
-return eN
-}
-oJ.wxXCkey=2
-_2z(z,14,lK,e,s,gg,oJ,'cod','index','cod')
+_(oJ,fS)
+cs.push("./pages/main/SeoCode.vue.wxml:text:17:10")
+var hU=_n('text')
+_rz(z,hU,'class',23,e,s,gg)
+var oV=_oz(z,24,e,s,gg)
+_(hU,oV)
 cs.pop()
+_(oJ,hU)
+cs.pop()
+_(hG,oJ)
 cs.pop()
 _(oB,hG)
 cs.pop()
@@ -2377,9 +2465,9 @@ return r
 }
 e_[x[16]]={f:m11,j:[],i:[],ti:[x[17]],ic:[]}
 d_[x[18]]={}
-d_[x[18]]["2b5715ca"]=function(e,s,r,gg){
+d_[x[18]]["3c123b5f"]=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b=x[18]+':2b5715ca'
+var b=x[18]+':3c123b5f'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/bVip.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[18]);return}
@@ -2400,34 +2488,83 @@ _(oB,xC)
 cs.push("./pages/main/bVip.vue.wxml:view:6:6")
 var fE=_n('view')
 _rz(z,fE,'class',6,e,s,gg)
-cs.push("./pages/main/bVip.vue.wxml:button:7:8")
-var cF=_n('button')
-_rz(z,cF,'class',7,e,s,gg)
-var hG=_oz(z,8,e,s,gg)
+cs.push("./pages/main/bVip.vue.wxml:view:7:8")
+var cF=_mz(z,'view',['bindtap',7,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/bVip.vue.wxml:text:8:10")
+var hG=_n('text')
+_rz(z,hG,'class',11,e,s,gg)
+var oH=_oz(z,12,e,s,gg)
+_(hG,oH)
+cs.pop()
 _(cF,hG)
+cs.push("./pages/main/bVip.vue.wxml:text:9:10")
+var cI=_mz(z,'text',['class',13,'style',1],[],e,s,gg)
+var oJ=_oz(z,15,e,s,gg)
+_(cI,oJ)
+cs.pop()
+_(cF,cI)
 cs.pop()
 _(fE,cF)
-cs.push("./pages/main/bVip.vue.wxml:button:8:8")
-var oH=_n('button')
-_rz(z,oH,'class',9,e,s,gg)
-var cI=_oz(z,10,e,s,gg)
-_(oH,cI)
+cs.push("./pages/main/bVip.vue.wxml:view:11:8")
+var lK=_mz(z,'view',['bindtap',16,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/main/bVip.vue.wxml:text:12:10")
+var aL=_n('text')
+_rz(z,aL,'class',20,e,s,gg)
+var tM=_oz(z,21,e,s,gg)
+_(aL,tM)
 cs.pop()
-_(fE,oH)
+_(lK,aL)
+cs.push("./pages/main/bVip.vue.wxml:text:13:10")
+var eN=_mz(z,'text',['class',22,'style',1],[],e,s,gg)
+var bO=_oz(z,24,e,s,gg)
+_(eN,bO)
+cs.pop()
+_(lK,eN)
+cs.pop()
+_(fE,lK)
 cs.pop()
 _(oB,fE)
-cs.push("./pages/main/bVip.vue.wxml:view:10:6")
-var oJ=_n('view')
-_rz(z,oJ,'class',11,e,s,gg)
-cs.push("./pages/main/bVip.vue.wxml:button:11:8")
-var lK=_n('button')
-_rz(z,lK,'class',12,e,s,gg)
-var aL=_oz(z,13,e,s,gg)
-_(lK,aL)
+cs.push("./pages/main/bVip.vue.wxml:view:16:6")
+var oP=_n('view')
+_rz(z,oP,'class',25,e,s,gg)
+cs.push("./pages/main/bVip.vue.wxml:navigator:17:8")
+var xQ=_mz(z,'navigator',['class',26,'url',1],[],e,s,gg)
+var oR=_v()
+_(xQ,oR)
+if(_oz(z,28,e,s,gg)){oR.wxVkey=1
+cs.push("./pages/main/bVip.vue.wxml:button:18:10")
+cs.push("./pages/main/bVip.vue.wxml:button:18:10")
+var fS=_n('button')
+_rz(z,fS,'class',29,e,s,gg)
+var cT=_oz(z,30,e,s,gg)
+_(fS,cT)
 cs.pop()
-_(oJ,lK)
+_(oR,fS)
 cs.pop()
-_(oB,oJ)
+}
+oR.wxXCkey=1
+cs.pop()
+_(oP,xQ)
+cs.push("./pages/main/bVip.vue.wxml:navigator:20:8")
+var hU=_mz(z,'navigator',['class',31,'url',1],[],e,s,gg)
+var oV=_v()
+_(hU,oV)
+if(_oz(z,33,e,s,gg)){oV.wxVkey=1
+cs.push("./pages/main/bVip.vue.wxml:button:21:10")
+cs.push("./pages/main/bVip.vue.wxml:button:21:10")
+var cW=_n('button')
+_rz(z,cW,'class',34,e,s,gg)
+var oX=_oz(z,35,e,s,gg)
+_(cW,oX)
+cs.pop()
+_(oV,cW)
+cs.pop()
+}
+oV.wxXCkey=1
+cs.pop()
+_(oP,hU)
+cs.pop()
+_(oB,oP)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -2466,9 +2603,9 @@ return r
 }
 e_[x[19]]={f:m13,j:[],i:[],ti:[x[20]],ic:[]}
 d_[x[21]]={}
-d_[x[21]]["b26c810e"]=function(e,s,r,gg){
+d_[x[21]]["0ef0f486"]=function(e,s,r,gg){
 var z=gz$gwx_15()
-var b=x[21]+':b26c810e'
+var b=x[21]+':0ef0f486'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[21]);return}
@@ -2540,16 +2677,16 @@ cs.push("./pages/main/main.vue.wxml:view:18:8")
 var aZ=function(e2,t1,b3,gg){
 cs.push("./pages/main/main.vue.wxml:view:18:8")
 var x5=_mz(z,'view',['class',37,'key',1],[],e2,t1,gg)
-cs.push("./pages/main/main.vue.wxml:navigator:19:10")
-var o6=_mz(z,'navigator',['class',39,'url',1],[],e2,t1,gg)
+cs.push("./pages/main/main.vue.wxml:view:19:10")
+var o6=_mz(z,'view',['bindtap',39,'class',1,'data-comkey',2,'data-eventid',3],[],e2,t1,gg)
 cs.push("./pages/main/main.vue.wxml:image:20:12")
-var f7=_mz(z,'image',['class',41,'mode',1,'src',2],[],e2,t1,gg)
+var f7=_mz(z,'image',['class',43,'mode',1,'src',2],[],e2,t1,gg)
 cs.pop()
 _(o6,f7)
 cs.push("./pages/main/main.vue.wxml:text:21:12")
 var c8=_n('text')
-_rz(z,c8,'class',44,e2,t1,gg)
-var h9=_oz(z,45,e2,t1,gg)
+_rz(z,c8,'class',46,e2,t1,gg)
+var h9=_oz(z,47,e2,t1,gg)
 _(c8,h9)
 cs.pop()
 _(o6,c8)
@@ -2602,9 +2739,9 @@ return r
 }
 e_[x[22]]={f:m15,j:[],i:[],ti:[x[23]],ic:[]}
 d_[x[24]]={}
-d_[x[24]]["9b396486"]=function(e,s,r,gg){
+d_[x[24]]["05a6b0f9"]=function(e,s,r,gg){
 var z=gz$gwx_17()
-var b=x[24]+':9b396486'
+var b=x[24]+':05a6b0f9'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/waiting.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[24]);return}
@@ -2679,9 +2816,9 @@ return r
 }
 e_[x[25]]={f:m17,j:[],i:[],ti:[x[26]],ic:[]}
 d_[x[27]]={}
-d_[x[27]]["3ddbf04a"]=function(e,s,r,gg){
+d_[x[27]]["39548f1f"]=function(e,s,r,gg){
 var z=gz$gwx_19()
-var b=x[27]+':3ddbf04a'
+var b=x[27]+':39548f1f'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[27]);return}
@@ -2787,9 +2924,9 @@ return r
 }
 e_[x[28]]={f:m19,j:[],i:[],ti:[x[29]],ic:[]}
 d_[x[30]]={}
-d_[x[30]]["34836fee"]=function(e,s,r,gg){
+d_[x[30]]["3e00cf4d"]=function(e,s,r,gg){
 var z=gz$gwx_21()
-var b=x[30]+':34836fee'
+var b=x[30]+':3e00cf4d'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[30]);return}
@@ -2824,78 +2961,96 @@ cs.push("./pages/reg/reg.vue.wxml:view:10:6")
 var oH=_n('view')
 _rz(z,oH,'class',17,e,s,gg)
 cs.push("./pages/reg/reg.vue.wxml:image:11:8")
-var cI=_mz(z,'image',['class',18,'src',1],[],e,s,gg)
-cs.pop()
-_(oH,cI)
-cs.push("./pages/reg/reg.vue.wxml:input:12:8")
-var oJ=_mz(z,'input',['bindinput',20,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
+var oJ=_mz(z,'image',['class',18,'src',1],[],e,s,gg)
 cs.pop()
 _(oH,oJ)
-cs.push("./pages/reg/reg.vue.wxml:button:13:8")
-var lK=_mz(z,'button',['bindtap',28,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-cs.push("./pages/reg/reg.vue.wxml:text:14:10")
-var aL=_n('text')
-_rz(z,aL,'class',32,e,s,gg)
-var tM=_oz(z,33,e,s,gg)
-_(aL,tM)
-cs.pop()
-_(lK,aL)
-var eN=_oz(z,34,e,s,gg)
-_(lK,eN)
+cs.push("./pages/reg/reg.vue.wxml:input:12:8")
+var lK=_mz(z,'input',['bindinput',20,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
 cs.pop()
 _(oH,lK)
+var cI=_v()
+_(oH,cI)
+if(_oz(z,28,e,s,gg)){cI.wxVkey=1
+cs.push("./pages/reg/reg.vue.wxml:text:13:8")
+cs.push("./pages/reg/reg.vue.wxml:text:13:8")
+var aL=_n('text')
+_rz(z,aL,'class',29,e,s,gg)
+var tM=_oz(z,30,e,s,gg)
+_(aL,tM)
+cs.pop()
+_(cI,aL)
+cs.pop()
+}
+else{cI.wxVkey=2
+cs.push("./pages/reg/reg.vue.wxml:button:14:8")
+cs.push("./pages/reg/reg.vue.wxml:button:14:8")
+var eN=_mz(z,'button',['bindtap',31,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:text:15:10")
+var bO=_n('text')
+_rz(z,bO,'class',35,e,s,gg)
+var oP=_oz(z,36,e,s,gg)
+_(bO,oP)
+cs.pop()
+_(eN,bO)
+var xQ=_oz(z,37,e,s,gg)
+_(eN,xQ)
+cs.pop()
+_(cI,eN)
+cs.pop()
+}
+cI.wxXCkey=1
 cs.pop()
 _(oB,oH)
-cs.push("./pages/reg/reg.vue.wxml:view:16:6")
-var bO=_n('view')
-_rz(z,bO,'class',35,e,s,gg)
-cs.push("./pages/reg/reg.vue.wxml:image:17:8")
-var oP=_mz(z,'image',['class',36,'src',1],[],e,s,gg)
-cs.pop()
-_(bO,oP)
-cs.push("./pages/reg/reg.vue.wxml:input:18:8")
-var xQ=_mz(z,'input',['bindinput',38,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
-cs.pop()
-_(bO,xQ)
-cs.pop()
-_(oB,bO)
-cs.push("./pages/reg/reg.vue.wxml:view:20:6")
+cs.push("./pages/reg/reg.vue.wxml:view:17:6")
 var oR=_n('view')
-_rz(z,oR,'class',46,e,s,gg)
-cs.push("./pages/reg/reg.vue.wxml:image:21:8")
-var fS=_mz(z,'image',['class',47,'src',1],[],e,s,gg)
+_rz(z,oR,'class',38,e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:image:18:8")
+var fS=_mz(z,'image',['class',39,'src',1],[],e,s,gg)
 cs.pop()
 _(oR,fS)
-cs.push("./pages/reg/reg.vue.wxml:input:22:8")
-var cT=_mz(z,'input',['bindinput',49,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:input:19:8")
+var cT=_mz(z,'input',['bindinput',41,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
 cs.pop()
 _(oR,cT)
 cs.pop()
 _(oB,oR)
-cs.push("./pages/reg/reg.vue.wxml:view:24:6")
+cs.push("./pages/reg/reg.vue.wxml:view:21:6")
 var hU=_n('view')
-_rz(z,hU,'class',57,e,s,gg)
-cs.push("./pages/reg/reg.vue.wxml:image:25:8")
-var oV=_mz(z,'image',['class',58,'src',1],[],e,s,gg)
+_rz(z,hU,'class',49,e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:image:22:8")
+var oV=_mz(z,'image',['class',50,'src',1],[],e,s,gg)
 cs.pop()
 _(hU,oV)
-cs.push("./pages/reg/reg.vue.wxml:input:26:8")
-var cW=_mz(z,'input',['bindinput',60,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:input:23:8")
+var cW=_mz(z,'input',['bindinput',52,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
 cs.pop()
 _(hU,cW)
 cs.pop()
 _(oB,hU)
-cs.push("./pages/reg/reg.vue.wxml:view:28:6")
+cs.push("./pages/reg/reg.vue.wxml:view:25:6")
 var oX=_n('view')
-_rz(z,oX,'class',68,e,s,gg)
-cs.push("./pages/reg/reg.vue.wxml:button:29:8")
-var lY=_mz(z,'button',['bindtap',69,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-var aZ=_oz(z,73,e,s,gg)
-_(lY,aZ)
+_rz(z,oX,'class',60,e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:image:26:8")
+var lY=_mz(z,'image',['class',61,'src',1],[],e,s,gg)
 cs.pop()
 _(oX,lY)
+cs.push("./pages/reg/reg.vue.wxml:input:27:8")
+var aZ=_mz(z,'input',['bindinput',63,'class',1,'data-comkey',2,'data-eventid',3,'placeholder',4,'placeholderStyle',5,'type',6,'value',7],[],e,s,gg)
+cs.pop()
+_(oX,aZ)
 cs.pop()
 _(oB,oX)
+cs.push("./pages/reg/reg.vue.wxml:view:29:6")
+var t1=_n('view')
+_rz(z,t1,'class',71,e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:button:30:8")
+var e2=_mz(z,'button',['bindtap',72,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+var b3=_oz(z,76,e,s,gg)
+_(e2,b3)
+cs.pop()
+_(t1,e2)
+cs.pop()
+_(oB,t1)
 cs.pop()
 _(r,oB)
 }catch(err){
