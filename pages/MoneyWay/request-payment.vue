@@ -11,21 +11,19 @@
 		<view>
 			<view class="desc">支付方式</view>
 			<!-- #ifdef MP-WEIXIN -->
-			<view class="pay-item">
-				<button type="primary" @tap="weixinPay" :loading="loading">微信支付</button>
+			<view class="uni-list">
+				<view class="pay-item">
+					<button type="primary" @tap="weixinPay" :loading="loading">微信支付</button>
+				</view>
 			</view>
+			
 			<!-- #endif -->
 			<!-- #ifdef APP-PLUS -->
 			<view class="uni-list">
-				<radio-group >
-					<label class="uni-list-cell uni-list-cell-pd pay-item" v-for="(item,index) in providerList" :key="index" @tap="requestPayment(item,index)">
-						<view>
-							<radio :value="item.value" checked="true" />
-						</view>
-						<view>{{item.name}}</view>
-					</label>
-				</radio-group>
-				<!-- <button v-for="(item,index) in providerList" :key="index" @tap="requestPayment(item,index)" :loading="item.loading">{{item.name}}支付</button> -->
+				<view class="pay-item" v-for="(item,index) in providerList" :key="index" @tap="requestPayment(item,index)" :loading="item.loading" >	
+					<button>{{item.name}}支付</button>
+				</view>
+				
 			</view>
 			
 			<!-- #endif -->
@@ -225,9 +223,6 @@
 		text-align: center;
 		font-size: 28upx;
 	}
-	.uni-list-cell {
-		justify-content: flex-start
-	}
 	.desc {
 		color: #B2B2B2;
 		font-size:40upx;
@@ -249,14 +244,26 @@
 		top: 8upx;
 		left: -40upx;
 	}
-
-	/* button {
-		background-color: #007aff;
-		color: #ffffff;
-	} */
+	.uni-list{
+		display:flex;
+		margin:0 30upx;
+		justify-content: space-around;
+	}
 	.pay-item{
 		margin-top:10upx;
 		height: 60upx;
-		background: #fff;
+		width:40%;
+		font-size:30upx;
+		background:#007aff;
+		border-radius: 5upx;
+	}
+	
+	.pay-item button{
+		border:none;
+		background:#E86318;
+		outline: none;
+		border:1px solid red;
+		color:#fff;
+		border-radius: 5upx;
 	}
 </style>

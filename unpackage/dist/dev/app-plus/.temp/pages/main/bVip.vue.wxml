@@ -4,11 +4,11 @@
       <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-4a2ca07a"></image>
     </view>
     <view class="_view data-v-4a2ca07a bevip">
-      <view class="_view data-v-4a2ca07a bevip-item {{active == 1 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'jU2-0'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-4a2ca07a bevip-item {{active == 1 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'Hqp-0'}}" data-comkey="{{$k}}">
         <text class="_text data-v-4a2ca07a">普通VIP</text>
         <text style="color:red" class="_text data-v-4a2ca07a">￥99</text>
       </view>
-      <view class="_view data-v-4a2ca07a bevip-item {{active == 2 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'5v6-1'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-4a2ca07a bevip-item {{active == 2 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'2qW-1'}}" data-comkey="{{$k}}">
         <text class="_text data-v-4a2ca07a">高级VIP</text>
         <text style="color:red" class="_text data-v-4a2ca07a">￥999</text>
       </view>

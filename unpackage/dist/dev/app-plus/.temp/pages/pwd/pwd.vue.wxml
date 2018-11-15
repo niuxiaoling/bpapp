@@ -5,18 +5,18 @@
     </view>
     <view class="_view data-v-0961f398 reg-list">
       <image src="../../static/img/shouji.png" class="_image data-v-0961f398"></image>
-      <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'P7a-0'}}" data-comkey="{{$k}}" class="_input data-v-0961f398" />
+      <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'NLM-0'}}" data-comkey="{{$k}}" class="_input data-v-0961f398" />
     </view>
     <view class="_view data-v-0961f398 reg-list">
       <image src="../../static/img/miam.png" class="_image data-v-0961f398"></image>
-      <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入新密码" placeholder-style="color:#ffffff" data-eventid="{{'5u3-1'}}" data-comkey="{{$k}}" class="_input data-v-0961f398" />
+      <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入新密码" placeholder-style="color:#ffffff" data-eventid="{{'CCH-1'}}" data-comkey="{{$k}}" class="_input data-v-0961f398" />
     </view>
     <view class="_view data-v-0961f398 reg-list">
       <image src="../../static/img/querenmima.png" class="_image data-v-0961f398"></image>
-      <input type="text" password="true" value="{{newPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'avo-2'}}" data-comkey="{{$k}}" class="_input data-v-0961f398" />
+      <input type="text" password="true" value="{{newPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'9wW-2'}}" data-comkey="{{$k}}" class="_input data-v-0961f398" />
     </view>
     <view class="_view data-v-0961f398 regBut">
-      <button bindtap="handleProxy" data-eventid="{{'njL-3'}}" data-comkey="{{$k}}" class="_button data-v-0961f398"> 确 定</button>
+      <button bindtap="handleProxy" data-eventid="{{'xVU-3'}}" data-comkey="{{$k}}" class="_button data-v-0961f398"> 确 定</button>
     </view>
   </view>
 </template>
