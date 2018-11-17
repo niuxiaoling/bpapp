@@ -37,10 +37,12 @@
 				title: 'request-payment',
 				loading: false,
 				providerList: [],
-				money:''
+				money:'',
+				userinfo:''
 			}
 		},
 		onLoad: function(options) {
+			this.userinfo = uni.getStorageSync('userInfo');
 			this.money = options.money;
 			// #ifdef APP-PLUS
 			uni.getProvider({
@@ -73,8 +75,108 @@
 			// #endif
 		},
 		methods: {
+			async requestPayment(e, index) {
+				this.providerList[index].loading = true;
+				let orderInfo = await this.getOrderInfo(e.id,index);
+				if (orderInfo.data.errorCode !== "0000") {
+					uni.showModal({
+						content: "支付失败",
+						showCancel: false
+					})
+					return;
+				}
+				var that = this;
+				uni.requestPayment({
+					provider: e.id,
+					orderInfo: orderInfo.data.payInfo.payString,
+					success: (e) => {
+						uni.showToast({
+							title: "支付成功"
+						})
+						var userInfoData = uni.getStorageSync('userInfo');
+						const userInfo ={
+							account:userInfoData.account,
+							password:userInfoData.password,
+						}
+						const jsonString ={
+							userInfo:userInfo,
+							requestType:"login",
+						}
+						const param ={
+							controllerRequestType:"loginControllerService",
+							jsonString:JSON.stringify(jsonString)
+						}
+						uni.request({
+							url:that.websiteUrl,
+							method:'POST',
+							header: {
+								// 'Access-Control-Allow-Origin':'*' ,
+								"content-type":"application/x-www-form-urlencoded"
+							},
+							data:param,
+							success: (res) => {
+								console.log(JSON.stringify(res));
+// 								uni.switchTab({
+// 									url:'/pages/main/main'
+// 								})
+							},
+						})	
+						
+					},
+					fail: function(error) {
+						
+// 						console.log(e.errMsg);
+// 						console.log(JSON.stringify(orderInfo.data.payInfo));
+						// console.log("fail", e);
+						uni.showModal({
+							content: "支付失败",
+							showCancel: false
+						})
+					},
+					complete: () => {
+						this.providerList[index].loading = false;
+					}
+				})
+			},
+			getOrderInfo(e,index) {
+				var that = this;
+				let appid = "wx726318aa9a4e7971";
+				// #ifdef APP-PLUS
+				appid = plus.runtime.appid;
+					// #endif
+				const userInfo ={
+						// totalFee:that.money,
+						totalFee:0.01,
+						body:'商品价格',
+				}
+				const jsonString ={
+					payInfo:userInfo,
+					requestType:this.providerList[index].requesttype
+				}
+				const param ={
+					controllerRequestType:"payControllerService",
+					jsonString:JSON.stringify(jsonString)
+				}
+				// let url = 'https://demo.dcloud.net.cn/payment/?payid=' + e + '&appid=' + appid + '&total=0.01';
+				return new Promise((res) => {
+					uni.request({
+						url:that.websiteUrl,
+						method:'POST',
+						header: {
+							// 'Access-Control-Allow-Origin':'*' ,
+							"content-type":"application/x-www-form-urlencoded"
+						},
+						data:param,
+						success: (result) => {
+							res(result);
+						},
+						fail: (e) => {
+							res(e);
+						}
+					})
+				})
+			},
 			weixinPay() {
-				console.log("发起支付");
 				this.loading = true;
 				uni.login({
 					success: (e) => {
@@ -141,75 +243,7 @@
 					}
 				})
 			},
-			async requestPayment(e, index) {
-				this.providerList[index].loading = true;
-				let orderInfo = await this.getOrderInfo(e.id,index);
-				console.log(JSON.stringify(orderInfo) );
-				if (orderInfo.data.errorCode !== "0000") {
-					uni.showModal({
-						content: "支付失败",
-						showCancel: false
-					})
-					return;
-				}
-				uni.requestPayment({
-					provider: e.id,
-					orderInfo: orderInfo.data.payInfo.payString,
-					success: (e) => {
-						uni.showToast({
-							title: "支付成功"
-						})
-					},
-					fail: (e) => {
-						console.log(e.errMsg);
-						console.log(JSON.stringify(orderInfo.data.payInfo));
-						console.log("fail", e);uni.showModal({
-							content: "支付失败",
-							showCancel: false
-						})
-					},
-					complete: () => {
-						this.providerList[index].loading = false;
-					}
-				})
-			},
-			getOrderInfo(e,index) {
-				var that = this;
-				let appid = "wx726318aa9a4e7971";
-				// #ifdef APP-PLUS
-				appid = plus.runtime.appid;
-					// #endif
-				const userInfo ={
-						totalFee:that.money,
-						body:'商品价格',
-				}
-				const jsonString ={
-					payInfo:userInfo,
-					requestType:this.providerList[index].requesttype
-				}
-				const param ={
-					controllerRequestType:"payControllerService",
-					jsonString:JSON.stringify(jsonString)
-				}
-				// let url = 'https://demo.dcloud.net.cn/payment/?payid=' + e + '&appid=' + appid + '&total=0.01';
-				return new Promise((res) => {
-					uni.request({
-						url:that.websiteUrl,
-						method:'POST',
-						header: {
-							// 'Access-Control-Allow-Origin':'*' ,
-							"content-type":"application/x-www-form-urlencoded"
-						},
-						data:param,
-						success: (result) => {
-							res(result);
-						},
-						fail: (e) => {
-							res(e);
-						}
-					})
-				})
-			}
+
 		}
 	}
 </script>
