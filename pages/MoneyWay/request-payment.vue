@@ -115,10 +115,12 @@
 							},
 							data:param,
 							success: (res) => {
-								console.log(JSON.stringify(res));
-// 								uni.switchTab({
-// 									url:'/pages/main/main'
-// 								})
+								if(res.data.errorCode == '0000'){
+									uni.setStorageSync("vipLevel",res.data.vipLevel);
+									uni.switchTab({
+										url:'/pages/main/main'
+									})
+								}
 							},
 						})	
 						

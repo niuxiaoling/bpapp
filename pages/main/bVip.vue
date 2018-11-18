@@ -31,18 +31,29 @@
 		data() {
 			return {
 				active:1,
-				money:'99'
-				
+				money:'99',
+				vipLevel:""
 			};
 		},
 		methods:{
 			change(index){
 				this.active = index;
+				if(vipLevel == 1){  
+					this.active != 1;	
+				}else if(vipLevel == 2){
+					this.active != 2;	
+				}
 			}
 		},
 		onLoad:function(){
-			// const  valueUser= uni.getStorageSync('userInfo');
-			// console.log(service.userInfo)
+			this.vipLevel = uni.getSystemInfoSync('vipLevel');
+			//99元套餐
+			if(vipLevel == 1){  
+				this.active == 2;	
+			}else if(vipLevel == 2){
+				this.active == 2;	
+			}
+			
 		}
 	}
 </script>

@@ -161,6 +161,8 @@
 			
 		},
 		onLoad:function(){
+			const vipLevel = uni.getSystemInfoSync('vipLevel');
+			
 			this.getUser();
 			this.seamlessscrolling();
 			var that = this;
