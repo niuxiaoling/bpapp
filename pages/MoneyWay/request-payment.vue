@@ -100,7 +100,7 @@
 						}
 						const jsonString ={
 							userInfo:userInfo,
-							requestType:"login",
+							requestType:"login"
 						}
 						const param ={
 							controllerRequestType:"loginControllerService",
@@ -110,7 +110,6 @@
 							url:that.websiteUrl,
 							method:'POST',
 							header: {
-								// 'Access-Control-Allow-Origin':'*' ,
 								"content-type":"application/x-www-form-urlencoded"
 							},
 							data:param,
@@ -146,10 +145,13 @@
 				// #ifdef APP-PLUS
 				appid = plus.runtime.appid;
 					// #endif
+					let accountOrder = uni.getStorageSync('userInfo')
+					console.log(accountOrder)
 				const userInfo ={
 						// totalFee:that.money,
 						totalFee:0.01,
 						body:'商品价格',
+						account:uni.getStorageSync('userInfo')
 				}
 				const jsonString ={
 					payInfo:userInfo,

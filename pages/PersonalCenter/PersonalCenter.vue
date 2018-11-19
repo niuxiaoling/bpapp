@@ -8,7 +8,7 @@
 				</view>
 			</view>
 		</view>
-		<text class="phoneNo">18888888888</text>
+		<text class="phoneNo">页面功能开发中···</text>
 		<view class="income">
 			<view class="income-list">
 				<text class="list-No">12</text>

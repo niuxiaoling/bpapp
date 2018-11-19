@@ -83,8 +83,7 @@
 						{
 							imgage:'../../static/img/kefu.png',
 							text:'客服中心',
-							url:"/pages/MoneyWay/request-payment"
-		
+							url:"/pages/main/waiting"
 						},
 						
 					],

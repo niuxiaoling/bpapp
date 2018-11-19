@@ -30,12 +30,12 @@
 		onLoad: function() {
 			this.plcode = uni.getStorageSync('userInfo').invitationCode;
 			var that = this;
-			var aa = 'https://www.sixkeep.com:8080/ScreenTheWord/html/resgs/index.html?invitationCode=666666'
-			 let imgsrc = QR.createQrCodeImg('http://www.baidu.com?aa=bb',{
-					size:parseInt(250)
+			var urlReg = 'https://www.sixkeep.com:8080/html/resgs/?invitationCode=' + that.plcode;
+			 let imgsrc = QR.createQrCodeImg(urlReg,{
+					size:parseInt(200)
 			})
 			that.qrimg = imgsrc;
-			that.plcodeArr = [...this.plcode];
+			that.plcodeArr = [...this.plcode];;
 		}
 	}
 </script>

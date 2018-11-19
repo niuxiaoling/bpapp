@@ -35,17 +35,17 @@
 				{
 				imgage:'../../static/img/renwudating.png',
 				text:'任务大厅',
-				url:'/pages/index/index'	
+				url:'/pages/main/waiting'	
 				},
 				{
 				imgage:'../../static/img/tijiaorenwu.png',
 				text:'提交任务',
-				url:'/pages/pwd/pwd'	
+				url:'/pages/main/waiting'	
 				},
 				{
 				imgage:'../../static/img/renwujilu.png',
 				text:'任务记录',
-				url:'/pages/pwd/pwd'	
+				url:'/pages/main/waiting'		
 				},
 				
 			]

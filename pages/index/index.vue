@@ -17,7 +17,7 @@
 		</view>
 		<view class="action-row">
 			<navigator url="../reg/reg">注册账号</navigator>
-			<navigator url="../pwd/pwd">忘记密码</navigator>
+			<navigator url="../main/waiting">忘记密码</navigator>
 		</view>
 		
 		
@@ -47,18 +47,9 @@
 					this.positionTop = uni.getSystemInfoSync().windowHeight - 100;
 				},
 				bindLogin() {
-		
-					uni.showModal({
-						title:'温馨提示',
-						content:"当前没有登陆，请登陆",
-						success:function(result){
-							if(result.confirm){
-								console.log("确定")
-							}
-							if(result.cancel){
-								console.log("取消")
-							}
-						}
+					uni.showLoading({
+						title:'Loading',
+						mask:true
 					})
 					var that = this;
 					if (this.account.length == '') {
@@ -96,13 +87,11 @@
 						},
 						data:param,
 						success: (res) => {
+							
 							console.log('登录中',JSON.stringify(res));
 							if(res.data.errorCode == '0000'){		
 								uni.setStorageSync("userInfo",res.data.userInfo);
-								uni.showToast({
-									icon:'none',
-									title:'登录成功'
-								})
+								uni.hideLoading();
 								uni.reLaunch({
 							      url:'../main/main',
 						    });

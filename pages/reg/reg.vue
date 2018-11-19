@@ -50,6 +50,10 @@
 		methods:{
 		// 获取手机验证码
 			getPhone(){
+				uni.showLoading({
+					title:'Loading',
+					mask:true
+				})
 				var that =  this;
 				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
 				 	uni.showToast({
@@ -79,6 +83,7 @@
 						},
 						data:param,
 						success(res) {
+							uni.hideLoading();
 							if(res.data.errorCode == '0000'){
 								  that.retunverificationCode = res.data.userInfo.retunverificationCode;
 							}else{
@@ -95,7 +100,7 @@
 						})
 						}
 					})
-					//缺少接口
+					//倒计时
 					this.showTime = true	
 					var go = setInterval(function(){
 						that.time --;
@@ -105,14 +110,17 @@
 							that.time = 60;
 						}
 					},1000) 
-					
-					
+	
 				 }
 				 
 
 			},
 		// 注册
 			register(){
+				uni.showLoading({
+					title:'Loading',
+					mask:true
+				})
 				var that = this;
 				 if(!(/^1[34578]\d{9}$/.test(this.phone))){
 					uni.showToast({
@@ -179,6 +187,7 @@
 					},
 					data:param,
 					success: (res) => {
+						uni.hideLoading();
 						if(res.data.errorCode == '0000'){
 							uni.showToast({
 								icon:'none',
