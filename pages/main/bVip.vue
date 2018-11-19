@@ -37,21 +37,27 @@
 		},
 		methods:{
 			change(index){
-				this.active = index;
-				if(vipLevel == 1){  
-					this.active != 1;	
-				}else if(vipLevel == 2){
-					this.active != 2;	
+				if(this.vipLevel){
+					if(this.vipLevel == 1){  
+						this.active == 2;	
+					}else if(this.vipLevel == 2){
+						this.active != 2;	
+					}	
+				}else{
+					this.active = index;
 				}
+				
+				
 			}
 		},
 		onLoad:function(){
-			this.vipLevel = uni.getSystemInfoSync('vipLevel');
+			this.vipLevel = uni.getStorageSync('vipLevel');
+			this.vipLevel = 1;
 			//99元套餐
-			if(vipLevel == 1){  
+			if(this.vipLevel == 1){  
 				this.active == 2;	
-			}else if(vipLevel == 2){
-				this.active == 2;	
+			}else if(this.vipLevel == 2){
+				this.active == 1;	
 			}
 			
 		}

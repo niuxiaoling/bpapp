@@ -9,12 +9,9 @@
 	<view class="tjCode">
 		<view class="plText">我的邀请码</view>
 		<view class="plCode" >
-			<text>0</text>
-			<text>3</text>
-			<text>e</text>
-			<text>g</text>
-			<text>j</text>
-			<text>k</text>
+			<block v-for="v in plcodeArr" :key="v">
+					<text>{{v}}</text>
+			</block>
 		</view>
 	</view>
 	</view>
@@ -26,21 +23,18 @@
 		data() {
 			return {
 				  qrimg:'',
-					plcode:'03egjk',
+					plcode:'',
 					plcodeArr:[]
 			};
 		},
 		onLoad: function() {
+			this.plcode = uni.getStorageSync('userInfo').invitationCode;
 			var that = this;
 			 let imgsrc = QR.createQrCodeImg('....',{
 					size:parseInt(250)
 			})
 			that.qrimg = imgsrc;
-// 			let str='';
-// 			for(let i= 0;i<=that.plcode.length;i++){
-// 				 str += that.plcode[i]+'-';
-// 			}
-			// console.log(that.plcodeArr);
+			that.plcodeArr = [...this.plcode];
 		}
 	}
 </script>

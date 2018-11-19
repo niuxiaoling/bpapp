@@ -116,7 +116,7 @@
 							data:param,
 							success: (res) => {
 								if(res.data.errorCode == '0000'){
-									uni.setStorageSync("vipLevel",res.data.vipLevel);
+									uni.setStorageSync("vipLevel",res.data.userInfo.vipLevel);
 									uni.switchTab({
 										url:'/pages/main/main'
 									})
