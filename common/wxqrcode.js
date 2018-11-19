@@ -1619,5 +1619,5 @@ var createQrCodeImg = function(text, options) {
 };
 // var module = {}; 需要注释这一行，否则微信小程序无法使用
 module.exports = {
-        createQrCodeImg : createQrCodeImg
+	createQrCodeImg : createQrCodeImg
 };

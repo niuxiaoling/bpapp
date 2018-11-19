@@ -16,7 +16,7 @@
     </view>
     <view class="_view data-v-70e7a7eb list">
       <view class="_view data-v-70e7a7eb list_item" wx:key="v" key="{{v}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="v">
-        <view class="_view data-v-70e7a7eb list_item_a" bindtap="handleProxy" data-eventid="{{'Xx5-0-'+index}}" data-comkey="{{$k}}">
+        <view class="_view data-v-70e7a7eb list_item_a" bindtap="handleProxy" data-eventid="{{'3qe-0-'+index}}" data-comkey="{{$k}}">
           <image src="{{v.imgage}}" mode="scaleToFill" class="_image data-v-70e7a7eb"></image>
           <text class="_text data-v-70e7a7eb">{{v.text}}</text>
         </view>

@@ -37,27 +37,43 @@
 		},
 		methods:{
 			change(index){
-				if(this.vipLevel){
-					if(this.vipLevel == 1){  
-						this.active == 2;	
-					}else if(this.vipLevel == 2){
-						this.active != 2;	
-					}	
-				}else{
-					this.active = index;
+				this.active = index;
+				if(index == 1){
+					if(this.vipLevel){
+						if(this.vipLevel == 1){  
+							this.active = 2;	
+							uni.showToast({
+								icon:'none',
+								title: '您已经是会员',
+							});
+						}else if(this.vipLevel == 2){
+							this.active = index;
+						}	
+					}
+				}else if(index == 2){
+					if(this.vipLevel){
+						if(this.vipLevel == 2){  
+							uni.showToast({
+								icon:'none',
+								title: '您已经是高级会员',
+							});
+							this.active = 1;
+						}else if(this.vipLevel == 2){
+						  	this.active = index;
+						}	
+					}
 				}
-				
 				
 			}
 		},
 		onLoad:function(){
 			this.vipLevel = uni.getStorageSync('vipLevel');
-			this.vipLevel = 1;
+			this.vipLevel = 2;
 			//99元套餐
 			if(this.vipLevel == 1){  
-				this.active == 2;	
+				this.active = 2;	
 			}else if(this.vipLevel == 2){
-				this.active == 1;	
+				this.active = 1;	
 			}
 			
 		}

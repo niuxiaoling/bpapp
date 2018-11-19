@@ -30,7 +30,8 @@
 		onLoad: function() {
 			this.plcode = uni.getStorageSync('userInfo').invitationCode;
 			var that = this;
-			 let imgsrc = QR.createQrCodeImg('....',{
+			var aa = 'https://www.sixkeep.com:8080/ScreenTheWord/html/resgs/index.html?invitationCode=666666'
+			 let imgsrc = QR.createQrCodeImg('http://www.baidu.com?aa=bb',{
 					size:parseInt(250)
 			})
 			that.qrimg = imgsrc;
