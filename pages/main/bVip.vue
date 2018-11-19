@@ -68,7 +68,7 @@
 		},
 		onLoad:function(){
 			this.vipLevel = uni.getStorageSync('vipLevel');
-			this.vipLevel = 2;
+			// this.vipLevel = 1;
 			//99元套餐
 			if(this.vipLevel == 1){  
 				this.active = 2;	

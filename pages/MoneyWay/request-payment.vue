@@ -36,7 +36,14 @@
 			return {
 				title: 'request-payment',
 				loading: false,
-				providerList: [],
+				providerList: [
+					{
+						"name":"支付宝","id":"alipay","loading":false,"requesttype":"aLiPay"
+					},
+					{
+						"name":"微信","id":"wxpay","loading":false,"requesttype":"wxPay"
+					}
+				],
 				money:'',
 				userinfo:''
 			}
@@ -45,33 +52,33 @@
 			this.userinfo = uni.getStorageSync('userInfo');
 			this.money = options.money;
 			// #ifdef APP-PLUS
-			uni.getProvider({
-				service: "payment",
-				success: (e) => {
-					console.log("payment success", e);
-					this.providerList = e.provider.map((value) => {
-						switch (value) {
-							case 'alipay':
-								return {
-									name: '支付宝',
-									id: value,
-									loading: false,
-									requesttype:'aLiPay'
-								}
-							case 'wxpay':
-								return {
-									name: '微信',
-									id: value,
-									loading: false,
-									requesttype:'wxPay'
-								}
-						}
-					})
-				},
-				fail: (e) => {
-					console.log("获取登录通道失败：", e);
-				}
-			});
+// 			uni.getProvider({
+// 				service: "payment",
+// 				success: (e) => {
+// 					console.log("payment success", e);
+// 					this.providerList = e.provider.map((value) => {
+// 						switch (value) {
+// 							case 'alipay':
+// 								return {
+// 									name: '支付宝',
+// 									id: value,
+// 									loading: false,
+// 									requesttype:'aLiPay'
+// 								}
+// 							case 'wxpay':
+// 								return {
+// 									name: '微信',
+// 									id: value,
+// 									loading: false,
+// 									requesttype:'wxPay'
+// 								}
+// 						}
+// 					})
+// 				},
+// 				fail: (e) => {
+// 					console.log("获取登录通道失败：", e);
+// 				}
+// 			});
 			// #endif
 		},
 		methods: {

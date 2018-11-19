@@ -9,12 +9,9 @@
     <view class="_view data-v-480e560a tjCode">
       <view class="_view data-v-480e560a plText">我的邀请码</view>
       <view class="_view data-v-480e560a plCode">
-        <text class="_text data-v-480e560a">0</text>
-        <text class="_text data-v-480e560a">3</text>
-        <text class="_text data-v-480e560a">e</text>
-        <text class="_text data-v-480e560a">g</text>
-        <text class="_text data-v-480e560a">j</text>
-        <text class="_text data-v-480e560a">k</text>
+        <block wx:key="v" key="{{v}}" wx:for="{{plcodeArr}}" wx:for-index="index" wx:for-item="v">
+          <text class="_text data-v-480e560a">{{v}}</text>
+        </block>
       </view>
     </view>
   </view>
