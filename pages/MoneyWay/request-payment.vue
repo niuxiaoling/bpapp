@@ -11,11 +11,11 @@
 		<view>
 			<view class="desc">支付方式</view>
 			<!-- #ifdef MP-WEIXIN -->
-			<view class="uni-list">
+			<!-- <view class="uni-list">
 				<view class="pay-item">
 					<button type="primary" @tap="weixinPay" :loading="loading">微信支付</button>
 				</view>
-			</view>
+			</view> -->
 			
 			<!-- #endif -->
 			<!-- #ifdef APP-PLUS -->
@@ -51,6 +51,7 @@
 		onLoad: function(options) {
 			this.userinfo = uni.getStorageSync('userInfo');
 			this.money = options.money;
+			console.log(JSON.stringify(options))
 			// #ifdef APP-PLUS
 // 			uni.getProvider({
 // 				service: "payment",
@@ -123,7 +124,8 @@
 							success: (res) => {
 								if(res.data.errorCode == '0000'){
 									uni.setStorageSync("vipLevel",res.data.userInfo.vipLevel);
-									uni.switchTab({
+									console.log(JSON.stringify(res.data.userInfo))
+									uni.reLaunch({
 										url:'/pages/main/main'
 									})
 								}
@@ -153,12 +155,12 @@
 				appid = plus.runtime.appid;
 					// #endif
 					let accountOrder = uni.getStorageSync('userInfo')
-					console.log(accountOrder)
+					console.log(JSON.stringify(accountOrder.account))
 				const userInfo ={
-						// totalFee:that.money,
-						totalFee:0.01,
+						totalFee:that.money,
+						// totalFee:0.01,
 						body:'商品价格',
-						account:uni.getStorageSync('userInfo')
+						account:accountOrder.account
 				}
 				const jsonString ={
 					payInfo:userInfo,

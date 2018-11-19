@@ -14,12 +14,14 @@
 			</view>
 		</view>
 		<view class="bevipbtn">
-			<navigator url="../MoneyWay/request-payment?money=99">
+			
+			<navigator url="../MoneyWay/request-payment?money=0.01">
 				<button v-if="active==1"  >成为VIP</button>
 			</navigator>
-			<navigator url="../MoneyWay/request-payment?money=999">
+			<navigator url="../MoneyWay/request-payment?money=0.02">
 				<button v-if="active==2" >成为高级VIP</button>
 			</navigator>
+			
 			
 		</view>
 	</view>
@@ -30,35 +32,36 @@
 	export default {
 		data() {
 			return {
-				active:1,
+				active:0,
 				money:'99',
 				vipLevel:""
 			};
 		},
+		
 		methods:{
 			change(index){
 				this.active = index;
 				if(index == 1){
 					if(this.vipLevel){
-						if(this.vipLevel == 1){  
+						if(this.vipLevel == 'VIP1'){  
 							this.active = 2;	
 							uni.showToast({
 								icon:'none',
 								title: '您已经是会员',
 							});
-						}else if(this.vipLevel == 2){
+						}else if(this.vipLevel == 'VIP2'){
 							this.active = index;
 						}	
 					}
 				}else if(index == 2){
 					if(this.vipLevel){
-						if(this.vipLevel == 2){  
+						if(this.vipLevel == 'VIP2'){  
 							uni.showToast({
 								icon:'none',
 								title: '您已经是高级会员',
 							});
 							this.active = 1;
-						}else if(this.vipLevel == 2){
+						}else if(this.vipLevel == 'VIP2'){
 						  	this.active = index;
 						}	
 					}
@@ -68,12 +71,11 @@
 		},
 		onLoad:function(){
 			this.vipLevel = uni.getStorageSync('vipLevel');
-			// this.vipLevel = 1;
 			//99元套餐
-			if(this.vipLevel == 1){  
+			if(this.vipLevel == 'VIP1'){  
 				this.active = 2;	
-			}else if(this.vipLevel == 2){
-				this.active = 1;	
+			}else if(this.vipLevel == 'VIP2'){
+				this.active = '';	
 			}
 			
 		}
