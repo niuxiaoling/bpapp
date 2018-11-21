@@ -49,12 +49,12 @@
 			<view class="listli">
 				<image src="../../static/img/JCGX.png" mode="aspectFit"></image><text>检查更新</text>
 			</view>
-			<view class="listli">
+			<view class="listli"  @tap="changeAccont">
 				<image src="../../static/img/QHZH.png" mode="aspectFit"></image><text>切换账号</text>
 			</view>
 	
 		</view>
-		<view style="width:100%;"><button class="getOut">退出APP</button>
+		<view style="width:100%;"><button class="getOut" @tap="layOutApp()">退出APP</button>
 		</view>
 		</view>
 		
@@ -66,7 +66,23 @@
 			
 		},
 		methods:{
-			
+			changeAccont(){
+				uni.showLoading({
+					mask:true,
+					title:'Loading'
+				})
+				uni.clearStorageSync('userInfo');
+				uni.clearStorageSync('vipLevel');
+				uni.reLaunch({
+						url:'../main/main',
+						success() {
+							uni.hideLoading()
+						}
+				});
+			},
+			layOutApp(){
+				plus.runtime.quit();
+			}
 		}
 		
 	}

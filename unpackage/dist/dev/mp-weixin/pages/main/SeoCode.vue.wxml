@@ -1,16 +1,16 @@
-<template name="3e7efdb0">
-  <view class="_view data-v-34f2c9f0">
-    <view class="_view data-v-34f2c9f0 logo">
-      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-34f2c9f0"></image>
+<template name="5719b0ba">
+  <view class="_view data-v-35939c1a">
+    <view class="_view data-v-35939c1a logo">
+      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-35939c1a"></image>
     </view>
-    <view class="_view data-v-34f2c9f0 erweima">
-      <image src="{{qrimg}}" class="_image data-v-34f2c9f0"></image>
+    <view class="_view data-v-35939c1a erweima">
+      <image src="{{qrimg}}" class="_image data-v-35939c1a"></image>
     </view>
-    <view class="_view data-v-34f2c9f0 tjCode">
-      <view class="_view data-v-34f2c9f0 plText">我的邀请码</view>
-      <view class="_view data-v-34f2c9f0 plCode">
+    <view class="_view data-v-35939c1a tjCode">
+      <view class="_view data-v-35939c1a plText">我的邀请码</view>
+      <view class="_view data-v-35939c1a plCode">
         <block wx:key="v" key="{{v}}" wx:for="{{plcodeArr}}" wx:for-index="index" wx:for-item="v">
-          <text class="_text data-v-34f2c9f0">{{v}}</text>
+          <text class="_text data-v-35939c1a">{{v}}</text>
         </block>
       </view>
     </view>

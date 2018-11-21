@@ -87,6 +87,7 @@
 						},
 						
 					],
+					vipLevel:'',//vip等级
 					bchange: 2,//变化值，可自定义设置
 					bspeed: 100,//速度，可自定义设置
 					direction: "horizontal", //  horizontal=水平 vertical=垂直  ，可设置
@@ -102,17 +103,7 @@
 				},
 				
 		methods: {
-			getUser:function(){
-					try {
-						const value = uni.getStorageSync('userInfo');
-						if (value) {
-							service.userInfo = value;
-					
-						}
-				} catch (e) {
-						// err
-				}
-			},
+		
 			 seamlessscrolling:function(){
 				 var that = this;
 				 //复制容器
@@ -133,6 +124,7 @@
 				})
 				},
 				goURL:function(url){
+					console.log(JSON.stringify(service.userInfo))
 						if(service.userInfo =="" ||!service.userInfo){
 							uni.showModal({
 								title:'温馨提示',
@@ -160,9 +152,11 @@
 			
 		},
 		onLoad:function(){
+			const values = uni.getStorageSync('userInfo');
+			console.log(JSON.stringify(values));
+			service.userInfo = values;
 			this.vipLevel = uni.getStorageSync('vipLevel');
-			
-			this.getUser();
+	    	console.log(JSON.stringify(vipLevel))
 			this.seamlessscrolling();
 			var that = this;
 			//动画

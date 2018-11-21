@@ -1,25 +1,11 @@
-<template name="3c123b5f">
-  <view class="_view data-v-4a2ca07a">
-    <view class="_view data-v-4a2ca07a logo">
-      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-4a2ca07a"></image>
+<template name="2b5715ca">
+  <view class="_view data-v-2d3145bb">
+    <view class="_view data-v-2d3145bb logo">
+      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-2d3145bb"></image>
     </view>
-    <view class="_view data-v-4a2ca07a bevip">
-      <view class="_view data-v-4a2ca07a bevip-item {{active == 1 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'4V1-0'}}" data-comkey="{{$k}}">
-        <text class="_text data-v-4a2ca07a">普通VIP</text>
-        <text style="color:red" class="_text data-v-4a2ca07a">￥99</text>
-      </view>
-      <view class="_view data-v-4a2ca07a bevip-item {{active == 2 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'lP5-1'}}" data-comkey="{{$k}}">
-        <text class="_text data-v-4a2ca07a">高级VIP</text>
-        <text style="color:red" class="_text data-v-4a2ca07a">￥999</text>
-      </view>
-    </view>
-    <view class="_view data-v-4a2ca07a bevipbtn">
-      <navigator url="../MoneyWay/request-payment?money=0.01" class="_navigator data-v-4a2ca07a">
-        <button wx:if="{{active==1}}" class="_button data-v-4a2ca07a">成为VIP</button>
-      </navigator>
-      <navigator url="../MoneyWay/request-payment?money=0.02" class="_navigator data-v-4a2ca07a">
-        <button wx:if="{{active==2}}" class="_button data-v-4a2ca07a">成为高级VIP</button>
-      </navigator>
+    <view class="_view data-v-2d3145bb bevipbtn">
+      <button bindtap="handleProxy" data-eventid="{{'Arg-0'}}" data-comkey="{{$k}}" class="_button data-v-2d3145bb">99成为VIP</button>
+      <button bindtap="handleProxy" data-eventid="{{'jBj-1'}}" data-comkey="{{$k}}" class="_button data-v-2d3145bb">999成为高级VIP</button>
     </view>
   </view>
 </template>

@@ -86,10 +86,13 @@
 			async requestPayment(e, index) {
 				this.providerList[index].loading = true;
 				let orderInfo = await this.getOrderInfo(e.id,index);
+				console.log(JSON.stringify(orderInfo.data.payInfo.payString  ));
+				// plus.nativeUI.alert(JSON.stringify(orderInfo.data.payInfo.payString ))
 				if (orderInfo.data.errorCode !== "0000") {
+					console.log(JSON.stringify(orderInfo.data.payInfo.payString));
 					uni.showModal({
-						content: "支付失败",
-						showCancel: false
+						content: "支付失败1",
+						showCancel: JSON.stringify(orderInfo.data.errorMessage)
 					})
 					return;
 				}
@@ -134,12 +137,13 @@
 						
 					},
 					fail: function(error) {
-						
-// 						console.log(e.errMsg);
-// 						console.log(JSON.stringify(orderInfo.data.payInfo));
-						// console.log("fail", e);
+						plus.nativeUI.alert(JSON.stringify(error))
+						plus.nativeUI.alert(JSON.stringify(orderInfo.data.payInfo))
+						console.log(e.errMsg);
+						console.log(JSON.stringify(orderInfo.data.payInfo));
+						console.log("fail", e);	
 						uni.showModal({
-							content: "支付失败",
+							content: "支付失败2",
 							showCancel: false
 						})
 					},
@@ -158,7 +162,6 @@
 					console.log(JSON.stringify(accountOrder.account))
 				const userInfo ={
 						totalFee:that.money,
-						// totalFee:0.01,
 						body:'商品价格',
 						account:accountOrder.account
 				}
@@ -182,6 +185,7 @@
 						data:param,
 						success: (result) => {
 							res(result);
+							console.log(JSON.stringify(result));
 						},
 						fail: (e) => {
 							res(e);

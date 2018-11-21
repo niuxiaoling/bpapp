@@ -34,7 +34,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });var isFn =
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });var userInfo = userInfo || {};exports.default =\n{\n\tdata: function data() {\n\t\treturn {\n\t\t\tuserInfo: userInfo };\n\n\t} };\n\n//////////////////\n// WEBPACK FOOTER\n// E:/其他项目/bpapp/common/service.js\n// module id = 3\n// module chunks = 0\n\n//# sourceURL=uni-app:///common/service.js?430f");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });var userInfo = userInfo || {};exports.default =\n{\n\tdata: function data() {\n\t\treturn {\n\t\t\tuserInfo: userInfo };\n\n\t} };\n\n//////////////////\n// WEBPACK FOOTER\n// C:/Users/Administrator/Desktop/wptx1/bpapp/common/service.js\n// module id = 3\n// module chunks = 0\n\n//# sourceURL=uni-app:///common/service.js?6db6");
 
 /***/ }),
 

@@ -10,7 +10,7 @@
 		<view class="reg-list">
 			 <!-- password="false" -->
 			<image src="../../static/img/miam.png"></image>
-			<input type="text"  v-model="password" placeholder="密码" maxlength="11" placeholder-class="placeholder"/>
+			<input type="password"  v-model="password" placeholder="密码" maxlength="11" placeholder-class="placeholder"/>
 		</view>
 		<view class="regBut">
 			<button @tap="bindLogin"> 登 录 </button>
@@ -82,7 +82,6 @@
 						url:that.websiteUrl,
 						method:'POST',
 						header: {
-							// 'Access-Control-Allow-Origin':'*' ,
 							"content-type":"application/x-www-form-urlencoded"
 						},
 						data:param,
@@ -91,6 +90,8 @@
 							console.log('登录中',JSON.stringify(res));
 							if(res.data.errorCode == '0000'){		
 								uni.setStorageSync("userInfo",res.data.userInfo);
+								uni.setStorageSync("vipLevel",res.data.userInfo.vipLevel);
+								console.log(JSON.stringify(res))
 								uni.hideLoading();
 								uni.reLaunch({
 							      url:'../main/main',
