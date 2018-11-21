@@ -87,7 +87,7 @@
 						},
 						
 					],
-					vipLevel:'',//vip等级
+					// vipLevel:'',//vip等级
 					bchange: 2,//变化值，可自定义设置
 					bspeed: 100,//速度，可自定义设置
 					direction: "horizontal", //  horizontal=水平 vertical=垂直  ，可设置
@@ -155,8 +155,8 @@
 			const values = uni.getStorageSync('userInfo');
 			console.log(JSON.stringify(values));
 			service.userInfo = values;
-			this.vipLevel = uni.getStorageSync('vipLevel');
-	    	console.log(JSON.stringify(vipLevel))
+// 			this.vipLevel = uni.getStorageSync('vipLevel');
+// 	    console.log(JSON.stringify(vipLevel))
 			this.seamlessscrolling();
 			var that = this;
 			//动画

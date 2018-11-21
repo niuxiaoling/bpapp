@@ -88,7 +88,7 @@
 			},
 		},
 		onLoad:function(){
-			this.vipLevel = uni.getStorageSync('vipLevel');
+			this.vipLevel = uni.getStorageSync('vipLevel') ?uni.getStorageSync('vipLevel') :"";
 		}
 	}
 </script>

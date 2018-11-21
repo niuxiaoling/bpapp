@@ -1,10 +1,11 @@
 <template>
-	<view>
+	<view class="content">
 	<view class="logo">
 		<image src="../../static/img/logoBanner.jpg" mode="widthFix"></image>
 	</view>
 	<view class="erweima">
-		<image :src="qrimg"></image>
+		<image :src="qrimg" class="erweimaimg"></image>
+		<image src="../../static/img/logo.jpg" mode="" class="erweimalogo"></image>
 	</view>
 	<view class="tjCode">
 		<view class="plText">我的邀请码</view>
@@ -41,6 +42,9 @@
 </script>
  
 <style>
+	.content{
+		background: #fff;
+	}
 .logo image{
 	 width: 100%;
  }
@@ -50,21 +54,33 @@
 	 
 	 }
 	 .erweima{
-		 width: 100%;
 		 height: auto;
-		 padding-top: 50upx;
+		 padding:30upx;
 		 display: flex;
+		 margin:0 auto;
 		 justify-content: center;
+		 background: #EA5B17;
+		 position: relative;
 	 }
-	 .erweima image{
-		 width: 500upx;
-		 height: 500upx;
+	 .erweimalogo{
+		 width:120upx;
+		 height: 80upx;
+		 position: absolute;
+		 left:0;
+		 right:0;
+		 top:0;
+		 bottom:0;
+		 margin:auto;
+	 }
+	 .erweima .erweimaimg{
+		 width: 450upx;
+		 height: 450upx;
 	 }
 	 .tjCode{
 		 display: flex;
 		 flex-direction: column;
 		 justify-content: center;
-		 margin-bottom: 50upx;
+		 margin-bottom:100upx;
 		 
 	 }
 	 .tjCode .plText{
