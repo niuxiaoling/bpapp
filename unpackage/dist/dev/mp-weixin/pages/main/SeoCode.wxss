@@ -1,0 +1,142 @@
+
+page {
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+.content {
+  background: #fff;
+}
+.logo {
+  width: 249rpx;
+  height: 244rpx;
+  margin: 0 auto;
+}
+.logo_title {
+  width: 631rpx;
+  height: 60rpx;
+  margin: 45rpx auto 0;
+}
+.logo image,
+.logo_title image {
+  width: 100%;
+  height: 100%;
+}
+.twobuttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.erweima-bg2 {
+  width: 400rpx;
+  height: 431rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.erweima {
+  width: 541rpx;
+  height: 703rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 40rpx auto 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+}
+.erweima-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+.erweima .erweimaimg {
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 302rpx;
+  height: 302rpx;
+}
+.erweima .erweimaimg .erweima-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0,-25%);
+  transform: translate(0,-25%);
+  margin: auto;
+}
+.erweima .erweimaimg .erweima-content image {
+  width: 100%;
+  height: 100%;
+}
+.erweimalogo {
+  width: 120rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  margin: auto;
+  z-index: 200;
+}
+.tjCode {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-bottom: 100rpx;
+  position: absolute;
+  bottom: 58rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200;
+}
+.tjCode .plCode {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  align-content: center;
+}
+.tjCode .plCode text {
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #000;
+  font-weight: bold;
+  background: #fff;
+  text-align: center;
+}

@@ -1,4 +1,7 @@
 
+.content {
+  background: #fff;
+}
 .logo image {
   width: 100%;
 }
@@ -12,19 +15,31 @@
   flex-direction: row;
 }
 .erweima {
-  width: 100%;
   height: auto;
-  padding-top: 50rpx;
+  padding: 30rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  margin: 0 auto;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  background: #EA5B17;
+  position: relative;
 }
-.erweima image {
-  width: 500rpx;
-  height: 500rpx;
+.erweimalogo {
+  width: 120rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.erweima .erweimaimg {
+  width: 450rpx;
+  height: 450rpx;
 }
 .tjCode {
   display: -webkit-box;
@@ -37,7 +52,7 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-bottom: 50rpx;
+  margin-bottom: 100rpx;
 }
 .tjCode .plText {
   text-align: center;
