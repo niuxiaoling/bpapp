@@ -91,8 +91,8 @@
 				if (orderInfo.data.errorCode !== "0000") {
 					console.log(JSON.stringify(orderInfo.data.payInfo.payString));
 					uni.showModal({
-						content: "支付失败1",
-						showCancel: JSON.stringify(orderInfo.data.errorMessage)
+						content: "支付失败",
+						showCancel: orderInfo.data.errorMessage
 					})
 					return;
 				}
@@ -137,13 +137,13 @@
 						
 					},
 					fail: function(error) {
-						plus.nativeUI.alert(JSON.stringify(error))
-						plus.nativeUI.alert(JSON.stringify(orderInfo.data.payInfo))
+// 						plus.nativeUI.alert(JSON.stringify(error))
+// 						plus.nativeUI.alert(JSON.stringify(orderInfo.data.payInfo))
 						console.log(e.errMsg);
 						console.log(JSON.stringify(orderInfo.data.payInfo));
 						console.log("fail", e);	
 						uni.showModal({
-							content: "支付失败2",
+							content: "支付失败",
 							showCancel: false
 						})
 					},

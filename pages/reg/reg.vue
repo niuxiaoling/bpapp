@@ -25,6 +25,9 @@
 			<image src="../../static/img/yaoqingma.png"></image>
 			<input type="text" v-model="superInvitationCode" placeholder="邀请码" placeholder-style="color:#ffffff"/>
 		</view>
+		<view class="checkbox">
+			<switch :checked="checked" @change="switch1Change" type="checkbox"/><navigator url="Agreement">我已阅读并同意《微品众信用户注册协议》</navigator>
+		</view>
 		<view class="regBut">
 			<button @tap="register">确认注册</button>
 		</view>
@@ -43,11 +46,14 @@
 				superInvitationCode:'',
 				showTime:false,
 				time:60,
-				
+				checked:false,
 				
 			}
 		},
 		methods:{
+			switch1Change: function (e){
+				this.checked = e.detail.value;
+			},
 		// 获取手机验证码
 			getPhone(){
 				uni.showLoading({
@@ -157,7 +163,14 @@
 					});
 					return;
 				}
-				
+			
+				if(this.checked == false ){
+					uni.showToast({
+						icon: 'none',
+						title: '注册需先同意用户注册协议'
+					});
+					return;	
+				}
 				
 				const data ={
 					phone:this.phone,
@@ -221,5 +234,19 @@
 	page{
 		background:linear-gradient(bottom, #E61532,#EA5B17);
 	}
+	.checkbox{
+		display: flex;
+		width: 80%;
+		padding: 0 10%;
+		line-height: 40upx;
+		align-items: center;
+		justify-content: flex-end;
+		margin: 20upx 0;
+		margin-top: 30upx;
+	}	
 	
+	.checkbox navigator{
+	
+		color: #FFFFFF;
+	}
 </style>

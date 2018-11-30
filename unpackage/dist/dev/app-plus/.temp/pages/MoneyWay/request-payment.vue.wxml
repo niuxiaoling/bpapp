@@ -1,18 +1,18 @@
-<template name="831282a4">
-  <view class="_view data-v-0743eee4">
-    <page-head title="{{title}}" class="_page-head data-v-0743eee4"></page-head>
-    <view class="_view data-v-0743eee4 page-body">
-      <view class="_view data-v-0743eee4 page-section">
-        <view class="_view data-v-0743eee4">支付金额</view>
-        <view class="_view data-v-0743eee4 price">
-          <text class="_text data-v-0743eee4 rmbLogo">￥</text>{{money}}</view>
+<template name="27ae4e06">
+  <view class="_view data-v-d1e79ada">
+    <page-head title="{{title}}" class="_page-head data-v-d1e79ada"></page-head>
+    <view class="_view data-v-d1e79ada page-body">
+      <view class="_view data-v-d1e79ada page-section">
+        <view class="_view data-v-d1e79ada">支付金额</view>
+        <view class="_view data-v-d1e79ada price">
+          <text class="_text data-v-d1e79ada rmbLogo">￥</text>{{money}}</view>
       </view>
     </view>
-    <view class="_view data-v-0743eee4">
-      <view class="_view data-v-0743eee4 desc">支付方式</view>
-      <view class="_view data-v-0743eee4 uni-list">
-        <view class="_view data-v-0743eee4 pay-item" wx:key="index" key="{{index}}" bindtap="handleProxy" loading="{{item.loading}}" data-eventid="{{'5QT-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item">
-          <button class="_button data-v-0743eee4">{{item.name}}支付</button>
+    <view class="_view data-v-d1e79ada">
+      <view class="_view data-v-d1e79ada desc">支付方式</view>
+      <view class="_view data-v-d1e79ada uni-list">
+        <view class="_view data-v-d1e79ada pay-item" wx:key="index" key="{{index}}" bindtap="handleProxy" loading="{{item.loading}}" data-eventid="{{'h3H-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item">
+          <button class="_button data-v-d1e79ada">{{item.name}}支付</button>
         </view>
       </view>
     </view>

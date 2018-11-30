@@ -1,24 +1,24 @@
-<template name="b26c810e">
-  <view class="_view data-v-2cb2dfce">
-    <view class="_view data-v-2cb2dfce swiperbox">
-      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#3AC198" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}" class="_swiper data-v-2cb2dfce">
-        <swiper-item wx:key="item" key="{{item}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-2cb2dfce">
-          <image src="{{item}}" mode="scaleToFill" class="_image data-v-2cb2dfce"></image>
+<template name="ac7f29be">
+  <view class="_view data-v-76bc3cb4">
+    <view class="_view data-v-76bc3cb4 swiperbox">
+      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#3AC198" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}" class="_swiper data-v-76bc3cb4">
+        <swiper-item wx:key="item" key="{{item}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-76bc3cb4">
+          <image src="{{item}}" mode="scaleToFill" class="_image data-v-76bc3cb4"></image>
         </swiper-item>
       </swiper>
     </view>
-    <view class="_view data-v-2cb2dfce banner">
-      <view class="_view data-v-2cb2dfce seamlessscrolling" style=" {{('height:' + (bh + 'px') + ';' + 'width:' + (bw + 'px') + ';')}}">
-        <view class="_view data-v-2cb2dfce" style=" {{(  'height:' +  (direction == 'vertical' ? bh * clonestr.length : bh + 'px') +  ';' +  'width:' +  (direction == 'horizontal' ? bw * clonestr.length + 'px' : bw + 'px') +  ';' +  'left:' +  (bl + 'px') +  ';' +  'top:' +  (bt + 'px') +  ';')}}">
-          <view wx:key="index" key="{{index}}" wx:for="{{clonestr}}" wx:for-index="index" wx:for-item="item" class="_view data-v-2cb2dfce" style=" {{(  'height:' +  (bh + 'px') +  ';' +  'line-height:' +  (bh + 'px') +  ';' +  'width:' +  (bw + 'px') +  ';' +  'position:' +  absolute +  ';' +  'top:' +  (direction == 'vertical' ? index * bh + 'px' : 0) +  ';' +  'left:' +  (direction == 'horizontal' ? index * bw + 'px' : 0) +  ';')}}">{{item}}</view>
+    <view class="_view data-v-76bc3cb4 banner">
+      <view class="_view data-v-76bc3cb4 seamlessscrolling" style=" {{('height:' + (bh + 'px') + ';' + 'width:' + (bw + 'px') + ';')}}">
+        <view class="_view data-v-76bc3cb4" style=" {{(  'height:' +  (direction == 'vertical' ? bh * clonestr.length : bh + 'px') +  ';' +  'width:' +  (direction == 'horizontal' ? bw * clonestr.length + 'px' : bw + 'px') +  ';' +  'left:' +  (bl + 'px') +  ';' +  'top:' +  (bt + 'px') +  ';')}}">
+          <view wx:key="index" key="{{index}}" wx:for="{{clonestr}}" wx:for-index="index" wx:for-item="item" class="_view data-v-76bc3cb4" style=" {{(  'height:' +  (bh + 'px') +  ';' +  'line-height:' +  (bh + 'px') +  ';' +  'width:' +  (bw + 'px') +  ';' +  'position:' +  absolute +  ';' +  'top:' +  (direction == 'vertical' ? index * bh + 'px' : 0) +  ';' +  'left:' +  (direction == 'horizontal' ? index * bw + 'px' : 0) +  ';')}}">{{item}}</view>
         </view>
       </view>
     </view>
-    <view class="_view data-v-2cb2dfce list">
-      <view class="_view data-v-2cb2dfce list_item" wx:key="v" key="{{v}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="v">
-        <view class="_view data-v-2cb2dfce list_item_a" bindtap="handleProxy" data-eventid="{{'VFE-0-'+index}}" data-comkey="{{$k}}">
-          <image src="{{v.imgage}}" mode="scaleToFill" class="_image data-v-2cb2dfce"></image>
-          <text class="_text data-v-2cb2dfce">{{v.text}}</text>
+    <view class="_view data-v-76bc3cb4 list">
+      <view class="_view data-v-76bc3cb4 list_item" wx:key="v" key="{{v}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="v">
+        <view class="_view data-v-76bc3cb4 list_item_a" bindtap="handleProxy" data-eventid="{{'NCY-0-'+index}}" data-comkey="{{$k}}">
+          <image src="{{v.imgage}}" mode="scaleToFill" class="_image data-v-76bc3cb4"></image>
+          <text class="_text data-v-76bc3cb4">{{v.text}}</text>
         </view>
       </view>
     </view>

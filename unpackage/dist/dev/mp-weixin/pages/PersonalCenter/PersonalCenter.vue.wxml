@@ -52,13 +52,13 @@
         <image src="../../static/img/JCGX.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
         <text class="_text data-v-2d129eeb">检查更新</text>
       </view>
-      <view class="_view data-v-2d129eeb listli" bindtap="handleProxy" data-eventid="{{'7Ho-0'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-2d129eeb listli" bindtap="handleProxy" data-eventid="{{'u3R-0'}}" data-comkey="{{$k}}">
         <image src="../../static/img/QHZH.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
         <text class="_text data-v-2d129eeb">切换账号</text>
       </view>
     </view>
     <view style="width:100%;" class="_view data-v-2d129eeb">
-      <button class="_button data-v-2d129eeb getOut" bindtap="handleProxy" data-eventid="{{'fxT-1'}}" data-comkey="{{$k}}">退出APP</button>
+      <button class="_button data-v-2d129eeb getOut" bindtap="handleProxy" data-eventid="{{'4uT-1'}}" data-comkey="{{$k}}">退出APP</button>
     </view>
   </view>
 </template>

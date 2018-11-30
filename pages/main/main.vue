@@ -76,7 +76,7 @@
 						},
 						{
 							imgage:'../../static/img/hb.png',
-							text:'全球免费',
+							text:'新社区零售',
 						  url:"/pages/main/waiting"
 		
 						},
@@ -124,7 +124,7 @@
 				})
 				},
 				goURL:function(url){
-					console.log(JSON.stringify(service.userInfo))
+					// console.log(JSON.stringify(service.userInfo))
 						if(service.userInfo =="" ||!service.userInfo){
 							uni.showModal({
 								title:'温馨提示',
@@ -153,7 +153,7 @@
 		},
 		onLoad:function(){
 			const values = uni.getStorageSync('userInfo');
-			console.log(JSON.stringify(values));
+			// console.log(JSON.stringify(values));
 			service.userInfo = values;
 // 			this.vipLevel = uni.getStorageSync('vipLevel');
 // 	    console.log(JSON.stringify(vipLevel))

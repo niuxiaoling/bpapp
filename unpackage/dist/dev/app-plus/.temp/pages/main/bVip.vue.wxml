@@ -1,11 +1,11 @@
-<template name="2b5715ca">
-  <view class="_view data-v-2d3145bb">
-    <view class="_view data-v-2d3145bb logo">
-      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-2d3145bb"></image>
+<template name="2569be7a">
+  <view class="_view data-v-8b721b54">
+    <view class="_view data-v-8b721b54 logo">
+      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-8b721b54"></image>
     </view>
-    <view class="_view data-v-2d3145bb bevipbtn">
-      <button bindtap="handleProxy" data-eventid="{{'Arg-0'}}" data-comkey="{{$k}}" class="_button data-v-2d3145bb">99成为VIP</button>
-      <button bindtap="handleProxy" data-eventid="{{'jBj-1'}}" data-comkey="{{$k}}" class="_button data-v-2d3145bb">999成为高级VIP</button>
+    <view class="_view data-v-8b721b54 bevipbtn">
+      <button bindtap="handleProxy" data-eventid="{{'yRO-0'}}" data-comkey="{{$k}}" class="_button data-v-8b721b54">99成为初级勇士</button>
+      <button bindtap="handleProxy" data-eventid="{{'oKT-1'}}" data-comkey="{{$k}}" class="_button data-v-8b721b54">999成为中级勇士</button>
     </view>
   </view>
 </template>

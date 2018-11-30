@@ -74,7 +74,7 @@
 				uni.clearStorageSync('userInfo');
 				uni.clearStorageSync('vipLevel');
 				uni.reLaunch({
-						url:'../main/main',
+						url:'../index/index',
 						success() {
 							uni.hideLoading()
 						}

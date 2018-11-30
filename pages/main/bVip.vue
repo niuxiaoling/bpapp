@@ -15,10 +15,10 @@
 		<!-- </view> -->
 		<view class="bevipbtn">
 			<!-- <navigator url="../MoneyWay/request-payment?money=0.01"> -->
-				<button  @tap="bevip1" >99成为VIP</button>
+				<button  @tap="bevip1" >99成为初级勇士</button>
 			<!-- </navigator> -->
 			<!-- <navigator url="../MoneyWay/request-payment?money=0.02"> -->
-				<button  @tap="bevip2"  >999成为高级VIP</button>
+				<button  @tap="bevip2">999成为中级勇士</button>
 			<!-- </navigator> -->
 		</view>
 	</view>
@@ -40,24 +40,24 @@
 				if(this.vipLevel == 'VIP1'){
 					uni.showToast({
 						icon:'none',
-						title: '您已经是VIP，请点击高级',
+						title: '您已经是初级勇士，请点击中级',
 					});
 					return;
 				}
 				if(this.vipLevel == 'VIP2'){
 					uni.showToast({
 						icon:'none',
-						title: '您已经是高级Vip，无须再次购买',
+						title: '您已经是中级勇士，无须再次购买',
 					});
 					return;
 				}
 				uni.showModal({
 					title:'微品提示',
-					content:'确定支付99成为普通vip',
+					content:'确定支付99成为初级勇士',
 					success:function(res){
 						if (res.confirm) {
 							uni.navigateTo({
-								url:'../MoneyWay/request-payment?money=0.01',
+								url:'../MoneyWay/request-payment?money=99',
 							})
 						} else if (res.cancel) {
 						}
@@ -69,17 +69,17 @@
 				if(this.vipLevel == 'VIP2'){
 					uni.showToast({
 						icon:'none',
-						title: '您已经是高级Vip，无须再次购买',
+						title: '您已经是中级勇士，无须再次购买',
 					});
 					return;
 				}
 				uni.showModal({
 					title:'微品提示',
-					content:'确定支付999成为高级vip',
+					content:'确定支付999成为中级勇士',
 					success:function(res){
 						if (res.confirm) {
 							uni.navigateTo({
-								url:'../MoneyWay/request-payment?money=0.02',
+								url:'../MoneyWay/request-payment?money=999',
 							})
 						} else if (res.cancel) {
 						}

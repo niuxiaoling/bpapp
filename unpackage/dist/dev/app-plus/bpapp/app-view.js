@@ -1060,33 +1060,33 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'831282a4'])
-Z([3,'_view data-v-0743eee4'])
-Z([3,'_page-head data-v-0743eee4'])
+Z([3,'27ae4e06'])
+Z([3,'_view data-v-d1e79ada'])
+Z([3,'_page-head data-v-d1e79ada'])
 Z([[7],[3,'title']])
-Z([3,'_view data-v-0743eee4 page-body'])
-Z([3,'_view data-v-0743eee4 page-section'])
+Z([3,'_view data-v-d1e79ada page-body'])
+Z([3,'_view data-v-d1e79ada page-section'])
 Z(z[1])
 Z([3,'支付金额'])
-Z([3,'_view data-v-0743eee4 price'])
-Z([3,'_text data-v-0743eee4 rmbLogo'])
+Z([3,'_view data-v-d1e79ada price'])
+Z([3,'_text data-v-d1e79ada rmbLogo'])
 Z([3,'￥'])
 Z([a,[[7],[3,'money']]])
 Z(z[1])
-Z([3,'_view data-v-0743eee4 desc'])
+Z([3,'_view data-v-d1e79ada desc'])
 Z([3,'支付方式'])
-Z([3,'_view data-v-0743eee4 uni-list'])
+Z([3,'_view data-v-d1e79ada uni-list'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'providerList']])
 Z(z[16])
 Z([3,'handleProxy'])
-Z([3,'_view data-v-0743eee4 pay-item'])
+Z([3,'_view data-v-d1e79ada pay-item'])
 Z([[7],[3,'$k']])
-Z([[2,'+'],[1,'5QT-0-'],[[7],[3,'index']]])
+Z([[2,'+'],[1,'h3H-0-'],[[7],[3,'index']]])
 Z([[7],[3,'index']])
 Z([[6],[[7],[3,'item']],[3,'loading']])
-Z([3,'_button data-v-0743eee4'])
+Z([3,'_button data-v-d1e79ada'])
 Z([a,[[6],[[7],[3,'item']],[3,'name']],[3,'支付']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
@@ -1095,31 +1095,31 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_2)return __WXML_GLOBAL__.ops_cached.$gwx_2
 __WXML_GLOBAL__.ops_cached.$gwx_2=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'831282a4'])
+Z([3,'27ae4e06'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
 }
 function gz$gwx_3(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
 __WXML_GLOBAL__.ops_cached.$gwx_3=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'3cc367b9'])
-Z([3,'_view data-v-866cb7ce avatars'])
-Z([3,'_view data-v-866cb7ce avatar_box'])
-Z([3,'_view data-v-866cb7ce avatar'])
-Z([3,'_image data-v-866cb7ce'])
+Z([3,'cdd0a13e'])
+Z([3,'_view data-v-52edf534 avatars'])
+Z([3,'_view data-v-52edf534 avatar_box'])
+Z([3,'_view data-v-52edf534 avatar'])
+Z([3,'_image data-v-52edf534'])
 Z([3,'aspectFit'])
 Z([3,'../../static/img/tx_rbt.jpg'])
-Z([3,'_view data-v-866cb7ce sign'])
+Z([3,'_view data-v-52edf534 sign'])
 Z(z[4])
 Z(z[5])
 Z([3,'../../static/img/viptest.jpg'])
-Z([3,'_text data-v-866cb7ce phoneNo'])
+Z([3,'_text data-v-52edf534 phoneNo'])
 Z([3,'页面功能开发中···'])
-Z([3,'_view data-v-866cb7ce income'])
-Z([3,'_view data-v-866cb7ce income-list'])
-Z([3,'_text data-v-866cb7ce list-No'])
+Z([3,'_view data-v-52edf534 income'])
+Z([3,'_view data-v-52edf534 income-list'])
+Z([3,'_text data-v-52edf534 list-No'])
 Z([3,'12'])
-Z([3,'_rich-text data-v-866cb7ce list-text'])
+Z([3,'_rich-text data-v-52edf534 list-text'])
 Z([3,'总贡献值'])
 Z(z[14])
 Z(z[15])
@@ -1131,12 +1131,12 @@ Z(z[15])
 Z(z[16])
 Z(z[17])
 Z([3,'已兑贡献'])
-Z([3,'_view data-v-866cb7ce lists'])
-Z([3,'_view data-v-866cb7ce listli'])
+Z([3,'_view data-v-52edf534 lists'])
+Z([3,'_view data-v-52edf534 listli'])
 Z(z[4])
 Z(z[5])
 Z([3,'../../static/img/GRZL.png'])
-Z([3,'_text data-v-866cb7ce'])
+Z([3,'_text data-v-52edf534'])
 Z([3,'个人资料'])
 Z(z[30])
 Z(z[4])
@@ -1177,18 +1177,18 @@ Z([3,'检查更新'])
 Z([3,'handleProxy'])
 Z(z[30])
 Z([[7],[3,'$k']])
-Z([1,'s3e-0'])
+Z([1,'Rb5-0'])
 Z(z[4])
 Z(z[5])
 Z([3,'../../static/img/QHZH.png'])
 Z(z[34])
 Z([3,'切换账号'])
-Z([3,'_view data-v-866cb7ce'])
+Z([3,'_view data-v-52edf534'])
 Z([3,'width:100%;'])
 Z(z[72])
-Z([3,'_button data-v-866cb7ce getOut'])
+Z([3,'_button data-v-52edf534 getOut'])
 Z(z[74])
-Z([1,'leC-1'])
+Z([1,'ZuE-1'])
 Z([3,'退出APP'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
 }
@@ -1197,18 +1197,18 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
 __WXML_GLOBAL__.ops_cached.$gwx_4=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'3cc367b9'])
+Z([3,'cdd0a13e'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
 function gz$gwx_5(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
 __WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'171408ae'])
-Z([3,'_view data-v-8e16766e'])
+Z([3,'51caf701'])
+Z([3,'_view data-v-bf2a8d64'])
 Z([[7],[3,'autoplay']])
 Z([[7],[3,'circular']])
-Z([3,'_swiper data-v-8e16766e swpier-box'])
+Z([3,'_swiper data-v-bf2a8d64 swpier-box'])
 Z([[7],[3,'duration']])
 Z([3,'#3AC198'])
 Z([[7],[3,'indicator']])
@@ -1216,24 +1216,24 @@ Z([3,'index'])
 Z([3,'ite'])
 Z([[7],[3,'items']])
 Z(z[9])
-Z([3,'_swiper-item data-v-8e16766e'])
+Z([3,'_swiper-item data-v-bf2a8d64'])
 Z([[7],[3,'ite']])
-Z([3,'_image data-v-8e16766e'])
+Z([3,'_image data-v-bf2a8d64'])
 Z([3,'scaleToFill'])
 Z(z[13])
-Z([3,'_view data-v-8e16766e taskListBOX'])
+Z([3,'_view data-v-bf2a8d64 taskListBOX'])
 Z(z[8])
 Z([3,'task'])
 Z([[7],[3,'tasksList']])
 Z(z[19])
-Z([3,'_view data-v-8e16766e taskList'])
+Z([3,'_view data-v-bf2a8d64 taskList'])
 Z([[7],[3,'task']])
-Z([3,'_navigator data-v-8e16766e'])
+Z([3,'_navigator data-v-bf2a8d64'])
 Z([[6],[[7],[3,'task']],[3,'url']])
 Z(z[14])
 Z(z[15])
 Z([[6],[[7],[3,'task']],[3,'imgage']])
-Z([3,'_text data-v-8e16766e'])
+Z([3,'_text data-v-bf2a8d64'])
 Z([a,[[6],[[7],[3,'task']],[3,'text']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
@@ -1242,25 +1242,25 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
 __WXML_GLOBAL__.ops_cached.$gwx_6=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'171408ae'])
+Z([3,'51caf701'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
 }
 function gz$gwx_7(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
 __WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'44e43b85'])
-Z([3,'_view data-v-7f19ed9f content'])
-Z([3,'_view data-v-7f19ed9f logo'])
-Z([3,'_image data-v-7f19ed9f'])
+Z([3,'64de9d2d'])
+Z([3,'_view data-v-1d76df7a content'])
+Z([3,'_view data-v-1d76df7a logo'])
+Z([3,'_image data-v-1d76df7a'])
 Z([3,'../../static/img/logo.jpg'])
-Z([3,'_view data-v-7f19ed9f reg-list'])
+Z([3,'_view data-v-1d76df7a reg-list'])
 Z(z[3])
 Z([3,'../../static/img/shouji.png'])
 Z([3,'handleProxy'])
-Z([3,'_input data-v-7f19ed9f'])
+Z([3,'_input data-v-1d76df7a'])
 Z([[7],[3,'$k']])
-Z([1,'3hH-0'])
+Z([1,'iCU-0'])
 Z([3,'11'])
 Z([3,'手机号'])
 Z([3,'placeholder'])
@@ -1272,20 +1272,20 @@ Z([3,'../../static/img/miam.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'b67-1'])
+Z([1,'zgL-1'])
 Z(z[12])
 Z([3,'密码'])
 Z(z[14])
 Z([3,'password'])
 Z([[7],[3,'password']])
-Z([3,'_view data-v-7f19ed9f regBut'])
+Z([3,'_view data-v-1d76df7a regBut'])
 Z(z[8])
-Z([3,'_button data-v-7f19ed9f'])
+Z([3,'_button data-v-1d76df7a'])
 Z(z[10])
-Z([1,'kei-2'])
+Z([1,'aDK-2'])
 Z([3,' 登 录 '])
-Z([3,'_view data-v-7f19ed9f action-row'])
-Z([3,'_navigator data-v-7f19ed9f'])
+Z([3,'_view data-v-1d76df7a action-row'])
+Z([3,'_navigator data-v-1d76df7a'])
 Z([3,'../reg/reg'])
 Z([3,'注册账号'])
 Z(z[36])
@@ -1298,16 +1298,16 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
 __WXML_GLOBAL__.ops_cached.$gwx_8=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'44e43b85'])
+Z([3,'64de9d2d'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
 __WXML_GLOBAL__.ops_cached.$gwx_9=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'47f658ef'])
-Z([3,'_view data-v-38b9d98f imageBox'])
-Z([3,'_image data-v-38b9d98f'])
+Z([3,'52def097'])
+Z([3,'_view data-v-98bc7eac imageBox'])
+Z([3,'_image data-v-98bc7eac'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/moneyway.png'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
@@ -1317,32 +1317,34 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'47f658ef'])
+Z([3,'52def097'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 function gz$gwx_11(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
 __WXML_GLOBAL__.ops_cached.$gwx_11=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'5719b0ba'])
-Z([3,'_view data-v-35939c1a'])
-Z([3,'_view data-v-35939c1a logo'])
-Z([3,'_image data-v-35939c1a'])
+Z([3,'366b8412'])
+Z([3,'_view data-v-62d4e59f content'])
+Z([3,'_view data-v-62d4e59f logo'])
+Z([3,'_image data-v-62d4e59f'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/logoBanner.jpg'])
-Z([3,'_view data-v-35939c1a erweima'])
-Z(z[3])
+Z([3,'_view data-v-62d4e59f erweima'])
+Z([3,'_image data-v-62d4e59f erweimaimg'])
 Z([[7],[3,'qrimg']])
-Z([3,'_view data-v-35939c1a tjCode'])
-Z([3,'_view data-v-35939c1a plText'])
+Z([3,'_image data-v-62d4e59f erweimalogo'])
+Z([3,'../../static/img/logo.jpg'])
+Z([3,'_view data-v-62d4e59f tjCode'])
+Z([3,'_view data-v-62d4e59f plText'])
 Z([3,'我的邀请码'])
-Z([3,'_view data-v-35939c1a plCode'])
+Z([3,'_view data-v-62d4e59f plCode'])
 Z([3,'index'])
 Z([3,'v'])
 Z([[7],[3,'plcodeArr']])
-Z(z[14])
+Z(z[16])
 Z([[7],[3,'v']])
-Z([3,'_text data-v-35939c1a'])
+Z([3,'_text data-v-62d4e59f'])
 Z([a,[[7],[3,'v']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
@@ -1351,30 +1353,30 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
 __WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'5719b0ba'])
+Z([3,'366b8412'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
 function gz$gwx_13(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
 __WXML_GLOBAL__.ops_cached.$gwx_13=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'2b5715ca'])
-Z([3,'_view data-v-2d3145bb'])
-Z([3,'_view data-v-2d3145bb logo'])
-Z([3,'_image data-v-2d3145bb'])
+Z([3,'2569be7a'])
+Z([3,'_view data-v-8b721b54'])
+Z([3,'_view data-v-8b721b54 logo'])
+Z([3,'_image data-v-8b721b54'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/logoBanner.jpg'])
-Z([3,'_view data-v-2d3145bb bevipbtn'])
+Z([3,'_view data-v-8b721b54 bevipbtn'])
 Z([3,'handleProxy'])
-Z([3,'_button data-v-2d3145bb'])
+Z([3,'_button data-v-8b721b54'])
 Z([[7],[3,'$k']])
-Z([1,'Arg-0'])
-Z([3,'99成为VIP'])
+Z([1,'yRO-0'])
+Z([3,'99成为初级勇士'])
 Z(z[7])
 Z(z[8])
 Z(z[9])
-Z([1,'jBj-1'])
-Z([3,'999成为高级VIP'])
+Z([1,'oKT-1'])
+Z([3,'999成为中级勇士'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
 }
 function gz$gwx_14(){
@@ -1382,19 +1384,19 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
 __WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'2b5715ca'])
+Z([3,'2569be7a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
 function gz$gwx_15(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
 __WXML_GLOBAL__.ops_cached.$gwx_15=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'b26c810e'])
-Z([3,'_view data-v-2cb2dfce'])
-Z([3,'_view data-v-2cb2dfce swiperbox'])
+Z([3,'ac7f29be'])
+Z([3,'_view data-v-76bc3cb4'])
+Z([3,'_view data-v-76bc3cb4 swiperbox'])
 Z([[7],[3,'autoplay']])
 Z([1,true])
-Z([3,'_swiper data-v-2cb2dfce'])
+Z([3,'_swiper data-v-76bc3cb4'])
 Z([[7],[3,'duration']])
 Z([3,'#3AC198'])
 Z([[7],[3,'indicatorDots']])
@@ -1403,13 +1405,13 @@ Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'itemList']])
 Z(z[11])
-Z([3,'_swiper-item data-v-2cb2dfce'])
+Z([3,'_swiper-item data-v-76bc3cb4'])
 Z([[7],[3,'item']])
-Z([3,'_image data-v-2cb2dfce'])
+Z([3,'_image data-v-76bc3cb4'])
 Z([3,'scaleToFill'])
 Z(z[15])
-Z([3,'_view data-v-2cb2dfce banner'])
-Z([3,'_view data-v-2cb2dfce seamlessscrolling'])
+Z([3,'_view data-v-76bc3cb4 banner'])
+Z([3,'_view data-v-76bc3cb4 seamlessscrolling'])
 Z([a,[3,' '],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'height:'],[[2,'+'],[[7],[3,'bh']],[1,'px']]],[1,';']],[1,'width:']],[[2,'+'],[[7],[3,'bw']],[1,'px']]],[1,';']]])
 Z(z[1])
 Z([a,z[21][1],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'height:'],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'vertical']],[[2,'*'],[[7],[3,'bh']],[[6],[[7],[3,'clonestr']],[3,'length']]],[[2,'+'],[[7],[3,'bh']],[1,'px']]]],[1,';']],[1,'width:']],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'horizontal']],[[2,'+'],[[2,'*'],[[7],[3,'bw']],[[6],[[7],[3,'clonestr']],[3,'length']]],[1,'px']],[[2,'+'],[[7],[3,'bw']],[1,'px']]]],[1,';']],[1,'left:']],[[2,'+'],[[7],[3,'bl']],[1,'px']]],[1,';']],[1,'top:']],[[2,'+'],[[7],[3,'bt']],[1,'px']]],[1,';']]])
@@ -1421,21 +1423,21 @@ Z(z[1])
 Z([[7],[3,'index']])
 Z([a,z[21][1],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[[2,'+'],[1,'height:'],[[2,'+'],[[7],[3,'bh']],[1,'px']]],[1,';']],[1,'line-height:']],[[2,'+'],[[7],[3,'bh']],[1,'px']]],[1,';']],[1,'width:']],[[2,'+'],[[7],[3,'bw']],[1,'px']]],[1,';']],[1,'position:']],[[7],[3,'absolute']]],[1,';']],[1,'top:']],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'vertical']],[[2,'+'],[[2,'*'],[[7],[3,'index']],[[7],[3,'bh']]],[1,'px']],[1,0]]],[1,';']],[1,'left:']],[[2,'?:'],[[2,'=='],[[7],[3,'direction']],[1,'horizontal']],[[2,'+'],[[2,'*'],[[7],[3,'index']],[[7],[3,'bw']]],[1,'px']],[1,0]]],[1,';']]])
 Z([a,[[7],[3,'item']]])
-Z([3,'_view data-v-2cb2dfce list'])
+Z([3,'_view data-v-76bc3cb4 list'])
 Z(z[10])
 Z([3,'v'])
 Z([[7],[3,'list']])
 Z(z[34])
-Z([3,'_view data-v-2cb2dfce list_item'])
+Z([3,'_view data-v-76bc3cb4 list_item'])
 Z([[7],[3,'v']])
 Z([3,'handleProxy'])
-Z([3,'_view data-v-2cb2dfce list_item_a'])
+Z([3,'_view data-v-76bc3cb4 list_item_a'])
 Z([[7],[3,'$k']])
-Z([[2,'+'],[1,'VFE-0-'],[[7],[3,'index']]])
+Z([[2,'+'],[1,'NCY-0-'],[[7],[3,'index']]])
 Z(z[16])
 Z(z[17])
 Z([[6],[[7],[3,'v']],[3,'imgage']])
-Z([3,'_text data-v-2cb2dfce'])
+Z([3,'_text data-v-76bc3cb4'])
 Z([a,[[6],[[7],[3,'v']],[3,'text']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
 }
@@ -1444,23 +1446,23 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
 __WXML_GLOBAL__.ops_cached.$gwx_16=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'b26c810e'])
+Z([3,'ac7f29be'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
 }
 function gz$gwx_17(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_17)return __WXML_GLOBAL__.ops_cached.$gwx_17
 __WXML_GLOBAL__.ops_cached.$gwx_17=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'9b396486'])
-Z([3,'_view data-v-de458dc6'])
-Z([3,'_view data-v-de458dc6 logo'])
-Z([3,'_image data-v-de458dc6'])
+Z([3,'dc95bdd6'])
+Z([3,'_view data-v-83c2fabc'])
+Z([3,'_view data-v-83c2fabc logo'])
+Z([3,'_image data-v-83c2fabc'])
 Z([3,'widthFix'])
 Z([3,'../../static/img/logoBanner.jpg'])
-Z([3,'_view data-v-de458dc6 waitfor'])
-Z([3,'_text data-v-de458dc6 willline'])
+Z([3,'_view data-v-83c2fabc waitfor'])
+Z([3,'_text data-v-83c2fabc willline'])
 Z([3,' 即将上线'])
-Z([3,'_text data-v-de458dc6 paeasewaiting'])
+Z([3,'_text data-v-83c2fabc paeasewaiting'])
 Z([3,' 敬请期待'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
 }
@@ -1469,25 +1471,25 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
 __WXML_GLOBAL__.ops_cached.$gwx_18=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'9b396486'])
+Z([3,'dc95bdd6'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
 }
 function gz$gwx_19(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
 __WXML_GLOBAL__.ops_cached.$gwx_19=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'3ddbf04a'])
-Z([3,'_view data-v-dbe3f096'])
-Z([3,'_view data-v-dbe3f096 logo'])
-Z([3,'_image data-v-dbe3f096'])
+Z([3,'0d8f7d83'])
+Z([3,'_view data-v-364c1f10'])
+Z([3,'_view data-v-364c1f10 logo'])
+Z([3,'_image data-v-364c1f10'])
 Z([3,'../../static/img/logo.jpg'])
-Z([3,'_view data-v-dbe3f096 reg-list'])
+Z([3,'_view data-v-364c1f10 reg-list'])
 Z(z[3])
 Z([3,'../../static/img/shouji.png'])
 Z([3,'handleProxy'])
-Z([3,'_input data-v-dbe3f096'])
+Z([3,'_input data-v-364c1f10'])
 Z([[7],[3,'$k']])
-Z([1,'rWE-0'])
+Z([1,'0nh-0'])
 Z([3,'11'])
 Z([3,'手机号'])
 Z([3,'color:#ffffff'])
@@ -1499,7 +1501,7 @@ Z([3,'../../static/img/miam.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'vV2-1'])
+Z([1,'Ez1-1'])
 Z([3,'true'])
 Z([3,'请输入新密码'])
 Z(z[14])
@@ -1511,17 +1513,17 @@ Z([3,'../../static/img/querenmima.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'pBC-2'])
+Z([1,'z4E-2'])
 Z(z[24])
 Z([3,'请确认密码'])
 Z(z[14])
 Z(z[15])
 Z([[7],[3,'newPassword']])
-Z([3,'_view data-v-dbe3f096 regBut'])
+Z([3,'_view data-v-364c1f10 regBut'])
 Z(z[8])
-Z([3,'_button data-v-dbe3f096'])
+Z([3,'_button data-v-364c1f10'])
 Z(z[10])
-Z([1,'CUJ-3'])
+Z([1,'lTl-3'])
 Z([3,' 确 定'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
 }
@@ -1530,25 +1532,157 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
 __WXML_GLOBAL__.ops_cached.$gwx_20=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'3ddbf04a'])
+Z([3,'0d8f7d83'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
 }
 function gz$gwx_21(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_21)return __WXML_GLOBAL__.ops_cached.$gwx_21
 __WXML_GLOBAL__.ops_cached.$gwx_21=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'34836fee'])
-Z([3,'_view data-v-d28b703a'])
-Z([3,'_view data-v-d28b703a logo'])
-Z([3,'_image data-v-d28b703a'])
+Z([3,'8926b772'])
+Z([3,'_view data-v-553b2814'])
+Z([3,'_view data-v-553b2814 title'])
+Z([3,'《微品众信用户注册协议》'])
+Z([3,'_view data-v-553b2814 textcontent'])
+Z([3,'在此特别提醒您在注册成为微品众信用户之前,请认真阅读本《微品众信用户注册协议》(以下简称“协议”),确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。您同意并点击确认本协议条款且完成注册程序后,才能成为微品众信受,并同意接受本协议各项条款的约束。若您不同意本协议,或对本协议中的条款存在任何疑问,请您立即停止微品众信用户注册程序,并可以选择不使用微品众信服务。本协议条款是上海六守电子科技有限公司（以下称“微品众信”或“我们”）对用户相关政策的许诺,请您务必仔细阅读。'])
+Z([3,'_view data-v-553b2814 titlesmile'])
+Z([3,'一：用户信息采集 '])
+Z(z[4])
+Z([3,'当您在本网站/软件进行用户注册登记，使用本网站/软件的服务，以及参加本网站/软件的活动时，即为您同意本网站/软件将收集您的个人信息，并保存记录。本网站/软件收集的个人信息包括但不限于：姓名、性别、生日、城市、身份证号码、电子邮箱地址、手机电话、血型，收货地址等。您主动提供的信息越多及越准确，我们就能够更好地为您提供有关服务。'])
+Z(z[6])
+Z([3,'二：用户信息的使用'])
+Z(z[4])
+Z([3,'本网站/软件收集个人信息的基本目的是为了更好的了解我们的用户，以便向您提供特色服务和个性化服务。个人信息将主要用于以下几个目的： '])
+Z(z[4])
+Z([3,'（1）完成您对特定服务或产品的要求。'])
+Z(z[4])
+Z([3,'（2）在我们提供服务时,用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途,确保我们向您提供的产品和服务的安全性。'])
+Z(z[4])
+Z([3,'（3）帮助我们设计新服务,改善我们现有服务。'])
+Z(z[4])
+Z([3,'（4）使我们更加了解您如何接入和使用我们的服务,从而针对性地回应您的个性化需求,例如语言设定、位置设定、个性化的帮助服务和指示,或对您和其他用户作出其他方面的回应。'])
+Z(z[4])
+Z([3,'（5）用于对本网站/软件用户数据的统计（如用户数量、构成、兴趣、表现等），以便我们向用户提供更好的服务和产品，或向第三方为了一定的合法目的披露该类统计数据。该类统计数据都是用户群整体的信息，而非个人的信息。'])
+Z(z[4])
+Z([3,'（6）让您参与有关我们产品和服务的调查。为了让您有更好的体验、改善我们的服务或您同意的其他用途,在符合相关法律法规的前提下,我们可能将通过某一项服务所收集的信息,以汇集信息或者个性化的方式,用于我们的其他服务。例如,在您使用我们的一项服务时所收集的信息,可能在另一服务中用于向您提供特定内容,或向您展示与您相关的、非普遍推送的信息。如果我们在相关服务中提供了相应选项,您也可以授权我们将该服务所提供和储存的信息用于我们的其他服务。'])
+Z(z[6])
+Z([3,'三：用户信息的共享和披露'])
+Z(z[4])
+Z([3,'微品众信信息所收集您的个人信息，将仅用于微品众信为您提供相关服务。一般情况下，在未得到您的同意之前，您的任何个人信息将不会被提供给无关的第三方。 在下列情况下，我们可能会将您的个人信息提供给有关的第三方：'])
+Z(z[4])
+Z([3,'(1)本网站/软件的某些服务需由一个合作伙伴(如代理公司、提供相关技术服务的公司、运输公司、邮寄公司、提供奖品的公司等)提供或共同提供。为了向您提供此类服务，本网站有必要与该合作伙伴分享您的个人信息。如果您不希望您的信息被分享，您可以不使用该具体服务从而拒绝您的个人信息被披露。'])
+Z(z[4])
+Z([3,'(2)本网站/软件可能会与第三方共同进行推广活动。在推广活动中所收集的全部或部分个人信息可能会与该第三方分享。如果您不想让您的信息被分享，您可以通过不参加该推广活动而拒绝。'])
+Z(z[4])
+Z([3,'(3)根据法律法规或政府的强制性规定，我们必须向有关司法或政府部门提供您的个人信息。 '])
+Z(z[4])
+Z([3,'(4)为了防止他人的合法权益或社会公共利益受到重大危害。'])
+Z(z[4])
+Z([3,'(5)为了防止您的合法权益受到重大危害。'])
+Z(z[4])
+Z([3,'(6)我们发现您的行为违反了本网站/软件的服务条款或关于特定服务或产品的任何使用指引， 或对微品众信信息的合法权益构成重大危害。'])
+Z(z[6])
+Z([3,'四：用户管理'])
+Z(z[4])
+Z([3,'您可以在任何时候通过使用您的本网站/软件的注册用户名和密码，查询，补充或更正您的本网站/软件帐户中的个人信息，或要求删除您的本网站/软件帐户中的个人信息。您在本网站/软件的帐户可以被删除，但这样会导致您不能够登录本网站/软件及使用本网站/软件的任何服务。若发现任何非法使用用户帐号或存在安全漏洞的情况,请立即通知本站并向公安机关报案。因用户未妥善保管其帐号名称及密码而导致第三人使用帐号而给用户造成的损失,由用户自行承担'])
+Z(z[4])
+Z([3,'用户在注册及使用时应承诺遵守法律法规、社会主义制度、国家利益、公民合法权益、公共秩序、社会道德风尚和信息真实性等七条底线,且用户对其发布的内容(包括但不限于文字、图片等)时,不得有以下情形：'])
+Z(z[4])
+Z([3,'(1)违反宪法或法律法规规定的;'])
+Z(z[4])
+Z([3,'(2)危害国家安全,泄露国家秘密,颠覆国家政权,破坏国家统一的;'])
+Z(z[4])
+Z([3,'(3)损害国家荣誉和利益的,损害公共利益的;'])
+Z(z[4])
+Z([3,'(4)煽动民族仇恨、民族歧视,破坏民族团结的;'])
+Z(z[4])
+Z([3,'(5)破坏国家宗教政策,宣扬邪教和封建迷信的;'])
+Z(z[4])
+Z([3,'(6)散布谣言,扰乱社会秩序,破坏社会稳定的;'])
+Z(z[4])
+Z([3,'(7)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的'])
+Z(z[4])
+Z([3,'(8)侮辱或者诽谤他人,侵害他人合法权益的;'])
+Z(z[4])
+Z([3,'(9)含有法律、行政法规禁止的其他内容或违反微品众信的其他规定的。'])
+Z(z[4])
+Z([3,'用户以虚假信息骗取帐号名称注册,或其帐号头像、简介等注册信息存在违法和不良信息的,微品众信有权采取通知限期改正、暂停使用、注销登记等措施。微品众信帐号仅限于用户本人使用,严禁将您的微品众信帐号允许第三人使用,否则用户应承担由此产生的全部责任,并与实际使用人承担连带责任。'])
+Z(z[6])
+Z([3,'五：信息安全'])
+Z(z[4])
+Z([3,'您的本网站/软件帐户信息和本网站/软件档案通过密码来保护，只有您个人才有权获取这些个人信息。我们建议您不要向任何他人泄露您的密码。本网站/软件也不会主动致电或主动发电子邮件给您来询问您的密码，如果您遇到此类情况请及时与微品众信客服联系确认。同时，请您在完成工作后，务必退出您的本网站/软件帐户并关闭您的浏览器窗口，以便当您与他人合用一台电脑，或正在公共场所使用电脑时，保证他人无法获取您的个人信息和往来通信。遗憾的是，任何通过互联网或无线网络的数据传输都无法获得绝对的安全保证。所以，在我们尽最大努力来保护您的个人信息的同时，本网站/软件不能对您向我们进行的信息传输，或我们所发的在线产品或服务的信息的安全作出肯定或保证。您作出上述行为时将自己承担风险。一旦我们收到您传输来的信息，我们将尽最大努力保证其在我们系统的安全。'])
+Z(z[6])
+Z([3,'六：用户隐私制度'])
+Z(z[4])
+Z([3,'我们会在您自愿的前提下收集您的个人信息并将这些信息进行整合,包括但不限于注册帐号时的相关信息和活动报名信息等。尊重用户个人隐私是微品众信的一项基本政策。所以,微品众信不会公开或向任何第三方透露用户的注册资料以及用户因享受微品众信服务而提供的任何信息,但以下情形除外:'])
+Z(z[4])
+Z([3,'(1)事先获得用户的明确授权或许可;'])
+Z(z[4])
+Z([3,'(2)遵守有关法律规定,包括在国家有关机关查询时,提供用户的注册信息、用户在本站发布的信息内容及其发布时间、互联网地址或者域名等'])
+Z(z[4])
+Z([3,'(3)在紧急情况下竭力维护用户个人和社会大众的隐私安全;'])
+Z(z[4])
+Z([3,'(4)根据本条款相关规定或者微品众信认为必要的其他情形。微品众信可能会与第三方合作向用户提供相关的网络服务,在此情况下,如该第三方同意承担与微品众信*同等的保护用户隐私的责任,则微品众信可将用户信息提供给该第三方。'])
+Z(z[6])
+Z([3,'七：所有权及知识产权条款'])
+Z(z[4])
+Z([3,'本“网站/软件”由微品众信拥有和运作。本“网站/软件”公开或显示的所有内容，包括但不限于文字、图表、照片、图像、动画、音效、插图及软件（简称“内容”）等，均属微品众信及其许可人或内容供应商所有。本“网站/软件”内的所有组成要素，包括但不限于整体设计及“内容”，均受商业外观、版权、道德规范、商标及其它所有相关知识产权的法律保护。除非依据本条款与条件或与经微品众信在其它协议的声明同意外，本网站/软件內的任何部分或组成要素或“內容”均不得以任何方式复制或传播。除非有明确协议同意，否则网站/软件中的“內容”及一切相关权利将为微品众信成员或其许可人的资产。'])
+Z(z[6])
+Z([3,'八：责任限制'])
+Z(z[4])
+Z([3,'除非另有明确的书面说明,本站及其所包含的或以其它方式通过本站提供给您的全部信息、内容、材料、产品(包括软件)和服务,均是在\x22按现状\x22和\x22按现有\x22的基础上提供的。除非另有明确的书面说明,我们不对本站的运营及其包含在本站上的信息、内容、材料、产品(包括软件)或服务作任何形式的、明示或默示的声明或担保(根据中华人民共和国法律另有规定的以外)。我们不担保本站所包含的或以其它方式通过本站提供给您的全部信息、内容、材料、产品(包括软件)和服务、其服务器或从本站发出的电子信件、信息没有病毒或其他有害成分。如因不可抗力或其它本站无法控制的原因使本站服务系统溃或无法正常使用导致服务不可用或网上交易无法完成或丢失有关的信息、记录等,我们会合理地尽力协助处理善后事宜'])
+Z(z[6])
+Z([3,'九：免责声明'])
+Z(z[4])
+Z([3,'客户明确同意使用微品众信服务的风险由客户承担。微品众信明确表示不提供任何类型的担保，不论是明确的或隐含的。微品众信将尽力维护客户使用微品众信服务的合法权益，但不担保微品众信服务一定能满足客户的要求，也不担保服务的及时性、安全性、真实性、稳定性、正确性。对客户使用该等服务中出现的信息（包括但不限于客户发布的信息）删除或储存失败，微品众信亦不承担任何责任。'])
+Z(z[4])
+Z([3,'客户理解并接受下载或通过相应产品服务取得的任何信息资料取决于客户自己，并自行承担系统受损、资料丢失以及其他任何风险。微品众信对客户在互联网上得到的任何商品购物服务、交易进程、招聘信息等，都不作担保。'])
+Z(z[4])
+Z([3,'微品众信对直接、间接、偶然、特殊及继起的损害不负责任，这些损害来自：不正当使用微品众信服务及/或应用服务，在网上购买商品或类似服务，在网上进行交易，非法使用服务或客户传送的信息有所变动。'])
+Z(z[4])
+Z([3,'微品众信对本项服务下涉及的境内外基础运营商的通信网络的故障、技术缺陷、覆盖范围限制、不可抗力、计算机病毒、黑客攻击、客户所在位置、客户关机或其他非微品众信技术能力范围内的事因等造成的服务中断、客户邮件内容丢失、出现乱码、错误接收、无法接收、迟延接收不承担责任。'])
+Z(z[4])
+Z([3,'微品众信保留判定客户的行为是否符合本服务协议要求的权利，如果客户违背了本服务协议的规定，微品众信有权中止或终止相应微品众信服务。'])
+Z(z[4])
+Z([3,'转户规定：如果客户将手机号码转让给他人，请用户提前自行删除微品众信内资料。否则，受让该号码的客户将能够查看您的客户个人数据。微品众信不承担由此引发的客户数据丢失等责任及纠纷。'])
+Z(z[6])
+Z([3,'十：协议更新及用户关注义务'])
+Z(z[4])
+Z([3,'根据国家法律法规的更新及网站运营需要,我们有权对本条款不时地进行修改,修改后的服务条款一旦被张贴在本站上即生效力,并代替原来的服务条款。用户可随时登录查阅最新服务条款内容。如用户不同意更新后的服务条款,应立即停止接受本站提供的服务;如用户继续使用本站提供的服务,即视为同意更新后的用户协议。我们建议您在使用本站之前阅读本用户协议及本站的公告。如果本用户协议中任何一条被视为废止无效或因任何理由不可执行,该条应视为可分的且并不影响任何其余协议的有效性和可执行性。'])
+Z(z[6])
+Z([3,'十一：法律管辖和适用'])
+Z(z[4])
+Z([3,'本用户协议的订立、执行和解释及争议的解决均应适用在中华人民共和国大陆地区现行之有效法律。如发生本服务条款的某些内容与适用之法律相抵触时,则这些条款将完全按法律规定重新解释,而其它有效条款继续有效。如缔约方就本条款內容或其执行发生任何争议,双方应尽力友好协商解决;协商不成时,任何一方均可向咕咚所在地的中华人民共和国大陆地区法院提起诉讼。'])
+Z(z[6])
+Z([3,'十二：其他'])
+Z(z[4])
+Z([3,'我们尊重用户和消费者的合法权利,本用户协议及本站上发布的各类规则、政策、声明等其他内容,均是为了更好的、更加便利的为用户和消费者提供服务。微品众信欢迎用户和社会各界提出意见和建议,我们将虚心接受并适时修改本服务条款及相关政策、规则。您完成注册且成为微品众信的注册用户则意味着您完全接受本用户协议,在注册之前请您再次确认已知悉并完全理解本用户协议的全部内容。'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
+}
+function gz$gwx_22(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
+__WXML_GLOBAL__.ops_cached.$gwx_22=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'8926b772'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_22);return __WXML_GLOBAL__.ops_cached.$gwx_22
+}
+function gz$gwx_23(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_23)return __WXML_GLOBAL__.ops_cached.$gwx_23
+__WXML_GLOBAL__.ops_cached.$gwx_23=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'123bbdb1'])
+Z([3,'_view data-v-3af85f3e'])
+Z([3,'_view data-v-3af85f3e logo'])
+Z([3,'_image data-v-3af85f3e'])
 Z([3,'../../static/img/logo.jpg'])
-Z([3,'_view data-v-d28b703a reg-list'])
+Z([3,'_view data-v-3af85f3e reg-list'])
 Z(z[3])
 Z([3,'../../static/img/shouji.png'])
 Z([3,'handleProxy'])
-Z([3,'_input data-v-d28b703a'])
+Z([3,'_input data-v-3af85f3e'])
 Z([[7],[3,'$k']])
-Z([1,'bm0-0'])
+Z([1,'DxW-0'])
 Z([3,'11'])
 Z([3,'手机号'])
 Z([3,'color:#ffffff'])
@@ -1560,19 +1694,19 @@ Z([3,'../../static/img/yanzhengma.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'bO9-1'])
+Z([1,'ajr-1'])
 Z([3,'手机验证码'])
 Z(z[14])
 Z(z[15])
 Z([[7],[3,'verificationCode']])
 Z([[7],[3,'showTime']])
-Z([3,'_text data-v-d28b703a yanzhentime'])
+Z([3,'_text data-v-3af85f3e yanzhentime'])
 Z([a,[[7],[3,'time']],[3,'s']])
 Z(z[8])
-Z([3,'_button data-v-d28b703a'])
+Z([3,'_button data-v-3af85f3e'])
 Z(z[10])
-Z([1,'AAS-2'])
-Z([3,'_text data-v-d28b703a'])
+Z([1,'DPy-2'])
+Z([3,'_text data-v-3af85f3e'])
 Z([3,'|'])
 Z([3,'获取'])
 Z(z[5])
@@ -1581,7 +1715,7 @@ Z([3,'../../static/img/miam.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'42W-3'])
+Z([1,'CFz-3'])
 Z([3,'密码'])
 Z(z[14])
 Z([3,'password'])
@@ -1592,7 +1726,7 @@ Z([3,'../../static/img/querenmima.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'TUb-4'])
+Z([1,'SEx-4'])
 Z([3,'请确认密码'])
 Z(z[14])
 Z(z[47])
@@ -1603,35 +1737,45 @@ Z([3,'../../static/img/yaoqingma.png'])
 Z(z[8])
 Z(z[9])
 Z(z[10])
-Z([1,'mfV-5'])
+Z([1,'kTU-5'])
 Z([3,'邀请码'])
 Z(z[14])
 Z(z[15])
 Z([[7],[3,'superInvitationCode']])
-Z([3,'_view data-v-d28b703a regBut'])
+Z([3,'_view data-v-3af85f3e checkbox'])
+Z(z[8])
+Z([[7],[3,'checked']])
+Z([3,'_switch data-v-3af85f3e'])
+Z(z[10])
+Z([1,'6ts-6'])
+Z([3,'checkbox'])
+Z([3,'_navigator data-v-3af85f3e'])
+Z([3,'Agreement'])
+Z([3,'我已阅读并同意《微品众信用户注册协议》'])
+Z([3,'_view data-v-3af85f3e regBut'])
 Z(z[8])
 Z(z[32])
 Z(z[10])
-Z([1,'mYO-6'])
+Z([1,'0uW-7'])
 Z([3,'确认注册'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
+})(__WXML_GLOBAL__.ops_cached.$gwx_23);return __WXML_GLOBAL__.ops_cached.$gwx_23
 }
-function gz$gwx_22(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
-__WXML_GLOBAL__.ops_cached.$gwx_22=[];
+function gz$gwx_24(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_24)return __WXML_GLOBAL__.ops_cached.$gwx_24
+__WXML_GLOBAL__.ops_cached.$gwx_24=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'34836fee'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_22);return __WXML_GLOBAL__.ops_cached.$gwx_22
+Z([3,'123bbdb1'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_24);return __WXML_GLOBAL__.ops_cached.$gwx_24
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);throw e;}
 }}}()
-var x=['./pages/MoneyWay/request-payment.vue.wxml','./pages/MoneyWay/request-payment.wxml','/pages/MoneyWay/request-payment.vue.wxml','./pages/PersonalCenter/PersonalCenter.vue.wxml','./pages/PersonalCenter/PersonalCenter.wxml','/pages/PersonalCenter/PersonalCenter.vue.wxml','./pages/TaskCenter/TaskCente.vue.wxml','./pages/TaskCenter/TaskCente.wxml','/pages/TaskCenter/TaskCente.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','/pages/index/index.vue.wxml','./pages/main/MoneyWay.vue.wxml','./pages/main/MoneyWay.wxml','/pages/main/MoneyWay.vue.wxml','./pages/main/SeoCode.vue.wxml','./pages/main/SeoCode.wxml','/pages/main/SeoCode.vue.wxml','./pages/main/bVip.vue.wxml','./pages/main/bVip.wxml','/pages/main/bVip.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','/pages/main/main.vue.wxml','./pages/main/waiting.vue.wxml','./pages/main/waiting.wxml','/pages/main/waiting.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','/pages/pwd/pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','/pages/reg/reg.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["831282a4"]=function(e,s,r,gg){
+var x=['./pages/MoneyWay/request-payment.vue.wxml','./pages/MoneyWay/request-payment.wxml','/pages/MoneyWay/request-payment.vue.wxml','./pages/PersonalCenter/PersonalCenter.vue.wxml','./pages/PersonalCenter/PersonalCenter.wxml','/pages/PersonalCenter/PersonalCenter.vue.wxml','./pages/TaskCenter/TaskCente.vue.wxml','./pages/TaskCenter/TaskCente.wxml','/pages/TaskCenter/TaskCente.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','/pages/index/index.vue.wxml','./pages/main/MoneyWay.vue.wxml','./pages/main/MoneyWay.wxml','/pages/main/MoneyWay.vue.wxml','./pages/main/SeoCode.vue.wxml','./pages/main/SeoCode.wxml','/pages/main/SeoCode.vue.wxml','./pages/main/bVip.vue.wxml','./pages/main/bVip.wxml','/pages/main/bVip.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','/pages/main/main.vue.wxml','./pages/main/waiting.vue.wxml','./pages/main/waiting.wxml','/pages/main/waiting.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','/pages/pwd/pwd.vue.wxml','./pages/reg/Agreement.vue.wxml','./pages/reg/Agreement.wxml','/pages/reg/Agreement.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','/pages/reg/reg.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["27ae4e06"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':831282a4'
+var b=x[0]+':27ae4e06'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/MoneyWay/request-payment.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -1750,9 +1894,9 @@ return r
 }
 e_[x[1]]={f:m1,j:[],i:[],ti:[x[2]],ic:[]}
 d_[x[3]]={}
-d_[x[3]]["3cc367b9"]=function(e,s,r,gg){
+d_[x[3]]["cdd0a13e"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[3]+':3cc367b9'
+var b=x[3]+':cdd0a13e'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/PersonalCenter/PersonalCenter.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[3]);return}
@@ -2033,9 +2177,9 @@ return r
 }
 e_[x[4]]={f:m3,j:[],i:[],ti:[x[5]],ic:[]}
 d_[x[6]]={}
-d_[x[6]]["171408ae"]=function(e,s,r,gg){
+d_[x[6]]["51caf701"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[6]+':171408ae'
+var b=x[6]+':51caf701'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/TaskCenter/TaskCente.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[6]);return}
@@ -2136,9 +2280,9 @@ return r
 }
 e_[x[7]]={f:m5,j:[],i:[],ti:[x[8]],ic:[]}
 d_[x[9]]={}
-d_[x[9]]["44e43b85"]=function(e,s,r,gg){
+d_[x[9]]["64de9d2d"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[9]+':44e43b85'
+var b=x[9]+':64de9d2d'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/index/index.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[9]);return}
@@ -2248,9 +2392,9 @@ return r
 }
 e_[x[10]]={f:m7,j:[],i:[],ti:[x[11]],ic:[]}
 d_[x[12]]={}
-d_[x[12]]["47f658ef"]=function(e,s,r,gg){
+d_[x[12]]["52def097"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[12]+':47f658ef'
+var b=x[12]+':52def097'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/MoneyWay.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[12]);return}
@@ -2301,9 +2445,9 @@ return r
 }
 e_[x[13]]={f:m9,j:[],i:[],ti:[x[14]],ic:[]}
 d_[x[15]]={}
-d_[x[15]]["5719b0ba"]=function(e,s,r,gg){
+d_[x[15]]["366b8412"]=function(e,s,r,gg){
 var z=gz$gwx_11()
-var b=x[15]+':5719b0ba'
+var b=x[15]+':366b8412'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/SeoCode.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[15]);return}
@@ -2328,43 +2472,47 @@ cs.push("./pages/main/SeoCode.vue.wxml:image:7:8")
 var cF=_mz(z,'image',['class',7,'src',1],[],e,s,gg)
 cs.pop()
 _(fE,cF)
+cs.push("./pages/main/SeoCode.vue.wxml:image:8:8")
+var hG=_mz(z,'image',['mode',-1,'class',9,'src',1],[],e,s,gg)
+cs.pop()
+_(fE,hG)
 cs.pop()
 _(oB,fE)
-cs.push("./pages/main/SeoCode.vue.wxml:view:9:6")
-var hG=_n('view')
-_rz(z,hG,'class',9,e,s,gg)
-cs.push("./pages/main/SeoCode.vue.wxml:view:10:8")
+cs.push("./pages/main/SeoCode.vue.wxml:view:10:6")
 var oH=_n('view')
-_rz(z,oH,'class',10,e,s,gg)
-var cI=_oz(z,11,e,s,gg)
-_(oH,cI)
-cs.pop()
-_(hG,oH)
+_rz(z,oH,'class',11,e,s,gg)
 cs.push("./pages/main/SeoCode.vue.wxml:view:11:8")
-var oJ=_n('view')
-_rz(z,oJ,'class',12,e,s,gg)
-var lK=_v()
-_(oJ,lK)
-cs.push("./pages/main/SeoCode.vue.wxml:block:12:10")
-var aL=function(eN,tM,bO,gg){
-cs.push("./pages/main/SeoCode.vue.wxml:block:12:10")
-cs.push("./pages/main/SeoCode.vue.wxml:text:13:12")
-var xQ=_n('text')
-_rz(z,xQ,'class',18,eN,tM,gg)
-var oR=_oz(z,19,eN,tM,gg)
-_(xQ,oR)
+var cI=_n('view')
+_rz(z,cI,'class',12,e,s,gg)
+var oJ=_oz(z,13,e,s,gg)
+_(cI,oJ)
 cs.pop()
-_(bO,xQ)
+_(oH,cI)
+cs.push("./pages/main/SeoCode.vue.wxml:view:12:8")
+var lK=_n('view')
+_rz(z,lK,'class',14,e,s,gg)
+var aL=_v()
+_(lK,aL)
+cs.push("./pages/main/SeoCode.vue.wxml:block:13:10")
+var tM=function(bO,eN,oP,gg){
+cs.push("./pages/main/SeoCode.vue.wxml:block:13:10")
+cs.push("./pages/main/SeoCode.vue.wxml:text:14:12")
+var oR=_n('text')
+_rz(z,oR,'class',20,bO,eN,gg)
+var fS=_oz(z,21,bO,eN,gg)
+_(oR,fS)
 cs.pop()
-return bO
+_(oP,oR)
+cs.pop()
+return oP
 }
-lK.wxXCkey=2
-_2z(z,15,aL,e,s,gg,lK,'v','index','v')
+aL.wxXCkey=2
+_2z(z,17,tM,e,s,gg,aL,'v','index','v')
 cs.pop()
 cs.pop()
-_(hG,oJ)
+_(oH,lK)
 cs.pop()
-_(oB,hG)
+_(oB,oH)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -2403,9 +2551,9 @@ return r
 }
 e_[x[16]]={f:m11,j:[],i:[],ti:[x[17]],ic:[]}
 d_[x[18]]={}
-d_[x[18]]["2b5715ca"]=function(e,s,r,gg){
+d_[x[18]]["2569be7a"]=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b=x[18]+':2b5715ca'
+var b=x[18]+':2569be7a'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/bVip.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[18]);return}
@@ -2478,9 +2626,9 @@ return r
 }
 e_[x[19]]={f:m13,j:[],i:[],ti:[x[20]],ic:[]}
 d_[x[21]]={}
-d_[x[21]]["b26c810e"]=function(e,s,r,gg){
+d_[x[21]]["ac7f29be"]=function(e,s,r,gg){
 var z=gz$gwx_15()
-var b=x[21]+':b26c810e'
+var b=x[21]+':ac7f29be'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[21]);return}
@@ -2614,9 +2762,9 @@ return r
 }
 e_[x[22]]={f:m15,j:[],i:[],ti:[x[23]],ic:[]}
 d_[x[24]]={}
-d_[x[24]]["9b396486"]=function(e,s,r,gg){
+d_[x[24]]["dc95bdd6"]=function(e,s,r,gg){
 var z=gz$gwx_17()
-var b=x[24]+':9b396486'
+var b=x[24]+':dc95bdd6'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/waiting.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[24]);return}
@@ -2691,9 +2839,9 @@ return r
 }
 e_[x[25]]={f:m17,j:[],i:[],ti:[x[26]],ic:[]}
 d_[x[27]]={}
-d_[x[27]]["3ddbf04a"]=function(e,s,r,gg){
+d_[x[27]]["0d8f7d83"]=function(e,s,r,gg){
 var z=gz$gwx_19()
-var b=x[27]+':3ddbf04a'
+var b=x[27]+':0d8f7d83'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[27]);return}
@@ -2799,12 +2947,467 @@ return r
 }
 e_[x[28]]={f:m19,j:[],i:[],ti:[x[29]],ic:[]}
 d_[x[30]]={}
-d_[x[30]]["34836fee"]=function(e,s,r,gg){
+d_[x[30]]["8926b772"]=function(e,s,r,gg){
 var z=gz$gwx_21()
-var b=x[30]+':34836fee'
+var b=x[30]+':8926b772'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/reg/Agreement.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[30]);return}
+p_[b]=true
+try{
+cs.push("./pages/reg/Agreement.vue.wxml:view:2:4")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+cs.push("./pages/reg/Agreement.vue.wxml:view:3:6")
+var xC=_n('view')
+_rz(z,xC,'class',2,e,s,gg)
+var oD=_oz(z,3,e,s,gg)
+_(xC,oD)
+cs.pop()
+_(oB,xC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:4:6")
+var fE=_n('view')
+_rz(z,fE,'class',4,e,s,gg)
+var cF=_oz(z,5,e,s,gg)
+_(fE,cF)
+cs.pop()
+_(oB,fE)
+cs.push("./pages/reg/Agreement.vue.wxml:view:5:6")
+var hG=_n('view')
+_rz(z,hG,'class',6,e,s,gg)
+var oH=_oz(z,7,e,s,gg)
+_(hG,oH)
+cs.pop()
+_(oB,hG)
+cs.push("./pages/reg/Agreement.vue.wxml:view:7:4")
+var cI=_n('view')
+_rz(z,cI,'class',8,e,s,gg)
+var oJ=_oz(z,9,e,s,gg)
+_(cI,oJ)
+cs.pop()
+_(oB,cI)
+cs.push("./pages/reg/Agreement.vue.wxml:view:8:4")
+var lK=_n('view')
+_rz(z,lK,'class',10,e,s,gg)
+var aL=_oz(z,11,e,s,gg)
+_(lK,aL)
+cs.pop()
+_(oB,lK)
+cs.push("./pages/reg/Agreement.vue.wxml:view:9:4")
+var tM=_n('view')
+_rz(z,tM,'class',12,e,s,gg)
+var eN=_oz(z,13,e,s,gg)
+_(tM,eN)
+cs.pop()
+_(oB,tM)
+cs.push("./pages/reg/Agreement.vue.wxml:view:10:4")
+var bO=_n('view')
+_rz(z,bO,'class',14,e,s,gg)
+var oP=_oz(z,15,e,s,gg)
+_(bO,oP)
+cs.pop()
+_(oB,bO)
+cs.push("./pages/reg/Agreement.vue.wxml:view:11:4")
+var xQ=_n('view')
+_rz(z,xQ,'class',16,e,s,gg)
+var oR=_oz(z,17,e,s,gg)
+_(xQ,oR)
+cs.pop()
+_(oB,xQ)
+cs.push("./pages/reg/Agreement.vue.wxml:view:12:4")
+var fS=_n('view')
+_rz(z,fS,'class',18,e,s,gg)
+var cT=_oz(z,19,e,s,gg)
+_(fS,cT)
+cs.pop()
+_(oB,fS)
+cs.push("./pages/reg/Agreement.vue.wxml:view:13:4")
+var hU=_n('view')
+_rz(z,hU,'class',20,e,s,gg)
+var oV=_oz(z,21,e,s,gg)
+_(hU,oV)
+cs.pop()
+_(oB,hU)
+cs.push("./pages/reg/Agreement.vue.wxml:view:14:4")
+var cW=_n('view')
+_rz(z,cW,'class',22,e,s,gg)
+var oX=_oz(z,23,e,s,gg)
+_(cW,oX)
+cs.pop()
+_(oB,cW)
+cs.push("./pages/reg/Agreement.vue.wxml:view:15:4")
+var lY=_n('view')
+_rz(z,lY,'class',24,e,s,gg)
+var aZ=_oz(z,25,e,s,gg)
+_(lY,aZ)
+cs.pop()
+_(oB,lY)
+cs.push("./pages/reg/Agreement.vue.wxml:view:16:4")
+var t1=_n('view')
+_rz(z,t1,'class',26,e,s,gg)
+var e2=_oz(z,27,e,s,gg)
+_(t1,e2)
+cs.pop()
+_(oB,t1)
+cs.push("./pages/reg/Agreement.vue.wxml:view:17:4")
+var b3=_n('view')
+_rz(z,b3,'class',28,e,s,gg)
+var o4=_oz(z,29,e,s,gg)
+_(b3,o4)
+cs.pop()
+_(oB,b3)
+cs.push("./pages/reg/Agreement.vue.wxml:view:18:4")
+var x5=_n('view')
+_rz(z,x5,'class',30,e,s,gg)
+var o6=_oz(z,31,e,s,gg)
+_(x5,o6)
+cs.pop()
+_(oB,x5)
+cs.push("./pages/reg/Agreement.vue.wxml:view:19:4")
+var f7=_n('view')
+_rz(z,f7,'class',32,e,s,gg)
+var c8=_oz(z,33,e,s,gg)
+_(f7,c8)
+cs.pop()
+_(oB,f7)
+cs.push("./pages/reg/Agreement.vue.wxml:view:20:4")
+var h9=_n('view')
+_rz(z,h9,'class',34,e,s,gg)
+var o0=_oz(z,35,e,s,gg)
+_(h9,o0)
+cs.pop()
+_(oB,h9)
+cs.push("./pages/reg/Agreement.vue.wxml:view:21:4")
+var cAB=_n('view')
+_rz(z,cAB,'class',36,e,s,gg)
+var oBB=_oz(z,37,e,s,gg)
+_(cAB,oBB)
+cs.pop()
+_(oB,cAB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:22:4")
+var lCB=_n('view')
+_rz(z,lCB,'class',38,e,s,gg)
+var aDB=_oz(z,39,e,s,gg)
+_(lCB,aDB)
+cs.pop()
+_(oB,lCB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:23:4")
+var tEB=_n('view')
+_rz(z,tEB,'class',40,e,s,gg)
+var eFB=_oz(z,41,e,s,gg)
+_(tEB,eFB)
+cs.pop()
+_(oB,tEB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:24:4")
+var bGB=_n('view')
+_rz(z,bGB,'class',42,e,s,gg)
+var oHB=_oz(z,43,e,s,gg)
+_(bGB,oHB)
+cs.pop()
+_(oB,bGB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:25:4")
+var xIB=_n('view')
+_rz(z,xIB,'class',44,e,s,gg)
+var oJB=_oz(z,45,e,s,gg)
+_(xIB,oJB)
+cs.pop()
+_(oB,xIB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:26:4")
+var fKB=_n('view')
+_rz(z,fKB,'class',46,e,s,gg)
+var cLB=_oz(z,47,e,s,gg)
+_(fKB,cLB)
+cs.pop()
+_(oB,fKB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:27:4")
+var hMB=_n('view')
+_rz(z,hMB,'class',48,e,s,gg)
+var oNB=_oz(z,49,e,s,gg)
+_(hMB,oNB)
+cs.pop()
+_(oB,hMB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:28:4")
+var cOB=_n('view')
+_rz(z,cOB,'class',50,e,s,gg)
+var oPB=_oz(z,51,e,s,gg)
+_(cOB,oPB)
+cs.pop()
+_(oB,cOB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:29:4")
+var lQB=_n('view')
+_rz(z,lQB,'class',52,e,s,gg)
+var aRB=_oz(z,53,e,s,gg)
+_(lQB,aRB)
+cs.pop()
+_(oB,lQB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:30:4")
+var tSB=_n('view')
+_rz(z,tSB,'class',54,e,s,gg)
+var eTB=_oz(z,55,e,s,gg)
+_(tSB,eTB)
+cs.pop()
+_(oB,tSB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:31:4")
+var bUB=_n('view')
+_rz(z,bUB,'class',56,e,s,gg)
+var oVB=_oz(z,57,e,s,gg)
+_(bUB,oVB)
+cs.pop()
+_(oB,bUB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:32:4")
+var xWB=_n('view')
+_rz(z,xWB,'class',58,e,s,gg)
+var oXB=_oz(z,59,e,s,gg)
+_(xWB,oXB)
+cs.pop()
+_(oB,xWB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:33:4")
+var fYB=_n('view')
+_rz(z,fYB,'class',60,e,s,gg)
+var cZB=_oz(z,61,e,s,gg)
+_(fYB,cZB)
+cs.pop()
+_(oB,fYB)
+cs.push("./pages/reg/Agreement.vue.wxml:view:34:4")
+var h1B=_n('view')
+_rz(z,h1B,'class',62,e,s,gg)
+var o2B=_oz(z,63,e,s,gg)
+_(h1B,o2B)
+cs.pop()
+_(oB,h1B)
+cs.push("./pages/reg/Agreement.vue.wxml:view:35:4")
+var c3B=_n('view')
+_rz(z,c3B,'class',64,e,s,gg)
+var o4B=_oz(z,65,e,s,gg)
+_(c3B,o4B)
+cs.pop()
+_(oB,c3B)
+cs.push("./pages/reg/Agreement.vue.wxml:view:36:4")
+var l5B=_n('view')
+_rz(z,l5B,'class',66,e,s,gg)
+var a6B=_oz(z,67,e,s,gg)
+_(l5B,a6B)
+cs.pop()
+_(oB,l5B)
+cs.push("./pages/reg/Agreement.vue.wxml:view:37:4")
+var t7B=_n('view')
+_rz(z,t7B,'class',68,e,s,gg)
+var e8B=_oz(z,69,e,s,gg)
+_(t7B,e8B)
+cs.pop()
+_(oB,t7B)
+cs.push("./pages/reg/Agreement.vue.wxml:view:38:4")
+var b9B=_n('view')
+_rz(z,b9B,'class',70,e,s,gg)
+var o0B=_oz(z,71,e,s,gg)
+_(b9B,o0B)
+cs.pop()
+_(oB,b9B)
+cs.push("./pages/reg/Agreement.vue.wxml:view:39:4")
+var xAC=_n('view')
+_rz(z,xAC,'class',72,e,s,gg)
+var oBC=_oz(z,73,e,s,gg)
+_(xAC,oBC)
+cs.pop()
+_(oB,xAC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:41:6")
+var fCC=_n('view')
+_rz(z,fCC,'class',74,e,s,gg)
+var cDC=_oz(z,75,e,s,gg)
+_(fCC,cDC)
+cs.pop()
+_(oB,fCC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:42:6")
+var hEC=_n('view')
+_rz(z,hEC,'class',76,e,s,gg)
+var oFC=_oz(z,77,e,s,gg)
+_(hEC,oFC)
+cs.pop()
+_(oB,hEC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:43:6")
+var cGC=_n('view')
+_rz(z,cGC,'class',78,e,s,gg)
+var oHC=_oz(z,79,e,s,gg)
+_(cGC,oHC)
+cs.pop()
+_(oB,cGC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:44:6")
+var lIC=_n('view')
+_rz(z,lIC,'class',80,e,s,gg)
+var aJC=_oz(z,81,e,s,gg)
+_(lIC,aJC)
+cs.pop()
+_(oB,lIC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:45:6")
+var tKC=_n('view')
+_rz(z,tKC,'class',82,e,s,gg)
+var eLC=_oz(z,83,e,s,gg)
+_(tKC,eLC)
+cs.pop()
+_(oB,tKC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:46:6")
+var bMC=_n('view')
+_rz(z,bMC,'class',84,e,s,gg)
+var oNC=_oz(z,85,e,s,gg)
+_(bMC,oNC)
+cs.pop()
+_(oB,bMC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:47:6")
+var xOC=_n('view')
+_rz(z,xOC,'class',86,e,s,gg)
+var oPC=_oz(z,87,e,s,gg)
+_(xOC,oPC)
+cs.pop()
+_(oB,xOC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:48:6")
+var fQC=_n('view')
+_rz(z,fQC,'class',88,e,s,gg)
+var cRC=_oz(z,89,e,s,gg)
+_(fQC,cRC)
+cs.pop()
+_(oB,fQC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:50:8")
+var hSC=_n('view')
+_rz(z,hSC,'class',90,e,s,gg)
+var oTC=_oz(z,91,e,s,gg)
+_(hSC,oTC)
+cs.pop()
+_(oB,hSC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:51:8")
+var cUC=_n('view')
+_rz(z,cUC,'class',92,e,s,gg)
+var oVC=_oz(z,93,e,s,gg)
+_(cUC,oVC)
+cs.pop()
+_(oB,cUC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:53:10")
+var lWC=_n('view')
+_rz(z,lWC,'class',94,e,s,gg)
+var aXC=_oz(z,95,e,s,gg)
+_(lWC,aXC)
+cs.pop()
+_(oB,lWC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:54:10")
+var tYC=_n('view')
+_rz(z,tYC,'class',96,e,s,gg)
+var eZC=_oz(z,97,e,s,gg)
+_(tYC,eZC)
+cs.pop()
+_(oB,tYC)
+cs.push("./pages/reg/Agreement.vue.wxml:view:55:10")
+var b1C=_n('view')
+_rz(z,b1C,'class',98,e,s,gg)
+var o2C=_oz(z,99,e,s,gg)
+_(b1C,o2C)
+cs.pop()
+_(oB,b1C)
+cs.push("./pages/reg/Agreement.vue.wxml:view:56:10")
+var x3C=_n('view')
+_rz(z,x3C,'class',100,e,s,gg)
+var o4C=_oz(z,101,e,s,gg)
+_(x3C,o4C)
+cs.pop()
+_(oB,x3C)
+cs.push("./pages/reg/Agreement.vue.wxml:view:57:10")
+var f5C=_n('view')
+_rz(z,f5C,'class',102,e,s,gg)
+var c6C=_oz(z,103,e,s,gg)
+_(f5C,c6C)
+cs.pop()
+_(oB,f5C)
+cs.push("./pages/reg/Agreement.vue.wxml:view:58:10")
+var h7C=_n('view')
+_rz(z,h7C,'class',104,e,s,gg)
+var o8C=_oz(z,105,e,s,gg)
+_(h7C,o8C)
+cs.pop()
+_(oB,h7C)
+cs.push("./pages/reg/Agreement.vue.wxml:view:59:10")
+var c9C=_n('view')
+_rz(z,c9C,'class',106,e,s,gg)
+var o0C=_oz(z,107,e,s,gg)
+_(c9C,o0C)
+cs.pop()
+_(oB,c9C)
+cs.push("./pages/reg/Agreement.vue.wxml:view:60:10")
+var lAD=_n('view')
+_rz(z,lAD,'class',108,e,s,gg)
+var aBD=_oz(z,109,e,s,gg)
+_(lAD,aBD)
+cs.pop()
+_(oB,lAD)
+cs.push("./pages/reg/Agreement.vue.wxml:view:61:10")
+var tCD=_n('view')
+_rz(z,tCD,'class',110,e,s,gg)
+var eDD=_oz(z,111,e,s,gg)
+_(tCD,eDD)
+cs.pop()
+_(oB,tCD)
+cs.push("./pages/reg/Agreement.vue.wxml:view:63:12")
+var bED=_n('view')
+_rz(z,bED,'class',112,e,s,gg)
+var oFD=_oz(z,113,e,s,gg)
+_(bED,oFD)
+cs.pop()
+_(oB,bED)
+cs.push("./pages/reg/Agreement.vue.wxml:view:64:12")
+var xGD=_n('view')
+_rz(z,xGD,'class',114,e,s,gg)
+var oHD=_oz(z,115,e,s,gg)
+_(xGD,oHD)
+cs.pop()
+_(oB,xGD)
+cs.push("./pages/reg/Agreement.vue.wxml:view:65:12")
+var fID=_n('view')
+_rz(z,fID,'class',116,e,s,gg)
+var cJD=_oz(z,117,e,s,gg)
+_(fID,cJD)
+cs.pop()
+_(oB,fID)
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m20=function(e,s,r,gg){
+var z=gz$gwx_21()
+return r
+}
+e_[x[30]]={f:m20,j:[],i:[],ti:[],ic:[]}
+d_[x[31]]={}
+var m21=function(e,s,r,gg){
+var z=gz$gwx_22()
+var xAC=e_[x[31]].i
+_ai(xAC,x[32],e_,x[31],1,1)
+var oBC=_v()
+_(r,oBC)
+cs.push("./pages/reg/Agreement.wxml:template:1:47")
+var fCC=_oz(z,1,e,s,gg)
+var cDC=_gd(x[31],fCC,e_,d_)
+if(cDC){
+var hEC=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+oBC.wxXCkey=3
+cDC(hEC,hEC,oBC,gg)
+gg.f=cur_globalf
+}
+else _w(fCC,x[31],1,59)
+cs.pop()
+xAC.pop()
+return r
+}
+e_[x[31]]={f:m21,j:[],i:[],ti:[x[32]],ic:[]}
+d_[x[33]]={}
+d_[x[33]]["123bbdb1"]=function(e,s,r,gg){
+var z=gz$gwx_23()
+var b=x[33]+':123bbdb1'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[30]);return}
+if(p_[b]){_wl(b,x[33]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:2:4")
@@ -2918,14 +3521,29 @@ _(oB,oX)
 cs.push("./pages/reg/reg.vue.wxml:view:29:6")
 var t1=_n('view')
 _rz(z,t1,'class',71,e,s,gg)
-cs.push("./pages/reg/reg.vue.wxml:button:30:8")
-var e2=_mz(z,'button',['bindtap',72,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
-var b3=_oz(z,76,e,s,gg)
-_(e2,b3)
+cs.push("./pages/reg/reg.vue.wxml:switch:30:8")
+var e2=_mz(z,'switch',['bindchange',72,'checked',1,'class',2,'data-comkey',3,'data-eventid',4,'type',5],[],e,s,gg)
 cs.pop()
 _(t1,e2)
+cs.push("./pages/reg/reg.vue.wxml:navigator:31:8")
+var b3=_mz(z,'navigator',['class',78,'url',1],[],e,s,gg)
+var o4=_oz(z,80,e,s,gg)
+_(b3,o4)
+cs.pop()
+_(t1,b3)
 cs.pop()
 _(oB,t1)
+cs.push("./pages/reg/reg.vue.wxml:view:33:6")
+var x5=_n('view')
+_rz(z,x5,'class',81,e,s,gg)
+cs.push("./pages/reg/reg.vue.wxml:button:34:8")
+var o6=_mz(z,'button',['bindtap',82,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+var f7=_oz(z,86,e,s,gg)
+_(o6,f7)
+cs.pop()
+_(x5,o6)
+cs.pop()
+_(oB,x5)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -2935,34 +3553,34 @@ throw err
 p_[b]=false
 return r
 }
-var m20=function(e,s,r,gg){
-var z=gz$gwx_21()
+var m22=function(e,s,r,gg){
+var z=gz$gwx_23()
 return r
 }
-e_[x[30]]={f:m20,j:[],i:[],ti:[],ic:[]}
-d_[x[31]]={}
-var m21=function(e,s,r,gg){
-var z=gz$gwx_22()
-var xAC=e_[x[31]].i
-_ai(xAC,x[32],e_,x[31],1,1)
-var oBC=_v()
-_(r,oBC)
+e_[x[33]]={f:m22,j:[],i:[],ti:[],ic:[]}
+d_[x[34]]={}
+var m23=function(e,s,r,gg){
+var z=gz$gwx_24()
+var oHC=e_[x[34]].i
+_ai(oHC,x[35],e_,x[34],1,1)
+var lIC=_v()
+_(r,lIC)
 cs.push("./pages/reg/reg.wxml:template:1:41")
-var fCC=_oz(z,1,e,s,gg)
-var cDC=_gd(x[31],fCC,e_,d_)
-if(cDC){
-var hEC=_1z(z,0,e,s,gg) || {}
+var aJC=_oz(z,1,e,s,gg)
+var tKC=_gd(x[34],aJC,e_,d_)
+if(tKC){
+var eLC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oBC.wxXCkey=3
-cDC(hEC,hEC,oBC,gg)
+lIC.wxXCkey=3
+tKC(eLC,eLC,lIC,gg)
 gg.f=cur_globalf
 }
-else _w(fCC,x[31],1,53)
+else _w(aJC,x[34],1,53)
 cs.pop()
-xAC.pop()
+oHC.pop()
 return r
 }
-e_[x[31]]={f:m21,j:[],i:[],ti:[x[32]],ic:[]}
+e_[x[34]]={f:m23,j:[],i:[],ti:[x[35]],ic:[]}
 if(path&&e_[path]){
 window.__wxml_comp_version__=0.02
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
