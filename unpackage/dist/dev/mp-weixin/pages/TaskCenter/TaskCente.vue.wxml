@@ -1,16 +1,16 @@
-<template name="7191f29f">
-  <view class="_view data-v-14a8f5b7">
-    <swiper class="_swiper data-v-14a8f5b7 swpier-box" autoplay="{{autoplay}}" circular="{{circular}}" duration="{{duration}}" indicator-dots="{{indicator}}" indicator-active-color="#3AC198">
-      <swiper-item wx:key="ite" key="{{ite}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="ite" class="_swiper-item data-v-14a8f5b7">
-        <image src="{{ite}}" mode="scaleToFill" class="_image data-v-14a8f5b7"></image>
+<template name="3a50943f">
+  <view class="_view data-v-1e8b9feb">
+    <swiper class="_swiper data-v-1e8b9feb swpier-box" autoplay="{{autoplay}}" circular="{{circular}}" duration="{{duration}}" indicator-dots="{{indicator}}" indicator-active-color="#3AC198">
+      <swiper-item wx:key="ite" key="{{ite}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="ite" class="_swiper-item data-v-1e8b9feb">
+        <image src="{{ite}}" mode="scaleToFill" class="_image data-v-1e8b9feb"></image>
       </swiper-item>
     </swiper>
-    <view class="_view data-v-14a8f5b7 taskListBOX">
-      <view class="_view data-v-14a8f5b7 taskList" wx:key="task" key="{{task}}" wx:for="{{tasksList}}" wx:for-index="index" wx:for-item="task">
-        <navigator url="{{task.url}}" class="_navigator data-v-14a8f5b7">
-          <image src="{{task.imgage}}" mode="scaleToFill" class="_image data-v-14a8f5b7"></image>
-          <text class="_text data-v-14a8f5b7">{{task.text}}</text>
-        </navigator>
+    <view class="_view data-v-1e8b9feb taskListBOX">
+      <view class="_view data-v-1e8b9feb taskList" wx:key="task" key="{{task}}" wx:for="{{tasksList}}" wx:for-index="index" wx:for-item="task">
+        <view class="_view data-v-1e8b9feb taskUrl" bindtap="handleProxy" data-eventid="{{'Z94-0-'+index}}" data-comkey="{{$k}}">
+          <image src="{{task.imgage}}" mode="scaleToFill" class="_image data-v-1e8b9feb"></image>
+          <text class="_text data-v-1e8b9feb">{{task.text}}</text>
+        </view>
       </view>
     </view>
   </view>

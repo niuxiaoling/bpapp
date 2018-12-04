@@ -16,7 +16,7 @@
 	/*每个页面公共css */
 
 	page {
-	        min-height: 100%;
+	    min-height: 100%;
 			width:100%;
 			background:#EDEDED;
 			overflow-x: hidden;
@@ -26,7 +26,6 @@
 	        display: flex;
 	        flex: 1;
 	        flex-direction: column;
-	        /* background-color: #efeff4; */
 	        padding: 20px;
 	    }
 		.placeholder{

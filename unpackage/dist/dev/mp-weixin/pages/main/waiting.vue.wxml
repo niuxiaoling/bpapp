@@ -1,11 +1,11 @@
-<template name="cc6eca9a">
-  <view class="_view data-v-40d0380b">
-    <view class="_view data-v-40d0380b logo">
-      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-40d0380b"></image>
+<template name="7cda475a">
+  <view class="_view data-v-7c6b5382">
+    <view class="_view data-v-7c6b5382 logo">
+      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-7c6b5382"></image>
     </view>
-    <view class="_view data-v-40d0380b waitfor">
-      <text class="_text data-v-40d0380b willline"> 即将上线</text>
-      <text class="_text data-v-40d0380b paeasewaiting"> 敬请期待</text>
+    <view class="_view data-v-7c6b5382 waitfor">
+      <text class="_text data-v-7c6b5382 willline"> 即将上线</text>
+      <text class="_text data-v-7c6b5382 paeasewaiting"> 敬请期待</text>
     </view>
   </view>
 </template>

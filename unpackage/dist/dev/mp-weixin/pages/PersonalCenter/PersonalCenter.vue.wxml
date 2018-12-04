@@ -1,64 +1,64 @@
-<template name="c16234fa">
-  <view class="_view data-v-2d129eeb avatars">
-    <view class="_view data-v-2d129eeb avatar_box">
-      <view class="_view data-v-2d129eeb avatar">
-        <image src="../../static/img/tx_rbt.jpg" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <view class="_view data-v-2d129eeb sign">
-          <image src="../../static/img/viptest.jpg" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+<template name="ab47d03a">
+  <view class="_view data-v-f50ba192 avatars">
+    <view class="_view data-v-f50ba192 avatar_box">
+      <view class="_view data-v-f50ba192 avatar">
+        <image src="../../static/img/tx_rbt.jpg" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <view class="_view data-v-f50ba192 sign">
+          <image src="../../static/img/viptest.jpg" mode="aspectFit" class="_image data-v-f50ba192"></image>
         </view>
       </view>
     </view>
-    <text class="_text data-v-2d129eeb phoneNo">页面功能开发中···</text>
-    <view class="_view data-v-2d129eeb income">
-      <view class="_view data-v-2d129eeb income-list">
-        <text class="_text data-v-2d129eeb list-No">12</text>
-        <rich-text class="_rich-text data-v-2d129eeb list-text">总贡献值</rich-text>
+    <text class="_text data-v-f50ba192 phoneNo">页面功能开发中···</text>
+    <view class="_view data-v-f50ba192 income">
+      <view class="_view data-v-f50ba192 income-list">
+        <text class="_text data-v-f50ba192 list-No">12</text>
+        <rich-text class="_rich-text data-v-f50ba192 list-text">总贡献值</rich-text>
       </view>
-      <view class="_view data-v-2d129eeb income-list">
-        <text class="_text data-v-2d129eeb list-No">12</text>
-        <rich-text class="_rich-text data-v-2d129eeb list-text">今日贡献</rich-text>
+      <view class="_view data-v-f50ba192 income-list">
+        <text class="_text data-v-f50ba192 list-No">12</text>
+        <rich-text class="_rich-text data-v-f50ba192 list-text">今日贡献</rich-text>
       </view>
-      <view class="_view data-v-2d129eeb income-list">
-        <text class="_text data-v-2d129eeb list-No">12</text>
-        <rich-text class="_rich-text data-v-2d129eeb list-text">已兑贡献</rich-text>
-      </view>
-    </view>
-    <view class="_view data-v-2d129eeb lists">
-      <view class="_view data-v-2d129eeb listli">
-        <image src="../../static/img/GRZL.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">个人资料</text>
-      </view>
-      <view class="_view data-v-2d129eeb listli">
-        <image src="../../static/img/VIP.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">账号会员</text>
-      </view>
-      <view class="_view data-v-2d129eeb listli">
-        <image src="../../static/img/TD.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">我得战队</text>
-      </view>
-      <view class="_view data-v-2d129eeb listli">
-        <image src="../../static/img/QB.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">我的钱包</text>
-      </view>
-      <view class="_view data-v-2d129eeb listli">
-        <image src="../../static/img/YHK.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">绑定银行卡</text>
-      </view>
-      <view class="_view data-v-2d129eeb listli">
-        <image src="../../static/img/TX.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">提现</text>
-      </view>
-      <view class="_view data-v-2d129eeb listli">
-        <image src="../../static/img/JCGX.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">检查更新</text>
-      </view>
-      <view class="_view data-v-2d129eeb listli" bindtap="handleProxy" data-eventid="{{'u3R-0'}}" data-comkey="{{$k}}">
-        <image src="../../static/img/QHZH.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
-        <text class="_text data-v-2d129eeb">切换账号</text>
+      <view class="_view data-v-f50ba192 income-list">
+        <text class="_text data-v-f50ba192 list-No">12</text>
+        <rich-text class="_rich-text data-v-f50ba192 list-text">已兑贡献</rich-text>
       </view>
     </view>
-    <view style="width:100%;" class="_view data-v-2d129eeb">
-      <button class="_button data-v-2d129eeb getOut" bindtap="handleProxy" data-eventid="{{'4uT-1'}}" data-comkey="{{$k}}">退出APP</button>
+    <view class="_view data-v-f50ba192 lists">
+      <view class="_view data-v-f50ba192 listli">
+        <image src="../../static/img/GRZL.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">个人资料</text>
+      </view>
+      <view class="_view data-v-f50ba192 listli">
+        <image src="../../static/img/VIP.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">账号会员</text>
+      </view>
+      <view class="_view data-v-f50ba192 listli">
+        <image src="../../static/img/TD.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">我得战队</text>
+      </view>
+      <view class="_view data-v-f50ba192 listli">
+        <image src="../../static/img/QB.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">我的钱包</text>
+      </view>
+      <view class="_view data-v-f50ba192 listli">
+        <image src="../../static/img/YHK.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">绑定银行卡</text>
+      </view>
+      <view class="_view data-v-f50ba192 listli">
+        <image src="../../static/img/TX.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">提现</text>
+      </view>
+      <view class="_view data-v-f50ba192 listli">
+        <image src="../../static/img/JCGX.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">检查更新</text>
+      </view>
+      <view class="_view data-v-f50ba192 listli" bindtap="handleProxy" data-eventid="{{'nOR-0'}}" data-comkey="{{$k}}">
+        <image src="../../static/img/QHZH.png" mode="aspectFit" class="_image data-v-f50ba192"></image>
+        <text class="_text data-v-f50ba192">切换账号</text>
+      </view>
+    </view>
+    <view style="width:100%;" class="_view data-v-f50ba192">
+      <button class="_button data-v-f50ba192 getOut" bindtap="handleProxy" data-eventid="{{'uZ3-1'}}" data-comkey="{{$k}}">退出APP</button>
     </view>
   </view>
 </template>

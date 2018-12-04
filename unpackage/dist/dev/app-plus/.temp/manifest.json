@@ -109,7 +109,7 @@
             "urlCheck" : false,
             "es6" : true,
             "postcss" : false,
-            "minified" : true
+            "minified" : false
         }
     }
 }

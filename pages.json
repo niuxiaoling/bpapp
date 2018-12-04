@@ -34,6 +34,49 @@
 			}
 		},
 		{
+			"path":"pages/TaskCenter/submitTask/submitTasks",
+			"style":{
+				"navigationBarTitleText":"提交任务",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path":"pages/TaskCenter/taskHall/taskHall",
+			"style":{
+				"navigationBarTitleText":"任务大厅",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path":"pages/TaskCenter/taskHall/YSTask",
+			"style":{
+				"navigationBarTitleText":"勇士任务大厅",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path":"pages/TaskCenter/taskHall/freeTask",
+			"style":{
+				"navigationBarTitleText":"自由任务大厅",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path":"pages/TaskCenter/taskRecord/taskRecord",
+			"style":{
+				"navigationBarTitleText":"任务记录",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		
+		
+		
+		{
 			"path": "pages/PersonalCenter/PersonalCenter",
 			"style": {
 				"navigationBarTitleText": "个人中心",
@@ -71,6 +114,14 @@
 			"path": "pages/main/SeoCode",
 			"style": {
 				"navigationBarTitleText": "勇士推广码",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/main/taskRelease",
+			"style": {
+				"navigationBarTitleText": "广告投放",
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}

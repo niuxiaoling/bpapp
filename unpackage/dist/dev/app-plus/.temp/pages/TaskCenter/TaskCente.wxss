@@ -31,7 +31,7 @@
   padding: 20rpx 0;
   border-right: 1px solid #ddd;
 }
-.taskList navigator {
+.taskList .taskUrl {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -49,12 +49,12 @@
 .taskList:last-child {
   border-right: none;
 }
-.taskList navigator image {
+.taskList .taskUrl image {
   width: 80rpx;
   height: 80rpx;
   margin: 10rpx 0;
 }
-.taskList navigator text {
+.taskList .taskUrl text {
   margin-top: 30rpx;
   font-size: 30rpx;
 }
