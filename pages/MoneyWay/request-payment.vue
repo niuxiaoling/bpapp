@@ -51,36 +51,8 @@
 		onLoad: function(options) {
 			this.userinfo = uni.getStorageSync('userInfo');
 			this.money = options.money;
+			console.log(options.payTradeType)
 			console.log(JSON.stringify(options))
-			// #ifdef APP-PLUS
-// 			uni.getProvider({
-// 				service: "payment",
-// 				success: (e) => {
-// 					console.log("payment success", e);
-// 					this.providerList = e.provider.map((value) => {
-// 						switch (value) {
-// 							case 'alipay':
-// 								return {
-// 									name: '支付宝',
-// 									id: value,
-// 									loading: false,
-// 									requesttype:'aLiPay'
-// 								}
-// 							case 'wxpay':
-// 								return {
-// 									name: '微信',
-// 									id: value,
-// 									loading: false,
-// 									requesttype:'wxPay'
-// 								}
-// 						}
-// 					})
-// 				},
-// 				fail: (e) => {
-// 					console.log("获取登录通道失败：", e);
-// 				}
-// 			});
-			// #endif
 		},
 		methods: {
 			async requestPayment(e, index) {
@@ -162,6 +134,7 @@
 					console.log(JSON.stringify(accountOrder.account))
 				const userInfo ={
 						totalFee:that.money,
+						payTradeType:that.payTradeType,
 						body:'商品价格',
 						account:accountOrder.account
 				}

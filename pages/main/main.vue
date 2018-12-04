@@ -47,7 +47,7 @@
 						{
 							imgage:'../../static/img/ggrw.png',
 							text:'广告投放',
-							url:"/pages/main/waiting"
+							url:"/pages/main/taskRelease"
 		
 						},
 						{

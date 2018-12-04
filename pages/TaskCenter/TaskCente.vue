@@ -8,10 +8,10 @@
 		</swiper>
 		<view class="taskListBOX">
 			<view class="taskList" v-for="task in tasksList" :key = "task">
-				<navigator  :url="task.url">
+				<view class="taskUrl" @tap="goURL(task.url)">
 					<image :src="task.imgage" mode="scaleToFill"></image>
 					<text>{{task.text}}</text>
-				</navigator >
+				</view >
 			</view>
 		</view>
 		
@@ -27,6 +27,7 @@
 				'../../static/img/banner2.jpg',
 				'../../static/img/banner2.jpg',
 			],
+			userInfo:'',
 			autoplay:true,
 			circular:true,
 			indicator:true,
@@ -35,21 +36,52 @@
 				{
 				imgage:'../../static/img/renwudating.png',
 				text:'任务大厅',
-				url:'/pages/main/waiting'	
+				url:'/pages/TaskCenter/taskHall/taskHall'	,
 				},
 				{
 				imgage:'../../static/img/tijiaorenwu.png',
 				text:'提交任务',
-				url:'/pages/main/waiting'	
+				url:'/pages/TaskCenter/submitTask/submitTasks'	
 				},
 				{
 				imgage:'../../static/img/renwujilu.png',
 				text:'任务记录',
-				url:'/pages/main/waiting'		
+				url:'/pages/TaskCenter/taskRecord/taskRecord'		
 				},
 				
 			]
 			
+		},
+		onLoad() {
+			const values = uni.getStorageSync('userInfo');
+			this.userInfo = values;
+			
+		},
+		methods:{
+			goURL:function(url){
+				let that = this;
+					if(that.userInfo =="" ||!that.userInfo){
+						uni.showModal({
+							title:'温馨提示',
+							content:"当前没有登陆，请登陆",
+							success:function(result){
+								if(result.confirm){
+									uni.navigateTo({
+										url:'../index/index',
+									})
+								}
+								if(result.cancel){
+									console.log("取消")
+								}
+							}
+						});;
+					}else{
+						uni.navigateTo({
+							url:url
+						})
+					}
+				
+			},
 		}
 	}
 </script>
@@ -80,7 +112,7 @@
 	padding: 20upx 0;
 	border-right:1px solid #ddd;
 }
-.taskList navigator{
+.taskList .taskUrl{
 	display: flex;
 	flex-direction:column;
 	justify-content:center;
@@ -89,12 +121,12 @@
 .taskList:last-child{
 	border-right:none;
 }
-.taskList navigator image{
+.taskList .taskUrl image{
 	width: 80upx;
 	height: 80upx;
 	margin: 10upx 0;
 }
-.taskList navigator text{
+.taskList .taskUrl text{
 	margin-top:30upx;
 	font-size:30upx;
 }
