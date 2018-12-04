@@ -4,13 +4,13 @@
       <image src="../../static/img/BvipImg.jpg" mode="widthFix" class="_image data-v-19d7e84e"></image>
     </view>
     <view class="_view data-v-19d7e84e bevipbtn">
-      <view bindtap="handleProxy" data-eventid="{{'NVN-0'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
+      <view bindtap="handleProxy" data-eventid="{{'nv7-0'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
         <image src="../../static/img/bvip1.png" mode="widthFix" class="_image data-v-19d7e84e"></image>
       </view>
-      <view bindtap="handleProxy" data-eventid="{{'bJb-1'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
+      <view bindtap="handleProxy" data-eventid="{{'i0D-1'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
         <image src="../../static/img/bvip2.png" mode="widthFix" class="_image data-v-19d7e84e"></image>
       </view>
-      <view bindtap="handleProxy" data-eventid="{{'9vH-2'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
+      <view bindtap="handleProxy" data-eventid="{{'QSv-2'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
         <image src="../../static/img/bvip3.png" mode="widthFix" class="_image data-v-19d7e84e"></image>
       </view>
     </view>

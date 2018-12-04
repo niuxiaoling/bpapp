@@ -7,7 +7,7 @@
     </swiper>
     <view class="_view data-v-1e8b9feb taskListBOX">
       <view class="_view data-v-1e8b9feb taskList" wx:key="task" key="{{task}}" wx:for="{{tasksList}}" wx:for-index="index" wx:for-item="task">
-        <view class="_view data-v-1e8b9feb taskUrl" bindtap="handleProxy" data-eventid="{{'Z94-0-'+index}}" data-comkey="{{$k}}">
+        <view class="_view data-v-1e8b9feb taskUrl" bindtap="handleProxy" data-eventid="{{'eYb-0-'+index}}" data-comkey="{{$k}}">
           <image src="{{task.imgage}}" mode="scaleToFill" class="_image data-v-1e8b9feb"></image>
           <text class="_text data-v-1e8b9feb">{{task.text}}</text>
         </view>

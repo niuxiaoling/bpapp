@@ -11,7 +11,7 @@
     <view class="_view data-v-9222faa0">
       <view class="_view data-v-9222faa0 desc">支付方式</view>
       <view class="_view data-v-9222faa0 uni-list">
-        <view class="_view data-v-9222faa0 pay-item" wx:key="index" key="{{index}}" bindtap="handleProxy" loading="{{item.loading}}" data-eventid="{{'WjC-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-9222faa0 pay-item" wx:key="index" key="{{index}}" bindtap="handleProxy" loading="{{item.loading}}" data-eventid="{{'XrE-0-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item">
           <button class="_button data-v-9222faa0">{{item.name}}支付</button>
         </view>
       </view>
