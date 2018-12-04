@@ -42,8 +42,8 @@
 		padding-top: 30upx;
 	}
 	.task{
-		width: 96%;
-		padding:20upx 2% ;
+		width: 100%;
+		padding:20upx 0 ;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -54,6 +54,7 @@
 		margin-bottom: 30upx;
 	}
 	.task image{
+		margin-left: 10upx;
 		width: 80upx;
 		height: 80upx;
 		}
