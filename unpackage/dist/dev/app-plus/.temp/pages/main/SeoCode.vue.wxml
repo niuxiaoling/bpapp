@@ -1,19 +1,27 @@
-<template name="366b8412">
-  <view class="_view data-v-62d4e59f content">
-    <view class="_view data-v-62d4e59f logo">
-      <image src="../../static/img/logoBanner.jpg" mode="widthFix" class="_image data-v-62d4e59f"></image>
+<template name="ab45d814">
+  <view class="_view data-v-480e560a content">
+    <view class="_view data-v-480e560a logo">
+      <image src="../../static/img/tg_logo.png" mode="widthFix" class="_image data-v-480e560a"></image>
     </view>
-    <view class="_view data-v-62d4e59f erweima">
-      <image src="{{qrimg}}" class="_image data-v-62d4e59f erweimaimg"></image>
-      <image src="../../static/img/logo.jpg" mode class="_image data-v-62d4e59f erweimalogo"></image>
+    <view class="_view data-v-480e560a logo_title">
+      <image src="../../static/img/tg_title.png" mode class="_image data-v-480e560a"></image>
     </view>
-    <view class="_view data-v-62d4e59f tjCode">
-      <view class="_view data-v-62d4e59f plText">我的邀请码</view>
-      <view class="_view data-v-62d4e59f plCode">
-        <block wx:key="v" key="{{v}}" wx:for="{{plcodeArr}}" wx:for-index="index" wx:for-item="v">
-          <text class="_text data-v-62d4e59f">{{v}}</text>
-        </block>
+    <view class="_view data-v-480e560a erweima">
+      <image class="_image data-v-480e560a erweima-bg" src="../../static/img/tg_bg_1.png" mode="aspectFit"></image>
+      <view class="_view data-v-480e560a erweimaimg">
+        <view class="_view data-v-480e560a erweima-content">
+          <image src="{{qrimg}}" class="_image data-v-480e560a"></image>
+        </view>
+        <image src="../../static/img/logo.jpg" mode class="_image data-v-480e560a erweimalogo"></image>
+      </view>
+      <view class="_view data-v-480e560a tjCode">
+        <view class="_view data-v-480e560a plCode">
+          <block wx:key="v" key="{{v}}" wx:for="{{plcodeArr}}" wx:for-index="index" wx:for-item="v">
+            <text class="_text data-v-480e560a">{{v}}</text>
+          </block>
+        </view>
       </view>
     </view>
+    <image class="_image data-v-480e560a erweima-bg2" src="../../static/img/tg_bg.png" mode></image>
   </view>
 </template>

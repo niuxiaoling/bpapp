@@ -1,0 +1,1 @@
+<import src="/pages/TaskCenter/taskHall/taskHall.vue.wxml" /><template is="bfe98e2e" data="{{ ...$root['0'], $root }}"/>

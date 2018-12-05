@@ -87,11 +87,11 @@
 						data:param,
 						success: (res) => {
 							
-							console.log('登录中',JSON.stringify(res));
+							// console.log('登录中',JSON.stringify(res));
 							if(res.data.errorCode == '0000'){		
 								uni.setStorageSync("userInfo",res.data.userInfo);
 								uni.setStorageSync("vipLevel",res.data.userInfo.vipLevel);
-								console.log(JSON.stringify(res.data.userInfo))
+								// console.log(JSON.stringify(res.data.userInfo))
 								uni.hideLoading();
 								uni.reLaunch({
 							      url:'../main/main',

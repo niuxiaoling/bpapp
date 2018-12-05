@@ -1,0 +1,14 @@
+<template name="bfe98e2e">
+  <view class="_view data-v-bceaadfe hall">
+    <view class="_view data-v-bceaadfe task" bindtap="handleProxy" data-eventid="{{'j2y-0'}}" data-comkey="{{$k}}">
+      <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-bceaadfe"></image>
+      <text class="_text data-v-bceaadfe">勇士任务大厅</text>
+      <image class="_image data-v-bceaadfe you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+    </view>
+    <view class="_view data-v-bceaadfe task" bindtap="handleProxy" data-eventid="{{'tRk-1'}}" data-comkey="{{$k}}">
+      <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-bceaadfe"></image>
+      <text class="_text data-v-bceaadfe">自由任务大厅</text>
+      <image class="_image data-v-bceaadfe you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+    </view>
+  </view>
+</template>

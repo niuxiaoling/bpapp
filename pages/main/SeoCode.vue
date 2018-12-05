@@ -159,16 +159,15 @@
 	 .tjCode .plCode{
 		 display: flex;
 		 flex-direction: row;
-		 justify-content: space-around;
+		 justify-content: space-between;
 		 align-content: center;
 	 }
 	 .tjCode .plCode text{
 		 width: 60upx;
 		 height: 60upx;
-		 line-height: 60upx;
-		 color: #000;
-		 font-weight: bold;
-		 background: #fff;
+		 line-height: 50upx;
+		 color: #FFFFFF;
+		 background: #D32241;
 		 text-align: center;
 	 }
 </style>
