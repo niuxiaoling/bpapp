@@ -58,6 +58,14 @@
 			}
 		},
 		{
+			"path":"pages/TaskCenter/taskHall/ysDetails",
+			"style":{
+				"navigationBarTitleText":"领取任务",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
 			"path":"pages/TaskCenter/taskHall/freeTask",
 			"style":{
 				"navigationBarTitleText":"自由任务大厅",
