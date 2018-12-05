@@ -88,7 +88,7 @@
 			};
 		},
 		onLoad() {
-			plus.nativeUI.alert(ystaskList.length)
+			
 		}
 	}
 </script>
