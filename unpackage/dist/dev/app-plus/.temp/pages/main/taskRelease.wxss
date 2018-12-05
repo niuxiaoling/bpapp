@@ -1,0 +1,50 @@
+
+page {
+  background: #FFFFFF;
+}
+.taskView {
+  width: 95%;
+  margin: 0 auto;
+}
+.taskTitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30rpx 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.taskTitles {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 30rpx 0;
+  padding: 10rpx 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  border-bottom: 1px solid #DADADA;
+}
+.taskTitle ._input {
+  text-align: right;
+  width: 80%;
+}
+.taskTitles ._input {
+  text-align: right;
+}
+.taskContent {
+  margin: 10rpx 0;
+  border: 1px solid #999999;
+  height: 600rpx;
+  padding-top: 15rpx;
+}
+.taskContent .contentText {
+  width: 96%;
+  height: 400rpx;
+  margin: 0 auto;
+}
+.taskGo {
+  background: #E86318;
+  color: #FFFFFF;
+}

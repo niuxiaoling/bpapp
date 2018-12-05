@@ -58,6 +58,14 @@
 			}
 		},
 		{
+			"path":"pages/TaskCenter/taskHall/freeTask",
+			"style":{
+				"navigationBarTitleText":"自由任务大厅",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
 			"path":"pages/TaskCenter/taskHall/ysDetails",
 			"style":{
 				"navigationBarTitleText":"领取任务",
@@ -66,9 +74,25 @@
 			}
 		},
 		{
-			"path":"pages/TaskCenter/taskHall/freeTask",
+			"path":"pages/TaskCenter/submitTask/submitTasks",
 			"style":{
-				"navigationBarTitleText":"自由任务大厅",
+				"navigationBarTitleText":"提交任务",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path":"pages/TaskCenter/submitTask/submitTasksList",
+			"style":{
+				"navigationBarTitleText":"任务提交列表",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path":"pages/TaskCenter/submitTask/submitContent",
+			"style":{
+				"navigationBarTitleText":"提交",
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}

@@ -1,0 +1,1 @@
+<import src="/pages/TaskCenter/taskHall/freeTask.vue.wxml" /><template is="74456976" data="{{ ...$root['0'], $root }}"/>
