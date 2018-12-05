@@ -1,3 +1,16 @@
 <template name="ec44368c">
-  <view class="_view data-v-630cfa3c"> 提交任务 !1 </view>
+  <view class="_view data-v-630cfa3c"> 提交任务 !1
+    <view class="_view data-v-630cfa3c hall">
+      <view class="_view data-v-630cfa3c task" bindtap="handleProxy" data-eventid="{{'qxU-0'}}" data-comkey="{{$k}}">
+        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-630cfa3c"></image>
+        <text class="_text data-v-630cfa3c">勇士任务</text>
+        <image class="_image data-v-630cfa3c you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+      </view>
+      <view class="_view data-v-630cfa3c task" bindtap="handleProxy" data-eventid="{{'rvb-1'}}" data-comkey="{{$k}}">
+        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-630cfa3c"></image>
+        <text class="_text data-v-630cfa3c">自由任务</text>
+        <image class="_image data-v-630cfa3c you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
 </template>

@@ -58,17 +58,26 @@
 			}
 		},
 		{
-			"path":"pages/TaskCenter/taskHall/ysDetails",
+			"path":"pages/TaskCenter/taskHall/freeTask",
 			"style":{
-				"navigationBarTitleText":"领取任务",
+				"navigationBarTitleText":"自由任务大厅",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+
+		{
+			"path":"pages/TaskCenter/submitTask/submitTasksList",
+			"style":{
+				"navigationBarTitleText":"任务提交列表",
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}
 		},
 		{
-			"path":"pages/TaskCenter/taskHall/freeTask",
+			"path":"pages/TaskCenter/submitTask/submitContent",
 			"style":{
-				"navigationBarTitleText":"自由任务大厅",
+				"navigationBarTitleText":"提交",
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}
@@ -81,9 +90,6 @@
 				"navigationBarTextStyle":"white"
 			}
 		},
-		
-		
-		
 		{
 			"path": "pages/PersonalCenter/PersonalCenter",
 			"style": {
@@ -91,9 +97,7 @@
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}
-		},
-			
-		
+		},	
 		{
 			"path": "pages/reg/reg",
 			"style": {

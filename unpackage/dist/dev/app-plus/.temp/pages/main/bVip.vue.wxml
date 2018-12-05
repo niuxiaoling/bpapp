@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template name="3c123b5f">
   <view class="_view data-v-4a2ca07a">
     <view class="_view data-v-4a2ca07a logo">
@@ -19,6 +20,29 @@
     </view>
     <view class="_view data-v-4a2ca07a textcontents" style="margin-top: 30px;">
       <text class="_text data-v-4a2ca07a wptextgr">注：满人员高级勇士才可升级精英，这是唯一途径，没有任何其他途径。</text>
+=======
+<template name="bb394376">
+  <view class="_view data-v-19d7e84e">
+    <view class="_view data-v-19d7e84e logo">
+      <image src="../../static/img/BvipImg.jpg" mode="widthFix" class="_image data-v-19d7e84e"></image>
+    </view>
+    <view class="_view data-v-19d7e84e bevipbtn">
+      <view bindtap="handleProxy" data-eventid="{{'hYT-0'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
+        <image src="../../static/img/bvip1.png" mode="widthFix" class="_image data-v-19d7e84e"></image>
+      </view>
+      <view bindtap="handleProxy" data-eventid="{{'ROz-1'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
+        <image src="../../static/img/bvip2.png" mode="widthFix" class="_image data-v-19d7e84e"></image>
+      </view>
+      <view bindtap="handleProxy" data-eventid="{{'8S0-2'}}" data-comkey="{{$k}}" class="_view data-v-19d7e84e">
+        <image src="../../static/img/bvip3.png" mode="widthFix" class="_image data-v-19d7e84e"></image>
+      </view>
+    </view>
+    <view class="_view data-v-19d7e84e textcontents">
+      <text class="_text data-v-19d7e84e wptext">微品众信向所有勇士签署单边协议，协议内容是3个月能成为精英者，均会在6年内通过微品众信平台赚取的收益买的起100万以上的房子，20万以上的车子。若是购买金额不足由微品众信补足剩余部分。本单边协议具有法律效力。</text>
+    </view>
+    <view class="_view data-v-19d7e84e textcontents" style="margin-top: 30px;">
+      <text class="_text data-v-19d7e84e wptextgr">注：满人员高级勇士才可升级精英，这是唯一途径，没有任何其他途径。</text>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
     </view>
   </view>
 </template>

@@ -1,3 +1,19 @@
+<<<<<<< HEAD
 <template name="ec44368c">
   <view class="_view data-v-630cfa3c"> 提交任务 !1 </view>
+=======
+<template name="7ace35a0">
+  <view class="_view data-v-307c8141 hall">
+    <view class="_view data-v-307c8141 task" bindtap="handleProxy" data-eventid="{{'XyZ-0'}}" data-comkey="{{$k}}">
+      <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-307c8141"></image>
+      <text class="_text data-v-307c8141">勇士任务</text>
+      <image class="_image data-v-307c8141 you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+    </view>
+    <view class="_view data-v-307c8141 task" bindtap="handleProxy" data-eventid="{{'RqF-1'}}" data-comkey="{{$k}}">
+      <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-307c8141"></image>
+      <text class="_text data-v-307c8141">自由任务</text>
+      <image class="_image data-v-307c8141 you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+    </view>
+  </view>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
 </template>

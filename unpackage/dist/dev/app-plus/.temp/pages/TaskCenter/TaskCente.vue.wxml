@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template name="e89f3a36">
   <view class="_view data-v-72c78caa">
     <swiper class="_swiper data-v-72c78caa swpier-box" autoplay="{{autoplay}}" circular="{{circular}}" duration="{{duration}}" indicator-dots="{{indicator}}" indicator-active-color="#3AC198">
@@ -10,6 +11,20 @@
         <view class="_view data-v-72c78caa taskUrl" bindtap="handleProxy" data-eventid="{{'aJI-0-'+index}}" data-comkey="{{$k}}">
           <image src="{{task.imgage}}" mode="scaleToFill" class="_image data-v-72c78caa"></image>
           <text class="_text data-v-72c78caa">{{task.text}}</text>
+=======
+<template name="3a50943f">
+  <view class="_view data-v-1e8b9feb">
+    <swiper class="_swiper data-v-1e8b9feb swpier-box" autoplay="{{autoplay}}" circular="{{circular}}" duration="{{duration}}" indicator-dots="{{indicator}}" indicator-active-color="#3AC198">
+      <swiper-item wx:key="ite" key="{{ite}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="ite" class="_swiper-item data-v-1e8b9feb">
+        <image src="{{ite}}" mode="scaleToFill" class="_image data-v-1e8b9feb"></image>
+      </swiper-item>
+    </swiper>
+    <view class="_view data-v-1e8b9feb taskListBOX">
+      <view class="_view data-v-1e8b9feb taskList" wx:key="task" key="{{task}}" wx:for="{{tasksList}}" wx:for-index="index" wx:for-item="task">
+        <view class="_view data-v-1e8b9feb taskUrl" bindtap="handleProxy" data-eventid="{{'gbS-0-'+index}}" data-comkey="{{$k}}">
+          <image src="{{task.imgage}}" mode="scaleToFill" class="_image data-v-1e8b9feb"></image>
+          <text class="_text data-v-1e8b9feb">{{task.text}}</text>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
         </view>
       </view>
     </view>

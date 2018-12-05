@@ -47,6 +47,7 @@ page {
 .taskGo {
   background: #E86318;
   color: #FFFFFF;
+<<<<<<< HEAD
 }
 .ts-uploader {
   display: -webkit-box;
@@ -167,4 +168,6 @@ page {
   width: 100%;
   height: 100%;
   opacity: 0;
+=======
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
 }

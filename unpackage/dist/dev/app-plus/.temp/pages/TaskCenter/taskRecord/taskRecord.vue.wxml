@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 <template name="3d49302e">
   <view class="_view data-v-cd81367e"> 任务记录 </view>
+=======
+<template name="e36b3b7a">
+  <view class="_view data-v-07c39e82"> 任务记录 </view>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
 </template>

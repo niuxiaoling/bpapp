@@ -1,0 +1,32 @@
+
+page {
+  background: #f0efed;
+}
+.hall {
+  padding-top: 30rpx;
+}
+.task {
+  width: 96%;
+  padding: 20rpx 2%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #FFFFFF;
+  width: 100%;
+  height: 80rpx;
+  margin-bottom: 30rpx;
+}
+.task image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.task .you {
+  height: 32rpx !important;
+}

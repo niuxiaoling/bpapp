@@ -1,0 +1,20 @@
+<template name="5ca5f144">
+  <view class="_view data-v-2a1a9a7f hall">
+    <view class="_view data-v-2a1a9a7f task">
+      <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-2a1a9a7f"></image>
+      <text class="_text data-v-2a1a9a7f">勇士任务</text>
+      <image class="_image data-v-2a1a9a7f you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+    </view>
+    <view class="_view data-v-2a1a9a7f task" wx:key="tasks" key="{{tasks}}" wx:for="{{submitLists}}" wx:for-index="index" wx:for-item="tasks">
+      <view class="_view data-v-2a1a9a7f subcontent">
+        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-2a1a9a7f"></image>
+        <text class="_text data-v-2a1a9a7f">{{tasks.title}}</text>
+        <text style="color: #999999;" class="_text data-v-2a1a9a7f">（{{tasks.dips}}）</text>
+      </view>
+      <view class="_view data-v-2a1a9a7f">
+        <text style="color: #666666;" class="_text data-v-2a1a9a7f">{{tasks.stauts}}</text>
+        <image class="_image data-v-2a1a9a7f you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+</template>

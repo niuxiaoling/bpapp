@@ -23,6 +23,7 @@
 						</view>
 					</view>
 				</view>
+
 			</view>
 		</view>
 		<view class="taskTitles">
@@ -39,6 +40,7 @@
 		</view>
 		<view class="submitPrice">
 			<button class="taskGo" @click="publishTask">发布任务</button>
+
 		</view>
 	</view>
 </template>

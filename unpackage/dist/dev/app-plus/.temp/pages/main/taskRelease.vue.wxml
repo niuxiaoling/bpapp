@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template name="6430a8ee">
   <view class="_view data-v-1f6b411a taskView">
     <view class="_view data-v-1f6b411a taskTitle">
@@ -38,6 +39,32 @@
     </view>
     <view class="_view data-v-1f6b411a submitPrice">
       <button class="_button data-v-1f6b411a taskGo">发布任务</button>
+=======
+<template name="a5f8d170">
+  <view class="_view data-v-6fd43b34 taskView">
+    <view class="_view data-v-6fd43b34 taskTitle">
+      <text class="_text data-v-6fd43b34">标题：</text>
+      <input class="_input data-v-6fd43b34 title" type="text" placeholder="请输入标题(最多12字符)" maxlength="12" />
+    </view>
+    <view class="_view data-v-6fd43b34 taskContent">
+      <textarea class="_textarea data-v-6fd43b34 contentText" placeholder="请输入广告内容(最多150字符)" />
+      <view class="_view data-v-6fd43b34 contentImg"></view>
+    </view>
+    <view class="_view data-v-6fd43b34 taskTitles">
+      <text class="_text data-v-6fd43b34">单笔广告费：</text>
+      <input type="number" maxlength="5" value="{{singleMoney}}" bindinput="handleProxy" data-eventid="{{'IfD-0'}}" data-comkey="{{$k}}" class="_input data-v-6fd43b34" />
+    </view>
+    <view class="_view data-v-6fd43b34 taskTitles">
+      <text class="_text data-v-6fd43b34">任务发布数量：</text>
+      <input type="number" maxlength="5" value="{{taskNumber}}" bindinput="handleProxy" data-eventid="{{'xqw-1'}}" data-comkey="{{$k}}" class="_input data-v-6fd43b34" />
+    </view>
+    <view class="_view data-v-6fd43b34 taskTitles">
+      <text class="_text data-v-6fd43b34">广告总价：</text>
+      <text class="_text data-v-6fd43b34">{{totalPrices}}</text>
+    </view>
+    <view class="_view data-v-6fd43b34 submitPrice">
+      <button class="_button data-v-6fd43b34 taskGo">发布任务</button>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
     </view>
   </view>
 </template>

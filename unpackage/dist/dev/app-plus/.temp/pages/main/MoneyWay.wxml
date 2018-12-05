@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <import src="/pages/main/MoneyWay.vue.wxml" /><template is="5d1f5d33" data="{{ ...$root['0'], $root }}"/>
+=======
+<import src="/pages/main/MoneyWay.vue.wxml" /><template is="1eb89d19" data="{{ ...$root['0'], $root }}"/>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd

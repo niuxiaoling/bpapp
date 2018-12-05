@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template name="ab45d814">
   <view class="_view data-v-480e560a content">
     <view class="_view data-v-480e560a logo">
@@ -18,10 +19,36 @@
         <view class="_view data-v-480e560a plCode">
           <block wx:key="v" key="{{v}}" wx:for="{{plcodeArr}}" wx:for-index="index" wx:for-item="v">
             <text class="_text data-v-480e560a">{{v}}</text>
+=======
+<template name="66493f50">
+  <view class="_view data-v-6680b93c content">
+    <view class="_view data-v-6680b93c logo">
+      <image src="../../static/img/tg_logo.png" mode="widthFix" class="_image data-v-6680b93c"></image>
+    </view>
+    <view class="_view data-v-6680b93c logo_title">
+      <image src="../../static/img/tg_title.png" mode class="_image data-v-6680b93c"></image>
+    </view>
+    <view class="_view data-v-6680b93c erweima">
+      <image class="_image data-v-6680b93c erweima-bg" src="../../static/img/tg_bg_1.png" mode="aspectFit"></image>
+      <view class="_view data-v-6680b93c erweimaimg">
+        <view class="_view data-v-6680b93c erweima-content">
+          <image src="{{qrimg}}" class="_image data-v-6680b93c"></image>
+        </view>
+        <image src="../../static/img/logo.jpg" mode class="_image data-v-6680b93c erweimalogo"></image>
+      </view>
+      <view class="_view data-v-6680b93c tjCode">
+        <view class="_view data-v-6680b93c plCode">
+          <block wx:key="v" key="{{v}}" wx:for="{{plcodeArr}}" wx:for-index="index" wx:for-item="v">
+            <text class="_text data-v-6680b93c">{{v}}</text>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
           </block>
         </view>
       </view>
     </view>
+<<<<<<< HEAD
     <image class="_image data-v-480e560a erweima-bg2" src="../../static/img/tg_bg.png" mode></image>
+=======
+    <image class="_image data-v-6680b93c erweima-bg2" src="../../static/img/tg_bg.png" mode></image>
+>>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
   </view>
 </template>
