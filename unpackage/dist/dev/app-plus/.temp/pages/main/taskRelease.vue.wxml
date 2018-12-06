@@ -1,70 +1,43 @@
-<<<<<<< HEAD
-<template name="6430a8ee">
-  <view class="_view data-v-1f6b411a taskView">
-    <view class="_view data-v-1f6b411a taskTitle">
-      <text class="_text data-v-1f6b411a">标题：</text>
-      <input class="_input data-v-1f6b411a title" type="text" placeholder="请输入标题(最多12字符)" maxlength="12" />
+<template name="4519b4b0">
+  <view class="_view data-v-523c5700 taskView">
+    <view class="_view data-v-523c5700 taskTitle">
+      <text class="_text data-v-523c5700">标题：</text>
+      <input class="_input data-v-523c5700 title" value="{{taskData.taskTitle}}" bindinput="handleProxy" type="text" placeholder="请输入标题(最多12字符)" maxlength="12" data-eventid="{{'Ffu-0'}}" data-comkey="{{$k}}" />
     </view>
-    <view class="_view data-v-1f6b411a taskContent">
-      <textarea class="_textarea data-v-1f6b411a contentText" placeholder="请输入广告内容(最多150字符)" />
-      <view class="_view data-v-1f6b411a contentImg">
-        <view class="_view data-v-1f6b411a ts-uploader">
-          <view class="_view data-v-1f6b411a ts-uploader-body">
-            <view class="_view data-v-1f6b411a ts-uploader__files">
+    <view class="_view data-v-523c5700 taskContent">
+      <textarea class="_textarea data-v-523c5700 contentText" value="{{taskData.copyWriting}}" bindinput="handleProxy" placeholder="请输入广告内容(最多150字符)" data-eventid="{{'uji-1'}}" data-comkey="{{$k}}" />
+      <view class="_view data-v-523c5700 contentImg">
+        <view class="_view data-v-523c5700 ts-uploader">
+          <view class="_view data-v-523c5700 ts-uploader-body">
+            <view class="_view data-v-523c5700 ts-uploader__files">
               <block wx:key="index" key="{{index}}" wx:for="{{imageList}}" wx:for-index="index" wx:for-item="image">
-                <view class="_view data-v-1f6b411a ts-uploader__file">
-                  <image class="_image data-v-1f6b411a ts-uploader__img" src="{{image}}" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'OWk-0-'+index}}" data-comkey="{{$k}}"></image>
+                <view class="_view data-v-523c5700 ts-uploader__file">
+                  <image class="_image data-v-523c5700 ts-uploader__img" src="{{image}}" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'HCx-2-'+index}}" data-comkey="{{$k}}"></image>
                 </view>
               </block>
-              <view class="_view data-v-1f6b411a ts-uploader__input-box">
-                <view class="_view data-v-1f6b411a ts-uploader-info ts-h5">{{imageList.length}}/{{count}}</view>
-                <view class="_view data-v-1f6b411a ts-uploader__input" bindtap="handleProxy" data-eventid="{{'gXA-1'}}" data-comkey="{{$k}}"></view>
+              <view class="_view data-v-523c5700 ts-uploader__input-box">
+                <view class="_view data-v-523c5700 ts-uploader-info ts-h5">{{imageList.length}}/{{count}}</view>
+                <view class="_view data-v-523c5700 ts-uploader__input" bindtap="handleProxy" data-eventid="{{'iGK-3'}}" data-comkey="{{$k}}"></view>
               </view>
             </view>
           </view>
         </view>
       </view>
     </view>
-    <view class="_view data-v-1f6b411a taskTitles">
-      <text class="_text data-v-1f6b411a">单笔广告费：</text>
-      <input type="number" maxlength="5" value="{{singleMoney}}" bindinput="handleProxy" data-eventid="{{'r6f-2'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
+    <view class="_view data-v-523c5700 taskTitles">
+      <text class="_text data-v-523c5700">单笔广告费：</text>
+      <input type="number" maxlength="5" value="{{taskData.contributionNo}}" bindinput="handleProxy" data-eventid="{{'KlH-4'}}" data-comkey="{{$k}}" class="_input data-v-523c5700" />
     </view>
-    <view class="_view data-v-1f6b411a taskTitles">
-      <text class="_text data-v-1f6b411a">任务发布数量：</text>
-      <input type="number" maxlength="5" value="{{taskNumber}}" bindinput="handleProxy" data-eventid="{{'Ejc-3'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
+    <view class="_view data-v-523c5700 taskTitles">
+      <text class="_text data-v-523c5700">任务发布数量：</text>
+      <input type="number" maxlength="5" value="{{taskData.releaseTaskNo}}" bindinput="handleProxy" data-eventid="{{'oVt-5'}}" data-comkey="{{$k}}" class="_input data-v-523c5700" />
     </view>
-    <view class="_view data-v-1f6b411a taskTitles">
-      <text class="_text data-v-1f6b411a">广告总价：</text>
-      <text class="_text data-v-1f6b411a">{{totalPrices}}</text>
+    <view class="_view data-v-523c5700 taskTitles">
+      <text class="_text data-v-523c5700">广告总价：</text>
+      <text class="_text data-v-523c5700">{{taskData.allMoney}}</text>
     </view>
-    <view class="_view data-v-1f6b411a submitPrice">
-      <button class="_button data-v-1f6b411a taskGo">发布任务</button>
-=======
-<template name="a5f8d170">
-  <view class="_view data-v-6fd43b34 taskView">
-    <view class="_view data-v-6fd43b34 taskTitle">
-      <text class="_text data-v-6fd43b34">标题：</text>
-      <input class="_input data-v-6fd43b34 title" type="text" placeholder="请输入标题(最多12字符)" maxlength="12" />
-    </view>
-    <view class="_view data-v-6fd43b34 taskContent">
-      <textarea class="_textarea data-v-6fd43b34 contentText" placeholder="请输入广告内容(最多150字符)" />
-      <view class="_view data-v-6fd43b34 contentImg"></view>
-    </view>
-    <view class="_view data-v-6fd43b34 taskTitles">
-      <text class="_text data-v-6fd43b34">单笔广告费：</text>
-      <input type="number" maxlength="5" value="{{singleMoney}}" bindinput="handleProxy" data-eventid="{{'IfD-0'}}" data-comkey="{{$k}}" class="_input data-v-6fd43b34" />
-    </view>
-    <view class="_view data-v-6fd43b34 taskTitles">
-      <text class="_text data-v-6fd43b34">任务发布数量：</text>
-      <input type="number" maxlength="5" value="{{taskNumber}}" bindinput="handleProxy" data-eventid="{{'xqw-1'}}" data-comkey="{{$k}}" class="_input data-v-6fd43b34" />
-    </view>
-    <view class="_view data-v-6fd43b34 taskTitles">
-      <text class="_text data-v-6fd43b34">广告总价：</text>
-      <text class="_text data-v-6fd43b34">{{totalPrices}}</text>
-    </view>
-    <view class="_view data-v-6fd43b34 submitPrice">
-      <button class="_button data-v-6fd43b34 taskGo">发布任务</button>
->>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
+    <view class="_view data-v-523c5700 submitPrice">
+      <button class="_button data-v-523c5700 taskGo" bindtap="handleProxy" data-eventid="{{'nZA-6'}}" data-comkey="{{$k}}">发布任务</button>
     </view>
   </view>
 </template>

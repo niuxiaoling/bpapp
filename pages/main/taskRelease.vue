@@ -58,15 +58,15 @@
 				imageList: [],
 				picId:[],
 				taskData:{
-					taskTitle:"",
-					copyWriting:"",
-					contributionNo:'',
-					releaseTaskNo:"",
-					allMoney:"",
-					picId:"",
-					picId2:"",
+					taskTitle:"",  //标题
+					copyWriting:"", //文案
+					contributionNo:'', //发布任务贡献值
+					releaseTaskNo:"",  //发布任务数量
+					allMoney:"",  //总数
+					picId:"",   //图片1
+					picId2:"",  //图片2
 				},
-				taskIdentifier:"", //任务标号
+				taskIdentifier:"", //任务编号
 				vipLevel:"",
 				userInfo:{}
 			};
@@ -75,7 +75,6 @@
 			this.imageList = [];
 		},
 		onLoad() {
-			self = this;
 			this.vipLevel = uni.getStorageSync('vipLevel') ?uni.getStorageSync('vipLevel') :"";
 			this.userInfo = uni.getStorageSync('userInfo');
 		},

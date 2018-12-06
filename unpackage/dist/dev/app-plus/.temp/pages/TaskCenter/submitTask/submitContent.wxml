@@ -1,1 +1,1 @@
-<import src="/pages/TaskCenter/submitTask/submitContent.vue.wxml" /><template is="7a3a6aea" data="{{ ...$root['0'], $root }}"/>
+<import src="/pages/TaskCenter/submitTask/submitContent.vue.wxml" /><template is="27ace02b" data="{{ ...$root['0'], $root }}"/>

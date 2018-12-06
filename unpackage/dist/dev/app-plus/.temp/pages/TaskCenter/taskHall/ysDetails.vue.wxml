@@ -1,46 +1,23 @@
-<<<<<<< HEAD
-<template name="656f30cd">
-  <view class="_view data-v-d8447896">
-    <view class="_view data-v-d8447896 detailsText">
-      <view class="_view data-v-d8447896 detailsTitle">普通任务一</view>
-      <view class="_view data-v-d8447896 detailsTips">请将下面得文本图片复制发送朋友圈（点击图片保存到手机）</view>
-      <view class="_view data-v-d8447896 detailsContent">关于霸屏威赫手机购买双向奖励公告 尊敬的霸屏天下&BOSS Wallet用户： 您好！ 自霸屏威赫手机在霸屏天下与霸屏钱包（BOSS Wallet）上线销售以来，得到了广大用户的拥护。 前段时间，霸屏钱包（BOSS Wallet）公布了购买霸屏威赫手机促销奖励政策，即通过霸屏钱包（BOSS Wallet）购买霸屏威赫手机后，将同步订单至霸屏天下，同步在霸屏天下拨发推广佣金，该奖励政策将于12月5日（周三）24:00结束。 在促销政策即将结束之前，经霸屏天下与霸屏钱包（BOSS Wallet）运营团队沟通，决定将霸屏威赫手机购买促销奖励政策升级为双向奖励，即保留原霸屏钱包（BOSS
-        Wallet）促销奖励政策的基础上，自11月30日通过霸屏天下购买霸屏威赫手机的用户，同步会在霸屏钱包（BOSS Wallet）获得购买金额60%的积分奖励。 双向促销政策，将于12月5日24:00结束，双向同步订单与积分奖励自购买之日起72小时内完成系统拨发，请全体用户悉知。 特别提醒：通过霸屏钱包（BOSS Wallet）购买霸屏威赫手机时务必填写正确的霸屏天下账号；通过霸屏天下购买霸屏威赫手机的用户，请务必确保在霸屏钱包（BOSS Wallet）中有使用相同手机号注册的霸屏钱包（BOSS
-        Wallet）账号。 如霸屏钱包（BOSS Wallet）与霸屏天下无对应账号，请及时同步注册。 请大家务必确认霸屏天下与霸屏钱包（BOSS Wallet）使用同一手机号注册。由于数据量过大，客服将不受理因账户不一致导致的积分、订单不能及时同步对的情况，所以请大家务必第一时间完成同步注册。 促销奖励再升级，手机存量有限，欲购从速！ 霸屏天下&BOSS Wallet 2018年12月2日 </view>
-      <view class="_view data-v-d8447896">
-        <button class="_button data-v-d8447896 pastbut">复制文案</button>
+<template name="103ab253">
+  <view class="_view data-v-063d3948">
+    <view class="_view data-v-063d3948 detailsText">
+      <view class="_view data-v-063d3948 detailsTitle">普通任务一</view>
+      <view class="_view data-v-063d3948 detailsTips">请将下面得文本图片复制发送朋友圈（点击图片保存到手机）</view>
+      <view class="_view data-v-063d3948 detailsContent">
+        <text class="_text data-v-063d3948"> {{taskData.copyWriting}} </text>
+      </view>
+      <view class="_view data-v-063d3948">
+        <button class="_button data-v-063d3948 pastbut" bindtap="handleProxy" data-eventid="{{'DHq-0'}}" data-comkey="{{$k}}">复制文案</button>
       </view>
     </view>
-    <view class="_view data-v-d8447896 detailsImg">
-      <view class="_view data-v-d8447896 ImgTitle">图片信息</view>
-      <view class="_view data-v-d8447896 imgContent" wx:key="img" key="{{img}}" bindtap="handleProxy" data-eventid="{{'Yo2-0-'+index}}" data-comkey="{{$k}}" wx:for="{{Images}}" wx:for-index="index" wx:for-item="img">
-        <image src="{{img}}" mode="widthFix" class="_image data-v-d8447896"></image>
+    <view class="_view data-v-063d3948 detailsImg">
+      <view class="_view data-v-063d3948 ImgTitle">图片信息</view>
+      <view class="_view data-v-063d3948 imgContent" wx:key="img" key="{{img}}" wx:for="{{copyImages}}" wx:for-index="index" wx:for-item="img">
+        <image src="{{img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'dme-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-063d3948"></image>
       </view>
     </view>
-    <view class="_view data-v-d8447896">
-      <button class="_button data-v-d8447896 getTasks">立即领取</button>
-=======
-<template name="1b47e4b3">
-  <view class="_view data-v-5ea4c994">
-    <view class="_view data-v-5ea4c994 detailsText">
-      <view class="_view data-v-5ea4c994 detailsTitle">普通任务一</view>
-      <view class="_view data-v-5ea4c994 detailsTips">请将下面得文本图片复制发送朋友圈（点击图片保存到手机）</view>
-      <view class="_view data-v-5ea4c994 detailsContent">关于霸屏威赫手机购买双向奖励公告 尊敬的霸屏天下&BOSS Wallet用户： 您好！ 自霸屏威赫手机在霸屏天下与霸屏钱包（BOSS Wallet）上线销售以来，得到了广大用户的拥护。 前段时间，霸屏钱包（BOSS Wallet）公布了购买霸屏威赫手机促销奖励政策，即通过霸屏钱包（BOSS Wallet）购买霸屏威赫手机后，将同步订单至霸屏天下，同步在霸屏天下拨发推广佣金，该奖励政策将于12月5日（周三）24:00结束。 在促销政策即将结束之前，经霸屏天下与霸屏钱包（BOSS Wallet）运营团队沟通，决定将霸屏威赫手机购买促销奖励政策升级为双向奖励，即保留原霸屏钱包（BOSS
-        Wallet）促销奖励政策的基础上，自11月30日通过霸屏天下购买霸屏威赫手机的用户，同步会在霸屏钱包（BOSS Wallet）获得购买金额60%的积分奖励。 双向促销政策，将于12月5日24:00结束，双向同步订单与积分奖励自购买之日起72小时内完成系统拨发，请全体用户悉知。 特别提醒：通过霸屏钱包（BOSS Wallet）购买霸屏威赫手机时务必填写正确的霸屏天下账号；通过霸屏天下购买霸屏威赫手机的用户，请务必确保在霸屏钱包（BOSS Wallet）中有使用相同手机号注册的霸屏钱包（BOSS
-        Wallet）账号。 如霸屏钱包（BOSS Wallet）与霸屏天下无对应账号，请及时同步注册。 请大家务必确认霸屏天下与霸屏钱包（BOSS Wallet）使用同一手机号注册。由于数据量过大，客服将不受理因账户不一致导致的积分、订单不能及时同步对的情况，所以请大家务必第一时间完成同步注册。 促销奖励再升级，手机存量有限，欲购从速！ 霸屏天下&BOSS Wallet 2018年12月2日 </view>
-      <view class="_view data-v-5ea4c994">
-        <button class="_button data-v-5ea4c994 pastbut">复制文案</button>
-      </view>
-    </view>
-    <view class="_view data-v-5ea4c994 detailsImg">
-      <view class="_view data-v-5ea4c994 ImgTitle">图片信息</view>
-      <view class="_view data-v-5ea4c994 imgContent" wx:key="img" key="{{img}}" bindtap="handleProxy" data-eventid="{{'hu0-0-'+index}}" data-comkey="{{$k}}" wx:for="{{Images}}" wx:for-index="index" wx:for-item="img">
-        <image src="{{img}}" mode="widthFix" class="_image data-v-5ea4c994"></image>
-      </view>
-    </view>
-    <view class="_view data-v-5ea4c994">
-      <button class="_button data-v-5ea4c994 getTasks">立即领取</button>
->>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
+    <view class="_view data-v-063d3948">
+      <button class="_button data-v-063d3948 getTasks" bindtap="handleProxy" data-eventid="{{'tFk-2'}}" data-comkey="{{$k}}">立即领取</button>
     </view>
   </view>
 </template>

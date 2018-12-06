@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-<import src="/pages/TaskCenter/taskHall/freeTask.vue.wxml" /><template is="2c57321c" data="{{ ...$root['0'], $root }}"/>
-=======
-<import src="/pages/TaskCenter/taskHall/freeTask.vue.wxml" /><template is="74456976" data="{{ ...$root['0'], $root }}"/>
->>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
+<import src="/pages/TaskCenter/taskHall/freeTask.vue.wxml" /><template is="d61b3054" data="{{ ...$root['0'], $root }}"/>

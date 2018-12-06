@@ -34,9 +34,9 @@
 			duration:500,
 			tasksList:[
 				{
-				imgage:'../../static/img/renwudating.png',
-				text:'任务大厅',
-				url:'/pages/TaskCenter/taskHall/taskHall'	,
+					imgage:'../../static/img/renwudating.png',
+					text:'任务大厅',
+					url:'/pages/TaskCenter/taskHall/taskMast',
 				},
 				{
 				imgage:'../../static/img/tijiaorenwu.png',

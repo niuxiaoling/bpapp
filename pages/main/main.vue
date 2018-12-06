@@ -37,7 +37,7 @@
 						{
 							imgage:'../../static/img/ruhezhuangqu.png',
 							text:'赚钱方式',
-							url:'/pages/main/MoneyWay'
+							url:'/pages/main/moneyWay'
 						},
 						{
 							imgage:'../../static/img/tgewm.png',

@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-<template name="5d1f5d33">
-  <view class="_view data-v-5efbbcce imageBox">
-    <image src="../../static/img/moneyway.png" mode="widthFix" class="_image data-v-5efbbcce"></image>
-=======
-<template name="1eb89d19">
-  <view class="_view data-v-257060ad imageBox">
-    <image src="../../static/img/moneyway.png" mode="widthFix" class="_image data-v-257060ad"></image>
->>>>>>> 7079179e7ba4e9dfe84a9899e4c49ca68b81f6cd
+<template name="4d3aaab9">
+  <view class="_view data-v-f1b28f3e imageBox">
+    <image src="../../static/img/moneyway.png" mode="widthFix" class="_image data-v-f1b28f3e"></image>
   </view>
 </template>

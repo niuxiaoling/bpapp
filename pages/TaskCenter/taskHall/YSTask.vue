@@ -3,46 +3,28 @@
 		<view class="tpis">
 			<text style="color: #D32241;">*</text>
 			勇士任务每天只可领取2条，自由任务可领取多条
-			</view>
-	<!-- <view class="ystaskList">
-		<image src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-		<view class="ysText">
-			<view class="textTop">
-				<text>勇士任务一</text>
-				<text>（丰胸）</text>
-			</view>
-			<view class="textTop">
-				<text>未领取</text>
-				<text>（已领完）</text>
-			</view>
 		</view>
-		<view class="price">
-			<text style="color: #D32241;">￥20</text>
-			<text>【高级】</text>
-		</view>
-		<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
-	</view> -->
-	<view class="ystaskList" v-for=" ys in ystaskList" :key='ys'>
-		<image src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-		<view class="ysText">
-			<view class="textTop">
-				<text>{{ys.title}}</text>
-				<text>（{{ys.describe}}）</text>
+		<view class="ystaskList" v-for=" ys in ystaskList" :key='ys' @tap="gotaskDetail(ys)">
+			<image src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
+			<view class="ysText">
+				<view class="textTop">
+					<text>{{ys.title}}</text>
+					<text>（{{ys.describe}}）</text>
+				</view>
+				<view class="textTop">
+					<text>{{ys.stauts}}</text>
+					<text style="color: #D32241;padding-left: 10upx;font-weight: 500;">{{ys.stauts1}}</text>
+				</view>
 			</view>
-			<view class="textTop">
-				<text>{{ys.stauts}}</text>
-				<text style="color: #D32241;padding-left: 10upx;font-weight: 500;">{{ys.stauts1}}</text>
+			<view class="price">
+				<text style="color: #D32241;">￥{{ys.price}}</text>
+				<text>【{{ys.leve}}】</text>
 			</view>
+			<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
 		</view>
-		<view class="price">
-			<text style="color: #D32241;">￥{{ys.price}}</text>
-			<text>【{{ys.leve}}】</text>
+		<view class="Taskhint">
+			<image src="../../../static/img/Taskhint.jpg" mode="widthFix"></image>
 		</view>
-		<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
-	</view>
-	<view class="Taskhint">
-		<image src="../../../static/img/Taskhint.jpg" mode="widthFix"></image>
-	</view>
 	</view>
 </template>
 
@@ -86,6 +68,13 @@
 				],
 				
 			};
+		},
+		methods:{
+			gotaskDetail(item){
+				uni.navigateTo({
+					url:'/pages/TaskCenter/taskHall/ysDetails'
+				})
+			}
 		},
 		onLoad() {
 			

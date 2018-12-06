@@ -42,7 +42,7 @@
 			}
 		},
 		{
-			"path":"pages/TaskCenter/taskHall/taskHall",
+			"path":"pages/TaskCenter/taskHall/taskMast",
 			"style":{
 				"navigationBarTitleText":"任务大厅",
 				"navigationBarBackgroundColor":"#EA5B17",
@@ -50,7 +50,7 @@
 			}
 		},
 		{
-			"path":"pages/TaskCenter/taskHall/YSTask",
+			"path":"pages/TaskCenter/taskHall/ysTask",
 			"style":{
 				"navigationBarTitleText":"勇士任务大厅",
 				"navigationBarBackgroundColor":"#EA5B17",
@@ -61,6 +61,14 @@
 			"path":"pages/TaskCenter/taskHall/freeTask",
 			"style":{
 				"navigationBarTitleText":"自由任务大厅",
+				"navigationBarBackgroundColor":"#EA5B17",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path":"pages/TaskCenter/taskHall/ysDetails",
+			"style":{
+				"navigationBarTitleText":"任务详情",
 				"navigationBarBackgroundColor":"#EA5B17",
 				"navigationBarTextStyle":"white"
 			}
@@ -115,7 +123,7 @@
 			}
 		},
 		{
-			"path": "pages/main/MoneyWay",
+			"path": "pages/main/MoneyWay",  
 			"style": {
 				"navigationBarTitleText": "赚钱方式",
 				"navigationBarBackgroundColor":"#EA5B17",
