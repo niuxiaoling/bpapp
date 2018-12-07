@@ -20,7 +20,8 @@
 			return {
 				submitLists:[],
 				orderInfo:{
-					account:''
+					account:'',
+					orderStatus:'1'
 				}
 			};
 		},

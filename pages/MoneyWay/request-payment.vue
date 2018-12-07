@@ -51,8 +51,9 @@
 		onLoad: function(options) {
 			this.userinfo = uni.getStorageSync('userInfo');
 			this.money = options.money;
-			console.log(options.payTradeType)
-			console.log(JSON.stringify(options))
+			this.payTradeType = options.payTradeType;
+// 			console.log(options.payTradeType)
+// 			console.log(JSON.stringify(options))
 		},
 		methods: {
 			async requestPayment(e, index) {

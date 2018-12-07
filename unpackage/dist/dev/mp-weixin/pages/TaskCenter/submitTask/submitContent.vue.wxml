@@ -8,13 +8,13 @@
       <text class="_text data-v-4e206166">2.截取朋友圈图片并上传:</text>
     </view>
     <view class="_view data-v-4e206166 item-list">
-      <view class="_view data-v-4e206166 btn-upload" bindtap="handleProxy" data-eventid="{{'KbE-0'}}" data-comkey="{{$k}}">请选择图片</view>
+      <view class="_view data-v-4e206166 btn-upload" bindtap="handleProxy" data-eventid="{{'kSe-0'}}" data-comkey="{{$k}}">请选择图片</view>
     </view>
     <view class="_view data-v-4e206166 imgbox">
-      <image src="{{uploadimg}}" mode="aspectFit" class="_image data-v-4e206166 imgbox-img" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'naM-1'}}" data-comkey="{{$k}}"></image>
+      <image src="{{uploadimg}}" mode="aspectFit" class="_image data-v-4e206166 imgbox-img" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'8f5-1'}}" data-comkey="{{$k}}"></image>
     </view>
     <view wx:if="{{uploadimg !=''}}" class="_view data-v-4e206166">
-      <button class="_button data-v-4e206166 getTasks" bindtap="handleProxy" data-eventid="{{'qLL-2'}}" data-comkey="{{$k}}">提交</button>
+      <button class="_button data-v-4e206166 getTasks" bindtap="handleProxy" data-eventid="{{'4Yr-2'}}" data-comkey="{{$k}}">提交</button>
     </view>
     <view class="_view data-v-4e206166 Taskhint">
       <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-4e206166"></image>

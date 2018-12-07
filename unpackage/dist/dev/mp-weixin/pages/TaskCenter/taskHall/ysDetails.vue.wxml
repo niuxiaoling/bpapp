@@ -7,17 +7,17 @@
         <text class="_text data-v-d8447896"> {{tasksDetails.copyWriting}} </text>
       </view>
       <view class="_view data-v-d8447896">
-        <button class="_button data-v-d8447896 pastbut" bindtap="handleProxy" data-eventid="{{'wrG-0'}}" data-comkey="{{$k}}">复制文案</button>
+        <button class="_button data-v-d8447896 pastbut" bindtap="handleProxy" data-eventid="{{'tHm-0'}}" data-comkey="{{$k}}">复制文案</button>
       </view>
     </view>
     <view class="_view data-v-d8447896 detailsImg">
       <view class="_view data-v-d8447896 ImgTitle">图片信息</view>
       <view class="_view data-v-d8447896 imgContent" wx:key="img" key="{{img}}" wx:for="{{copyImages}}" wx:for-index="index" wx:for-item="img">
-        <image src="{{img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'NjP-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-d8447896"></image>
+        <image src="{{img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'1Ty-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-d8447896"></image>
       </view>
     </view>
     <view class="_view data-v-d8447896">
-      <button class="_button data-v-d8447896 getTasks" bindtap="handleProxy" data-eventid="{{'hmV-2'}}" data-comkey="{{$k}}">立即领取</button>
+      <button class="_button data-v-d8447896 getTasks" bindtap="handleProxy" data-eventid="{{'p04-2'}}" data-comkey="{{$k}}">立即领取</button>
     </view>
   </view>
 </template>
