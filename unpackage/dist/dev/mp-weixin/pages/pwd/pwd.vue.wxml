@@ -1,22 +1,22 @@
-<template name="057c0db6">
-  <view class="_view data-v-201227f2">
-    <view class="_view data-v-201227f2 logo">
-      <image src="../../static/img/logo.jpg" class="_image data-v-201227f2"></image>
+<template name="84542f3c">
+  <view class="_view data-v-065380b0">
+    <view class="_view data-v-065380b0 logo">
+      <image src="../../static/img/logo.jpg" class="_image data-v-065380b0"></image>
     </view>
-    <view class="_view data-v-201227f2 reg-list">
-      <image src="../../static/img/shouji.png" class="_image data-v-201227f2"></image>
-      <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'6jR-0'}}" data-comkey="{{$k}}" class="_input data-v-201227f2" />
+    <view class="_view data-v-065380b0 reg-list">
+      <image src="../../static/img/shouji.png" class="_image data-v-065380b0"></image>
+      <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'aiB-0'}}" data-comkey="{{$k}}" class="_input data-v-065380b0" />
     </view>
-    <view class="_view data-v-201227f2 reg-list">
-      <image src="../../static/img/miam.png" class="_image data-v-201227f2"></image>
-      <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入新密码" placeholder-style="color:#ffffff" data-eventid="{{'DvA-1'}}" data-comkey="{{$k}}" class="_input data-v-201227f2" />
+    <view class="_view data-v-065380b0 reg-list">
+      <image src="../../static/img/miam.png" class="_image data-v-065380b0"></image>
+      <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入新密码" placeholder-style="color:#ffffff" data-eventid="{{'M4o-1'}}" data-comkey="{{$k}}" class="_input data-v-065380b0" />
     </view>
-    <view class="_view data-v-201227f2 reg-list">
-      <image src="../../static/img/querenmima.png" class="_image data-v-201227f2"></image>
-      <input type="text" password="true" value="{{newPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'wC2-2'}}" data-comkey="{{$k}}" class="_input data-v-201227f2" />
+    <view class="_view data-v-065380b0 reg-list">
+      <image src="../../static/img/querenmima.png" class="_image data-v-065380b0"></image>
+      <input type="text" password="true" value="{{newPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'C6C-2'}}" data-comkey="{{$k}}" class="_input data-v-065380b0" />
     </view>
-    <view class="_view data-v-201227f2 regBut">
-      <button bindtap="handleProxy" data-eventid="{{'nNE-3'}}" data-comkey="{{$k}}" class="_button data-v-201227f2"> 确 定</button>
+    <view class="_view data-v-065380b0 regBut">
+      <button bindtap="handleProxy" data-eventid="{{'OPy-3'}}" data-comkey="{{$k}}" class="_button data-v-065380b0"> 确 定</button>
     </view>
   </view>
 </template>

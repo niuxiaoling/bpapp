@@ -3,28 +3,28 @@
 		<view class="tpis">
 			<text style="color: #D32241;">*</text>
 			勇士任务每天只可领取2条，自由任务可领取多条
-		</view>
-		<view class="ystaskList" v-for=" ys in ystaskList" :key='ys' @tap="gotaskDetail(ys)">
-			<image src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-			<view class="ysText">
-				<view class="textTop">
-					<text>{{ys.title}}</text>
-					<text>（{{ys.describe}}）</text>
-				</view>
-				<view class="textTop">
-					<text>{{ys.stauts}}</text>
-					<text style="color: #D32241;padding-left: 10upx;font-weight: 500;">{{ys.stauts1}}</text>
-				</view>
 			</view>
-			<view class="price">
-				<text style="color: #D32241;">￥{{ys.price}}</text>
-				<text>【{{ys.leve}}】</text>
+	<view class="ystaskList" v-for=" ys in ystaskList" :key='ys' @tap="goReceive(ys)">
+		<image src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
+		<view class="ysText">
+			<view class="textTop">
+				<text>{{ys.taskTitle}}</text>
+				<!-- <text>（{{ys.describe}}）</text> -->
 			</view>
-			<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+			<view class="textTop">
+				<text>{{ys.statusTask =='01'?"未领取":'已领取' }}</text>
+				<text style="color: #D32241;padding-left: 10upx;font-weight: 500;">{{ys.stauts1}}</text>
+			</view>
 		</view>
-		<view class="Taskhint">
-			<image src="../../../static/img/Taskhint.jpg" mode="widthFix"></image>
+		<view class="price">
+			<text style="color: #D32241;">￥{{ys.contributionNo}}</text>
+			<text>【勇士】</text>
 		</view>
+		<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+	</view>
+	<view class="Taskhint">
+		<image src="../../../static/img/Taskhint.jpg" mode="widthFix"></image>
+	</view>
 	</view>
 </template>
 
@@ -32,52 +32,66 @@
 	export default {
 		data() {
 			return {
-				ystaskList:[
-					{
-						title:'勇士任务2',
-						describe:"丰胸2",
-						stauts:"未领取",
-						stauts1:"已领完",
-						price:30,
-						leve:"高级"
-					},
-					{
-						title:'勇士任务2',
-						describe:"商城",
-						stauts:"未领取",
-						stauts1:"",
-						price:10,
-						leve:"中级"
-					},
-					{
-						title:'勇士任务8',
-						describe:"丰胸2",
-						stauts:"未领取",
-						stauts1:"已领完",
-						price:30,
-						leve:"高级"
-					},
-					{
-						title:'勇士任务10',
-						describe:"丰胸2",
-						stauts:"未领取",
-						stauts1:"已领完",
-						price:30,
-						leve:"高级"
-					}
-				],
+				ystaskList:[],
+				taskData:{
+					taskType:'01',
+					account:''
+				},
 				
 			};
 		},
-		methods:{
-			gotaskDetail(item){
-				uni.navigateTo({
-					url:'/pages/TaskCenter/taskHall/ysDetails'
+		onShow() {
+			uni.showLoading({
+				mask:'true',
+				title:'加载中'
+			})
+			let that =this;
+			that.account = uni.getStorageSync('userInfo').account;
+				const jsonString = {
+					taskInfo:this.taskData,
+					requestType:"selectTask",
+				}
+				const param ={
+					controllerRequestType:"taskControllerService",
+					jsonString:JSON.stringify(jsonString)
+				}
+				
+				uni.request({
+					url:that.websiteUrl,
+					method:'POST',
+					header: {
+						"content-type":"application/x-www-form-urlencoded"
+					},
+					data:param,
+					success(res) {
+						if(res.data.errorCode == '0000'){
+							 that.ystaskList = res.data.taskInfo.taskInfoList;
+							 console.log(JSON.stringify(that.ystaskList))
+							 uni.hideLoading()
+						}else{
+							uni.showToast({
+								icon:'none',
+								title:res.data.errorMessage
+							})
+						}
+						
+					},
+					fail(res) {
+						console.log(JSON.stringify(res))
+						uni.hideLoading()
+					},
+					
 				})
-			}
+			uni.hideLoading()
 		},
-		onLoad() {
-			
+		methods:{
+			goReceive(vl){
+				console.log(JSON.stringify(vl));
+					uni.setStorageSync('tasksDetails',vl);
+					uni.navigateTo({
+						url:'ysDetails'
+					})
+				}
 		}
 	}
 </script>

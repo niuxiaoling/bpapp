@@ -31,7 +31,7 @@ page {
 .detailsContent {
   width: 96%;
   line-height: 50rpx;
-  margin: 10rpx auto;
+  margin: 15rpx auto;
   color: #333333;
   text-indent: 20rpx;
 }
@@ -48,12 +48,14 @@ page {
   margin: 10rpx auto;
 }
 .imgContent image {
-  width: 100%;
-  margin: 10rpx auto;
+  width: 96%;
+  margin: 0 auto;
+  border: 1px solid #DADADA;
+  box-shadow: 5rpx 5rpx 5rpx #999999;
 }
 .getTasks {
   background: #E61532;
   width: 80%;
   color: #FFFFFF;
-  margin-bottom: 10rpx;
+  margin: 30rpx auto;
 }

@@ -24,8 +24,8 @@
 			items:[
 				'../../static/img/banner1.jpg',
 				'../../static/img/banner2.jpg',
-				'../../static/img/banner2.jpg',
-				'../../static/img/banner2.jpg',
+				'../../static/img/banner3.jpg',
+				'../../static/img/banner4.jpg',
 			],
 			userInfo:'',
 			autoplay:true,
@@ -36,7 +36,7 @@
 				{
 					imgage:'../../static/img/renwudating.png',
 					text:'任务大厅',
-					url:'/pages/TaskCenter/taskHall/taskMast',
+					url:'/pages/TaskCenter/taskHall/YSTask',
 				},
 				{
 				imgage:'../../static/img/tijiaorenwu.png',

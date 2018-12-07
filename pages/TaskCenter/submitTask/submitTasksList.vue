@@ -1,19 +1,13 @@
 <template>
 	<view class="hall">
-		<view class="task">
-			<image src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-			<text>勇士任务</text>
-			<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
-		</view>
-		
 		<view class="task" v-for="tasks in submitLists" :key='tasks'>
 				<view class="subcontent">
 					<image  src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-					<text>{{tasks.title}}</text>
-					<text style="color: #999999;">（{{tasks.dips}}）</text>
+					<text>{{tasks.taskTitle}}</text>
+					<text style="color: #999999;">（{{tasks.taskType == '01'?'勇士':'自由'}}）</text>
 				</view>
 				<view>
-					<text style="color: #666666;">{{tasks.stauts}}</text>
+					<text style="color: #666666;">{{tasks.statusTask == '02'?'待提交':'已提交'}}</text>
 					<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
 				</view>
 			
@@ -25,19 +19,49 @@
 	export default {
 		data() {
 			return {
-				submitLists:[
-					{
-						title:"勇士任务001",
-						dips:"喜讯",
-						stauts:"待提交"
-					},
-					{
-						title:"勇士任务002",
-						dips:"喜讯3",
-						stauts:"待提交"
-					},
-				]
+				submitLists:[],
+				orderInfo:{
+					account:''
+				}
 			};
+		},
+		onLoad() {
+			this.orderInfo.account = uni.getStorageSync('userInfo').account;
+			const jsonString = {
+				orderInfo:this.orderInfo,
+				requestType:"getOrdeFromAccount",
+			}
+			const param ={
+				controllerRequestType:"orderControllerService",
+				jsonString:JSON.stringify(jsonString)
+			}
+			uni.request({
+				url:this.websiteUrl,
+				method:'POST',
+				header:{
+					"content-type":"application/x-www-form-urlencoded"
+				},
+				data:param,
+				success(res) {
+					// console.log(param);
+					console.log(res);
+					if(res.data.errorCode == '0000'){
+						console.log(res.data);
+						this.submitLists = res.data;		
+					}else{
+// 						uni.showToast({
+// 							icon:'none',
+// 							title:res.data.errorMessage
+// 						})
+					}
+				},
+				fail(res) {
+					uni.showToast({
+						icon:'none',
+						title:'网络异常，请稍后重试'
+					})
+				}
+			})
 		},
 		methods:{
 			

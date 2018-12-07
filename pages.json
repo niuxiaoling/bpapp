@@ -1,226 +1,224 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页
-// 		{
-// 			"path": "pages/index/index",
-// 			"style": {
-// 				"navigationBarTitleText": "登录",
-// 				"navigationBarBackgroundColor":"#EA5B17",
-// 				"navigationBarTextStyle":"white"
-// 			}
-// 		},
-		{
-			"path": "pages/main/main",
-			"style": {
-				"navigationBarTitleText": "微品",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "登录",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		
-		{
-			"path":"pages/TaskCenter/TaskCente",
-			"style":{
-				"navigationBarTitleText":"任务中心",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/TaskCenter/submitTask/submitTasks",
-			"style":{
-				"navigationBarTitleText":"提交任务",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/TaskCenter/taskHall/taskMast",
-			"style":{
-				"navigationBarTitleText":"任务大厅",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/TaskCenter/taskHall/ysTask",
-			"style":{
-				"navigationBarTitleText":"勇士任务大厅",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/TaskCenter/taskHall/freeTask",
-			"style":{
-				"navigationBarTitleText":"自由任务大厅",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/TaskCenter/taskHall/ysDetails",
-			"style":{
-				"navigationBarTitleText":"任务详情",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-
-		{
-			"path":"pages/TaskCenter/submitTask/submitTasksList",
-			"style":{
-				"navigationBarTitleText":"任务提交列表",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/TaskCenter/submitTask/submitContent",
-			"style":{
-				"navigationBarTitleText":"提交",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/TaskCenter/taskRecord/taskRecord",
-			"style":{
-				"navigationBarTitleText":"任务记录",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/PersonalCenter/PersonalCenter",
-			"style": {
-				"navigationBarTitleText": "个人中心",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},	
-		{
-			"path": "pages/reg/reg",
-			"style": {
-				"navigationBarTitleText": "注册",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/pwd/pwd",
-			"style": {
-				"navigationBarTitleText": "找回密码",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/main/MoneyWay",  
-			"style": {
-				"navigationBarTitleText": "赚钱方式",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/main/SeoCode",
-			"style": {
-				"navigationBarTitleText": "勇士推广码",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/main/taskRelease",
-			"style": {
-				"navigationBarTitleText": "广告投放",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/main/bVip",
-			"style": {
-				"navigationBarTitleText": "微品勇士",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/main/waiting",
-			"style": {
-				"navigationBarTitleText": "功能开发中",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path": "pages/MoneyWay/request-payment",
-			"style": {
-				"navigationBarTitleText": "支付",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		},
-		{
-			"path":"pages/reg/Agreement",
-			"style":{
-				"navigationBarTitleText": "用户注册协议",
-				"navigationBarBackgroundColor":"#EA5B17",
-				"navigationBarTextStyle":"white"
-			}
-		}
-		
-		
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"condition" : { //模式配置，仅开发期间生效
-		"current": 0, //当前激活的模式(list 的索引项)
-		"list": [
-			{
-				"name": "", //模式名称
-				"path": "", //启动页面，必选
-				"query": "" //启动参数，在页面的onLoad函数里面得到
-			}
-		]
-	},
-	"tabBar" : {
-		"color" : "#7A7E83",
-		"selectedColor" : "#007AFF",
-		"borderStyle" : "black",
-		"backgroundColor" : "#ffffff",
-		"list" : [
-			{
-				"pagePath" : "pages/main/main",
-				"iconPath" : "static/img/home.png",
-				"selectedIconPath" : "static/img/home_select.png",
-				"text" : "首页"
-			},
-			{
-				"pagePath" : "pages/TaskCenter/TaskCente",
-				"iconPath" : "static/img/book.png",
-				"selectedIconPath" : "static/img/book_select.png",
-				"text" : "任务中心"
-			},
-			{
-				"pagePath" : "pages/PersonalCenter/PersonalCenter",
-				"iconPath" : "static/img/person.png",
-				"selectedIconPath" : "static/img/person_select.png",
-				"text" : "个人中心"
-			}
-		]
-	}
+    "pages" : [
+        //pages数组中第一项表示应用启动页
+        // 		{
+        // 			"path": "pages/index/index",
+        // 			"style": {
+        // 				"navigationBarTitleText": "登录",
+        // 				"navigationBarBackgroundColor":"#EA5B17",
+        // 				"navigationBarTextStyle":"white"
+        // 			}
+        // 		},
+        {
+            "path" : "pages/main/main",
+            "style" : {
+                "navigationBarTitleText" : "微品",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationBarTitleText" : "登录",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/TaskCente",
+            "style" : {
+                "navigationBarTitleText" : "任务中心",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/submitTask/submitTasks",
+            "style" : {
+                "navigationBarTitleText" : "提交任务",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/taskHall/taskMast",
+            "style" : {
+                "navigationBarTitleText" : "任务大厅",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/taskHall/YSTask",
+            "style" : {
+                "navigationBarTitleText" : "勇士任务大厅",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/taskHall/freeTask",
+            "style" : {
+                "navigationBarTitleText" : "自由任务大厅",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/taskHall/ysDetails",
+            "style" : {
+                "navigationBarTitleText" : "任务详情",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/submitTask/submitTasksList",
+            "style" : {
+                "navigationBarTitleText" : "任务提交列表",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/submitTask/submitContent",
+            "style" : {
+                "navigationBarTitleText" : "提交",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/TaskCenter/taskRecord/taskRecord",
+            "style" : {
+                "navigationBarTitleText" : "任务记录",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/PersonalCenter/PersonalCenter",
+            "style" : {
+                "navigationBarTitleText" : "个人中心",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/reg/reg",
+            "style" : {
+                "navigationBarTitleText" : "注册",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/pwd/pwd",
+            "style" : {
+                "navigationBarTitleText" : "找回密码",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/main/MoneyWay",
+            "style" : {
+                "navigationBarTitleText" : "赚钱方式",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/main/SeoCode",
+            "style" : {
+                "navigationBarTitleText" : "勇士推广码",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/main/taskRelease",
+            "style" : {
+                "navigationBarTitleText" : "广告投放",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/main/bVip",
+            "style" : {
+                "navigationBarTitleText" : "微品勇士",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/main/waiting",
+            "style" : {
+                "navigationBarTitleText" : "功能开发中",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/MoneyWay/request-payment",
+            "style" : {
+                "navigationBarTitleText" : "支付",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        },
+        {
+            "path" : "pages/reg/Agreement",
+            "style" : {
+                "navigationBarTitleText" : "用户注册协议",
+                "navigationBarBackgroundColor" : "#EA5B17",
+                "navigationBarTextStyle" : "white"
+            }
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "uni-app",
+        "navigationBarBackgroundColor" : "#F8F8F8",
+        "backgroundColor" : "#F8F8F8"
+    },
+    "condition" : {
+        //模式配置，仅开发期间生效
+        "current" : 0, //当前激活的模式(list 的索引项)
+        "list" : [
+            {
+                "name" : "", //模式名称
+                "path" : "", //启动页面，必选
+                "query" : "" //启动参数，在页面的onLoad函数里面得到
+            }
+        ]
+    },
+    "tabBar" : {
+        "color" : "#7A7E83",
+        "selectedColor" : "#007AFF",
+        "borderStyle" : "black",
+        "backgroundColor" : "#ffffff",
+        "list" : [
+            {
+                "pagePath" : "pages/main/main",
+                "iconPath" : "static/img/home.png",
+                "selectedIconPath" : "static/img/home_select.png",
+                "text" : "首页"
+            },
+            {
+                "pagePath" : "pages/TaskCenter/TaskCente",
+                "iconPath" : "static/img/book.png",
+                "selectedIconPath" : "static/img/book_select.png",
+                "text" : "任务中心"
+            },
+            {
+                "pagePath" : "pages/PersonalCenter/PersonalCenter",
+                "iconPath" : "static/img/person.png",
+                "selectedIconPath" : "static/img/person_select.png",
+                "text" : "个人中心"
+            }
+        ]
+    }
 }
