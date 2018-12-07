@@ -1,0 +1,44 @@
+
+page {
+  background: #FFFFFF;
+}
+.item-list {
+  margin: 20rpx 0 20rpx 20rpx;
+  font-size: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.btn-upload {
+  display: inline-block;
+  padding: 0 20rpx;
+  border-radius: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #fff;
+  background: #E61532;
+  font-size: 30rpx;
+}
+.imgbox {
+  margin: 0 auto;
+  padding: 0 20rpx;
+}
+.imgbox-img {
+  width: 100%;
+}
+.getTasks {
+  background: #E61532;
+  width: 80%;
+  color: #FFFFFF;
+  margin: 30rpx auto;
+}
+.Taskhint {
+  width: 96%;
+  padding: 0 2%;
+}
+.Taskhint image {
+  width: 100%;
+}

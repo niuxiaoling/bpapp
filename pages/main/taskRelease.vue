@@ -16,7 +16,7 @@
 									<image class="ts-uploader__img" :src="image" @tap="previewImage" @longpress="removeImage(image)"></image>
 								</view>
 							</block>
-							<view class="ts-uploader__input-box">
+							<view class="ts-uploader__input-box" v-if="imageList.length < count">
 								<view class="ts-uploader-info ts-h5">{{imageList.length}}/{{count}}</view>
 								<view class="ts-uploader__input" @tap="chooseImg"></view>
 							</view>
@@ -47,14 +47,15 @@
 
 <script>
 	export default {
-		props: {
-			count: {
-				type: Number,
-				default: 2
-			}
-		},
+// 		props: {
+// 			count: {
+// 				type: Number,
+// 				default: 2
+// 			}
+// 		},
 		data() {
 			return {
+				count:2,
 				imageList: [],
 				picId:[],
 				taskData:{
@@ -147,7 +148,7 @@
 				uni.chooseImage({
 					sourceType: ['camera', 'album'],
 					sizeType: 'compressed',
-					count: self.count - self.imageList.length,
+					count: that.count - that.imageList.length,
 					success: function(res) { 
 						uni.request({
 							url:res.tempFilePaths[0],
@@ -192,36 +193,37 @@
 					
 						// self.imageList = self.imageList.concat(res.tempFilePaths);
 						//只添加不重复的文件
-						if (self.imageList.length > 0) {
+						if (that.imageList.length > 0) {
 							for (let img of res.tempFilePaths) {
-								let index = self.imageList.findIndex(item => item === img);
+								let index = that.imageList.findIndex(item => item === img);
 								if (index === -1) {
-									self.imageList.push(img);
+									that.imageList.push(img);
 								}
 							}
 						} else {
-							self.imageList = res.tempFilePaths;
+							that.imageList = res.tempFilePaths;
 						}
 						
 						// console.log(JSON.stringify(self.imageList))
 						//触发所选择文件更改事件，参数为文件列表
-						self.$emit('change', self.imageList);
+						that.$emit('change', that.imageList);
 					}
 				});
 			},
 			removeImage(img) {
+				var that = this;
 				uni.showModal({
 					content: '确认删除选中的图片？',
 					success: function() {
-						const index = self.imageList.findIndex(item => item === img);
-						self.imageList.splice(index, 1);
+						const index = that.imageList.findIndex(item => item === img);
+						that.imageList.splice(index, 1);
 					}
 				});
 			},
 			previewImage() {
 				//预览图片
 				uni.previewImage({
-					urls: self.imageList
+					urls: this.imageList
 				});
 			}
 		}

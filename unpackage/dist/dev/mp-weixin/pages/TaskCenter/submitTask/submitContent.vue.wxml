@@ -1,23 +1,23 @@
-<template name="e7c47c30">
-  <view class="_view data-v-0b8bf7c9">
-    <view class="_view data-v-0b8bf7c9 item-list">
-      <text class="_text data-v-0b8bf7c9">1.提交的任务:</text>
-      <text class="_text data-v-0b8bf7c9">{{tasksDetails.taskTitle}}</text>
+<template name="4cc31b25">
+  <view class="_view data-v-4e206166">
+    <view class="_view data-v-4e206166 item-list">
+      <text class="_text data-v-4e206166">1.提交的任务:</text>
+      <text class="_text data-v-4e206166">{{tasksDetails.taskTitle}}</text>
     </view>
-    <view class="_view data-v-0b8bf7c9 item-list">
-      <text class="_text data-v-0b8bf7c9">2.截取朋友圈图片并上传:</text>
+    <view class="_view data-v-4e206166 item-list">
+      <text class="_text data-v-4e206166">2.截取朋友圈图片并上传:</text>
     </view>
-    <view class="_view data-v-0b8bf7c9 item-list">
-      <view class="_view data-v-0b8bf7c9 btn-upload" bindtap="handleProxy" data-eventid="{{'E3b-0'}}" data-comkey="{{$k}}">请选择图片</view>
+    <view class="_view data-v-4e206166 item-list">
+      <view class="_view data-v-4e206166 btn-upload" bindtap="handleProxy" data-eventid="{{'Flc-0'}}" data-comkey="{{$k}}">请选择图片</view>
     </view>
-    <view class="_view data-v-0b8bf7c9 imgbox">
-      <image src="{{uploadimg}}" mode="aspectFit" class="_image data-v-0b8bf7c9 imgbox-img"></image>
+    <view class="_view data-v-4e206166 imgbox">
+      <image src="{{uploadimg}}" mode="aspectFit" class="_image data-v-4e206166 imgbox-img"></image>
     </view>
-    <view wx:if="{{uploadimg !=''}}" class="_view data-v-0b8bf7c9">
-      <button class="_button data-v-0b8bf7c9 getTasks" bindtap="handleProxy" data-eventid="{{'Kj8-1'}}" data-comkey="{{$k}}">提交</button>
+    <view wx:if="{{uploadimg !=''}}" class="_view data-v-4e206166">
+      <button class="_button data-v-4e206166 getTasks" bindtap="handleProxy" data-eventid="{{'PC3-1'}}" data-comkey="{{$k}}">提交</button>
     </view>
-    <view class="_view data-v-0b8bf7c9 Taskhint">
-      <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-0b8bf7c9"></image>
+    <view class="_view data-v-4e206166 Taskhint">
+      <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-4e206166"></image>
     </view>
   </view>
 </template>
