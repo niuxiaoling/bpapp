@@ -33,14 +33,14 @@
                 "navigationBarTextStyle" : "white"
             }
         },
-        {
-            "path" : "pages/TaskCenter/submitTask/submitTasks",
-            "style" : {
-                "navigationBarTitleText" : "提交任务",
-                "navigationBarBackgroundColor" : "#EA5B17",
-                "navigationBarTextStyle" : "white"
-            }
-        },
+//         {
+//             "path" : "pages/TaskCenter/submitTask/submitTasks",
+//             "style" : {
+//                 "navigationBarTitleText" : "提交任务",
+//                 "navigationBarBackgroundColor" : "#EA5B17",
+//                 "navigationBarTextStyle" : "white"
+//             }
+//         },
         {
             "path" : "pages/TaskCenter/taskHall/taskMast",
             "style" : {

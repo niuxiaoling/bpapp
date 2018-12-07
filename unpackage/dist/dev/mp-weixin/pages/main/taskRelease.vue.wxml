@@ -2,22 +2,22 @@
   <view class="_view data-v-1f6b411a taskView">
     <view class="_view data-v-1f6b411a taskTitle">
       <text class="_text data-v-1f6b411a">标题：</text>
-      <input class="_input data-v-1f6b411a title" value="{{taskData.taskTitle}}" bindinput="handleProxy" type="text" placeholder="请输入标题(最多6字符)" maxlength="6" data-eventid="{{'FXl-0'}}" data-comkey="{{$k}}" />
+      <input class="_input data-v-1f6b411a title" value="{{taskData.taskTitle}}" bindinput="handleProxy" type="text" placeholder="请输入标题(最多6字符)" maxlength="6" data-eventid="{{'Rch-0'}}" data-comkey="{{$k}}" />
     </view>
     <view class="_view data-v-1f6b411a taskContent">
-      <textarea class="_textarea data-v-1f6b411a contentText" value="{{taskData.copyWriting}}" bindinput="handleProxy" placeholder="请输入广告内容(最多150字符)" maxlength="150" data-eventid="{{'cmi-1'}}" data-comkey="{{$k}}" />
+      <textarea class="_textarea data-v-1f6b411a contentText" value="{{taskData.copyWriting}}" bindinput="handleProxy" placeholder="请输入广告内容(最多150字符)" maxlength="150" data-eventid="{{'uvW-1'}}" data-comkey="{{$k}}" />
       <view class="_view data-v-1f6b411a contentImg">
         <view class="_view data-v-1f6b411a ts-uploader">
           <view class="_view data-v-1f6b411a ts-uploader-body">
             <view class="_view data-v-1f6b411a ts-uploader__files">
               <block wx:key="index" key="{{index}}" wx:for="{{imageList}}" wx:for-index="index" wx:for-item="image">
                 <view class="_view data-v-1f6b411a ts-uploader__file">
-                  <image class="_image data-v-1f6b411a ts-uploader__img" src="{{image}}" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'WMJ-2-'+index}}" data-comkey="{{$k}}"></image>
+                  <image class="_image data-v-1f6b411a ts-uploader__img" src="{{image}}" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'gdG-2-'+index}}" data-comkey="{{$k}}"></image>
                 </view>
               </block>
               <view class="_view data-v-1f6b411a ts-uploader__input-box" wx:if="{{imageList.length < count}}">
                 <view class="_view data-v-1f6b411a ts-uploader-info ts-h5">{{imageList.length}}/{{count}}</view>
-                <view class="_view data-v-1f6b411a ts-uploader__input" bindtap="handleProxy" data-eventid="{{'wsR-3'}}" data-comkey="{{$k}}"></view>
+                <view class="_view data-v-1f6b411a ts-uploader__input" bindtap="handleProxy" data-eventid="{{'uul-3'}}" data-comkey="{{$k}}"></view>
               </view>
             </view>
           </view>
@@ -26,18 +26,18 @@
     </view>
     <view class="_view data-v-1f6b411a taskTitles">
       <text class="_text data-v-1f6b411a">单笔广告费：</text>
-      <input type="number" maxlength="5" value="{{taskData.contributionNo}}" bindinput="handleProxy" data-eventid="{{'kzg-4'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
+      <input type="number" maxlength="5" value="{{taskData.contributionNo}}" bindinput="handleProxy" data-eventid="{{'JTW-4'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
     </view>
     <view class="_view data-v-1f6b411a taskTitles">
       <text class="_text data-v-1f6b411a">任务发布数量：</text>
-      <input type="number" maxlength="5" value="{{taskData.releaseTaskNo}}" bindinput="handleProxy" data-eventid="{{'Oee-5'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
+      <input type="number" maxlength="5" value="{{taskData.releaseTaskNo}}" bindinput="handleProxy" data-eventid="{{'885-5'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
     </view>
     <view class="_view data-v-1f6b411a taskTitles">
       <text class="_text data-v-1f6b411a">广告总价：</text>
       <text class="_text data-v-1f6b411a">{{taskData.allMoney}}</text>
     </view>
     <view class="_view data-v-1f6b411a submitPrice">
-      <button class="_button data-v-1f6b411a taskGo" bindtap="handleProxy" data-eventid="{{'GSR-6'}}" data-comkey="{{$k}}">发布任务</button>
+      <button class="_button data-v-1f6b411a taskGo" bindtap="handleProxy" data-eventid="{{'Gwv-6'}}" data-comkey="{{$k}}">发布任务</button>
     </view>
   </view>
 </template>
