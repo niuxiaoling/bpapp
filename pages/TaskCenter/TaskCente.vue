@@ -41,7 +41,7 @@
 				{
 				imgage:'../../static/img/tijiaorenwu.png',
 				text:'提交任务',
-				url:'/pages/TaskCenter/submitTask/submitTasks'	
+				url:'/pages/TaskCenter/submitTask/submitTasksList'	
 				},
 				{
 				imgage:'../../static/img/renwujilu.png',
@@ -89,6 +89,11 @@
 <style>
 .swpier-box{
 	width: 100%;
+	height: 350upx;
+}
+.swpier-box swiper{
+	width: 100%;
+	height: 100%;
 }
 .swpier-box image{
 	width: 100%;

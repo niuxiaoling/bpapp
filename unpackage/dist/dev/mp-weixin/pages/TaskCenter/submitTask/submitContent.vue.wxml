@@ -1,3 +1,23 @@
-<template name="e7c47c30">
-  <view class="_view data-v-0b8bf7c9"></view>
+<template name="27ace02b">
+  <view class="_view data-v-61578aa0">
+    <view class="_view data-v-61578aa0 item-list">
+      <text class="_text data-v-61578aa0">1.提交的任务:</text>
+      <text class="_text data-v-61578aa0">666</text>
+    </view>
+    <view class="_view data-v-61578aa0 item-list">
+      <text class="_text data-v-61578aa0">2.截取朋友圈图片并上传:</text>
+    </view>
+    <view class="_view data-v-61578aa0 item-list">
+      <view class="_view data-v-61578aa0 btn-upload" bindtap="handleProxy" data-eventid="{{'kms-0'}}" data-comkey="{{$k}}">请选择图片</view>
+    </view>
+    <view class="_view data-v-61578aa0 imgbox">
+      <image src="{{uploadimg}}" mode="aspectFit" class="_image data-v-61578aa0 imgbox-img"></image>
+    </view>
+    <view wx:if="{{uploadimg !=''}}" class="_view data-v-61578aa0">
+      <button class="_button data-v-61578aa0 getTasks" bindtap="handleProxy" data-eventid="{{'zZQ-1'}}" data-comkey="{{$k}}">提交</button>
+    </view>
+    <view class="_view data-v-61578aa0 Taskhint">
+      <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-61578aa0"></image>
+    </view>
+  </view>
 </template>

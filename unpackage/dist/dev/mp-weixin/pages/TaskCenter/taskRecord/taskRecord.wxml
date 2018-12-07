@@ -1,1 +1,1 @@
-<import src="/pages/TaskCenter/taskRecord/taskRecord.vue.wxml" /><template is="6c7e1ff4" data="{{ ...$root['0'], $root }}"/>
+<import src="/pages/TaskCenter/taskRecord/taskRecord.vue.wxml" /><template is="799130a3" data="{{ ...$root['0'], $root }}"/>

@@ -195,10 +195,13 @@
 }
 .pastbut{
 	width: 30%;
-	height: 80upx;
+	height: 70upx;
+	line-height: 70upx;
 	border:1px solid #007AFF;
 	border-radius: 5upx;
 	color: #007AFF;
+	outline:none;
+	background: transparent;
 	margin: 20upx auto;
 	}
 .imgContent{

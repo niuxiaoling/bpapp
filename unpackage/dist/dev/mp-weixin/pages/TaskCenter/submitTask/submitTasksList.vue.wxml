@@ -1,14 +1,14 @@
-<template name="38079b7b">
-  <view class="_view data-v-d68045c8 hall">
-    <view class="_view data-v-d68045c8 task" wx:key="tasks" key="{{tasks}}" wx:for="{{submitLists}}" wx:for-index="index" wx:for-item="tasks">
-      <view class="_view data-v-d68045c8 subcontent">
-        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-d68045c8"></image>
-        <text class="_text data-v-d68045c8">{{tasks.taskTitle}}</text>
-        <text style="color: #999999;" class="_text data-v-d68045c8">（{{tasks.taskType == '01'?'勇士':'自由'}}）</text>
+<template name="2c4834fe">
+  <view class="_view data-v-b41bd39a hall">
+    <view class="_view data-v-b41bd39a task" wx:key="tasks" key="{{tasks}}" bindtap="handleProxy" data-eventid="{{'WSd-0-'+index}}" data-comkey="{{$k}}" wx:for="{{submitLists}}" wx:for-index="index" wx:for-item="tasks">
+      <view class="_view data-v-b41bd39a subcontent">
+        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-b41bd39a"></image>
+        <text class="_text data-v-b41bd39a">{{tasks.taskTitle}}</text>
+        <text style="color: #999999;" class="_text data-v-b41bd39a">（{{tasks.taskType == '01'?'勇士':'自由'}}）</text>
       </view>
-      <view class="_view data-v-d68045c8">
-        <text style="color: #666666;" class="_text data-v-d68045c8">{{tasks.statusTask == '02'?'待提交':'已提交'}}</text>
-        <image class="_image data-v-d68045c8 you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+      <view class="_view data-v-b41bd39a">
+        <text style="color: #666666;" class="_text data-v-b41bd39a">{{tasks.statusTask == '02'?'待提交':'已提交'}}</text>
+        <image class="_image data-v-b41bd39a you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
       </view>
     </view>
   </view>

@@ -17,7 +17,7 @@
 <script>
 	export default{
 		data(){
-			task:''
+			task:'111'
 		},
 		methods:{
 			ysTask(){

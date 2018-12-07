@@ -1,16 +1,15 @@
 <template>
 	<view class="hall">
-		<view class="task" v-for="tasks in submitLists" :key='tasks'>
-				<view class="subcontent">
-					<image  src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-					<text>{{tasks.taskTitle}}</text>
-					<text style="color: #999999;">（{{tasks.taskType == '01'?'勇士':'自由'}}）</text>
-				</view>
-				<view>
-					<text style="color: #666666;">{{tasks.statusTask == '02'?'待提交':'已提交'}}</text>
-					<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
-				</view>
-			
+		<view class="task" v-for="tasks in submitLists" :key='tasks' @tap="goSubmitContent(tasks)">
+			<view class="subcontent">
+				<image  src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
+				<text>{{tasks.taskTitle}}</text>
+				<text style="color: #999999;">（{{tasks.taskType == '01'?'勇士':'自由'}}）</text>
+			</view>
+			<view>
+				<text style="color: #666666;">{{tasks.statusTask == '02'?'待提交':'已提交'}}</text>
+				<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+			</view>
 		</view>
 	</view>
 </template>
@@ -26,6 +25,7 @@
 			};
 		},
 		onLoad() {
+			var that = this;
 			this.orderInfo.account = uni.getStorageSync('userInfo').account;
 			const jsonString = {
 				orderInfo:this.orderInfo,
@@ -43,17 +43,15 @@
 				},
 				data:param,
 				success(res) {
-					// console.log(param);
-					console.log(res);
-					if(res.data.errorCode == '0000'){
-						console.log(res.data);
-						this.submitLists = res.data;		
-					}else{
+					// console.log(res);
+					// if(res.data.errorCode == '0000'){
+						that.submitLists = res.data.orderInfo.ordeList;		
+					// }else{
 // 						uni.showToast({
 // 							icon:'none',
 // 							title:res.data.errorMessage
 // 						})
-					}
+					// }
 				},
 				fail(res) {
 					uni.showToast({
@@ -64,7 +62,11 @@
 			})
 		},
 		methods:{
-			
+			goSubmitContent(task){
+				uni.navigateTo({
+					url:'./submitContent?task='+JSON.stringify(task)
+				})
+			}
 		}
 	}
 </script>
@@ -75,16 +77,15 @@
 	}
 	.task{
 		width: 100%;
-		padding:20upx 0 ;
+		padding:10upx 0 ;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		background: #FFFFFF;
 		width: 100%;
-		height: 80upx;
-		
-		margin-bottom: 30upx;
+		min-height: 70upx;
+		margin-bottom: 20upx;
 	}
 	.task image{
 		margin-left: 10upx;

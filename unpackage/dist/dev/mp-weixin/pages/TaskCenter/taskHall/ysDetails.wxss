@@ -37,10 +37,13 @@ page {
 }
 .pastbut {
   width: 30%;
-  height: 80rpx;
+  height: 70rpx;
+  line-height: 70rpx;
   border: 1px solid #007AFF;
   border-radius: 5rpx;
   color: #007AFF;
+  outline: none;
+  background: transparent;
   margin: 20rpx auto;
 }
 .imgContent {

@@ -1,24 +1,24 @@
-<template name="b4bb603c">
-  <view class="_view data-v-b4072814">
-    <view class="_view data-v-b4072814 logo">
-      <image src="../../static/img/BvipImg.jpg" mode="widthFix" class="_image data-v-b4072814"></image>
+<template name="8b658836">
+  <view class="_view data-v-971b44e6">
+    <view class="_view data-v-971b44e6 logo">
+      <image src="../../static/img/BvipImg.jpg" mode="widthFix" class="_image data-v-971b44e6"></image>
     </view>
-    <view class="_view data-v-b4072814 bevipbtn">
-      <view bindtap="handleProxy" data-eventid="{{'q3K-0'}}" data-comkey="{{$k}}" class="_view data-v-b4072814">
-        <image src="../../static/img/bvip1.png" mode="widthFix" class="_image data-v-b4072814"></image>
+    <view class="_view data-v-971b44e6 bevipbtn">
+      <view bindtap="handleProxy" data-eventid="{{'jd8-0'}}" data-comkey="{{$k}}" class="_view data-v-971b44e6">
+        <image src="../../static/img/bvip1.png" mode="widthFix" class="_image data-v-971b44e6"></image>
       </view>
-      <view bindtap="handleProxy" data-eventid="{{'c7R-1'}}" data-comkey="{{$k}}" class="_view data-v-b4072814">
-        <image src="../../static/img/bvip2.png" mode="widthFix" class="_image data-v-b4072814"></image>
+      <view bindtap="handleProxy" data-eventid="{{'9mS-1'}}" data-comkey="{{$k}}" class="_view data-v-971b44e6">
+        <image src="../../static/img/bvip2.png" mode="widthFix" class="_image data-v-971b44e6"></image>
       </view>
-      <view bindtap="handleProxy" data-eventid="{{'KO7-2'}}" data-comkey="{{$k}}" class="_view data-v-b4072814">
-        <image src="../../static/img/bvip3.png" mode="widthFix" class="_image data-v-b4072814"></image>
+      <view bindtap="handleProxy" data-eventid="{{'mrq-2'}}" data-comkey="{{$k}}" class="_view data-v-971b44e6">
+        <image src="../../static/img/bvip3.png" mode="widthFix" class="_image data-v-971b44e6"></image>
       </view>
     </view>
-    <view class="_view data-v-b4072814 textcontents">
-      <text class="_text data-v-b4072814 wptext">微品众信向所有勇士签署单边协议，协议内容是3个月能成为精英者，均会在6年内通过微品众信平台赚取的收益买的起100万以上的房子，20万以上的车子。若是购买金额不足由微品众信补足剩余部分。本单边协议具有法律效力。</text>
+    <view class="_view data-v-971b44e6 textcontents">
+      <text class="_text data-v-971b44e6 wptext">微品众信向所有勇士签署单边协议，协议内容是3个月能成为精英者，均会在6年内通过微品众信平台赚取的收益买的起100万以上的房子，20万以上的车子。若是购买金额不足由微品众信补足剩余部分。本单边协议具有法律效力。</text>
     </view>
-    <view class="_view data-v-b4072814 textcontents" style="margin-top: 30px;">
-      <text class="_text data-v-b4072814 wptextgr">注：满人员高级勇士才可升级精英，这是唯一途径，没有任何其他途径。</text>
+    <view class="_view data-v-971b44e6 textcontents" style="margin-top: 30px;">
+      <text class="_text data-v-971b44e6 wptextgr">注：满人员高级勇士才可升级精英，这是唯一途径，没有任何其他途径。</text>
     </view>
   </view>
 </template>

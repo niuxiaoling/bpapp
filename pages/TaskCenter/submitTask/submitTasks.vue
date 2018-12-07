@@ -1,6 +1,5 @@
 <template>
 	<view>
-		提交任务	!1
 		<view class="hall">
 			<view class="task" @tap="ysTaskSub">
 				<image src="../../../static/img/logoicon1.png" mode="aspectFit"></image>

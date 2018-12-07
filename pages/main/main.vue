@@ -28,7 +28,10 @@
 	import service from '../../common/service.js';
 	export default{
 		data:{
-					
+					indicatorDots:true,
+					autoplay:true,
+					interval:2000,
+					duration:"500",
 					itemList: [
 						'../../static/img/banner1.jpg',
 						'../../static/img/banner2.jpg',
@@ -184,7 +187,11 @@
 <style>
 	.swiperbox{
 		width:100%;
+		height: 350upx;
 		background:#fff;
+	}
+	.swiperbox swiper{
+		height: 100%;
 	}
 	.swiperbox image{
 		width:100%;

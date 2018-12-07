@@ -1,7 +1,11 @@
 
 .swiperbox {
   width: 100%;
+  height: 350rpx;
   background: #fff;
+}
+.swiperbox swiper {
+  height: 100%;
 }
 .swiperbox image {
   width: 100%;
