@@ -31,7 +31,9 @@
 					
 					itemList: [
 						'../../static/img/banner1.jpg',
-						'../../static/img/banner2.jpg'
+						'../../static/img/banner2.jpg',
+						'../../static/img/banner3.jpg',
+						'../../static/img/banner4.jpg',
 					],
 					list:[
 						{
