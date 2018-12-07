@@ -3,11 +3,11 @@
 		<view class="task" v-for="tasks in submitLists" :key='tasks' @tap="goSubmitContent(tasks)">
 			<view class="subcontent">
 				<image  src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-				<text>{{tasks.taskTitle}}</text>
-				<text style="color: #999999;">（{{tasks.taskType == '01'?'勇士':'自由'}}）</text>
+				<text>{{tasks.taskInfo.taskTitle}}</text>
+				<text style="color: #999999;">（{{tasks.taskInfo.taskType == '01'?'勇士':'自由'}}）</text>
 			</view>
 			<view>
-				<text style="color: #666666;">{{tasks.statusTask == '02'?'待提交':'已提交'}}</text>
+				<text style="color: #666666;">{{tasks.orderStatus == '1'?'待提交':'已提交'}}</text>
 				<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
 			</view>
 		</view>
@@ -43,15 +43,14 @@
 				},
 				data:param,
 				success(res) {
-					// console.log(res);
-					// if(res.data.errorCode == '0000'){
+					if(res.data.errorCode == '0000'){
 						that.submitLists = res.data.orderInfo.ordeList;		
-					// }else{
+					 }else{
 // 						uni.showToast({
 // 							icon:'none',
 // 							title:res.data.errorMessage
 // 						})
-					// }
+					}
 				},
 				fail(res) {
 					uni.showToast({
@@ -65,7 +64,8 @@
 			goSubmitContent(task){
 				uni.navigateTo({
 					url:'./submitContent?task='+JSON.stringify(task)
-				})
+				})	
+				
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 	<view>
 		<view class="item-list">
 			<text>1.提交的任务:</text>
-			<text>666</text>
+			<text>{{tasksDetails.taskTitle}}</text>
 		</view>
 		<view class="item-list">
 			<text>2.截取朋友圈图片并上传:</text>
@@ -41,14 +41,19 @@
 					taskIdentifier:'',
 					account:''
 				},
+				order:{}
 				
 			};
 		},
 		onLoad(options){
-			
-			// console.log(JSON.parse(options.task));
+			 let order = JSON.parse(options.task);
+			 console.log(order.taskInfo);
+			 this.tasksDetails.taskTitle = order.taskInfo.taskTitle;
+			 this.orderInfo.taskIdentifier = order.taskInfo.taskIdentifier; //编号
+			 this.orderInfo.account = uni.getStorageSync('userInfo').account;
 		},
 		methods:{
+			
 			chooseImg(){
 				var that = this;
 				uni.chooseImage({
@@ -56,27 +61,84 @@
 					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 					sourceType: ['album'], //从相册选择
 					success: function (res) {
-						uni.getImageInfo({
-							src: res.tempFilePaths[0],
-							success: function (image) {
-								console.log(image);
-								that.uploadimg = image.path;
+						uni.showLoading({
+							mask:true,
+							title:'loading'
+						})
+						uni.request({
+						url:res.tempFilePaths[0],
+						method:'GET',
+						responseType: 'arraybuffer',
+						success: ress => {
+							var base64 = wx.arrayBufferToBase64(ress.data); //把arraybuffer转成base64 
+							// base64 = 'data:image/jpeg;base64,' + base64 //不加上这串字符，在页面无法显示的哦
+							// that.base64 = base64;
+							const jsonString = {
+								taskInfo:{
+									picBast64:base64,
+									upType:'pic',
+								},
+								requestType:"upFile",
 							}
-						});
+							const param ={
+								controllerRequestType:"taskControllerService",
+								jsonString:JSON.stringify(jsonString)
+							}
+							uni.request({
+								url:that.websiteUrl,
+								method:'POST',
+								header: {
+									"content-type":"application/x-www-form-urlencoded"
+								},
+								data:param,
+								success: (dat) => {
+									if(dat.data.errorCode == '0000'){
+							
+										console.log(dat.data)
+										uni.getImageInfo({
+											src: res.tempFilePaths[0],
+											success: function (image) {
+												uni.hideLoading();
+												// console.log(image);
+												that.uploadimg = image.path;
+											}
+										});
+									}
+								},
+								fail:(dat) =>{
+									uni.hideLoading();
+									console.log(JSON.stringify(res));
+								}
+							})
+							
+						}
+						})
+						
+                       
+                         
 					}
 				});
 			},
+// 			removeImage(img) {
+// 				uni.showModal({
+// 					content: '确认删除选中的图片？',
+// 					success: function() {
+// 						 if (res.confirm) {
+// 									that.uploadimg = '';
+// 								} else if (res.cancel) {
+// 									
+// 								}
+// 						// const index = this.copyImages.findIndex(item => item === img);
+// 						// this.copyImages.splice(0, 1);
+// 						// console.log(t0his.copyImages)
+// 						
+// 					}
+// 				});
+// 			},
 			getTask(){
-				if(this.tasksDetails.statusTask !='01'){
-					uni.showToast({
-						icon:'none',
-						title:'当前任务已领取，请勿重复领取'
-					});
-					return;
-				}else{
 				const jsonString = {
 					orderInfo:this.orderInfo,
-					requestType:"creatOrde",
+					requestType:"finishOrde",
 				}
 				const param ={
 					controllerRequestType:"orderControllerService",
@@ -93,6 +155,19 @@
 						console.log(res.data);
 						if(res.data.errorCode =='0000'){
 						    // 您已经提交任务,请等待管理员审核
+							uni.showModal({
+								content:'您已经提交任务,请等待管理员审核',
+								
+								success(res) {
+									if(res.confirm){
+										
+									}
+										
+									if(res.cancel){
+									}
+								}
+							})
+							
 						}else{
 							uni.showToast({
 								icon:'none',
@@ -107,7 +182,7 @@
 					})	
 					}
 				})	
-				}
+				
 				
 					
 			}

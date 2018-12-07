@@ -2,10 +2,10 @@
 	<view class="taskView">
 		<view class="taskTitle">
 			<text>标题：</text>
-			<input class="title" v-model="taskData.taskTitle" type="text" placeholder="请输入标题(最多12字符)" maxlength="12"/>
+			<input class="title" v-model="taskData.taskTitle" type="text" placeholder="请输入标题(最多6字符)" maxlength="6" />
 		</view>
 		<view class="taskContent">
-			<textarea class="contentText" v-model="taskData.copyWriting" placeholder="请输入广告内容(最多150字符)"></textarea>
+			<textarea class="contentText" v-model="taskData.copyWriting" placeholder="请输入广告内容(最多150字符)" maxlength="150"></textarea>
 			<!-- 图片部分 -->
 			<view class="contentImg">
 				<view class="ts-uploader">
@@ -103,17 +103,22 @@
 					data:param,
 					success: (res) => {
 						if(res.data.errorCode == '0000'){
-							
-						}
-						if(res.data.errorCode == '9000'){
-							console.log(res.data.taskInfo);
 							if(res.data.taskInfo.statusTask == '04'){
+								console.log(res.data)
 								that.taskIdentifier = res.data.taskInfo.taskIdentifier;
-								uni.navigateTo({
-									url:'bVip',
+// 								uni.navigateTo({
+// 									url:'bVip',
+// 								})
+								uni.showModal({
+									content:'自由任务暂未开发！'
+								})
+							
+							}else{
+								uni.showModal({
+									content:'勇士任务发布成功'
 								})
 							}
-							}
+						}
 					},
 					fail:(res) =>{
 						console.log(JSON.stringify(res));
@@ -122,7 +127,7 @@
 			},
 			totalPrice(){
 				var  that = this;
-				that.totalPrices = that.singleMoney*that.taskNumber;
+				this.taskData.allMoney = Number(this.taskData.contributionNo)*Number(this.taskData.releaseTaskNo);
 			},
 			urlTobase64(url){
 				var that = this;
