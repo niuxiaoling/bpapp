@@ -26,6 +26,10 @@
 			};
 		},
 		onLoad() {
+			uni.showLoading({
+				mask:true,
+				title:'loading'
+			})
 			var that = this;
 			this.orderInfo.account = uni.getStorageSync('userInfo').account;
 			const jsonString = {
@@ -45,12 +49,13 @@
 				data:param,
 				success(res) {
 					if(res.data.errorCode == '0000'){
-						that.submitLists = res.data.orderInfo.ordeList;		
+						that.submitLists = res.data.orderInfo.ordeList;	
+						uni.hideLoading();
 					 }else{
-// 						uni.showToast({
-// 							icon:'none',
-// 							title:res.data.errorMessage
-// 						})
+						uni.showToast({
+							icon:'none',
+							title:res.data.errorMessage
+						})
 					}
 				},
 				fail(res) {

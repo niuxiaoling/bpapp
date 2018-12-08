@@ -1,1 +1,1 @@
-<import src="/pages/TaskCenter/taskHall/ysDetails.vue.wxml" /><template is="656f30cd" data="{{ ...$root['0'], $root }}"/>
+<import src="/pages/TaskCenter/taskHall/ysDetails.vue.wxml" /><template is="b955c1e4" data="{{ ...$root['0'], $root }}"/>

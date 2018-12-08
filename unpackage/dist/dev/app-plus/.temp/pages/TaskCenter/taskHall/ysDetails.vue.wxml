@@ -1,23 +1,23 @@
-<template name="656f30cd">
-  <view class="_view data-v-d8447896">
-    <view class="_view data-v-d8447896 detailsText">
-      <view class="_view data-v-d8447896 detailsTitle">{{tasksDetails.taskTitle}}</view>
-      <view class="_view data-v-d8447896 detailsTips">请将下面得文本图片复制发送朋友圈（点击图片保存到手机）</view>
-      <view class="_view data-v-d8447896 detailsContent">
-        <text class="_text data-v-d8447896"> {{tasksDetails.copyWriting}} </text>
+<template name="b955c1e4">
+  <view class="_view data-v-5c592a7b">
+    <view class="_view data-v-5c592a7b detailsText">
+      <view class="_view data-v-5c592a7b detailsTitle">{{tasksDetails.taskTitle}}</view>
+      <view class="_view data-v-5c592a7b detailsTips">请将下面得文本图片复制发送朋友圈（点击图片保存到手机）</view>
+      <view class="_view data-v-5c592a7b detailsContent">
+        <text class="_text data-v-5c592a7b"> {{tasksDetails.copyWriting}} </text>
       </view>
-      <view class="_view data-v-d8447896">
-        <button class="_button data-v-d8447896 pastbut" bindtap="handleProxy" data-eventid="{{'IUj-0'}}" data-comkey="{{$k}}">复制文案</button>
-      </view>
-    </view>
-    <view class="_view data-v-d8447896 detailsImg">
-      <view class="_view data-v-d8447896 ImgTitle">图片信息</view>
-      <view class="_view data-v-d8447896 imgContent" wx:key="img" key="{{img}}" wx:for="{{copyImages}}" wx:for-index="index" wx:for-item="img">
-        <image src="{{img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'kwJ-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-d8447896"></image>
+      <view class="_view data-v-5c592a7b">
+        <button class="_button data-v-5c592a7b pastbut" bindtap="handleProxy" data-eventid="{{'ZQk-0'}}" data-comkey="{{$k}}">复制文案</button>
       </view>
     </view>
-    <view class="_view data-v-d8447896">
-      <button class="_button data-v-d8447896 getTasks" bindtap="handleProxy" data-eventid="{{'MFR-2'}}" data-comkey="{{$k}}">立即领取</button>
+    <view class="_view data-v-5c592a7b detailsImg">
+      <view class="_view data-v-5c592a7b ImgTitle">图片信息</view>
+      <view class="_view data-v-5c592a7b imgContent" wx:key="img" key="{{img}}" wx:for="{{copyImages}}" wx:for-index="index" wx:for-item="img">
+        <image src="{{img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'Kn4-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-5c592a7b"></image>
+      </view>
+    </view>
+    <view class="_view data-v-5c592a7b">
+      <button class="_button data-v-5c592a7b getTasks" bindtap="handleProxy" data-eventid="{{'o7w-2'}}" data-comkey="{{$k}}">立即领取</button>
     </view>
   </view>
 </template>

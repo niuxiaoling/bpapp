@@ -1,22 +1,22 @@
-<template name="1e4980c9">
-  <view class="_view data-v-4aa9949e content">
-    <view class="_view data-v-4aa9949e logo">
-      <image src="../../static/img/logo.jpg" class="_image data-v-4aa9949e"></image>
+<template name="6631a56c">
+  <view class="_view data-v-4ca140e4 content">
+    <view class="_view data-v-4ca140e4 logo">
+      <image src="../../static/img/logo.jpg" class="_image data-v-4ca140e4"></image>
     </view>
-    <view class="_view data-v-4aa9949e reg-list">
-      <image src="../../static/img/shouji.png" class="_image data-v-4aa9949e"></image>
-      <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-class="placeholder" data-eventid="{{'Avg-0'}}" data-comkey="{{$k}}" class="_input data-v-4aa9949e" />
+    <view class="_view data-v-4ca140e4 reg-list">
+      <image src="../../static/img/shouji.png" class="_image data-v-4ca140e4"></image>
+      <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-class="placeholder" data-eventid="{{'OMs-0'}}" data-comkey="{{$k}}" class="_input data-v-4ca140e4" />
     </view>
-    <view class="_view data-v-4aa9949e reg-list">
-      <image src="../../static/img/miam.png" class="_image data-v-4aa9949e"></image>
-      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" maxlength="11" placeholder-class="placeholder" data-eventid="{{'2IQ-1'}}" data-comkey="{{$k}}" class="_input data-v-4aa9949e" />
+    <view class="_view data-v-4ca140e4 reg-list">
+      <image src="../../static/img/miam.png" class="_image data-v-4ca140e4"></image>
+      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" maxlength="11" placeholder-class="placeholder" data-eventid="{{'LC9-1'}}" data-comkey="{{$k}}" class="_input data-v-4ca140e4" />
     </view>
-    <view class="_view data-v-4aa9949e regBut">
-      <button bindtap="handleProxy" data-eventid="{{'3j9-2'}}" data-comkey="{{$k}}" class="_button data-v-4aa9949e"> 登 录 </button>
+    <view class="_view data-v-4ca140e4 regBut">
+      <button bindtap="handleProxy" data-eventid="{{'GFL-2'}}" data-comkey="{{$k}}" class="_button data-v-4ca140e4"> 登 录 </button>
     </view>
-    <view class="_view data-v-4aa9949e action-row">
-      <navigator url="../reg/reg" class="_navigator data-v-4aa9949e">注册账号</navigator>
-      <navigator url="../main/waiting" class="_navigator data-v-4aa9949e">忘记密码</navigator>
+    <view class="_view data-v-4ca140e4 action-row">
+      <navigator url="../reg/reg" class="_navigator data-v-4ca140e4">注册账号</navigator>
+      <navigator url="../main/waiting" class="_navigator data-v-4ca140e4">忘记密码</navigator>
     </view>
   </view>
 </template>

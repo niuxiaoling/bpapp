@@ -116,12 +116,21 @@
 							
 							}else{
 								uni.showModal({
-									content:'勇士任务发布成功'
-								})
+								content: '勇士任务发布成功',
+								success: function (res) {
+								uni.reLaunch({
+										url:'../main/main',
+								});
+								}
+							});
 							}
 						}
 					},
 					fail:(res) =>{
+						uni.showToast({
+							icon:'none',
+							title:'网络异常，请重试'
+						})
 						console.log(JSON.stringify(res));
 					}
 				})

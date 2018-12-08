@@ -46,7 +46,7 @@
 				{
 				imgage:'../../static/img/renwujilu.png',
 				text:'任务记录',
-				url:'/pages/TaskCenter/taskRecord/taskRecord'		
+				url:'/pages/main/waiting'		
 				},
 				
 			]

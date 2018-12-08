@@ -1,37 +1,37 @@
-<template name="3e00cf4d">
-  <view class="_view data-v-0009733c">
-    <view class="_view data-v-0009733c logo">
-      <image src="../../static/img/logo.jpg" class="_image data-v-0009733c"></image>
+<template name="65a2e44e">
+  <view class="_view data-v-36dff4b0">
+    <view class="_view data-v-36dff4b0 logo">
+      <image src="../../static/img/logo.jpg" class="_image data-v-36dff4b0"></image>
     </view>
-    <view class="_view data-v-0009733c reg-list">
-      <image src="../../static/img/shouji.png" class="_image data-v-0009733c"></image>
-      <input type="text" value="{{phone}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'PIK-0'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
+    <view class="_view data-v-36dff4b0 reg-list">
+      <image src="../../static/img/shouji.png" class="_image data-v-36dff4b0"></image>
+      <input type="text" value="{{phone}}" bindinput="handleProxy" placeholder="手机号" maxlength="11" placeholder-style="color:#ffffff" data-eventid="{{'yFg-0'}}" data-comkey="{{$k}}" class="_input data-v-36dff4b0" />
     </view>
-    <view class="_view data-v-0009733c reg-list">
-      <image src="../../static/img/yanzhengma.png" class="_image data-v-0009733c"></image>
-      <input type="text" value="{{verificationCode}}" bindinput="handleProxy" placeholder="手机验证码" placeholder-style="color:#ffffff" data-eventid="{{'MV4-1'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
-      <text class="_text data-v-0009733c yanzhentime" wx:if="{{showTime}}">{{time}}s</text>
-      <button wx:else bindtap="handleProxy" data-eventid="{{'nnM-2'}}" data-comkey="{{$k}}" class="_button data-v-0009733c">
-        <text class="_text data-v-0009733c">|</text>获取</button>
+    <view class="_view data-v-36dff4b0 reg-list">
+      <image src="../../static/img/yanzhengma.png" class="_image data-v-36dff4b0"></image>
+      <input type="text" value="{{verificationCode}}" bindinput="handleProxy" placeholder="手机验证码" placeholder-style="color:#ffffff" data-eventid="{{'w19-1'}}" data-comkey="{{$k}}" class="_input data-v-36dff4b0" />
+      <text class="_text data-v-36dff4b0 yanzhentime" wx:if="{{showTime}}">{{time}}s</text>
+      <button wx:else bindtap="handleProxy" data-eventid="{{'DWD-2'}}" data-comkey="{{$k}}" class="_button data-v-36dff4b0">
+        <text class="_text data-v-36dff4b0">|</text>获取</button>
     </view>
-    <view class="_view data-v-0009733c reg-list">
-      <image src="../../static/img/miam.png" class="_image data-v-0009733c"></image>
-      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" placeholder-style="color:#ffffff" data-eventid="{{'heS-3'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
+    <view class="_view data-v-36dff4b0 reg-list">
+      <image src="../../static/img/miam.png" class="_image data-v-36dff4b0"></image>
+      <input type="password" value="{{password}}" bindinput="handleProxy" placeholder="密码" placeholder-style="color:#ffffff" data-eventid="{{'efc-3'}}" data-comkey="{{$k}}" class="_input data-v-36dff4b0" />
     </view>
-    <view class="_view data-v-0009733c reg-list">
-      <image src="../../static/img/querenmima.png" class="_image data-v-0009733c"></image>
-      <input type="password" value="{{okPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'Dxp-4'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
+    <view class="_view data-v-36dff4b0 reg-list">
+      <image src="../../static/img/querenmima.png" class="_image data-v-36dff4b0"></image>
+      <input type="password" value="{{okPassword}}" bindinput="handleProxy" placeholder="请确认密码" placeholder-style="color:#ffffff" data-eventid="{{'R3J-4'}}" data-comkey="{{$k}}" class="_input data-v-36dff4b0" />
     </view>
-    <view class="_view data-v-0009733c reg-list">
-      <image src="../../static/img/yaoqingma.png" class="_image data-v-0009733c"></image>
-      <input type="text" value="{{superInvitationCode}}" bindinput="handleProxy" placeholder="邀请码" placeholder-style="color:#ffffff" data-eventid="{{'zMJ-5'}}" data-comkey="{{$k}}" class="_input data-v-0009733c" />
+    <view class="_view data-v-36dff4b0 reg-list">
+      <image src="../../static/img/yaoqingma.png" class="_image data-v-36dff4b0"></image>
+      <input type="text" value="{{superInvitationCode}}" bindinput="handleProxy" placeholder="邀请码" placeholder-style="color:#ffffff" data-eventid="{{'1Wh-5'}}" data-comkey="{{$k}}" class="_input data-v-36dff4b0" />
     </view>
-    <view class="_view data-v-0009733c checkbox">
-      <switch checked="{{checked}}" bindchange="handleProxy" type="checkbox" data-eventid="{{'1NW-6'}}" data-comkey="{{$k}}" class="_switch data-v-0009733c" />
-      <navigator url="Agreement" class="_navigator data-v-0009733c">我已阅读并同意《微品众信用户注册协议》</navigator>
+    <view class="_view data-v-36dff4b0 checkbox">
+      <switch checked="{{checked}}" bindchange="handleProxy" type="checkbox" data-eventid="{{'605-6'}}" data-comkey="{{$k}}" class="_switch data-v-36dff4b0" />
+      <navigator url="Agreement" class="_navigator data-v-36dff4b0">我已阅读并同意《微品众信用户注册协议》</navigator>
     </view>
-    <view class="_view data-v-0009733c regBut">
-      <button bindtap="handleProxy" data-eventid="{{'edf-7'}}" data-comkey="{{$k}}" class="_button data-v-0009733c">确认注册</button>
+    <view class="_view data-v-36dff4b0 regBut">
+      <button bindtap="handleProxy" data-eventid="{{'iNP-7'}}" data-comkey="{{$k}}" class="_button data-v-36dff4b0">确认注册</button>
     </view>
   </view>
 </template>

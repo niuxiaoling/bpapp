@@ -39,7 +39,8 @@
 				copyImages:[],
 				orderInfo:{
 					taskIdentifier:'',
-					account:''
+					account:'',
+					orderNo:''
 				},
 				order:{}
 				
@@ -49,6 +50,7 @@
 			 let order = JSON.parse(options.task);
 			 this.tasksDetails.taskTitle = order.taskInfo.taskTitle;
 			 this.orderInfo.taskIdentifier = order.taskInfo.taskIdentifier; //编号
+			 this.orderInfo.orderNo = order.orderNo;
 			 this.orderInfo.account = uni.getStorageSync('userInfo').account;
 		},
 		methods:{
