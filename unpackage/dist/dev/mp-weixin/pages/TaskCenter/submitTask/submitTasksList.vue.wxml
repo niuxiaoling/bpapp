@@ -1,14 +1,14 @@
-<template name="64bb9978">
-  <view class="_view data-v-cee838c0 hall">
-    <view class="_view data-v-cee838c0 task" wx:key="tasks" key="{{tasks}}" bindtap="handleProxy" data-eventid="{{'vTM-0-'+index}}" data-comkey="{{$k}}" wx:for="{{submitLists}}" wx:for-index="index" wx:for-item="tasks">
-      <view class="_view data-v-cee838c0 subcontent">
-        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-cee838c0"></image>
-        <text class="_text data-v-cee838c0">{{tasks.taskInfo.taskTitle}}</text>
-        <text style="color: #999999;" class="_text data-v-cee838c0">（{{tasks.taskInfo.taskType == '01'?'勇士':'自由'}}）</text>
+<template name="3233b6b9">
+  <view class="_view data-v-b1a1b734 hall">
+    <view class="_view data-v-b1a1b734 task" wx:key="tasks" key="{{tasks}}" bindtap="handleProxy" data-eventid="{{'ebA-0-'+index}}" data-comkey="{{$k}}" wx:for="{{submitLists}}" wx:for-index="index" wx:for-item="tasks">
+      <view class="_view data-v-b1a1b734 subcontent">
+        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-b1a1b734"></image>
+        <text class="_text data-v-b1a1b734">{{tasks.taskInfo.taskTitle}}</text>
+        <text style="color: #999999;" class="_text data-v-b1a1b734">（{{tasks.taskInfo.taskType == '01'?'勇士':'自由'}}）</text>
       </view>
-      <view class="_view data-v-cee838c0">
-        <text style="color: #666666;" class="_text data-v-cee838c0">{{tasks.orderStatus == '1'?'待提交':'已提交'}}</text>
-        <image class="_image data-v-cee838c0 you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+      <view class="_view data-v-b1a1b734">
+        <text style="color: #666666;" class="_text data-v-b1a1b734">{{tasks.orderStatus == '1'?'待提交':'已提交'}}</text>
+        <image class="_image data-v-b1a1b734 you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
       </view>
     </view>
   </view>

@@ -1,26 +1,26 @@
-<template name="6a65798a">
-  <view class="_view data-v-669be0bc">
-    <view class="_view data-v-669be0bc tpis">
-      <text style="color: #D32241;" class="_text data-v-669be0bc">*</text> 勇士任务每天只可领取2条，自由任务可领取多条 </view>
-    <view class="_view data-v-669be0bc ystaskList" wx:key="ys" key="{{ys}}" bindtap="handleProxy" data-eventid="{{'R0Z-0-'+index}}" data-comkey="{{$k}}" wx:for="{{ystaskList}}" wx:for-index="index" wx:for-item="ys">
-      <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-669be0bc"></image>
-      <view class="_view data-v-669be0bc ysText">
-        <view class="_view data-v-669be0bc textTop">
-          <text class="_text data-v-669be0bc">{{ys.taskTitle}}</text>
+<template name="8c89ca2e">
+  <view class="_view data-v-6ccf8e9c">
+    <view class="_view data-v-6ccf8e9c tpis">
+      <text style="color: #D32241;" class="_text data-v-6ccf8e9c">*</text> 勇士任务每天只可领取2条，自由任务可领取多条 </view>
+    <view class="_view data-v-6ccf8e9c ystaskList" wx:key="ys" key="{{ys}}" bindtap="handleProxy" data-eventid="{{'bbq-0-'+index}}" data-comkey="{{$k}}" wx:for="{{ystaskList}}" wx:for-index="index" wx:for-item="ys">
+      <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-6ccf8e9c"></image>
+      <view class="_view data-v-6ccf8e9c ysText">
+        <view class="_view data-v-6ccf8e9c textTop">
+          <text class="_text data-v-6ccf8e9c">{{ys.taskTitle}}</text>
         </view>
-        <view class="_view data-v-669be0bc textTop">
-          <text class="_text data-v-669be0bc">{{ys.statusTask =='01'?"未领取":'已领取' }}</text>
-          <text style="color: #D32241;padding-left: 10rpx;font-weight: 500;" class="_text data-v-669be0bc">{{ys.stauts1}}</text>
+        <view class="_view data-v-6ccf8e9c textTop">
+          <text class="_text data-v-6ccf8e9c">{{ys.statusTask =='01'?"未领取":'已领取' }}</text>
+          <text style="color: #D32241;padding-left: 10rpx;font-weight: 500;" class="_text data-v-6ccf8e9c">{{ys.stauts1}}</text>
         </view>
       </view>
-      <view class="_view data-v-669be0bc price">
-        <text style="color: #D32241;" class="_text data-v-669be0bc">￥{{ys.contributionNo}}</text>
-        <text class="_text data-v-669be0bc">【勇士】</text>
+      <view class="_view data-v-6ccf8e9c price">
+        <text style="color: #D32241;" class="_text data-v-6ccf8e9c">￥{{ys.contributionNo}}</text>
+        <text class="_text data-v-6ccf8e9c">【勇士】</text>
       </view>
-      <image class="_image data-v-669be0bc you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+      <image class="_image data-v-6ccf8e9c you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
     </view>
-    <view class="_view data-v-669be0bc Taskhint">
-      <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-669be0bc"></image>
+    <view class="_view data-v-6ccf8e9c Taskhint">
+      <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-6ccf8e9c"></image>
     </view>
   </view>
 </template>

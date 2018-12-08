@@ -1,27 +1,27 @@
-<template name="ab45d814">
-  <view class="_view data-v-480e560a content">
-    <view class="_view data-v-480e560a logo">
-      <image src="../../static/img/tg_logo.png" mode="widthFix" class="_image data-v-480e560a"></image>
+<template name="611610d6">
+  <view class="_view data-v-18f6b175 content">
+    <view class="_view data-v-18f6b175 logo">
+      <image src="../../static/img/tg_logo.png" mode="widthFix" class="_image data-v-18f6b175"></image>
     </view>
-    <view class="_view data-v-480e560a logo_title">
-      <image src="../../static/img/tg_title.png" mode class="_image data-v-480e560a"></image>
+    <view class="_view data-v-18f6b175 logo_title">
+      <image src="../../static/img/tg_title.png" mode class="_image data-v-18f6b175"></image>
     </view>
-    <view class="_view data-v-480e560a erweima">
-      <image class="_image data-v-480e560a erweima-bg" src="../../static/img/tg_bg_1.png" mode="aspectFit"></image>
-      <view class="_view data-v-480e560a erweimaimg">
-        <view class="_view data-v-480e560a erweima-content">
-          <image src="{{qrimg}}" class="_image data-v-480e560a"></image>
+    <view class="_view data-v-18f6b175 erweima">
+      <image class="_image data-v-18f6b175 erweima-bg" src="../../static/img/tg_bg_1.png" mode="aspectFit"></image>
+      <view class="_view data-v-18f6b175 erweimaimg">
+        <view class="_view data-v-18f6b175 erweima-content">
+          <image src="{{qrimg}}" class="_image data-v-18f6b175"></image>
         </view>
-        <image src="../../static/img/logo.jpg" mode class="_image data-v-480e560a erweimalogo"></image>
+        <image src="../../static/img/logo.jpg" mode class="_image data-v-18f6b175 erweimalogo"></image>
       </view>
-      <view class="_view data-v-480e560a tjCode">
-        <view class="_view data-v-480e560a plCode">
+      <view class="_view data-v-18f6b175 tjCode">
+        <view class="_view data-v-18f6b175 plCode">
           <block wx:key="v" key="{{v}}" wx:for="{{plcodeArr}}" wx:for-index="index" wx:for-item="v">
-            <text class="_text data-v-480e560a">{{v}}</text>
+            <text class="_text data-v-18f6b175">{{v}}</text>
           </block>
         </view>
       </view>
     </view>
-    <image class="_image data-v-480e560a erweima-bg2" src="../../static/img/tg_bg.png" mode></image>
+    <image class="_image data-v-18f6b175 erweima-bg2" src="../../static/img/tg_bg.png" mode></image>
   </view>
 </template>
