@@ -159,7 +159,7 @@
 	 .tjCode .plCode{
 		 display: flex;
 		 flex-direction: row;
-		 justify-content: space-between;
+		 justify-content: space-around;
 		 align-content: center;
 	 }
 	 .tjCode .plCode text{

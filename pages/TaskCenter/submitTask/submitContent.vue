@@ -91,11 +91,11 @@
 									data:param,
 									success: (res) => {
 										if(res.data.errorCode == '0000'){
-											that.picId.push(res.data.taskInfo.picId);
+											// that.picId.push(res.data.taskInfo.picId);
 										}
 									},
 									fail:(res) =>{
-										console.log(JSON.stringify(res));
+										// console.log(JSON.stringify(res));
 									}
 								})
 								
@@ -118,7 +118,14 @@
 				uni.showModal({
 					content: '确认删除选中的图片？',
 					success: function() {
-						 that.uploadimg = '';
+						if(res.confirm){
+							that.uploadimg = '';
+
+						}	
+						if(res.cancel){
+						
+						}
+						
 					}
 				});
 			},
@@ -146,10 +153,16 @@
 								
 								success(res) {
 									if(res.confirm){
-										
+										uni.reLaunch({
+												url:'../../main/main',
+
+										});
 									}
 										
 									if(res.cancel){
+										uni.reLaunch({
+												url:'../../main/main',
+										});
 									}
 								}
 							})

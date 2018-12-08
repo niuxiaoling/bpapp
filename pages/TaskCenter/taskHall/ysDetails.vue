@@ -52,6 +52,7 @@
 		},
 		methods:{
 			getTask(){
+				var that = this;
 				if(this.tasksDetails.statusTask !='01'){
 					uni.showToast({
 						icon:'none',
@@ -75,13 +76,13 @@
 					},
 					data:param,
 					success(res) {
-						console.log(res.data);
+						// console.log(res.data);
 						if(res.data.errorCode =='0000'){
 							uni.showToast({
 								icon:'none',
 								title:'领取任务成功！'
 							})
-							this.tasksDetails.statusTask = '08';
+							that.tasksDetails.statusTask = '08';
 						}else{
 							uni.showToast({
 								icon:'none',

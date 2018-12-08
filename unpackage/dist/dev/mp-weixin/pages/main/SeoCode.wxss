@@ -126,9 +126,8 @@ page {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   -webkit-align-content: center;
   align-content: center;
 }

@@ -66,7 +66,7 @@
 					success(res) {
 						if(res.data.errorCode == '0000'){
 							 that.ystaskList = res.data.taskInfo.taskInfoList;
-							 console.log(JSON.stringify(that.ystaskList))
+							 // console.log(JSON.stringify(that.ystaskList))
 							 uni.hideLoading()
 						}else{
 							uni.showToast({
@@ -77,7 +77,7 @@
 						
 					},
 					fail(res) {
-						console.log(JSON.stringify(res))
+						// console.log(JSON.stringify(res))
 						uni.hideLoading()
 					},
 					
@@ -86,7 +86,7 @@
 		},
 		methods:{
 			goReceive(vl){
-				console.log(JSON.stringify(vl));
+				// console.log(JSON.stringify(vl));
 					uni.setStorageSync('tasksDetails',vl);
 					uni.navigateTo({
 						url:'ysDetails'
