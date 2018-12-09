@@ -1,23 +1,23 @@
-<template name="4cc31b25">
-  <view class="_view data-v-4e206166">
-    <view class="_view data-v-4e206166 item-list">
-      <text class="_text data-v-4e206166">1.提交的任务:</text>
-      <text class="_text data-v-4e206166">{{tasksDetails.taskTitle}}</text>
+<template name="a4dbc32a">
+  <view class="_view data-v-9e47f468">
+    <view class="_view data-v-9e47f468 item-list">
+      <text class="_text data-v-9e47f468">1.提交的任务:</text>
+      <text class="_text data-v-9e47f468">{{tasksDetails.taskTitle}}</text>
     </view>
-    <view class="_view data-v-4e206166 item-list">
-      <text class="_text data-v-4e206166">2.截取朋友圈图片并上传:</text>
+    <view class="_view data-v-9e47f468 item-list">
+      <text class="_text data-v-9e47f468">2.截取朋友圈图片并上传:</text>
     </view>
-    <view class="_view data-v-4e206166 item-list">
-      <view class="_view data-v-4e206166 btn-upload" bindtap="handleProxy" data-eventid="{{'abt-0'}}" data-comkey="{{$k}}">请选择图片</view>
+    <view class="_view data-v-9e47f468 item-list">
+      <view class="_view data-v-9e47f468 btn-upload" bindtap="handleProxy" data-eventid="{{'1Ym-0'}}" data-comkey="{{$k}}">请选择图片</view>
     </view>
-    <view class="_view data-v-4e206166 imgbox">
-      <image src="{{uploadimg}}" mode="aspectFit" class="_image data-v-4e206166 imgbox-img" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'fiG-1'}}" data-comkey="{{$k}}"></image>
+    <view class="_view data-v-9e47f468 imgbox">
+      <image src="{{uploadimg}}" mode="aspectFit" class="_image data-v-9e47f468 imgbox-img" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'zyM-1'}}" data-comkey="{{$k}}"></image>
     </view>
-    <view wx:if="{{uploadimg !=''}}" class="_view data-v-4e206166">
-      <button class="_button data-v-4e206166 getTasks" bindtap="handleProxy" data-eventid="{{'uDe-2'}}" data-comkey="{{$k}}">提交</button>
+    <view wx:if="{{uploadimg !=''}}" class="_view data-v-9e47f468">
+      <button class="_button data-v-9e47f468 getTasks" bindtap="handleProxy" data-eventid="{{'li3-2'}}" data-comkey="{{$k}}">提交</button>
     </view>
-    <view class="_view data-v-4e206166 Taskhint">
-      <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-4e206166"></image>
+    <view class="_view data-v-9e47f468 Taskhint">
+      <image src="../../../static/img/Taskhint.jpg" mode="widthFix" class="_image data-v-9e47f468"></image>
     </view>
   </view>
 </template>
