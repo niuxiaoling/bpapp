@@ -11,17 +11,17 @@
 		<text class="phoneNo">页面功能开发中···</text>
 		<view class="income">
 			<view class="income-list">
-				<text class="list-No">12</text>
+				<text class="list-No">{{ontribution.allContribution}}</text>
 				<rich-text class="list-text">总贡献值</rich-text>
 				
 			</view>
 			<view class="income-list">
-				<text class="list-No">12</text>
+				<text class="list-No">{{ontribution.todayContribution}}</text>
 				<rich-text class="list-text">今日贡献</rich-text>
 				
 			</view>
 			<view class="income-list">
-				<text class="list-No">12</text>
+				<text class="list-No">{{ontribution.receiveContribution}}</text>
 				<rich-text class="list-text">已兑贡献</rich-text>
 			</view>
 		</view>
@@ -63,8 +63,62 @@
 <script>
 	export default {
 		data:{
+			ontribution:{
+				allContribution:'',//总贡献
+				todayContribution:'',//今日贡献
+				receiveContribution:''//剩余贡献
+			}
 			
 		},
+		onShow() {
+			console.log('个人中心');
+			//获取贡献值
+			var that = this;
+			let account = uni.getStorageSync('userInfo').account;
+			let password = uni.getStorageSync('userInfo').password;
+			const userInfo ={
+					account:account,
+					password:password,
+						}
+			const jsonString ={
+				userInfo:userInfo,
+				requestType:"login",
+			}
+			const param ={
+				controllerRequestType:"loginControllerService",
+				jsonString:JSON.stringify(jsonString)
+			}
+			
+			uni.request({
+				url:that.websiteUrl,
+				method:'POST',
+				header: {
+					"content-type":"application/x-www-form-urlencoded"
+				},
+				data:param,
+				success: (res) => {
+					if(res.data.errorCode == '0000'){		
+						console.log(res.data.userInfo);
+						this.ontribution.allContribution = res.data.userInfo.allContribution;
+						this.ontribution.todayContribution = res.data.userInfo.todayContribution;
+						this.ontribution.receiveContribution = res.data.userInfo.receiveContribution;
+						uni.hideLoading();
+					
+					}else{
+						uni.showToast({
+							icon:'none',
+							title:res.data.errorMessage
+						})
+					}
+				
+				
+				},
+				fail:(res) =>{
+					console.log(JSON.stringify(res));
+				}
+			})
+		},
+		
 		methods:{
 			changeAccont(){
 				uni.showLoading({

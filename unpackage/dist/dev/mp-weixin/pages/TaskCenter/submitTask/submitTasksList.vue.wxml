@@ -1,6 +1,6 @@
 <template name="64523984">
   <view class="_view data-v-2644765f hall">
-    <view class="_view data-v-2644765f task" wx:key="tasks" key="{{tasks}}" bindtap="handleProxy" data-eventid="{{'1PG-0-'+index}}" data-comkey="{{$k}}" wx:for="{{submitLists}}" wx:for-index="index" wx:for-item="tasks">
+    <view class="_view data-v-2644765f task" wx:key="tasks" key="{{tasks}}" bindtap="handleProxy" data-eventid="{{'ggz-0-'+index}}" data-comkey="{{$k}}" wx:for="{{submitLists}}" wx:for-index="index" wx:for-item="tasks">
       <view class="_view data-v-2644765f subcontent">
         <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-2644765f"></image>
         <text class="_text data-v-2644765f">{{tasks.taskInfo.taskTitle}}</text>

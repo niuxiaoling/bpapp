@@ -17,16 +17,22 @@
 <script>
 	export default{
 		data(){
-			task:'111'
+			taskType:'';
 		},
 		methods:{
 			ysTask(){
+				this.taskType ='01';
+				uni.setStorageSync('taskType',this.taskType);
 				uni.navigateTo({
 					url:'/pages/TaskCenter/taskHall/ysTask'
 				})
 			},
 			freeTask(){
-				
+				this.taskType ='02';
+				uni.setStorageSync('taskType',this.taskType);
+				uni.navigateTo({
+					url:'/pages/TaskCenter/taskHall/ysTask'
+				})
 			}
 		}
 	}

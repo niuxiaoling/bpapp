@@ -50,9 +50,9 @@
             }
         },
         {
-            "path" : "pages/TaskCenter/taskHall/YSTask",
+            "path" : "pages/TaskCenter/taskHall/ysTask",
             "style" : {
-                "navigationBarTitleText" : "勇士任务大厅",
+                "navigationBarTitleText" : "任务大厅",
                 "navigationBarBackgroundColor" : "#EA5B17",
                 "navigationBarTextStyle" : "white"
             }

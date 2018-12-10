@@ -13,7 +13,7 @@
 		<view class="detailsImg">
 			<view class="ImgTitle">图片信息</view>
 			<view class="imgContent" v-for="img in copyImages" :key='img'>
-				<image :src="img" mode="widthFix" @tap="saveImage(img)"></image>
+				<image :src="'https://www.sixkeep.com:8080/pics/' + img" mode="widthFix" @tap="saveImage(img)"></image>
 			</view>
 		</view>
 		<view>
@@ -44,10 +44,10 @@
 		onLoad(){
 			this.tasksDetails = uni.getStorageSync('tasksDetails');
 			this.copyImages=[
-				'https://www.sixkeep.com:8080/pics/'+this.tasksDetails.picId,
-				'https://www.sixkeep.com:8080/pics/'+this.tasksDetails.picId2,
+				this.tasksDetails.picId,
+				this.tasksDetails.picId2,
 			];
-			this.orderInfo.taskIdentifier = this.tasksDetails.taskIdentifier;
+			this.orderInfo.taskIdentifier = this.tasksDetails.taskIdentifier; 
 			this.orderInfo.account = uni.getStorageSync('userInfo').account;
 		},
 		methods:{

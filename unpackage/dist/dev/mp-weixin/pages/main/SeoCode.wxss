@@ -90,12 +90,12 @@ page {
   height: 100%;
 }
 .erweimalogo {
-  width: 120rpx;
-  height: 80rpx;
+  width: 60rpx;
+  height: 40rpx;
   position: absolute;
   left: 0;
   right: 0;
-  top: 60%;
+  top: 65%;
   margin: auto;
   z-index: 200;
 }

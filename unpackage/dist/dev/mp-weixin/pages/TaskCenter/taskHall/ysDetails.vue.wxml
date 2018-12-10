@@ -7,17 +7,17 @@
         <text class="_text data-v-f64ef518"> {{tasksDetails.copyWriting}} </text>
       </view>
       <view class="_view data-v-f64ef518">
-        <button class="_button data-v-f64ef518 pastbut" bindtap="handleProxy" data-eventid="{{'9fQ-0'}}" data-comkey="{{$k}}">复制文案</button>
+        <button class="_button data-v-f64ef518 pastbut" bindtap="handleProxy" data-eventid="{{'vxB-0'}}" data-comkey="{{$k}}">复制文案</button>
       </view>
     </view>
     <view class="_view data-v-f64ef518 detailsImg">
       <view class="_view data-v-f64ef518 ImgTitle">图片信息</view>
       <view class="_view data-v-f64ef518 imgContent" wx:key="img" key="{{img}}" wx:for="{{copyImages}}" wx:for-index="index" wx:for-item="img">
-        <image src="{{img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'k8K-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-f64ef518"></image>
+        <image src="{{'https://www.sixkeep.com:8080/pics/' + img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'ITj-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-f64ef518"></image>
       </view>
     </view>
     <view class="_view data-v-f64ef518">
-      <button class="_button data-v-f64ef518 getTasks" bindtap="handleProxy" data-eventid="{{'2iC-2'}}" data-comkey="{{$k}}">立即领取</button>
+      <button class="_button data-v-f64ef518 getTasks" bindtap="handleProxy" data-eventid="{{'wly-2'}}" data-comkey="{{$k}}">立即领取</button>
     </view>
   </view>
 </template>

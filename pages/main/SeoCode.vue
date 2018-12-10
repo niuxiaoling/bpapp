@@ -134,12 +134,12 @@
 		 height: 100%;
 	 }
 	 .erweimalogo{
-	 	width:120upx;
-	 	height: 80upx;
+	 	width:60upx;
+	 	height: 40upx;
 	 	position: absolute;
 	 	left:0;
 	 	right:0;
-	 	top:60%;
+	 	top:65%;
 	 	margin:auto;
 	 	z-index:200;
 	 }

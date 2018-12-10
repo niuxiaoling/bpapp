@@ -36,7 +36,7 @@
 				{
 					imgage:'../../static/img/renwudating.png',
 					text:'任务大厅',
-					url:'/pages/TaskCenter/taskHall/YSTask',
+					url:'/pages/TaskCenter/taskHall/taskMast',
 				},
 				{
 				imgage:'../../static/img/tijiaorenwu.png',

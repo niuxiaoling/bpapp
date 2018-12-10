@@ -28,11 +28,11 @@
 		</view>
 		<view class="taskTitles">
 			<text>单笔广告费：</text>
-		    <input type="number" maxlength="5" v-model="taskData.contributionNo"/>
+		    <input type="number" maxlength="5" v-model="taskData.contributionNo" @blur="testNumber"/>
 		</view>
 		<view class="taskTitles">
 			<text>任务发布数量：</text>
-			<input type="number" maxlength="5" v-model="taskData.releaseTaskNo"/>
+			<input type="number" maxlength="5" v-model="taskData.releaseTaskNo" @blur="testNumber2"/>
 		</view>
 		<view class="taskTitles">
 			<text>广告总价：</text>
@@ -79,14 +79,38 @@
 			this.vipLevel = uni.getStorageSync('vipLevel') ?uni.getStorageSync('vipLevel') :"";
 			this.userInfo = uni.getStorageSync('userInfo');
 		},
+		
 		methods:{
+			testNumber(){
+				this.taskData.contributionNo = this.taskData.contributionNo.replace(/[^\.\d]/g,'');
+				this.taskData.contributionNo = this.taskData.contributionNo.replace('.','');
+			},
+			testNumber2(){
+				this.taskData.releaseTaskNo = this.taskData.releaseTaskNo.replace(/[^\.\d]/g,'');
+				this.taskData.releaseTaskNo = this.taskData.releaseTaskNo.replace('.','');
+			},
 			publishTask(){
 				var that = this;
 				this.taskData.allMoney = Number(this.taskData.contributionNo)*Number(this.taskData.releaseTaskNo);
 				this.taskData.picId = this.picId[0];
 				this.taskData.picId2 = this.picId[1];
-				console.log(this.taskData,this.picId);
+				// console.log(this.taskData,this.picId);
 				this.taskData.account = this.userInfo.account;
+				// conosole.log(this.taskData)
+				if(this.taskData.contributionNo ==''||Number(this.taskData.contributionNo) < 1){
+					uni.showToast({
+						icon:'none',
+						title:'单笔广告费用不能少于1'
+					})
+					return;
+				}
+				if(this.taskData.releaseTaskNo ==''||Number(this.taskData.releaseTaskNo) < 1 ){
+					uni.showToast({
+						icon:'none',
+						title:'广告数量至少为1'
+					})
+					return;
+				}
 				const jsonString = {
 					taskInfo:this.taskData,
 					requestType:"creatTask",
@@ -105,13 +129,27 @@
 					success: (res) => {
 						if(res.data.errorCode == '0000'){
 							if(res.data.taskInfo.statusTask == '04'){
+								console.log(res)
+								console.log("间隔符")
 								console.log(res.data)
 								that.taskIdentifier = res.data.taskInfo.taskIdentifier;
-// 								uni.navigateTo({
-// 									url:'bVip',
-// 								})
+								
 								uni.showModal({
-									content:'自由任务暂未开发！'
+									title:'微品提示',
+									content:'确定支付'+res.data.taskInfo.allMoney + '发布自由任务',
+									success:function(ress){
+										 // '+res.data.taskInfo.allMoney +'
+										if (ress.confirm) {
+											uni.navigateTo({
+												url:'../MoneyWay/request-payment?money=0.01&payTradeType=' + res.data.taskInfo.taskIdentifier,
+											})
+										} else if (ress.cancel) {
+											uni.reLaunch({
+													url:'../main/main',
+											});
+										}
+										
+									}
 								})
 							
 							}else{
@@ -124,6 +162,11 @@
 								}
 							});
 							}
+						}else{
+							uni.showToast({
+								icon:'none',
+								title:res.data.errorMessage
+							})
 						}
 					},
 					fail:(res) =>{
@@ -159,6 +202,7 @@
 					sizeType: 'compressed',
 					count: that.count - that.imageList.length,
 					success: function(res) { 
+						console.log(JSON.stringify(res.tempFilePaths))
 						uni.request({
 							url:res.tempFilePaths[0],
 							method:'GET',
@@ -187,6 +231,7 @@
 									data:param,
 									success: (res) => {
 										if(res.data.errorCode == '0000'){
+											console.log('chenggong')
 											that.picId.push(res.data.taskInfo.picId);
 										}
 									},

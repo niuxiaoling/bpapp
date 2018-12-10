@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="tpis">
+		<view class="tpis" v-if="ysText">
 			<text style="color: #D32241;">*</text>
 			勇士任务每天只可领取2条，自由任务可领取多条
 			</view>
@@ -18,7 +18,7 @@
 		</view>
 		<view class="price">
 			<text style="color: #D32241;">￥{{ys.contributionNo}}</text>
-			<text>【勇士】</text>
+			<text>{{ys.taskType =='01'?"【勇士】":'【自由】' }}</text>
 		</view>
 		<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
 	</view>
@@ -32,9 +32,10 @@
 	export default {
 		data() {
 			return {
+				ysText:false,
 				ystaskList:[],
 				taskData:{
-					taskType:'01',
+					taskType:'',
 					account:''
 				},
 				
@@ -46,7 +47,10 @@
 				title:'加载中'
 			})
 			let that =this;
-			that.account = uni.getStorageSync('userInfo').account;
+			this.taskData.taskType = uni.getStorageSync('taskType');
+			
+			console.log(this.taskData.taskType)
+			that.taskData.account = uni.getStorageSync('userInfo').account;
 				const jsonString = {
 					taskInfo:this.taskData,
 					requestType:"selectTask",
