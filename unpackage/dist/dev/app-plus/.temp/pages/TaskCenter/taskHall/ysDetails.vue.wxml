@@ -1,0 +1,23 @@
+<template name="656f30cd">
+  <view class="_view data-v-d8447896">
+    <view class="_view data-v-d8447896 detailsText">
+      <view class="_view data-v-d8447896 detailsTitle">{{tasksDetails.taskTitle}}</view>
+      <view class="_view data-v-d8447896 detailsTips">请将下面得文本图片复制发送朋友圈（点击图片保存到手机）</view>
+      <view class="_view data-v-d8447896 detailsContent">
+        <text class="_text data-v-d8447896"> {{tasksDetails.copyWriting}} </text>
+      </view>
+      <view class="_view data-v-d8447896">
+        <button class="_button data-v-d8447896 pastbut" bindtap="handleProxy" data-eventid="{{'VdE-0'}}" data-comkey="{{$k}}">复制文案</button>
+      </view>
+    </view>
+    <view class="_view data-v-d8447896 detailsImg">
+      <view class="_view data-v-d8447896 ImgTitle">图片信息</view>
+      <view class="_view data-v-d8447896 imgContent" wx:key="img" key="{{img}}" wx:for="{{copyImages}}" wx:for-index="index" wx:for-item="img">
+        <image src="{{'https://www.sixkeep.com:8080/pics/' + img}}" mode="widthFix" bindtap="handleProxy" data-eventid="{{'FPI-1-'+index}}" data-comkey="{{$k}}" class="_image data-v-d8447896"></image>
+      </view>
+    </view>
+    <view class="_view data-v-d8447896">
+      <button class="_button data-v-d8447896 getTasks" bindtap="handleProxy" data-eventid="{{'5UF-2'}}" data-comkey="{{$k}}">立即领取</button>
+    </view>
+  </view>
+</template>

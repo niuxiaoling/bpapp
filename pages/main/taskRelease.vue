@@ -47,12 +47,6 @@
 
 <script>
 	export default {
-// 		props: {
-// 			count: {
-// 				type: Number,
-// 				default: 2
-// 			}
-// 		},
 		data() {
 			return {
 				count:2,
@@ -94,9 +88,7 @@
 				this.taskData.allMoney = Number(this.taskData.contributionNo)*Number(this.taskData.releaseTaskNo);
 				this.taskData.picId = this.picId[0];
 				this.taskData.picId2 = this.picId[1];
-				// console.log(this.taskData,this.picId);
 				this.taskData.account = this.userInfo.account;
-				// conosole.log(this.taskData)
 				if(this.taskData.contributionNo ==''||Number(this.taskData.contributionNo) < 1){
 					uni.showToast({
 						icon:'none',
@@ -108,6 +100,20 @@
 					uni.showToast({
 						icon:'none',
 						title:'广告数量至少为1'
+					})
+					return;
+				}
+				if(this.taskData.taskTitle == ''){
+					uni.showToast({
+						icon:'none',
+						title:'广告标题不能为空'
+					})
+					return;
+				}
+				if(this.taskData.copyWriting == ''){
+					uni.showToast({
+						icon:'none',
+						title:'广告内容不能为空'
 					})
 					return;
 				}
@@ -202,50 +208,17 @@
 					sizeType: 'compressed',
 					count: that.count - that.imageList.length,
 					success: function(res) { 
-						console.log(JSON.stringify(res.tempFilePaths))
-						uni.request({
-							url:res.tempFilePaths[0],
-							method:'GET',
-							responseType: 'arraybuffer',
-							success: ress => {
-								var base64 = wx.arrayBufferToBase64(ress.data); //把arraybuffer转成base64 
-								// base64 = 'data:image/jpeg;base64,' + base64 //不加上这串字符，在页面无法显示的哦
-								// that.base64 = base64;
-								const jsonString = {
-									taskInfo:{
-										picBast64:base64,
-										upType:'pic',
-									},
-									requestType:"upFile",
-								}
-								const param ={
-									controllerRequestType:"taskControllerService",
-									jsonString:JSON.stringify(jsonString)
-								}
-								uni.request({
-									url:that.websiteUrl,
-									method:'POST',
-									header: {
-										"content-type":"application/x-www-form-urlencoded"
-									},
-									data:param,
-									success: (res) => {
-										if(res.data.errorCode == '0000'){
-											console.log('chenggong')
-											that.picId.push(res.data.taskInfo.picId);
-										}
-									},
-									fail:(res) =>{
-										console.log(JSON.stringify(res));
-									}
-								})
-								
+						const tempFilePaths = res.tempFilePaths;
+						console.log(tempFilePaths);
+						uni.uploadFile({
+							url: that.uploadUrl,
+							filePath: tempFilePaths[0],
+							name: 'file',
+							formData: {},
+							success: (uploadFileRes) => {
+								that.picId.push(uploadFileRes.data);	
 							}
-						})
-						
-						// that.base64 = that.urlTobase64(res.tempFilePaths[0]);
-					
-						// self.imageList = self.imageList.concat(res.tempFilePaths);
+						});
 						//只添加不重复的文件
 						if (that.imageList.length > 0) {
 							for (let img of res.tempFilePaths) {
@@ -257,8 +230,6 @@
 						} else {
 							that.imageList = res.tempFilePaths;
 						}
-						
-						// console.log(JSON.stringify(self.imageList))
 						//触发所选择文件更改事件，参数为文件列表
 						that.$emit('change', that.imageList);
 					}
