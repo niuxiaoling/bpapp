@@ -1,64 +1,64 @@
-<template name="16f93806">
-  <view class="_view data-v-8a99ad50 avatars">
-    <view class="_view data-v-8a99ad50 avatar_box">
-      <view class="_view data-v-8a99ad50 avatar">
-        <image src="../../static/img/tx_rbt.jpg" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <view class="_view data-v-8a99ad50 sign">
-          <image src="../../static/img/viptest.jpg" mode="aspectFit" class="_image data-v-8a99ad50"></image>
+<template name="c16234fa">
+  <view class="_view data-v-2d129eeb avatars">
+    <view class="_view data-v-2d129eeb avatar_box">
+      <view class="_view data-v-2d129eeb avatar">
+        <image src="../../static/img/tx_rbt.jpg" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <view class="_view data-v-2d129eeb sign">
+          <image src="../../static/img/viptest.jpg" mode="aspectFit" class="_image data-v-2d129eeb"></image>
         </view>
       </view>
     </view>
-    <text class="_text data-v-8a99ad50 phoneNo">页面功能开发中···</text>
-    <view class="_view data-v-8a99ad50 income">
-      <view class="_view data-v-8a99ad50 income-list">
-        <text class="_text data-v-8a99ad50 list-No">{{ontribution.allContribution}}</text>
-        <rich-text class="_rich-text data-v-8a99ad50 list-text">总贡献值</rich-text>
+    <text class="_text data-v-2d129eeb phoneNo">页面功能开发中···</text>
+    <view class="_view data-v-2d129eeb income">
+      <view class="_view data-v-2d129eeb income-list">
+        <text class="_text data-v-2d129eeb list-No">{{ontribution.allContribution}}</text>
+        <rich-text class="_rich-text data-v-2d129eeb list-text">总贡献值</rich-text>
       </view>
-      <view class="_view data-v-8a99ad50 income-list">
-        <text class="_text data-v-8a99ad50 list-No">{{ontribution.todayContribution}}</text>
-        <rich-text class="_rich-text data-v-8a99ad50 list-text">今日贡献</rich-text>
+      <view class="_view data-v-2d129eeb income-list">
+        <text class="_text data-v-2d129eeb list-No">{{ontribution.todayContribution}}</text>
+        <rich-text class="_rich-text data-v-2d129eeb list-text">今日贡献</rich-text>
       </view>
-      <view class="_view data-v-8a99ad50 income-list">
-        <text class="_text data-v-8a99ad50 list-No">{{ontribution.receiveContribution}}</text>
-        <rich-text class="_rich-text data-v-8a99ad50 list-text">已兑贡献</rich-text>
-      </view>
-    </view>
-    <view class="_view data-v-8a99ad50 lists">
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/GRZL.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">个人资料</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/VIP.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">账号会员</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/TD.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">我得战队</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/QB.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">我的钱包</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/YHK.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">绑定银行卡</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/TX.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">提现</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli">
-        <image src="../../static/img/JCGX.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">检查更新</text>
-      </view>
-      <view class="_view data-v-8a99ad50 listli" bindtap="handleProxy" data-eventid="{{'qZE-0'}}" data-comkey="{{$k}}">
-        <image src="../../static/img/QHZH.png" mode="aspectFit" class="_image data-v-8a99ad50"></image>
-        <text class="_text data-v-8a99ad50">切换账号</text>
+      <view class="_view data-v-2d129eeb income-list">
+        <text class="_text data-v-2d129eeb list-No">{{ontribution.receiveContribution}}</text>
+        <rich-text class="_rich-text data-v-2d129eeb list-text">已兑贡献</rich-text>
       </view>
     </view>
-    <view style="width:100%;" class="_view data-v-8a99ad50">
-      <button class="_button data-v-8a99ad50 getOut" bindtap="handleProxy" data-eventid="{{'2om-1'}}" data-comkey="{{$k}}">退出APP</button>
+    <view class="_view data-v-2d129eeb lists">
+      <view class="_view data-v-2d129eeb listli">
+        <image src="../../static/img/GRZL.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">个人资料</text>
+      </view>
+      <view class="_view data-v-2d129eeb listli">
+        <image src="../../static/img/VIP.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">账号会员</text>
+      </view>
+      <view class="_view data-v-2d129eeb listli">
+        <image src="../../static/img/TD.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">我得战队</text>
+      </view>
+      <view class="_view data-v-2d129eeb listli">
+        <image src="../../static/img/QB.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">我的钱包</text>
+      </view>
+      <view class="_view data-v-2d129eeb listli">
+        <image src="../../static/img/YHK.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">绑定银行卡</text>
+      </view>
+      <view class="_view data-v-2d129eeb listli">
+        <image src="../../static/img/TX.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">提现</text>
+      </view>
+      <view class="_view data-v-2d129eeb listli">
+        <image src="../../static/img/JCGX.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">检查更新</text>
+      </view>
+      <view class="_view data-v-2d129eeb listli" bindtap="handleProxy" data-eventid="{{'Gqa-0'}}" data-comkey="{{$k}}">
+        <image src="../../static/img/QHZH.png" mode="aspectFit" class="_image data-v-2d129eeb"></image>
+        <text class="_text data-v-2d129eeb">切换账号</text>
+      </view>
+    </view>
+    <view style="width:100%;" class="_view data-v-2d129eeb">
+      <button class="_button data-v-2d129eeb getOut" bindtap="handleProxy" data-eventid="{{'YoL-1'}}" data-comkey="{{$k}}">退出APP</button>
     </view>
   </view>
 </template>

@@ -49,7 +49,7 @@
 			let that =this;
 			this.taskData.taskType = uni.getStorageSync('taskType');
 			
-			console.log(this.taskData.taskType)
+			// console.log(this.taskData.taskType)
 			that.taskData.account = uni.getStorageSync('userInfo').account;
 				const jsonString = {
 					taskInfo:this.taskData,

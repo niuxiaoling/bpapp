@@ -1,15 +1,15 @@
-<template name="98587cb6">
-  <view class="_view data-v-95599c86">
-    <view class="_view data-v-95599c86 hall">
-      <view class="_view data-v-95599c86 task" bindtap="handleProxy" data-eventid="{{'qgo-0'}}" data-comkey="{{$k}}">
-        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-95599c86"></image>
-        <text class="_text data-v-95599c86">勇士任务大厅</text>
-        <image class="_image data-v-95599c86 you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+<template name="1c6ef75f">
+  <view class="_view data-v-7f353dca">
+    <view class="_view data-v-7f353dca hall">
+      <view class="_view data-v-7f353dca task" bindtap="handleProxy" data-eventid="{{'s1x-0'}}" data-comkey="{{$k}}">
+        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-7f353dca"></image>
+        <text class="_text data-v-7f353dca">勇士任务大厅</text>
+        <image class="_image data-v-7f353dca you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
       </view>
-      <view class="_view data-v-95599c86 task" bindtap="handleProxy" data-eventid="{{'0If-1'}}" data-comkey="{{$k}}">
-        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-95599c86"></image>
-        <text class="_text data-v-95599c86">自由任务大厅</text>
-        <image class="_image data-v-95599c86 you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+      <view class="_view data-v-7f353dca task" bindtap="handleProxy" data-eventid="{{'c7a-1'}}" data-comkey="{{$k}}">
+        <image src="../../../static/img/logoicon1.png" mode="aspectFit" class="_image data-v-7f353dca"></image>
+        <text class="_text data-v-7f353dca">自由任务大厅</text>
+        <image class="_image data-v-7f353dca you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
       </view>
     </view>
   </view>

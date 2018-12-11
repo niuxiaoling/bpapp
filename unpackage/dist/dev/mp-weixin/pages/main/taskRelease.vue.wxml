@@ -1,43 +1,46 @@
-<template name="6430a8ee">
-  <view class="_view data-v-1f6b411a taskView">
-    <view class="_view data-v-1f6b411a taskTitle">
-      <text class="_text data-v-1f6b411a">标题：</text>
-      <input class="_input data-v-1f6b411a title" value="{{taskData.taskTitle}}" bindinput="handleProxy" type="text" placeholder="请输入标题(最多6字符)" maxlength="6" data-eventid="{{'GWV-0'}}" data-comkey="{{$k}}" />
+<template name="4519b4b0">
+  <view class="_view data-v-523c5700 taskView">
+    <view class="_view data-v-523c5700 taskTitle">
+      <text class="_text data-v-523c5700">标题：</text>
+      <input class="_input data-v-523c5700 title" value="{{taskData.taskTitle}}" bindinput="handleProxy" type="text" placeholder="请输入标题(最多6字符)" maxlength="6" data-eventid="{{'NBm-0'}}" data-comkey="{{$k}}" />
     </view>
-    <view class="_view data-v-1f6b411a taskContent">
-      <textarea class="_textarea data-v-1f6b411a contentText" value="{{taskData.copyWriting}}" bindinput="handleProxy" placeholder="请输入广告内容(最多150字符)" maxlength="150" data-eventid="{{'HYT-1'}}" data-comkey="{{$k}}" />
-      <view class="_view data-v-1f6b411a contentImg">
-        <view class="_view data-v-1f6b411a ts-uploader">
-          <view class="_view data-v-1f6b411a ts-uploader-body">
-            <view class="_view data-v-1f6b411a ts-uploader__files">
+    <view class="_view data-v-523c5700 taskContent">
+      <textarea class="_textarea data-v-523c5700 contentText" value="{{taskData.copyWriting}}" bindinput="handleProxy" placeholder="请输入广告内容(最多150字符)" maxlength="150" data-eventid="{{'ggn-1'}}" data-comkey="{{$k}}" />
+      <view class="_view data-v-523c5700 contentImg">
+        <view class="_view data-v-523c5700 ts-uploader">
+          <view class="_view data-v-523c5700 ts-uploader-body">
+            <view class="_view data-v-523c5700 ts-uploader__files">
               <block wx:key="index" key="{{index}}" wx:for="{{imageList}}" wx:for-index="index" wx:for-item="image">
-                <view class="_view data-v-1f6b411a ts-uploader__file">
-                  <image class="_image data-v-1f6b411a ts-uploader__img" src="{{image}}" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'Xq2-2-'+index}}" data-comkey="{{$k}}"></image>
+                <view class="_view data-v-523c5700 ts-uploader__file">
+                  <image class="_image data-v-523c5700 ts-uploader__img" src="{{image}}" bindtap="handleProxy" bindlongpress="handleProxy" data-eventid="{{'InS-2-'+index}}" data-comkey="{{$k}}"></image>
+                  <view class="_view data-v-523c5700 progress-line">
+                    <progress percent="{{percent}}" stroke-width="5" class="_progress data-v-523c5700" />
+                  </view>
                 </view>
               </block>
-              <view class="_view data-v-1f6b411a ts-uploader__input-box" wx:if="{{imageList.length < count}}">
-                <view class="_view data-v-1f6b411a ts-uploader-info ts-h5">{{imageList.length}}/{{count}}</view>
-                <view class="_view data-v-1f6b411a ts-uploader__input" bindtap="handleProxy" data-eventid="{{'rPq-3'}}" data-comkey="{{$k}}"></view>
+              <view class="_view data-v-523c5700 ts-uploader__input-box" wx:if="{{imageList.length < count}}">
+                <view class="_view data-v-523c5700 ts-uploader-info ts-h5">{{imageList.length}}/{{count}}</view>
+                <view class="_view data-v-523c5700 ts-uploader__input" bindtap="handleProxy" data-eventid="{{'LHz-3'}}" data-comkey="{{$k}}"></view>
               </view>
             </view>
           </view>
         </view>
       </view>
     </view>
-    <view class="_view data-v-1f6b411a taskTitles">
-      <text class="_text data-v-1f6b411a">单笔广告费：</text>
-      <input type="number" maxlength="5" value="{{taskData.contributionNo}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'Non-4'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
+    <view class="_view data-v-523c5700 taskTitles">
+      <text class="_text data-v-523c5700">单笔广告费：</text>
+      <input type="number" maxlength="5" value="{{taskData.contributionNo}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'Cu8-4'}}" data-comkey="{{$k}}" class="_input data-v-523c5700" />
     </view>
-    <view class="_view data-v-1f6b411a taskTitles">
-      <text class="_text data-v-1f6b411a">任务发布数量：</text>
-      <input type="number" maxlength="5" value="{{taskData.releaseTaskNo}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'Xa7-5'}}" data-comkey="{{$k}}" class="_input data-v-1f6b411a" />
+    <view class="_view data-v-523c5700 taskTitles">
+      <text class="_text data-v-523c5700">任务发布数量：</text>
+      <input type="number" maxlength="5" value="{{taskData.releaseTaskNo}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'xAy-5'}}" data-comkey="{{$k}}" class="_input data-v-523c5700" />
     </view>
-    <view class="_view data-v-1f6b411a taskTitles">
-      <text class="_text data-v-1f6b411a">广告总价：</text>
-      <text class="_text data-v-1f6b411a">{{taskData.allMoney}}</text>
+    <view class="_view data-v-523c5700 taskTitles">
+      <text class="_text data-v-523c5700">广告总价：</text>
+      <text class="_text data-v-523c5700">{{taskData.allMoney}}</text>
     </view>
-    <view class="_view data-v-1f6b411a submitPrice">
-      <button class="_button data-v-1f6b411a taskGo" bindtap="handleProxy" data-eventid="{{'TzA-6'}}" data-comkey="{{$k}}">发布任务</button>
+    <view class="_view data-v-523c5700 submitPrice">
+      <button class="_button data-v-523c5700 taskGo" bindtap="handleProxy" data-eventid="{{'APu-6'}}" data-comkey="{{$k}}">发布任务</button>
     </view>
   </view>
 </template>

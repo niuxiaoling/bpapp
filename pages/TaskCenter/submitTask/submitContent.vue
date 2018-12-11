@@ -12,6 +12,9 @@
 		</view>
 		<view class="imgbox">
 			<image :src="uploadimg" mode="aspectFit"  class="imgbox-img" @tap="previewImage" @longpress="removeImage(image)"></image>
+			<view class="progress-line">
+				<progress :percent="percent" stroke-width="5"></progress>
+			</view>
 		</view>
 		<view v-if="uploadimg !=''">
 			<button class="getTasks"  @tap="getTask">提交</button>
@@ -27,7 +30,7 @@
 		data() {
 			return {
 				uploadimg:'',
-
+				percent:0,
 				tasksDetails:{
 					taskTitle:'',
 					copyWriting:'',
@@ -36,7 +39,6 @@
 					taskIdentifier:"",//任务编号
 					statusTask:''//任务状态
 				},
-				copyImages:[],
 				orderInfo:{
 					taskIdentifier:'',
 					account:'',
@@ -54,7 +56,6 @@
 			 this.orderInfo.account = uni.getStorageSync('userInfo').account;
 		},
 		methods:{
-			
 			chooseImg() {
 				var that = this;
 				//选择图片
@@ -63,47 +64,20 @@
 					sizeType: 'compressed',
 					count: 1,
 					success: function(res) { 
-						uni.request({
-							url:res.tempFilePaths[0],
-							method:'GET',
-							responseType: 'arraybuffer',
-							success: ress => {
-								var base64 = wx.arrayBufferToBase64(ress.data); //把arraybuffer转成base64 
-								// base64 = 'data:image/jpeg;base64,' + base64 //不加上这串字符，在页面无法显示的哦
-								// that.base64 = base64;
-								const jsonString = {
-									taskInfo:{
-										picBast64:base64,
-										upType:'pic',
-									},
-									requestType:"upFile",
-								}
-								const param ={
-									controllerRequestType:"taskControllerService",
-									jsonString:JSON.stringify(jsonString)
-								}
-								uni.request({
-									url:that.websiteUrl,
-									method:'POST',
-									header: {
-										"content-type":"application/x-www-form-urlencoded"
-									},
-									data:param,
-									success: (res) => {
-										if(res.data.errorCode == '0000'){
-											// that.picId.push(res.data.taskInfo.picId);
-										}
-									},
-									fail:(res) =>{
-										// console.log(JSON.stringify(res));
-									}
-								})
-								
+						const tempFilePaths = res.tempFilePaths;
+						const uploadTask = uni.uploadFile({
+							url: that.uploadUrl,
+							filePath: tempFilePaths[0],
+							name: 'file',
+							formData: {},
+							success: (uploadFileRes) => {
+								that.uploadimg = tempFilePaths[0];
 							}
+						});
+						uploadTask.onProgressUpdate(function(res){
+							that.percent = res.progress;
 						})
-							that.uploadimg = res.tempFilePaths[0];
-							//触发所选择文件更改事件，参数为文件列表
-							that.$emit('change', that.uploadimg);
+						
 					}
 				});
 				},
@@ -211,8 +185,15 @@
 		font-size:30upx;
 	}
 	.imgbox{
+		width:90%;
 		margin:0 auto;
-		padding:0 20upx;
+		position: relative;
+	}
+	.progress-line{
+		position: absolute;
+		bottom:0;
+		left:0;
+		width:100%;
 	}
 	.imgbox-img{
 		width:100%;

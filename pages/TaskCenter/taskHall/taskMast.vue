@@ -34,6 +34,9 @@
 					url:'/pages/TaskCenter/taskHall/ysTask'
 				})
 			}
+		},
+		onUnload:function(){
+			this.taskType ='';
 		}
 	}
 </script>

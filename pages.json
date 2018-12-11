@@ -1,14 +1,6 @@
 {
     "pages" : [
         //pages数组中第一项表示应用启动页
-        // 		{
-        // 			"path": "pages/index/index",
-        // 			"style": {
-        // 				"navigationBarTitleText": "登录",
-        // 				"navigationBarBackgroundColor":"#EA5B17",
-        // 				"navigationBarTextStyle":"white"
-        // 			}
-        // 		},
         {
             "path" : "pages/main/main",
             "style" : {
@@ -52,7 +44,7 @@
         {
             "path" : "pages/TaskCenter/taskHall/ysTask",
             "style" : {
-                "navigationBarTitleText" : "任务大厅",
+                "navigationBarTitleText" : "勇士任务大厅",
                 "navigationBarBackgroundColor" : "#EA5B17",
                 "navigationBarTextStyle" : "white"
             }

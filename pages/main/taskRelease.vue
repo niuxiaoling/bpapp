@@ -14,6 +14,9 @@
 							<block v-for="(image,index) in imageList" :key="index">
 								<view class="ts-uploader__file">
 									<image class="ts-uploader__img" :src="image" @tap="previewImage" @longpress="removeImage(image)"></image>
+									<view class="progress-line">
+										<progress :percent="percent" stroke-width="5"></progress>
+									</view>
 								</view>
 							</block>
 							<view class="ts-uploader__input-box" v-if="imageList.length < count">
@@ -23,7 +26,6 @@
 						</view>
 					</view>
 				</view>
-
 			</view>
 		</view>
 		<view class="taskTitles">
@@ -51,6 +53,7 @@
 			return {
 				count:2,
 				imageList: [],
+				percent:0,
 				picId:[],
 				taskData:{
 					taskTitle:"",  //标题
@@ -85,7 +88,14 @@
 			},
 			publishTask(){
 				var that = this;
-				this.taskData.allMoney = Number(this.taskData.contributionNo)*Number(this.taskData.releaseTaskNo);
+				if(this.picId.length <= 0){
+					uni.showToast({
+						icon:'none',
+						title:'请你先上传图片'
+					})
+					return;
+				}
+				this.taskData.allMoney = Number(this.taskData.contributionNo) * Number(this.taskData.releaseTaskNo);
 				this.taskData.picId = this.picId[0];
 				this.taskData.picId2 = this.picId[1];
 				this.taskData.account = this.userInfo.account;
@@ -209,8 +219,7 @@
 					count: that.count - that.imageList.length,
 					success: function(res) { 
 						const tempFilePaths = res.tempFilePaths;
-						console.log(tempFilePaths);
-						uni.uploadFile({
+						const uploadTask  = uni.uploadFile({
 							url: that.uploadUrl,
 							filePath: tempFilePaths[0],
 							name: 'file',
@@ -228,10 +237,11 @@
 								}
 							}
 						} else {
-							that.imageList = res.tempFilePaths;
-						}
-						//触发所选择文件更改事件，参数为文件列表
-						that.$emit('change', that.imageList);
+							that.imageList = tempFilePaths;
+						};
+						uploadTask.onProgressUpdate(function(res){
+							  that.percent = res.progress;
+						})
 					}
 				});
 			},
@@ -335,8 +345,15 @@
 	    flex-direction: row;
 	    margin-right: 18upx;
 	    margin-bottom: 18upx;
+		position: relative;
+		width:158upx;
 	}
-	
+	.progress-line{
+		position: absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+	}
 	.ts-uploader__img {
 	    display: flex;
 	    flex-direction: row;

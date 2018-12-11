@@ -1,31 +1,36 @@
 <template>
 	<view class="hall">
-		<view class="task" v-for="tasks in submitLists" :key='tasks' @tap="goSubmitContent(tasks)">
-			<view class="subcontent">
-				<image  src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
-				<text>{{tasks.taskInfo.taskTitle}}</text>
-				<text style="color: #999999;">（{{tasks.taskInfo.taskType == '01'?'勇士':'自由'}}）</text>
+		<block v-if="submitList.length >0">
+			<view class="task" v-for="tasks in submitList" :key='tasks' @tap="goSubmitContent(tasks)">
+				<view class="subcontent">
+					<image  src="../../../static/img/logoicon1.png" mode="aspectFit"></image>
+					<text>{{tasks.taskInfo.taskTitle}}</text>
+					<text style="color: #999999;">（{{tasks.taskInfo.taskType == '01'?'勇士':'自由'}}）</text>
+				</view>
+				<view>
+					<text style="color: #666666;">{{tasks.orderStatus == '1'?'待提交':'已提交'}}</text>
+					<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
+				</view>
 			</view>
-			<view>
-				<text style="color: #666666;">{{tasks.orderStatus == '1'?'待提交':'已提交'}}</text>
-				<image class="you" src="../../../static/img/youjiantou.png" mode="aspectFit"></image>
-			</view>
+		</block>
+		<view v-else>
+			暂无数据
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
-		data() {
+		data(){
 			return {
-				submitLists:[],
+				submitList:[],
 				orderInfo:{
 					account:'',
 					orderStatus:'1'
 				}
 			};
 		},
-		onLoad() {
+		onLoad:function() {
 			uni.showLoading({
 				mask:true,
 				title:'loading'
@@ -48,10 +53,17 @@
 				},
 				data:param,
 				success(res) {
+					that.submitList = [];
 					if(res.data.errorCode == '0000'){
-						that.submitLists = res.data.orderInfo.ordeList;	
+						const data = res.data.orderInfo.ordeList;
+						data.forEach(function(value,index){
+							if(value.taskInfo){
+								that.submitList.push(value);
+							}
+						})
 						uni.hideLoading();
 					 }else{
+						that.submitList = [];
 						uni.showToast({
 							icon:'none',
 							title:res.data.errorMessage

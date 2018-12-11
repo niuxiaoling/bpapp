@@ -1,8 +1,0 @@
-
-.imageBox {
-  width: 100%;
-  height: auto;
-}
-.imageBox image {
-  width: 100%;
-}

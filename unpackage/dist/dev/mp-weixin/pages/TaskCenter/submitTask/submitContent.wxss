@@ -23,8 +23,15 @@ page {
   font-size: 30rpx;
 }
 .imgbox {
+  width: 90%;
   margin: 0 auto;
-  padding: 0 20rpx;
+  position: relative;
+}
+.progress-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .imgbox-img {
   width: 100%;

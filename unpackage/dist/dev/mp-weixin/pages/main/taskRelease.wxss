@@ -113,6 +113,14 @@ page {
   flex-direction: row;
   margin-right: 18rpx;
   margin-bottom: 18rpx;
+  position: relative;
+  width: 158rpx;
+}
+.progress-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .ts-uploader__img {
   display: -webkit-box;
